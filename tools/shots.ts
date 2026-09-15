@@ -1,0 +1,40 @@
+/** Frames and fps of `/` in headless Chrome with the real GPU:  node --import tsx tools/shots.ts [--cpu 4] [--out shots/lobby] */
+import { spawn } from 'node:child_process';
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+const arg = (k: string, d: string) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1]! : d; };
+const BASE = arg('--base', 'http://127.0.0.1:4410'), CPU = Number(arg('--cpu', '1')), OUT = arg('--out', 'shots/lobby'), W = 1440, H = 900;
+const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+if (!existsSync(CHROME)) throw new Error('Google Chrome not found');
+mkdirSync(OUT, { recursive: true });
+const profile = mkdtempSync(join(tmpdir(), 'tdg-shots-'));
+const chrome = spawn(CHROME, ['--headless=new', '--remote-debugging-port=0', `--user-data-dir=${profile}`, '--no-first-run', '--no-default-browser-check', `--window-size=${W},${H}`, '--hide-scrollbars', '--use-angle=metal', '--enable-gpu-rasterization', '--ignore-gpu-blocklist'], { stdio: 'ignore' });
+const portFile = join(profile, 'DevToolsActivePort');
+for (let i = 0; i < 100 && !existsSync(portFile); i++) await new Promise(r => setTimeout(r, 100));
+const port = readFileSync(portFile, 'utf8').split('\n')[0]!.trim();
+const target = await (await fetch(`http://127.0.0.1:${port}/json/new?about:blank`, { method: 'PUT' })).json() as { webSocketDebuggerUrl: string };
+const ws = new WebSocket(target.webSocketDebuggerUrl); await new Promise<void>((res, rej) => { ws.addEventListener('open', () => res()); ws.addEventListener('error', rej); });
+let id = 0; const waits = new Map<number, (v: any) => void>();
+ws.addEventListener('message', e => { const m = JSON.parse(String(e.data)); if (m.id && waits.has(m.id)) { waits.get(m.id)!(m); waits.delete(m.id); } });
+const send = (method: string, params: Record<string, unknown> = {}) => { const n = ++id; ws.send(JSON.stringify({ id: n, method, params })); return new Promise<any>(r => waits.set(n, r)); };
+const ev = async (expr: string) => (await send('Runtime.evaluate', { expression: expr, awaitPromise: true, returnByValue: true })).result?.result?.value;
+const shot = async (name: string) => { const r = await send('Page.captureScreenshot', { format: 'jpeg', quality: 85 }); writeFileSync(join(OUT, `${name}.jpg`), Buffer.from(r.result.data, 'base64')); };
+const wait = (ms: number) => new Promise(r => setTimeout(r, ms));
+await send('Page.enable'); await send('Runtime.enable');
+await send('Emulation.setDeviceMetricsOverride', { width: W, height: H, deviceScaleFactor: 1, mobile: false });
+await send('Emulation.setCPUThrottlingRate', { rate: CPU });
+await send('Page.navigate', { url: `${BASE}/` });
+await wait(1500); await shot('00-arrive'); await wait(1500); await shot('01-live');
+const renderer = await ev(`(() => { const c = document.createElement('canvas'); const g = c.getContext('webgl2'); const d = g && g.getExtension('WEBGL_debug_renderer_info'); return d ? g.getParameter(d.UNMASKED_RENDERER_WEBGL) : 'no webgl2'; })()`);
+const live = await ev(`document.querySelector('.stage-live') !== null`);
+const riveOffered = await ev(`document.querySelector('.stage-rive') !== null`);
+await ev(`document.querySelector('.stage-hit[data-hit="government"]').dispatchEvent(new MouseEvent('mouseover', { bubbles: true }))`); await wait(400); await shot('02-focus-government');
+const caption = await ev(`document.querySelector('.stage-caption').textContent`);
+const fps = await ev(`(async () => { const t0 = performance.now(); let f = 0; await new Promise(r => { const tick = () => { f++; if (performance.now() - t0 < 2000) requestAnimationFrame(tick); else r(); }; requestAnimationFrame(tick); }); return Math.round(f / ((performance.now() - t0) / 1000)); })()`);
+const result = { renderer, riveOffered, riveLive: live, caption, cpu: CPU, fpsIdle: fps, at: new Date().toISOString() };
+writeFileSync(join(OUT, `fps-${CPU}x.json`), JSON.stringify(result, null, 2));
+console.log(JSON.stringify(result));
+ws.close(); chrome.kill(); await new Promise(r => chrome.once('exit', r)); rmSync(profile, { recursive: true, force: true });
+if (riveOffered && !live) { console.error('Rive was offered but did not go live in headless Chrome'); process.exit(1); }
+if (fps < (CPU >= 4 ? 30 : 55)) { console.error(`fps ${fps} below the bar`); process.exit(1); }

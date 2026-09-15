@@ -1,0 +1,57 @@
+{
+  "schema": "tdg-site-truth/v1",
+  "sourceCommit": "423fd30b72cef6511430162d48de4442573e8ccc",
+  "importedAt": "2026-09-15T23:29:16.341Z",
+  "org": {
+    "id": "https://thatdeveloperguy.com/#organization",
+    "name": "ThatDeveloperGuy",
+    "legalName": "THATDEVELOPERGUY LLC",
+    "telephone": "+14176712606",
+    "telephoneDisplay": "417 671 2606",
+    "email": "admin@thatdeveloperguy.com",
+    "foundingDate": "2017",
+    "address": {
+      "streetAddress": "463 State Highway 76",
+      "addressLocality": "Cassville",
+      "addressRegion": "MO",
+      "postalCode": "65625",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.wikidata.org/wiki/Q139709771",
+      "https://www.linkedin.com/company/thatdeveloperguy",
+      "https://www.crunchbase.com/organization/thatdevpro",
+      "https://www.google.com/maps?cid=6894929544552952126",
+      "https://www.facebook.com/people/Thatdevpro/61589759327967/",
+      "https://www.npmjs.com/~thatdevpro",
+      "https://pypi.org/user/thatdevpro/",
+      "https://huggingface.co/ThatDeveloperGuy13",
+      "https://hashnode.com/@thataiguy13",
+      "https://x.com/thatdevpro",
+      "https://www.instagram.com/thatdevpro/",
+      "https://www.reddit.com/r/thatdevpro/",
+      "https://clutch.co/profile/thatdeveloperguy",
+      "https://www.trustpilot.com/review/thatdeveloperguy.com",
+      "https://www.yelp.com/biz/that-developer-guy-cassville",
+      "https://opencorporates.com/companies/us_mo/LC014742166"
+    ]
+  },
+  "person": {
+    "id": "https://thatdeveloperguy.com/#person",
+    "name": "Joseph W. Anady",
+    "jobTitle": "Founder and Principal Engineer",
+    "url": "https://feedthejoe.com/joseph/"
+  },
+  "host": {
+    "host": "thatdeveloperguy.com",
+    "role": "the main face of the organization — the brand; handles governmental work: the most professional property, built specifically for winning governmental contracts; the canonical declaration of the organization and the person (#organization, #person)"
+  },
+  "ownerToSupply": [
+    "CAGE code",
+    "SAM.gov Active date",
+    "SBA VetCert status",
+    "NAICS approval",
+    "PSC codes",
+    "Named past-performance clients"
+  ]
+}
