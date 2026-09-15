@@ -4,7 +4,12 @@ import { fitRing, ringArea, unionRings, type Contour } from './geometry.ts';
 export { serializeScene, extractPart, listGroupIds } from './serialize.ts';
 
 export interface RefineOptions { minArea: number; tolerance: number; minTurnDeg: number; union: boolean }
-export const DEFAULT_REFINE: RefineOptions = { minArea: 4, tolerance: 0.75, minTurnDeg: 60, union: true };
+/**
+ * minArea 1 px²: the traces' 0.6 px dither squares (0.36 px²) go, two-pixel lettering fragments stay.
+ * union stays off: the tracer draws lettering and cut-outs as opposite-wound holes, which a union fills in,
+ * and measured on the lobby it removed under 4% of vertices anyway.
+ */
+export const DEFAULT_REFINE: RefineOptions = { minArea: 1, tolerance: 0.75, minTurnDeg: 60, union: false };
 
 export interface RefinedPath { kind: 'path'; id: string; fill: string; contours: Contour[] }
 export interface RefinedGroup { kind: 'group'; id: string; label?: string; children: RefinedNode[] }

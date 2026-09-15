@@ -78,9 +78,23 @@ export function cornerIndices(ring: Ring, minTurnDeg: number): number[] {
   return out;
 }
 
-function fitOpen(points: Point[], tolerance: number): Cubic[] {
-  if (points.length < 2) return [];
-  if (points.length === 2) { const [a, b] = points as [Point, Point]; return [{ c1: a, c2: b, to: b }]; }
+/** fit-curve measures error only at sample points, so a sparse polyline lets a cubic bulge between them. Resample every `step` px first. */
+export function densify(points: Point[], step: number): Point[] {
+  const out: Point[] = [];
+  for (let i = 0; i < points.length - 1; i++) {
+    const a = points[i]!, b = points[i + 1]!;
+    const len = Math.hypot(b[0] - a[0], b[1] - a[1]);
+    const n = Math.max(1, Math.ceil(len / step));
+    for (let k = 0; k < n; k++) out.push([a[0] + (b[0] - a[0]) * k / n, a[1] + (b[1] - a[1]) * k / n]);
+  }
+  out.push(points[points.length - 1]!);
+  return out;
+}
+
+function fitOpen(sparse: Point[], tolerance: number): Cubic[] {
+  if (sparse.length < 2) return [];
+  if (sparse.length === 2) { const [a, b] = sparse as [Point, Point]; return [{ c1: a, c2: b, to: b }]; }
+  const points = densify(sparse, 2);
   const curves = fitCurve(points.map(p => [p[0], p[1]]), tolerance);
   return curves.map(c => ({ c1: [c[1]![0]!, c[1]![1]!], c2: [c[2]![0]!, c[2]![1]!], to: [c[3]![0]!, c[3]![1]!] }));
 }
