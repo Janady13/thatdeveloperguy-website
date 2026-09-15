@@ -1,0 +1,90 @@
+{
+  "room": "lobby",
+  "file": "lobby.riv",
+  "sha256": "72dd2512c7dcfb5d53961e19178318baf9137a555899b2f7bfaa814b65b815c7",
+  "bytes": 567404,
+  "artboard": "Lobby",
+  "stateMachine": "State Machine 1",
+  "viewModel": "Lobby",
+  "enum": {
+    "LobbyFocus": [
+      "none",
+      "it",
+      "government",
+      "cyber"
+    ]
+  },
+  "inputs": {
+    "focus": "enum",
+    "openIt": "trigger",
+    "openGovernment": "trigger",
+    "openCyber": "trigger",
+    "reducedMotion": "boolean"
+  },
+  "animations": [
+    "Ambient",
+    "DoorOpenIt",
+    "DoorOpenGovernment",
+    "DoorOpenCyber",
+    "FocusIt",
+    "FocusGovernment",
+    "FocusCyber"
+  ],
+  "doors": [
+    {
+      "id": "it",
+      "leafId": "door_it_leaf",
+      "hinge": [
+        564,
+        529
+      ],
+      "hit": {
+        "x": 542,
+        "y": 229,
+        "width": 176,
+        "height": 302
+      },
+      "href": "/it-services/",
+      "label": "IT SERVICES"
+    },
+    {
+      "id": "government",
+      "leafId": "door_government_leaf",
+      "hinge": [
+        804,
+        529
+      ],
+      "hit": {
+        "x": 782,
+        "y": 229,
+        "width": 176,
+        "height": 302
+      },
+      "href": "/government-solutions/",
+      "label": "GOV SOLUTIONS"
+    },
+    {
+      "id": "cyber",
+      "leafId": "door_cyber_leaf",
+      "hinge": [
+        1049,
+        529
+      ],
+      "hit": {
+        "x": 1028,
+        "y": 229,
+        "width": 177,
+        "height": 302
+      },
+      "href": "/cybersecurity/",
+      "label": "CYBER SECURITY"
+    }
+  ],
+  "editor": {
+    "fileId": 2583647,
+    "url": "https://editor.rive.app/file/tdg-patch/2583647"
+  },
+  "authoredAt": "2026-09-15T23:28:16.105Z",
+  "exportedBy": "mcp",
+  "exportNote": "The editor MCP export omits MCP-created artboards (probed 2026-09-15). Export from the editor UI and ingest with --riv <path>."
+}

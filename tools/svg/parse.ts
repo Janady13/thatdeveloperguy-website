@@ -42,7 +42,7 @@ function element(node: Element): SvgNode | null {
     const children: SvgNode[] = [];
     for (let i = 0; i < node.childNodes.length; i++) {
       const child = node.childNodes[i];
-      if (child && child.nodeType === 1) { const parsed = element(child as Element); if (parsed) children.push(parsed); }
+      if (child && child.nodeType === 1) { const parsed = element(child as unknown as Element); if (parsed) children.push(parsed); }
     }
     const group: GroupNode = { kind: 'group', id: node.getAttribute('id') ?? '', children };
     const label = node.getAttributeNS(INKSCAPE, 'label');
@@ -65,7 +65,7 @@ export function parseScene(svgText: string): SceneDoc {
   for (let i = 0; i < svg.childNodes.length; i++) {
     const child = svg.childNodes[i];
     if (!child || child.nodeType !== 1) continue;
-    const el = child as Element;
+    const el = child as unknown as Element;
     if (el.localName === 'title') { title = el.textContent ?? ''; continue; }
     if (el.localName === 'desc') continue;
     const parsed = element(el);

@@ -17,7 +17,8 @@ export function ringArea(ring: Ring): number {
 /** Union of rings that share one paint. polygon-clipping returns exteriors and holes with opposite winding, which the nonzero fill rule renders correctly. */
 export function unionRings(rings: Ring[]): Ring[] {
   if (rings.length <= 1) return rings;
-  const result = polygonClipping.union(...rings.map(ring => [ring.map(p => [p[0], p[1]] as [number, number])]));
+  const polygons = rings.map(ring => [ring.map(p => [p[0], p[1]] as [number, number])]);
+  const result = polygonClipping.union(polygons[0]!, ...polygons.slice(1));
   const out: Ring[] = [];
   for (const polygon of result) for (const ring of polygon) {
     const pts = ring.map(p => [p[0], p[1]] as Point);
