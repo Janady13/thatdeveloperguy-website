@@ -19,7 +19,7 @@ export function SceneStage({ poster, rive, hotspots, caption, onActivate, label,
         {rive && !failed && !reducedMotion && <RiveScene {...rive} focus={focus ?? 'none'} reducedMotion={reducedMotion} fire={fire} onReady={() => setReady(true)} onError={() => setFailed(true)} />}
         <svg className="stage-hits" viewBox="0 0 1648 928" role="navigation" aria-label={`${label} destinations`}>
           {hotspots.map(h => (
-            <a key={h.id} href={h.href} aria-label={h.label} className="stage-hit" data-hit={h.id} onMouseEnter={() => onFocus(h.id)} onMouseLeave={() => onFocus(null)} onFocus={() => onFocus(h.id)} onBlur={() => onFocus(null)} onClick={e => activate(e, h)}>
+            <a key={h.id} href={h.href} aria-label={h.label} className="stage-hit" data-hit={h.id} tabIndex={0} onMouseEnter={() => onFocus(h.id)} onMouseLeave={() => onFocus(null)} onFocus={() => onFocus(h.id)} onBlur={() => onFocus(null)} onClick={e => activate(e, h)}>
               <rect x={h.hit.x} y={h.hit.y} width={h.hit.width} height={h.hit.height} rx={6} />
             </a>
           ))}
