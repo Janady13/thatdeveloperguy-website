@@ -34,3 +34,12 @@ test('fitRing keeps square corners exactly and fits a 180-point circle in few cu
     assert.ok(Math.abs(r - 40) < 0.8, `endpoint drifted off the circle: ${r}`);
   }
 });
+
+test('simplifyRing collapses a pixel staircase to its two real corners per run', async () => {
+  const { simplifyRing } = await import('../../tools/svg/geometry.ts');
+  const stair: Ring = [];
+  for (let i = 0; i < 20; i++) { stair.push([i * 0.6, i * 0.6]); stair.push([i * 0.6 + 0.6, i * 0.6]); }
+  stair.push([12, 0]);
+  const simple = simplifyRing(stair, 0.75);
+  assert.ok(simple.length <= 4, `expected a triangle-ish ring, got ${simple.length} points`);
+});

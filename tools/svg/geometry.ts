@@ -35,6 +35,38 @@ function turn(a: Point, b: Point, c: Point): number {
   return Math.acos(cos) * 180 / Math.PI;
 }
 
+function pointLineDistance(p: Point, a: Point, b: Point): number {
+  const dx = b[0] - a[0], dy = b[1] - a[1];
+  const len2 = dx * dx + dy * dy;
+  if (len2 === 0) return Math.hypot(p[0] - a[0], p[1] - a[1]);
+  const t = Math.max(0, Math.min(1, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / len2));
+  return Math.hypot(p[0] - (a[0] + t * dx), p[1] - (a[1] + t * dy));
+}
+
+function douglasPeucker(points: Point[], epsilon: number): Point[] {
+  if (points.length <= 2) return points;
+  let index = 0, max = 0;
+  const a = points[0]!, b = points[points.length - 1]!;
+  for (let i = 1; i < points.length - 1; i++) { const d = pointLineDistance(points[i]!, a, b); if (d > max) { max = d; index = i; } }
+  if (max <= epsilon) return [a, b];
+  const left = douglasPeucker(points.slice(0, index + 1), epsilon), right = douglasPeucker(points.slice(index), epsilon);
+  return left.slice(0, -1).concat(right);
+}
+
+/** Douglas-Peucker on a closed ring: split at the two points farthest apart so the pixel staircase collapses to its straight and curved runs. */
+export function simplifyRing(ring: Ring, epsilon: number): Ring {
+  if (ring.length <= 4) return ring;
+  let i0 = 0, i1 = 0, far = -1;
+  for (let i = 0; i < ring.length; i++) { const p = ring[i]!, d = Math.hypot(p[0] - ring[0]![0], p[1] - ring[0]![1]); if (d > far) { far = d; i1 = i; } }
+  far = -1;
+  for (let i = 0; i < ring.length; i++) { const p = ring[i]!, d = Math.hypot(p[0] - ring[i1]![0], p[1] - ring[i1]![1]); if (d > far) { far = d; i0 = i; } }
+  if (i0 > i1) [i0, i1] = [i1, i0];
+  const first = douglasPeucker(ring.slice(i0, i1 + 1), epsilon);
+  const second = douglasPeucker(ring.slice(i1).concat(ring.slice(0, i0 + 1)), epsilon);
+  const out = first.slice(0, -1).concat(second.slice(0, -1));
+  return out.length >= 3 ? out : ring;
+}
+
 /** Indices where the polyline turns more than `minTurnDeg`; those stay sharp through fitting. */
 export function cornerIndices(ring: Ring, minTurnDeg: number): number[] {
   const out: number[] = [];
@@ -54,7 +86,8 @@ function fitOpen(points: Point[], tolerance: number): Cubic[] {
 }
 
 /** Schneider fitting per corner-to-corner run. A ring with no corners is fitted as one closed run starting at index 0. */
-export function fitRing(ring: Ring, tolerance: number, minTurnDeg: number): Contour {
+export function fitRing(source: Ring, tolerance: number, minTurnDeg: number): Contour {
+  const ring = simplifyRing(source, tolerance);
   const n = ring.length;
   const corners = cornerIndices(ring, minTurnDeg);
   const anchors = corners.length ? corners : [0];
