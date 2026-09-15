@@ -1,0 +1,9 @@
+node_modules/
+apps/web/dist/
+apps/web/public/scenes/
+apps/web/public/animation/
+.tools/
+test-results/
+shots/
+*.log
+.DS_Store

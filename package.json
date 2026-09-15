@@ -1,0 +1,54 @@
+{
+  "name": "thatdeveloperguy-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "thatdeveloperguy.com — illustrated Rive site",
+  "engines": {
+    "node": ">=24.19.0 <25"
+  },
+  "scripts": {
+    "dev": "vite --config apps/web/vite.config.ts --host 127.0.0.1 --port 4410",
+    "build": "vite build --config apps/web/vite.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --import tsx tests/unit/*.test.ts",
+    "test:browser": "playwright test",
+    "refine": "node --import tsx tools/refine-vectors.ts",
+    "rive:author": "node --import tsx tools/rive-author.ts",
+    "rive:verify": "node --import tsx tools/verify-riv.ts",
+    "truth": "node --import tsx tools/import-truth.ts",
+    "sync": "node scripts/sync-rive-wasm.mjs && node scripts/sync-scenes.mjs",
+    "shots": "node --import tsx tools/shots.ts"
+  },
+  "dependencies": {
+    "@rive-app/react-webgl2": "4.34.2",
+    "gsap": "3.15.0",
+    "lenis": "1.3.26",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-router": "8.3.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.63.0",
+    "@resvg/resvg-js": "2.6.2",
+    "@rive-app/canvas-advanced": "2.42.1",
+    "@types/node": "24.13.4",
+    "@types/pixelmatch": "5.2.6",
+    "@types/pngjs": "6.0.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "@xmldom/xmldom": "0.9.12",
+    "fit-curve": "0.2.0",
+    "pixelmatch": "7.2.0",
+    "pngjs": "7.0.0",
+    "polygon-clipping": "0.15.7",
+    "tsx": "4.23.13",
+    "typescript": "7.0.2",
+    "vite": "8.3.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
