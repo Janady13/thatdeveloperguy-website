@@ -33,7 +33,7 @@ mkdirSync(resolve(root, 'public/animation/rooms'), { recursive: true });
 for (const [sceneId, kit] of Object.entries(KITS)) {
   const refined = resolve(root, 'creative-source/refined', kit.room);
   const manifest = JSON.parse(readFileSync(resolve(refined, 'manifest.json'), 'utf8'));
-  copyFileSync(resolve(refined, 'scene.svg'), resolve(root, `public/images/posters/${sceneId}.svg`));
+  copyFileSync(resolve(refined, existsSync(resolve(refined, 'poster.svg')) ? 'poster.svg' : 'scene.svg'), resolve(root, `public/images/posters/${sceneId}.svg`));
   const rivePath = resolve(root, 'creative-source/rive', kit.room, 'rive-manifest.json');
   let rive: SceneRecord['rive'] = null;
   if (existsSync(rivePath)) {

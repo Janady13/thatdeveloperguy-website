@@ -38,7 +38,7 @@ export function SceneShell({ scene, page }: { scene: SceneRecord; page: Compiled
   return (
     <section className={`scene${live ? ' scene-live' : ''}`} aria-label={`${page.heading} room`} data-scene={scene.id} data-focus={focus ?? ''} data-renderer={hardware ?? ''}>
       <div className="scene-frame" style={{ aspectRatio: ASPECT }}>
-        <img className="scene-poster" src={scene.poster} alt={scene.posterAlt} width={1648} height={928} decoding="async" fetchPriority="high" />
+        <img className="scene-poster" src={scene.poster} alt={scene.posterAlt} width={1648} height={928} decoding="async" fetchPriority="high" {...({ elementtiming: "poster" } as Record<string, string>)} />
         {showRive && <Suspense fallback={null}><RiveCanvas rive={scene.rive!} focus={focus ?? 'none'} reducedMotion={!motion} fire={fire} onReady={() => setLive(true)} onError={() => setFailed(true)} /></Suspense>}
         <HotspotOverlay label={page.heading} hotspots={hotspots} onFocus={id => { if (!leaving) setFocus(id); }} onActivate={activate} />
       </div>

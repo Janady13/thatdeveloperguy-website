@@ -31,3 +31,16 @@ test('extractPart keeps only the named group on the same canvas', () => {
   assert.equal(part.width, 100);
   assert.deepEqual(listGroupIds(part), ['door_it_leaf']);
 });
+
+test('the compact poster form renders the same geometry: no ids, relative cubics, same precision', async () => {
+  const { serializePoster } = await import('../../tools/svg/serialize.ts');
+  const { renderSvg } = await import('../../tools/svg/diff.ts');
+  const { PNG } = await import('pngjs');
+  const pixelmatch = (await import('pixelmatch')).default;
+  const refined = refineScene(doc).doc;
+  const full = serializeScene(refined), poster = serializePoster(refined, 10);
+  assert.doesNotMatch(poster, /id="|inkscape/);
+  assert.match(poster, /<path fill="#3b2a6e" d="M10 10c/);
+  const a = PNG.sync.read(Buffer.from(renderSvg(full, 400))), b = PNG.sync.read(Buffer.from(renderSvg(poster, 400)));
+  assert.equal(pixelmatch(a.data, b.data, undefined, a.width, a.height, { threshold: 0.1 }), 0);
+});

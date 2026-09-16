@@ -5,6 +5,7 @@ import { pathToFileURL } from 'node:url';
 import { loadKits, repoRoot, resolveRoom, type RoomId } from './kits.ts';
 import { parseScene } from './svg/parse.ts';
 import { DEFAULT_REFINE, extractPart, refineScene, serializeScene, type RefineOptions, type RefineStats } from './svg/refine.ts';
+import { serializePoster } from './svg/serialize.ts';
 import { diffAgainstReference, type DiffResult } from './svg/diff.ts';
 
 export interface KitManifest { doors?: Array<{ id: string; leafId: string; pivot: [number, number] }>; layers: Array<{ id: string; pivot: [number, number]; motion: string }> }
@@ -37,6 +38,8 @@ export function refineRoom(room: RoomId, options: RefineOptions = DEFAULT_REFINE
   const { doc, stats } = refineScene(parseScene(svgText), options);
   const scene = serializeScene(doc);
   writeFileSync(join(out, 'scene.svg'), scene);
+  // Public poster: same geometry at the same 0.1 px precision, written compactly (relative commands, no ids). Renders identically; ~half the bytes.
+  writeFileSync(join(out, 'poster.svg'), serializePoster(doc, 10));
   const parts = selectParts(kitManifest).filter(part => { try { extractPart(doc, part.id); return true; } catch { console.warn(`part ${part.id} not in SVG; skipped`); return false; } });
   for (const part of parts) writeFileSync(join(out, 'parts', `${part.id}.svg`), serializeScene(extractPart(doc, part.id)));
   const diff = diffAgainstReference(scene, kit.reference, join(out, 'diff.png'));
