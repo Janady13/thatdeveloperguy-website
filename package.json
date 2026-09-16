@@ -51,7 +51,7 @@
     "@playwright/test": "1.63.0",
     "@resvg/resvg-js": "2.6.2",
     "@rive-app/canvas-advanced": "2.42.2",
-    "@types/node": "24.13.4",
+    "@types/node": "26.5.1",
     "@types/nodemailer": "8.0.2",
     "@types/pixelmatch": "5.2.6",
     "@types/pngjs": "6.0.5",
