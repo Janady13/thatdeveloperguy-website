@@ -3,7 +3,7 @@ import type { CompiledPage } from '../../src/contracts/page';
 import type { SceneRecord } from '../../src/contracts/scene';
 import { HotspotOverlay } from './HotspotOverlay';
 import { ItServicesEnvironment } from './ItServicesEnvironment';
-import { MotionPreferenceControl, useMotionPreference } from './MotionPreferenceControl';
+import { useMotionPreference } from './MotionPreferenceControl';
 import { probeRenderer } from './renderer-capability';
 import { sceneAspect } from './scene-coordinate-map';
 import { useSceneNavigation } from './useSceneNavigation';
@@ -19,7 +19,7 @@ export function ItServicesSceneShell({ scene, page }: { scene: SceneRecord; page
   const [nativeReady, setNativeReady] = useState(false);
   const [nativeFailed, setNativeFailed] = useState(false);
   const [focus, setFocus] = useState<string | null>(null);
-  const [motion, setMotion] = useMotionPreference();
+  const [motion] = useMotionPreference();
   const [pointer, setPointer] = useState({ x: 0.5, y: 0.5, active: false });
 
   useEffect(() => {
@@ -40,7 +40,6 @@ export function ItServicesSceneShell({ scene, page }: { scene: SceneRecord; page
 
   const hardware = mounted && !/^no |^software/i.test(renderer) && renderer !== 'pending';
   const showNative = Boolean(hardware && motion && scene.rive && !nativeFailed);
-  const caption = focus ? scene.captions[focus] ?? hotspots.find(hotspot => hotspot.id === focus)?.label ?? '' : scene.captionRest;
   const planeStyle = {
     aspectRatio: sceneAspect(scene.canvas),
     '--scene-w': scene.canvas.width,
@@ -105,10 +104,6 @@ export function ItServicesSceneShell({ scene, page }: { scene: SceneRecord; page
           onFocus={id => { if (!leaving) setFocus(id); }}
           onActivate={activate}
         />
-      </div>
-      <div className="scene-ui">
-        <p className="scene-caption" aria-live="polite">{caption}</p>
-        {mounted && <MotionPreferenceControl on={motion} onChange={setMotion} />}
       </div>
     </section>
   );

@@ -62,10 +62,6 @@ body:has(.scene-it-services) .scene-it-services {
 .scene-it-services .it-services-rive {
   z-index: 2;
   background: transparent;
-  /* Keep the rejected imported-room build out of the visual stack. The
-     production replacement is a transparent, script-free effects artboard. */
-  mix-blend-mode: normal;
-  opacity: 0;
 }
 
 .scene-it-services .it-services-rive canvas {

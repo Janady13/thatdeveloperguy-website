@@ -21,8 +21,9 @@ export default function Audience() {
   return (
     <>
       <JsonLd page={page} />
+      {scene && page.sceneId === 'government' && <GovernmentSceneShell scene={scene} page={page} />}
       <div className="page-wrap"><PageHeading page={page} /></div>
-      {scene && (page.sceneId === 'government' ? <GovernmentSceneShell scene={scene} page={page} /> : <SceneShell scene={scene} page={page} />)}
+      {scene && page.sceneId !== 'government' && <SceneShell scene={scene} page={page} />}
       <div className="page-wrap">
         <ContentSections page={page} />
         <OwnerToSupply />

@@ -2,11 +2,11 @@ import { lazy, Suspense, useEffect, useState, type CSSProperties } from 'react';
 import type { CompiledPage } from '../../src/contracts/page';
 import type { SceneRecord } from '../../src/contracts/scene';
 import { HotspotOverlay } from './HotspotOverlay';
-import { MotionPreferenceControl, useMotionPreference } from './MotionPreferenceControl';
+import { useMotionPreference } from './MotionPreferenceControl';
 import { probeRenderer } from './renderer-capability';
 import { sceneAspect } from './scene-coordinate-map';
 import { useSceneNavigation } from './useSceneNavigation';
-import '../styles/it-services-rive.css';
+import '../styles/government-rive.css';
 
 const GovernmentRiveCanvas = lazy(() => import('./GovernmentRiveCanvas.client'));
 const ROUTE_TRANSITION_MS = 760;
@@ -18,15 +18,15 @@ export function GovernmentSceneShell({ scene, page }: { scene: SceneRecord; page
   const [nativeReady, setNativeReady] = useState(false);
   const [nativeFailed, setNativeFailed] = useState(false);
   const [focus, setFocus] = useState<string | null>(null);
-  const [motion, setMotion] = useMotionPreference();
+  const [motion] = useMotionPreference();
   const [pointer, setPointer] = useState({ x: 0.5, y: 0.5, active: false });
 
   useEffect(() => {
     setMounted(true);
-    document.body.classList.add('it-services-route', 'government-route');
+    document.body.classList.add('government-route');
     const verdict = probeRenderer();
     setRenderer(verdict.ok ? verdict.renderer : verdict.reason);
-    return () => document.body.classList.remove('it-services-route', 'government-route');
+    return () => document.body.classList.remove('government-route');
   }, []);
 
   const { hotspots, activate, leaving, leavingTarget } = useSceneNavigation({
@@ -39,7 +39,6 @@ export function GovernmentSceneShell({ scene, page }: { scene: SceneRecord; page
 
   const hardware = mounted && !/^no |^software/i.test(renderer) && renderer !== 'pending';
   const showNative = Boolean(hardware && motion && scene.rive && !nativeFailed);
-  const caption = focus ? scene.captions[focus] ?? hotspots.find(hotspot => hotspot.id === focus)?.label ?? '' : scene.captionRest;
   const planeStyle = {
     aspectRatio: sceneAspect(scene.canvas),
     '--scene-w': scene.canvas.width,
@@ -50,7 +49,7 @@ export function GovernmentSceneShell({ scene, page }: { scene: SceneRecord; page
 
   return (
     <section
-      className={`scene scene-it-services scene-government${nativeReady ? ' scene-live scene-native-ready' : ''}${leaving ? ' scene-leaving' : ''}`}
+      className={`scene scene-government${nativeReady ? ' scene-live scene-native-ready' : ''}${leaving ? ' scene-leaving' : ''}`}
       aria-label={`${page.heading} room`}
       data-scene="government"
       data-focus={focus ?? ''}
@@ -96,10 +95,6 @@ export function GovernmentSceneShell({ scene, page }: { scene: SceneRecord; page
           onFocus={id => { if (!leaving) setFocus(id); }}
           onActivate={activate}
         />
-      </div>
-      <div className="scene-ui">
-        <p className="scene-caption" aria-live="polite">{caption}</p>
-        {mounted && <MotionPreferenceControl on={motion} onChange={setMotion} />}
       </div>
     </section>
   );

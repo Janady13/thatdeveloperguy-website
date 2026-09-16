@@ -1,0 +1,23 @@
+/* The Government Solutions room is a full-viewport hero; the page copy follows below it. */
+body.government-route .site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 30;
+  background: linear-gradient(to bottom, rgba(244, 241, 250, .92), rgba(244, 241, 250, .36) 66%, transparent);
+  border: 0;
+  backdrop-filter: blur(5px);
+}
+.scene-government {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border: 0;
+  height: 100dvh;
+  min-height: 100dvh;
+}
+.scene-government .scene-poster { opacity: 1; visibility: visible; }
+.scene-government .government-rive { position: absolute; inset: 0; z-index: 2; background: transparent; }
+.scene-government .government-rive canvas { display: block; width: 100% !important; height: 100% !important; }
+.scene-government .scene-hits { z-index: 4; }
+@media (max-width: 720px) { .scene-government { height: 78dvh; min-height: 78dvh; } }
