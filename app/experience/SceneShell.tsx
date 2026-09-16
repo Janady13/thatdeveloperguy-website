@@ -48,15 +48,16 @@ export function SceneShell({ scene, page }: { scene: SceneRecord; page: Compiled
   const caption = focus ? scene.captions[focus] ?? hotspots.find(h => h.id === focus)?.label ?? '' : scene.captionRest;
   return (
     <section className={`scene${live ? ' scene-live' : ''}`} aria-label={`${page.heading} room`} data-scene={scene.id} data-focus={focus ?? ''} data-renderer={hardware ?? ''}>
-      <div className="scene-frame" style={{ aspectRatio: ASPECT }}>
+      {/* One plane in room coordinates, sized to cover the viewport: poster, native layer, Consultant and hit shapes all map the same way. */}
+      <div className="scene-plane" style={{ aspectRatio: ASPECT }}>
         <img className="scene-poster" src={scene.poster} alt={scene.posterAlt} width={1648} height={928} decoding="async" fetchPriority="high" {...({ elementtiming: "poster" } as Record<string, string>)} />
         {showRive && <Suspense fallback={null}><RiveCanvas rive={scene.rive!} focus={focus ?? 'none'} reducedMotion={!motion} fire={fire} onReady={() => setLive(true)} onError={() => setFailed(true)} /></Suspense>}
         {showConsultant && <Suspense fallback={null}><ConsultantView file={scene.consultant!.file} placement={scene.consultant!.placement} state={consultantState} facing={facing} paused={!motion} onError={() => setConsultantFailed(true)} /></Suspense>}
         <HotspotOverlay label={page.heading} hotspots={hotspots} onFocus={id => { if (!leaving) setFocus(id); }} onActivate={activate} />
       </div>
-      <div className="scene-bar">
+      <div className="scene-ui">
         <p className="scene-caption" aria-live="polite">{caption}</p>
-        {scene.rive && mounted && <MotionPreferenceControl on={motion} onChange={setMotion} />}
+        {(scene.rive || scene.consultant) && mounted && hardware === 'yes' && <MotionPreferenceControl on={motion} onChange={setMotion} />}
       </div>
     </section>
   );

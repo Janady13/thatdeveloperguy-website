@@ -4,1270 +4,1125 @@
     "width": 1648,
     "height": 928
   },
+  "package": "TDG_VECTOR_ROOMS_REBUILD_v3 3.0.0-review.1 (hand-authored vector, no tracing)",
   "source": {
-    "svg": "TDG_IT_SERVICES_ANIMATION_KIT/svg/tdg-it-services.rive-import.svg",
-    "sha256": "c11268fdc550d1fba2e95dad2fb1075bac1f7c4cfca459b77ed91ee6b1027626",
-    "manifest": "TDG_IT_SERVICES_ANIMATION_KIT/docs/scene-manifest.json",
-    "hotspots": "TDG_IT_SERVICES_ANIMATION_KIT/web/hotspots.json"
+    "svg": "rooms/it-services/it-services.rive-import.svg",
+    "sha256": "0a64c1258e7dc8e9e98aa5b3638e0dff9110e7bc2b47e395644e13a8689389b0",
+    "paths": 401,
+    "bytes": 204385
   },
-  "stats": {
-    "before": {
-      "paths": 4382,
-      "rings": 63920,
-      "vertices": 381131
-    },
-    "after": {
-      "paths": 3341,
-      "contours": 19894,
-      "vertices": 117995
-    },
-    "dropped": {
-      "rings": 44026,
-      "paths": 1041
-    }
-  },
-  "options": {
-    "minArea": 1,
-    "tolerance": 0.75,
-    "minTurnDeg": 60,
-    "union": false
-  },
-  "parts": [
-    {
-      "id": "exterior_clouds",
-      "pivot": [
-        185,
-        252
-      ],
-      "motion": "drift_small"
-    },
-    {
-      "id": "rear_mission_poster",
-      "pivot": [
-        514,
-        236
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "ceiling_light_panel_1",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "light_intensity"
-    },
-    {
-      "id": "ceiling_light_panel_2",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "light_intensity"
-    },
-    {
-      "id": "ceiling_light_panel_3",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "light_intensity"
-    },
-    {
-      "id": "ceiling_light_panel_4",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "light_intensity"
-    },
-    {
-      "id": "ceiling_downlight_1",
-      "pivot": [
-        461,
-        44
-      ],
-      "motion": "light_intensity"
-    },
-    {
-      "id": "ceiling_downlight_2",
-      "pivot": [
-        470,
-        169
-      ],
-      "motion": "light_intensity"
-    },
-    {
-      "id": "ceiling_downlight_3",
-      "pivot": [
-        677,
-        170
-      ],
-      "motion": "light_intensity"
-    },
-    {
-      "id": "ceiling_downlight_4",
-      "pivot": [
-        968,
-        170
-      ],
-      "motion": "light_intensity"
-    },
-    {
-      "id": "ceiling_downlight_5",
-      "pivot": [
-        1167,
-        170
-      ],
-      "motion": "light_intensity"
-    },
-    {
-      "id": "ceiling_downlight_6",
-      "pivot": [
-        1180,
-        44
-      ],
-      "motion": "light_intensity"
-    },
-    {
-      "id": "sign_server_icon",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "sign_title",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "board_heading_signal",
-      "pivot": [
-        648,
-        245
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "board_row_1_value",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "board_row_1_signal",
-      "pivot": [
-        649,
-        287
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "board_row_2_value",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "board_row_2_signal",
-      "pivot": [
-        649,
-        319
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "board_row_3_value",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "board_row_3_signal",
-      "pivot": [
-        649,
-        350
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "board_row_4_value",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "board_row_4_signal",
-      "pivot": [
-        649,
-        381
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "board_mission_icon",
-      "pivot": [
-        948,
-        315
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "deployment_door_panel",
-      "pivot": [
-        1075,
-        550
-      ],
-      "motion": "door_hinge"
-    },
-    {
-      "id": "deployment_door_handle_left",
-      "pivot": [
-        1081,
-        438
-      ],
-      "motion": "rotate_small"
-    },
-    {
-      "id": "deployment_door_handle_right",
-      "pivot": [
-        1165,
-        438
-      ],
-      "motion": "rotate_small"
-    },
-    {
-      "id": "shelf_binder_1",
-      "pivot": [
-        1320,
-        248
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "shelf_binder_2",
-      "pivot": [
-        1320,
-        248
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "shelf_binder_3",
-      "pivot": [
-        1320,
-        248
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "shelf_binder_4",
-      "pivot": [
-        1320,
-        248
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "shelf_binder_5",
-      "pivot": [
-        1320,
-        248
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "server_rack_01_led_row_01",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_01_led_row_02",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_01_led_row_03",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_01_led_row_04",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_01_led_row_05",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_01_led_row_06",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_01_led_row_07",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_01_led_row_08",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_01_led_row_09",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_02_led_row_01",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_02_led_row_02",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_02_led_row_03",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_02_led_row_04",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_02_led_row_05",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_02_led_row_06",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_02_led_row_07",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_02_led_row_08",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_02_led_row_09",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_03_led_row_01",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_03_led_row_02",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_03_led_row_03",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_03_led_row_04",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_03_led_row_05",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_03_led_row_06",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_03_led_row_07",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_03_led_row_08",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_03_led_row_09",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_04_led_row_01",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_04_led_row_02",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_04_led_row_03",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_04_led_row_04",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_04_led_row_05",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_04_led_row_06",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_04_led_row_07",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_04_led_row_08",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "server_rack_04_led_row_09",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "floor_endpoint_leds",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "rear_storage_drawer_1",
-      "pivot": [
-        389,
-        465
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "rear_storage_drawer_2",
-      "pivot": [
-        389,
-        496
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "rear_storage_drawer_3",
-      "pivot": [
-        467,
-        514
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "rear_storage_drawer_4",
-      "pivot": [
-        467,
-        548
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "rear_storage_drawer_5",
-      "pivot": [
-        467,
-        583
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "service_chair_back",
-      "pivot": [
-        827,
-        478
-      ],
-      "motion": "tilt_small"
-    },
-    {
-      "id": "service_monitor_left_housing",
-      "pivot": [
-        735,
-        476
-      ],
-      "motion": "tilt_small"
-    },
-    {
-      "id": "service_monitor_right_housing",
-      "pivot": [
-        943,
-        476
-      ],
-      "motion": "tilt_small"
-    },
-    {
-      "id": "desk_paper_tray_1",
-      "pivot": [
-        658,
-        473
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "desk_paper_tray_2",
-      "pivot": [
-        658,
-        473
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "desk_paper_tray_3",
-      "pivot": [
-        658,
-        473
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "desk_reader_head",
-      "pivot": [
-        891,
-        474
-      ],
-      "motion": "tilt_small"
-    },
-    {
-      "id": "desk_reader_indicator",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "desk_help_sign",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "left_cabinet_drawer_1_face",
-      "pivot": [
-        132,
-        627
-      ],
-      "motion": "drawer_pull"
-    },
-    {
-      "id": "left_cabinet_drawer_2_face",
-      "pivot": [
-        132,
-        670
-      ],
-      "motion": "drawer_pull"
-    },
-    {
-      "id": "left_cabinet_drawer_3_face",
-      "pivot": [
-        132,
-        720
-      ],
-      "motion": "drawer_pull"
-    },
-    {
-      "id": "workstation_monitor_01_bezel",
-      "pivot": [
-        42.25,
-        552
-      ],
-      "motion": "tilt_small"
-    },
-    {
-      "id": "workstation_monitor_01_screen",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "screen_refresh"
-    },
-    {
-      "id": "workstation_monitor_02_bezel",
-      "pivot": [
-        170.75,
-        526
-      ],
-      "motion": "tilt_small"
-    },
-    {
-      "id": "workstation_monitor_02_screen",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "screen_refresh"
-    },
-    {
-      "id": "workstation_monitor_03_bezel",
-      "pivot": [
-        273.5,
-        511
-      ],
-      "motion": "tilt_small"
-    },
-    {
-      "id": "workstation_monitor_03_screen",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "screen_refresh"
-    },
-    {
-      "id": "workstation_monitor_04_bezel",
-      "pivot": [
-        349.25,
-        507
-      ],
-      "motion": "tilt_small"
-    },
-    {
-      "id": "workstation_monitor_04_screen",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "screen_refresh"
-    },
-    {
-      "id": "workstation_keyboard_near",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "workstation_keyboard_far",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "workstation_mouse",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "workstation_phone_handset",
-      "pivot": [
-        280,
-        508
-      ],
-      "motion": "phone_ring"
-    },
-    {
-      "id": "coffee_mug_body",
-      "pivot": [
-        135,
-        574
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "chair_far_wheel_1",
-      "pivot": [
-        405,
-        647
-      ],
-      "motion": "rotate"
-    },
-    {
-      "id": "chair_far_wheel_2",
-      "pivot": [
-        436,
-        661
-      ],
-      "motion": "rotate"
-    },
-    {
-      "id": "chair_far_wheel_3",
-      "pivot": [
-        487,
-        660
-      ],
-      "motion": "rotate"
-    },
-    {
-      "id": "chair_far_back",
-      "pivot": [
-        461,
-        584
-      ],
-      "motion": "tilt_small"
-    },
-    {
-      "id": "chair_near_wheel_1",
-      "pivot": [
-        262,
-        745
-      ],
-      "motion": "rotate"
-    },
-    {
-      "id": "chair_near_wheel_2",
-      "pivot": [
-        342,
-        753
-      ],
-      "motion": "rotate"
-    },
-    {
-      "id": "chair_near_wheel_3",
-      "pivot": [
-        411,
-        744
-      ],
-      "motion": "rotate"
-    },
-    {
-      "id": "chair_near_back",
-      "pivot": [
-        390,
-        636
-      ],
-      "motion": "tilt_small"
-    },
-    {
-      "id": "network_appliance_leds",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "laptop_lid_housing",
-      "pivot": [
-        1569,
-        511
-      ],
-      "motion": "laptop_hinge"
-    },
-    {
-      "id": "laptop_screen",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "screen_refresh"
-    },
-    {
-      "id": "cable_loop_left",
-      "pivot": [
-        1581,
-        334
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "cable_loop_right",
-      "pivot": [
-        1623,
-        334
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "tool_cart_drawer_1_face",
-      "pivot": [
-        1385,
-        582.5
-      ],
-      "motion": "drawer_pull"
-    },
-    {
-      "id": "tool_cart_drawer_2_face",
-      "pivot": [
-        1385,
-        616
-      ],
-      "motion": "drawer_pull"
-    },
-    {
-      "id": "tool_cart_drawer_3_face",
-      "pivot": [
-        1385,
-        646.5
-      ],
-      "motion": "drawer_pull"
-    },
-    {
-      "id": "tool_cart_drawer_4_face",
-      "pivot": [
-        1385,
-        677
-      ],
-      "motion": "drawer_pull"
-    },
-    {
-      "id": "tool_cart_drawer_5_face",
-      "pivot": [
-        1385,
-        711.5
-      ],
-      "motion": "drawer_pull"
-    },
-    {
-      "id": "tool_cart_wheel_1",
-      "pivot": [
-        1394,
-        759
-      ],
-      "motion": "rotate"
-    },
-    {
-      "id": "tool_cart_wheel_2",
-      "pivot": [
-        1503,
-        777
-      ],
-      "motion": "rotate"
-    },
-    {
-      "id": "storage_bin_1_lid",
-      "pivot": [
-        1555,
-        571
-      ],
-      "motion": "lift_small"
-    },
-    {
-      "id": "storage_bin_2_lid",
-      "pivot": [
-        1543,
-        655
-      ],
-      "motion": "lift_small"
-    },
-    {
-      "id": "plant_rear_left_foliage_crown",
-      "pivot": [
-        417,
-        423
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_rear_left_foliage_left",
-      "pivot": [
-        417,
-        423
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_rear_left_foliage_right",
-      "pivot": [
-        417,
-        423
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_rear_cabinet_left_foliage_crown",
-      "pivot": [
-        411,
-        491
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_rear_cabinet_left_foliage_left",
-      "pivot": [
-        411,
-        491
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_rear_cabinet_left_foliage_right",
-      "pivot": [
-        411,
-        491
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_rear_cabinet_right_foliage_crown",
-      "pivot": [
-        500,
-        492
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_rear_cabinet_right_foliage_left",
-      "pivot": [
-        500,
-        492
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_rear_cabinet_right_foliage_right",
-      "pivot": [
-        500,
-        492
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_service_desk_foliage_crown",
-      "pivot": [
-        616,
-        451
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_service_desk_foliage_left",
-      "pivot": [
-        616,
-        451
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_service_desk_foliage_right",
-      "pivot": [
-        616,
-        451
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_workstation_foliage_crown",
-      "pivot": [
-        246,
-        508
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_workstation_foliage_left",
-      "pivot": [
-        246,
-        508
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_workstation_foliage_right",
-      "pivot": [
-        246,
-        508
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_server_corner_foliage_crown",
-      "pivot": [
-        1325,
-        516
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_server_corner_foliage_left",
-      "pivot": [
-        1325,
-        516
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_server_corner_foliage_right",
-      "pivot": [
-        1325,
-        516
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_foreground_foliage_crown",
-      "pivot": [
-        36,
-        794
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_foreground_foliage_left",
-      "pivot": [
-        36,
-        794
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_foreground_foliage_right",
-      "pivot": [
-        36,
-        794
-      ],
-      "motion": "sway_small"
+  "floorAnchor": [
+    834,
+    770
+  ],
+  "doors": [
+    {
+      "id": "DeploymentDoor",
+      "leafId": "it-services__DeploymentDoor_Leaf",
+      "pivot": [
+        1104,
+        312
+      ],
+      "accessLightId": null,
+      "hotspotId": "deployment"
     }
   ],
-  "hotspots": {
-    "canvas": {
-      "width": 1648,
-      "height": 928
+  "ambient": [
+    {
+      "id": "it-services__LightLevel",
+      "kind": "opacity",
+      "pivot": [
+        0,
+        0
+      ],
+      "amount": 0.3
     },
-    "hotspots": [
-      {
-        "id": "status-board",
-        "label": "System status illustration",
-        "href": "#monitoring",
-        "target": "status_board",
-        "hitbox": [
-          615,
-          213,
-          420,
-          200
-        ],
-        "effect": "board-refresh"
-      },
-      {
-        "id": "helpdesk",
-        "label": "IT support",
-        "href": "#support",
-        "target": "service_desk",
-        "hitbox": [
-          568,
-          473,
-          511,
-          142
-        ],
-        "effect": "reader-pulse"
-      },
-      {
-        "id": "workstations",
-        "label": "Workstations and endpoints",
-        "href": "#workstations",
-        "target": "workstation_monitor_02",
-        "hitbox": [
-          112,
-          413,
-          280,
-          126
-        ],
-        "effect": "screen-refresh"
-      },
-      {
-        "id": "infrastructure",
-        "label": "Network and infrastructure",
-        "href": "#infrastructure",
-        "target": "server_rack_02",
-        "hitbox": [
-          1351,
-          258,
-          195,
-          274
-        ],
-        "effect": "rack-ripple"
-      },
-      {
-        "id": "deployment",
-        "label": "Deployment and maintenance",
-        "href": "#deployment",
-        "target": "deployment_door_leaf",
-        "hitbox": [
-          1062,
-          282,
-          126,
-          272
-        ],
-        "effect": "door-open"
-      },
-      {
-        "id": "toolkit",
-        "label": "IT service process",
-        "href": "#process",
-        "target": "tool_cart",
-        "hitbox": [
-          1377,
-          545,
-          160,
-          248
-        ],
-        "effect": "drawers"
-      },
-      {
-        "id": "contact",
-        "label": "Request IT support",
-        "href": "/contact/?project=itsupport&from=it-room#request",
-        "target": null,
-        "hitbox": null,
-        "effect": null
-      }
-    ]
-  },
-  "diff": {
-    "width": 1672,
-    "height": 941,
-    "differentPixels": 440123,
-    "ratio": 0.2797358760150303
-  }
+    {
+      "id": "it-services__StatusIndicator_0",
+      "kind": "opacity",
+      "pivot": [
+        0,
+        0
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__StatusIndicator_1",
+      "kind": "opacity",
+      "pivot": [
+        0,
+        0
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__StatusIndicator_2",
+      "kind": "opacity",
+      "pivot": [
+        0,
+        0
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__StatusIndicator_3",
+      "kind": "opacity",
+      "pivot": [
+        0,
+        0
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_1_LED_1",
+      "kind": "opacity",
+      "pivot": [
+        1365,
+        257
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_1_LED_2",
+      "kind": "opacity",
+      "pivot": [
+        1365,
+        257
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_1_LED_3",
+      "kind": "opacity",
+      "pivot": [
+        1365,
+        257
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_1_LED_4",
+      "kind": "opacity",
+      "pivot": [
+        1365,
+        257
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_1_LED_5",
+      "kind": "opacity",
+      "pivot": [
+        1365,
+        257
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_1_LED_6",
+      "kind": "opacity",
+      "pivot": [
+        1365,
+        257
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_1_LED_7",
+      "kind": "opacity",
+      "pivot": [
+        1365,
+        257
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_1_LED_8",
+      "kind": "opacity",
+      "pivot": [
+        1365,
+        257
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_1_Glass",
+      "kind": "glass",
+      "pivot": [
+        1370,
+        262
+      ],
+      "amount": 0.75
+    },
+    {
+      "id": "it-services__IT_Rack_2_LED_1",
+      "kind": "opacity",
+      "pivot": [
+        1471,
+        231.00000000000003
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_2_LED_2",
+      "kind": "opacity",
+      "pivot": [
+        1471,
+        231.00000000000003
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_2_LED_3",
+      "kind": "opacity",
+      "pivot": [
+        1471,
+        231.00000000000003
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_2_LED_4",
+      "kind": "opacity",
+      "pivot": [
+        1471,
+        231.00000000000003
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_2_LED_5",
+      "kind": "opacity",
+      "pivot": [
+        1471,
+        231.00000000000003
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_2_LED_6",
+      "kind": "opacity",
+      "pivot": [
+        1471,
+        231.00000000000003
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_2_LED_7",
+      "kind": "opacity",
+      "pivot": [
+        1471,
+        231.00000000000003
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_2_LED_8",
+      "kind": "opacity",
+      "pivot": [
+        1471,
+        231.00000000000003
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_2_LED_9",
+      "kind": "opacity",
+      "pivot": [
+        1471,
+        231.00000000000003
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_2_Glass",
+      "kind": "glass",
+      "pivot": [
+        1476,
+        236.00000000000003
+      ],
+      "amount": 0.75
+    },
+    {
+      "id": "it-services__IT_Rack_3_LED_1",
+      "kind": "opacity",
+      "pivot": [
+        1578.0000000000002,
+        209
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_3_LED_2",
+      "kind": "opacity",
+      "pivot": [
+        1578.0000000000002,
+        209
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_3_LED_3",
+      "kind": "opacity",
+      "pivot": [
+        1578.0000000000002,
+        209
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_3_LED_4",
+      "kind": "opacity",
+      "pivot": [
+        1578.0000000000002,
+        209
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_3_LED_5",
+      "kind": "opacity",
+      "pivot": [
+        1578.0000000000002,
+        209
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_3_LED_6",
+      "kind": "opacity",
+      "pivot": [
+        1578.0000000000002,
+        209
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_3_LED_7",
+      "kind": "opacity",
+      "pivot": [
+        1578.0000000000002,
+        209
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_3_LED_8",
+      "kind": "opacity",
+      "pivot": [
+        1578.0000000000002,
+        209
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_3_LED_9",
+      "kind": "opacity",
+      "pivot": [
+        1578.0000000000002,
+        209
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__IT_Rack_3_Glass",
+      "kind": "glass",
+      "pivot": [
+        1583.0000000000002,
+        214
+      ],
+      "amount": 0.75
+    },
+    {
+      "id": "it-services__RearChair_Shift",
+      "kind": "translateX",
+      "pivot": [
+        813,
+        494
+      ],
+      "amount": 10
+    },
+    {
+      "id": "it-services__RearMonitor_L_Display",
+      "kind": "opacity",
+      "pivot": [
+        697,
+        394
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__RearMonitor_R_Display",
+      "kind": "opacity",
+      "pivot": [
+        919,
+        394
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__DeskPlant_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        622,
+        456
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__DeskPlant_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        622,
+        456
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__DeskPlant_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        622,
+        456
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__DeskPlant_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        622,
+        456
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__DeskPlant_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        622,
+        456
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__DeskPlant_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        622,
+        456
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__DeskPlant_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        622,
+        456
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__DeskPlant_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        622,
+        456
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__DeskDocuments_Book_1",
+      "kind": "translateY",
+      "pivot": [
+        662,
+        470
+      ],
+      "amount": -8
+    },
+    {
+      "id": "it-services__WorkstationStorage_A_Drawer_1",
+      "kind": "drawer",
+      "pivot": [
+        23.000000000000004,
+        566
+      ],
+      "amount": 10
+    },
+    {
+      "id": "it-services__WorkstationStorage_A_Drawer_2",
+      "kind": "drawer",
+      "pivot": [
+        23.000000000000004,
+        616
+      ],
+      "amount": 10
+    },
+    {
+      "id": "it-services__WorkstationStorage_A_Drawer_3",
+      "kind": "drawer",
+      "pivot": [
+        23.000000000000004,
+        666
+      ],
+      "amount": 10
+    },
+    {
+      "id": "it-services__WorkstationStorage_B_Drawer_1",
+      "kind": "drawer",
+      "pivot": [
+        401,
+        527
+      ],
+      "amount": 10
+    },
+    {
+      "id": "it-services__WorkstationStorage_B_Drawer_2",
+      "kind": "drawer",
+      "pivot": [
+        401,
+        588
+      ],
+      "amount": 10
+    },
+    {
+      "id": "it-services__WorkMonitor_1_Display",
+      "kind": "opacity",
+      "pivot": [
+        15,
+        422
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__WorkMonitor_2_Display",
+      "kind": "opacity",
+      "pivot": [
+        146,
+        409.00000000000006
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__WorkMonitor_3_Display",
+      "kind": "opacity",
+      "pivot": [
+        271,
+        414.00000000000006
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__WorkMonitor_4_Display",
+      "kind": "opacity",
+      "pivot": [
+        369,
+        414.00000000000006
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "it-services__WorkMug_Steam_0",
+      "kind": "steam",
+      "pivot": [
+        90,
+        564
+      ],
+      "amount": 8
+    },
+    {
+      "id": "it-services__WorkMug_Steam_1",
+      "kind": "steam",
+      "pivot": [
+        90,
+        564
+      ],
+      "amount": 8
+    },
+    {
+      "id": "it-services__WorkPlant_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        302,
+        514
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__WorkPlant_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        302,
+        514
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__WorkPlant_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        302,
+        514
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__WorkPlant_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        302,
+        514
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__WorkPlant_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        302,
+        514
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__WorkPlant_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        302,
+        514
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__WorkPlant_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        302,
+        514
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__WorkPlant_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        302,
+        514
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__WorkChair_1_Shift",
+      "kind": "translateX",
+      "pivot": [
+        234.99999999999997,
+        678.0000000000001
+      ],
+      "amount": 10
+    },
+    {
+      "id": "it-services__WorkChair_2_Shift",
+      "kind": "translateX",
+      "pivot": [
+        374,
+        627
+      ],
+      "amount": 10
+    },
+    {
+      "id": "it-services__RackPlant_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        1304,
+        514
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__RackPlant_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        1304,
+        514
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__RackPlant_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        1304,
+        514
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__RackPlant_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        1304,
+        514
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__RackPlant_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        1304,
+        514
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__RackPlant_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        1304,
+        514
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__RackPlant_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        1304,
+        514
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__RackPlant_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        1304,
+        514
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__BenchStorage_Drawer_1",
+      "kind": "drawer",
+      "pivot": [
+        1554,
+        621
+      ],
+      "amount": 10
+    },
+    {
+      "id": "it-services__BenchStorage_Drawer_2",
+      "kind": "drawer",
+      "pivot": [
+        1554,
+        674.3300018310548
+      ],
+      "amount": 10
+    },
+    {
+      "id": "it-services__BenchStorage_Drawer_3",
+      "kind": "drawer",
+      "pivot": [
+        1554,
+        727.6699981689453
+      ],
+      "amount": 10
+    },
+    {
+      "id": "it-services__RepairLaptop_Lid",
+      "kind": "laptop",
+      "pivot": [
+        1540.0000000000002,
+        561
+      ],
+      "amount": 0.28
+    },
+    {
+      "id": "it-services__ToolCart_Drawer_1",
+      "kind": "drawer",
+      "pivot": [
+        1375.0000000000002,
+        639.0000000000001
+      ],
+      "amount": 12
+    },
+    {
+      "id": "it-services__ToolCart_Drawer_2",
+      "kind": "drawer",
+      "pivot": [
+        1375.0000000000002,
+        683.0000000000001
+      ],
+      "amount": 12
+    },
+    {
+      "id": "it-services__ToolCart_Drawer_3",
+      "kind": "drawer",
+      "pivot": [
+        1375.0000000000002,
+        727
+      ],
+      "amount": 12
+    },
+    {
+      "id": "it-services__ToolCart_Drawer_4",
+      "kind": "drawer",
+      "pivot": [
+        1375.0000000000002,
+        771
+      ],
+      "amount": 12
+    },
+    {
+      "id": "it-services__ToolCart_Drawer_5",
+      "kind": "drawer",
+      "pivot": [
+        1375.0000000000002,
+        815
+      ],
+      "amount": 12
+    },
+    {
+      "id": "it-services__IT_ForegroundPlant_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        46.00000000000001,
+        780.0000000000001
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__IT_ForegroundPlant_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        46.00000000000001,
+        780.0000000000001
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__IT_ForegroundPlant_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        46.00000000000001,
+        780.0000000000001
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__IT_ForegroundPlant_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        46.00000000000001,
+        780.0000000000001
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__IT_ForegroundPlant_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        46.00000000000001,
+        780.0000000000001
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__IT_ForegroundPlant_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        46.00000000000001,
+        780.0000000000001
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__IT_ForegroundPlant_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        46.00000000000001,
+        780.0000000000001
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__IT_ForegroundPlant_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        46.00000000000001,
+        780.0000000000001
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__IT_WindowPlant_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        399,
+        444
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__IT_WindowPlant_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        399,
+        444
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__IT_WindowPlant_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        399,
+        444
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__IT_WindowPlant_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        399,
+        444
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__IT_WindowPlant_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        399,
+        444
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__IT_WindowPlant_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        399,
+        444
+      ],
+      "amount": 2
+    },
+    {
+      "id": "it-services__IT_WindowPlant_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        399,
+        444
+      ],
+      "amount": -2
+    },
+    {
+      "id": "it-services__IT_WindowPlant_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        399,
+        444
+      ],
+      "amount": 2
+    }
+  ],
+  "hotspots": [
+    {
+      "id": "status",
+      "label": "IT service overview",
+      "rect": [
+        615,
+        217,
+        431,
+        203
+      ],
+      "pageId": "capability.business-it",
+      "section": "#overview"
+    },
+    {
+      "id": "deployment",
+      "label": "Our approach",
+      "rect": [
+        1092,
+        298,
+        109,
+        247
+      ],
+      "pageId": "approach",
+      "section": ""
+    },
+    {
+      "id": "toolcart",
+      "label": "Delivery process",
+      "rect": [
+        1371,
+        625,
+        150,
+        248
+      ],
+      "pageId": "approach",
+      "section": ""
+    },
+    {
+      "id": "workstations",
+      "label": "Support and management",
+      "rect": [
+        16,
+        402,
+        435,
+        153
+      ],
+      "pageId": "capability.business-it",
+      "section": "#support"
+    },
+    {
+      "id": "racks",
+      "label": "Infrastructure",
+      "rect": [
+        1365,
+        209,
+        278,
+        380
+      ],
+      "pageId": "capability.business-it",
+      "section": "#infrastructure"
+    }
+  ],
+  "lettering": [
+    {
+      "id": "it-services__TXT_001",
+      "text": "IT SERVICES"
+    },
+    {
+      "id": "it-services__TXT_002",
+      "text": "SUPPORT  /  INFRASTRUCTURE  /  CONTINUITY"
+    },
+    {
+      "id": "it-services__TXT_003",
+      "text": "PEOPLE"
+    },
+    {
+      "id": "it-services__TXT_004",
+      "text": "SOLUTIONS"
+    },
+    {
+      "id": "it-services__TXT_005",
+      "text": "SUPPORT"
+    },
+    {
+      "id": "it-services__TXT_006",
+      "text": "KEEP"
+    },
+    {
+      "id": "it-services__TXT_007",
+      "text": "SYSTEMS"
+    },
+    {
+      "id": "it-services__TXT_008",
+      "text": "RUNNING"
+    },
+    {
+      "id": "it-services__TXT_009",
+      "text": "SUPPORT"
+    },
+    {
+      "id": "it-services__TXT_010",
+      "text": "DELIVER"
+    },
+    {
+      "id": "it-services__TXT_011",
+      "text": "SYSTEM STATUS"
+    },
+    {
+      "id": "it-services__TXT_012",
+      "text": "IT SERVICES"
+    },
+    {
+      "id": "it-services__TXT_013",
+      "text": "NETWORK"
+    },
+    {
+      "id": "it-services__TXT_014",
+      "text": "APPLICATIONS"
+    },
+    {
+      "id": "it-services__TXT_015",
+      "text": "INFRASTRUCTURE"
+    },
+    {
+      "id": "it-services__TXT_016",
+      "text": "ILLUSTRATIVE SERVICE DASHBOARD"
+    },
+    {
+      "id": "it-services__TXT_017",
+      "text": "DEPLOYMENT"
+    },
+    {
+      "id": "it-services__TXT_018",
+      "text": "INFRASTRUCTURE"
+    },
+    {
+      "id": "it-services__TXT_019",
+      "text": "ENDPOINTS"
+    },
+    {
+      "id": "it-services__TXT_020",
+      "text": "APPLICATIONS"
+    },
+    {
+      "id": "it-services__TXT_021",
+      "text": "SERVICE DESK"
+    },
+    {
+      "id": "it-services__TXT_022",
+      "text": "SECURE SYSTEMS."
+    },
+    {
+      "id": "it-services__TXT_023",
+      "text": "STRONGER SERVICES."
+    },
+    {
+      "id": "it-services__TXT_024",
+      "text": "IT SERVICES"
+    },
+    {
+      "id": "it-services__TXT_025",
+      "text": "SUPPORT  /  SOLUTIONS  /  RELIABILITY"
+    },
+    {
+      "id": "it-services__TXT_026",
+      "text": "WORK"
+    },
+    {
+      "id": "it-services__TXT_027",
+      "text": "HELP DESK"
+    },
+    {
+      "id": "it-services__TXT_028",
+      "text": "TDG"
+    },
+    {
+      "id": "it-services__TXT_029",
+      "text": "PLAN"
+    },
+    {
+      "id": "it-services__TXT_030",
+      "text": "CONFIGURE"
+    },
+    {
+      "id": "it-services__TXT_031",
+      "text": "DEPLOY"
+    },
+    {
+      "id": "it-services__TXT_032",
+      "text": "MAINTAIN"
+    },
+    {
+      "id": "it-services__TXT_033",
+      "text": "IMPROVE"
+    }
+  ]
 }

@@ -1,18 +1,18 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync } from 'node:fs';
-import { loadKits, resolveRoom } from '../../tools/kits.ts';
+import { loadKits, resolveRoom, ROOM_IDS } from '../../tools/kits.ts';
 
-test('kits config names four rooms on a 1648×928 canvas', () => {
+test('the kit config points at the v3 vector package: four rooms on a 1648×928 canvas', () => {
   const kits = loadKits();
-  assert.deepEqual(Object.keys(kits.rooms).sort(), ['cybersecurity', 'government-solutions', 'it-services', 'lobby']);
+  assert.deepEqual(Object.keys(kits.rooms).sort(), [...ROOM_IDS].sort());
   assert.deepEqual(kits.canvas, { width: 1648, height: 928 });
+  assert.match(kits.package, /v3/);
 });
 
-test('resolveRoom returns absolute paths that exist for the lobby', () => {
-  const kit = resolveRoom('lobby');
-  for (const key of ['svg', 'manifest', 'hotspots', 'reference'] as const) {
-    assert.ok(kit[key].startsWith('/'), `${key} must be absolute`);
-    assert.ok(existsSync(kit[key]), `${key} missing: ${kit[key]}`);
+test('every room resolves to files that exist', () => {
+  for (const room of ROOM_IDS) {
+    const kit = resolveRoom(room);
+    for (const key of ['svg', 'manifest', 'hotspots', 'pivots', 'preview'] as const) assert.ok(existsSync(kit[key]), `${room} ${key} missing: ${kit[key]}`);
   }
 });

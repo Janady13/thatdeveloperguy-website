@@ -10,7 +10,8 @@ export interface ConsultantViewProps { file: string; placement: ConsultantPlacem
 export default function ConsultantView({ file, placement, state, facing, paused, onError }: ConsultantViewProps) {
   const controller = useRef<PatchController | null>(null);
   useEffect(() => { const id = setInterval(() => { if (!paused) controller.current?.blink(); }, 3800 + Math.random() * 1500); return () => clearInterval(id); }, [paused]);
-  const width = (placement.artboard.width * placement.scale / ROOM.width) * 100;
+  // The box is wider than the artboard (Fit.Contain centres it) so the gesture arm that reaches past the artboard edge is not clipped.
+  const width = (placement.artboard.width * placement.scale * 1.4 / ROOM.width) * 100;
   const height = (placement.artboard.height * placement.scale / ROOM.height) * 100;
   const style = { left: `${(placement.feet[0] / ROOM.width) * 100}%`, bottom: `${((ROOM.height - placement.feet[1]) / ROOM.height) * 100}%`, width: `${width}%`, height: `${height}%` };
   return (

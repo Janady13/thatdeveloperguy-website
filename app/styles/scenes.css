@@ -1,19 +1,19 @@
-.scene { position: relative; background: var(--lavender); }
-.scene-frame { position: relative; margin: 0 auto; width: min(100%, calc((100svh - var(--header-h) - 64px) * 1648 / 928)); max-height: calc(100svh - var(--header-h) - 64px); overflow: hidden; }
+/* The room is the page: it fills the viewport below the header, cropped like object-fit: cover, on one plane in room coordinates. */
+.scene { position: relative; height: calc(100svh - var(--header-h)); min-height: 520px; overflow: hidden; background: #e9e4f3; }
+.scene-plane { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: max(100%, calc((100svh - var(--header-h)) * 1648 / 928)); min-width: 100%; }
 .scene-poster, .scene-rive, .scene-hits { position: absolute; inset: 0; width: 100%; height: 100%; }
-.scene-poster { object-fit: cover; }
-.scene-rive { opacity: 0; transition: opacity .4s ease; pointer-events: none; } .scene-live .scene-rive { opacity: 1; }
+.scene-poster { display: block; }
+.scene-rive { opacity: 0; transition: opacity .5s ease; pointer-events: none; } .scene-live .scene-rive { opacity: 1; }
 .scene-rive canvas { width: 100% !important; height: 100% !important; }
-.scene-hits { z-index: 2; } .scene-hit { cursor: pointer; } .scene-hit rect { fill: transparent; stroke: transparent; stroke-width: 3; stroke-dasharray: 8 6; }
+.scene-hits { z-index: 3; } .scene-hit { cursor: pointer; } .scene-hit rect { fill: transparent; stroke: transparent; stroke-width: 3; stroke-dasharray: 8 6; }
 .scene-hit:focus-visible { outline: none; } .scene-hit:focus-visible rect { stroke: var(--purple); }
-.scene-bar { display: flex; align-items: center; justify-content: center; gap: 16px; padding: 10px var(--gutter); min-height: 48px; }
-.scene-caption { margin: 0; text-align: center; font-weight: 600; color: var(--purple-deep); }
-.motion-control { padding: 6px 12px; border-radius: 999px; border: 1px solid var(--purple); background: transparent; color: var(--purple); cursor: pointer; font-size: .9rem; }
-@media (max-width: 767px) {
-  .scene-frame { width: 100%; max-height: none; }
-  .scene-rive { display: none; }
-  .scene-bar { flex-direction: column; gap: 8px; }
-}
-.consultant { position: absolute; z-index: 1; transform: translateX(-50%); pointer-events: none; }
+.consultant { position: absolute; z-index: 2; transform: translateX(-50%); pointer-events: none; }
 .tdg-patch-rive { width: 100%; height: 100%; transform: scaleX(var(--patch-facing, 1)); transform-origin: 50% 100%; } .tdg-patch-rive canvas { width: 100% !important; height: 100% !important; }
-@media (max-width: 767px) { .consultant { display: none; } }
+.scene-ui { position: absolute; left: 0; right: 0; bottom: 0; z-index: 4; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; padding: 18px 24px 20px; pointer-events: none; background: linear-gradient(to top, rgba(31, 20, 62, .55), rgba(31, 20, 62, 0)); }
+.scene-caption { margin: 0; color: #fff; font-weight: 600; font-size: 1.05rem; text-shadow: 0 1px 2px rgba(0, 0, 0, .35); }
+.motion-control { pointer-events: auto; padding: 6px 12px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .7); background: rgba(31, 20, 62, .35); color: #fff; cursor: pointer; font-size: .85rem; backdrop-filter: blur(6px); }
+@media (max-width: 767px) {
+  .scene { height: min(70svh, 560px); min-height: 360px; }
+  .scene-plane { width: max(100%, calc(min(70svh, 560px) * 1648 / 928)); }
+  .scene-rive, .consultant, .motion-control { display: none; }
+}

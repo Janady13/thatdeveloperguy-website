@@ -4,743 +4,808 @@
     "width": 1648,
     "height": 928
   },
+  "package": "TDG_VECTOR_ROOMS_REBUILD_v3 3.0.0-review.1 (hand-authored vector, no tracing)",
   "source": {
-    "svg": "TDG_LOBBY_ANIMATION_KIT/svg/tdg-lobby.rive-import.svg",
-    "sha256": "ee975f3b6919b701ff6101dc8da5898e0cd8970d02b673d0a566d9d9eb9334b6",
-    "manifest": "TDG_LOBBY_ANIMATION_KIT/docs/scene-manifest.json",
-    "hotspots": "TDG_LOBBY_ANIMATION_KIT/web/hotspots.json"
+    "svg": "rooms/lobby/lobby.rive-import.svg",
+    "sha256": "aec363037fec0ab8f2bc9d38ada21564bb4fae44a9ddb254bd65a137557c9ab1",
+    "paths": 342,
+    "bytes": 161023
   },
-  "stats": {
-    "before": {
-      "paths": 2804,
-      "rings": 60022,
-      "vertices": 390914
-    },
-    "after": {
-      "paths": 2145,
-      "contours": 17976,
-      "vertices": 118887
-    },
-    "dropped": {
-      "rings": 42046,
-      "paths": 659
-    }
-  },
-  "options": {
-    "minArea": 1,
-    "tolerance": 0.75,
-    "minTurnDeg": 60,
-    "union": false
-  },
-  "parts": [
-    {
-      "id": "door_it_leaf",
-      "pivot": [
-        564,
-        529
-      ],
-      "motion": "door"
-    },
-    {
-      "id": "door_government_leaf",
-      "pivot": [
-        804,
-        529
-      ],
-      "motion": "door"
-    },
-    {
-      "id": "door_cyber_leaf",
-      "pivot": [
-        1049,
-        529
-      ],
-      "motion": "door"
-    },
-    {
-      "id": "outdoor_clouds",
-      "pivot": [
-        1500,
-        200
-      ],
-      "motion": "drift_small"
-    },
-    {
-      "id": "window_glass_reflection",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "wall_wordmark",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "wall_left_mission_poster",
-      "pivot": [
-        99,
-        214
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "wall_values_lettering",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "sign_main_lettering",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "sign_star_left",
-      "pivot": [
-        670,
-        133
-      ],
-      "motion": "rotate"
-    },
-    {
-      "id": "sign_star_right",
-      "pivot": [
-        1031,
-        134
-      ],
-      "motion": "rotate"
-    },
-    {
-      "id": "wall_right_poster_section_1",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "wall_right_poster_section_2",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "wall_right_poster_section_3",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "side_entry_glass",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_panel_center",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_panel_left",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_panel_right",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_panel_far_left",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_panel_far_right",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_downlight_1",
-      "pivot": [
-        269,
-        18
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_downlight_2",
-      "pivot": [
-        366,
-        85
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_downlight_3",
-      "pivot": [
-        621,
-        199
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_downlight_4",
-      "pivot": [
-        744,
-        193
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_downlight_5",
-      "pivot": [
-        1138,
-        199
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_downlight_6",
-      "pivot": [
-        1204,
-        133
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_downlight_7",
-      "pivot": [
-        1277,
-        28
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "ceiling_downlight_8",
-      "pivot": [
-        1312,
-        119
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "camera_left_dome",
-      "pivot": [
-        480,
-        167
-      ],
-      "motion": "rotate"
-    },
-    {
-      "id": "camera_left_lens",
-      "pivot": [
-        480,
-        167
-      ],
-      "motion": "look"
-    },
-    {
-      "id": "camera_right_dome",
-      "pivot": [
-        1247,
-        167
-      ],
-      "motion": "rotate"
-    },
-    {
-      "id": "camera_right_lens",
-      "pivot": [
-        1247,
-        167
-      ],
-      "motion": "look"
-    },
-    {
-      "id": "door_it_status_light",
-      "pivot": [
-        631,
-        241
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "door_it_panel",
-      "pivot": [
-        564,
-        529
-      ],
-      "motion": "door_hinge"
-    },
-    {
-      "id": "door_it_icon",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "door_it_reader_light",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "door_it_reader_button",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "door_government_status_light",
-      "pivot": [
-        870,
-        241
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "door_government_panel",
-      "pivot": [
-        804,
-        529
-      ],
-      "motion": "door_hinge"
-    },
-    {
-      "id": "door_government_icon",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "door_government_reader_light",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "door_government_reader_button",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "door_cyber_status_light",
-      "pivot": [
-        1117,
-        241
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "door_cyber_panel",
-      "pivot": [
-        1049,
-        529
-      ],
-      "motion": "door_hinge"
-    },
-    {
-      "id": "door_cyber_icon",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "door_cyber_reader_light",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "door_cyber_reader_button",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "wall_badge_reader_left",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "wall_badge_reader_right",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "pulse"
-    },
-    {
-      "id": "floor_emblem_star",
-      "pivot": [
-        859,
-        663
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "plant_left_column_foliage_left",
-      "pivot": [
-        469,
-        443
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_left_column_foliage_right",
-      "pivot": [
-        469,
-        443
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_left_column_foliage_crown",
-      "pivot": [
-        469,
-        443
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_between_it_government_foliage_left",
-      "pivot": [
-        748,
-        475
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_between_it_government_foliage_right",
-      "pivot": [
-        748,
-        475
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_between_it_government_foliage_crown",
-      "pivot": [
-        748,
-        475
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_between_government_cyber_foliage_left",
-      "pivot": [
-        995,
-        474
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_between_government_cyber_foliage_right",
-      "pivot": [
-        995,
-        474
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_between_government_cyber_foliage_crown",
-      "pivot": [
-        995,
-        474
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_right_column_foliage_left",
-      "pivot": [
-        1252,
-        466
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_right_column_foliage_right",
-      "pivot": [
-        1252,
-        466
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "plant_right_column_foliage_crown",
-      "pivot": [
-        1252,
-        466
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "reception_desk_lettering",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "desk_papers_left",
-      "pivot": [
-        81,
-        548
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "desk_papers_right",
-      "pivot": [
-        408,
-        510
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "desk_monitor_body",
-      "pivot": [
-        279,
-        537
-      ],
-      "motion": "tilt_small"
-    },
-    {
-      "id": "desk_monitor_screen",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "desk_mug_handle",
-      "pivot": [
-        186,
-        548
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "desk_mug_body",
-      "pivot": [
-        182,
-        549
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "desk_mug_lettering",
-      "pivot": [
-        0,
-        0
-      ],
-      "motion": "opacity"
-    },
-    {
-      "id": "plant_reception_foliage",
-      "pivot": [
-        24,
-        510
-      ],
-      "motion": "sway_small"
-    },
-    {
-      "id": "lounge_chair_left_body",
-      "pivot": [
-        1424,
-        620
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "lounge_chair_left_cushion",
-      "pivot": [
-        1410,
-        542
-      ],
-      "motion": "tilt_small"
-    },
-    {
-      "id": "lounge_chair_right",
-      "pivot": [
-        1590,
-        731
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "lounge_table_top",
-      "pivot": [
-        1547,
-        571
-      ],
-      "motion": "translate_small"
-    },
-    {
-      "id": "plant_table_foliage",
-      "pivot": [
-        1568,
-        552
-      ],
-      "motion": "sway_small"
-    },
+  "floorAnchor": [
+    825,
+    750
+  ],
+  "doors": [
     {
-      "id": "plant_window_foliage",
+      "id": "Door_IT",
+      "leafId": "lobby__Door_IT_Leaf",
       "pivot": [
-        1622,
-        534
+        562,
+        301
       ],
-      "motion": "sway_small"
+      "accessLightId": "lobby__Door_IT_AccessLight",
+      "hotspotId": "door-IT"
     },
     {
-      "id": "plant_foreground_foliage_left",
+      "id": "Door_Gov",
+      "leafId": "lobby__Door_Gov_Leaf",
       "pivot": [
-        1593,
-        876
+        803,
+        301
       ],
-      "motion": "sway_small"
+      "accessLightId": "lobby__Door_Gov_AccessLight",
+      "hotspotId": "door-Gov"
     },
     {
-      "id": "plant_foreground_foliage_right",
+      "id": "Door_Cyber",
+      "leafId": "lobby__Door_Cyber_Leaf",
       "pivot": [
-        1593,
-        876
+        1044,
+        301
       ],
-      "motion": "sway_small"
+      "accessLightId": "lobby__Door_Cyber_AccessLight",
+      "hotspotId": "door-Cyber"
     }
   ],
-  "hotspots": {
-    "canvas": {
-      "width": 1648,
-      "height": 928
+  "ambient": [
+    {
+      "id": "lobby__LightLevel",
+      "kind": "opacity",
+      "pivot": [
+        0,
+        0
+      ],
+      "amount": 0.3
     },
-    "doors": [
-      {
-        "id": "it",
-        "label": "IT SERVICES",
-        "href": "/it-services/",
-        "leafId": "door_it_leaf",
-        "pivot": [
-          564,
-          529
-        ],
-        "hitbox": {
-          "x": 542,
-          "y": 229,
-          "width": 176,
-          "height": 302
-        },
-        "threshold": [
-          631,
-          529
-        ],
-        "routeIsProposed": true
-      },
-      {
-        "id": "government",
-        "label": "GOV SOLUTIONS",
-        "href": "/government-solutions/",
-        "leafId": "door_government_leaf",
-        "pivot": [
-          804,
-          529
-        ],
-        "hitbox": {
-          "x": 782,
-          "y": 229,
-          "width": 176,
-          "height": 302
-        },
-        "threshold": [
-          870,
-          529
-        ],
-        "routeIsProposed": true
-      },
-      {
-        "id": "cyber",
-        "label": "CYBER SECURITY",
-        "href": "/cybersecurity/",
-        "leafId": "door_cyber_leaf",
-        "pivot": [
-          1049,
-          529
-        ],
-        "hitbox": {
-          "x": 1028,
-          "y": 229,
-          "width": 177,
-          "height": 302
-        },
-        "threshold": [
-          1117,
-          529
-        ],
-        "routeIsProposed": true
-      }
-    ]
-  },
-  "diff": {
-    "width": 1672,
-    "height": 941,
-    "differentPixels": 203546,
-    "ratio": 0.12937092271786607
-  }
+    {
+      "id": "lobby__Door_IT_AccessLight",
+      "kind": "opacity",
+      "pivot": [
+        550,
+        240
+      ],
+      "amount": 0.45
+    },
+    {
+      "id": "lobby__Door_Gov_AccessLight",
+      "kind": "opacity",
+      "pivot": [
+        791,
+        240
+      ],
+      "amount": 0.45
+    },
+    {
+      "id": "lobby__Door_Cyber_AccessLight",
+      "kind": "opacity",
+      "pivot": [
+        1032,
+        240
+      ],
+      "amount": 0.45
+    },
+    {
+      "id": "lobby__ReceptionPlant_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        470,
+        438.00000000000006
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__ReceptionPlant_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        470,
+        438.00000000000006
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__ReceptionPlant_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        470,
+        438.00000000000006
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__ReceptionPlant_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        470,
+        438.00000000000006
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__ReceptionPlant_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        470,
+        438.00000000000006
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__ReceptionPlant_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        470,
+        438.00000000000006
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__ReceptionPlant_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        470,
+        438.00000000000006
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__ReceptionPlant_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        470,
+        438.00000000000006
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__DoorPlant_IT_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        762,
+        484.00000000000006
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__DoorPlant_IT_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        762,
+        484.00000000000006
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__DoorPlant_IT_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        762,
+        484.00000000000006
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__DoorPlant_IT_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        762,
+        484.00000000000006
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__DoorPlant_IT_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        762,
+        484.00000000000006
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__DoorPlant_IT_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        762,
+        484.00000000000006
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__DoorPlant_IT_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        762,
+        484.00000000000006
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__DoorPlant_IT_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        762,
+        484.00000000000006
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__DoorPlant_Gov_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        998,
+        483
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__DoorPlant_Gov_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        998,
+        483
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__DoorPlant_Gov_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        998,
+        483
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__DoorPlant_Gov_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        998,
+        483
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__DoorPlant_Gov_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        998,
+        483
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__DoorPlant_Gov_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        998,
+        483
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__DoorPlant_Gov_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        998,
+        483
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__DoorPlant_Gov_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        998,
+        483
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__DoorPlant_Cyber_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        1261,
+        459
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__DoorPlant_Cyber_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        1261,
+        459
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__DoorPlant_Cyber_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        1261,
+        459
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__DoorPlant_Cyber_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        1261,
+        459
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__DoorPlant_Cyber_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        1261,
+        459
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__DoorPlant_Cyber_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        1261,
+        459
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__DoorPlant_Cyber_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        1261,
+        459
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__DoorPlant_Cyber_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        1261,
+        459
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__Camera_Left_Head",
+      "kind": "rotate",
+      "pivot": [
+        478,
+        176
+      ],
+      "amount": 12
+    },
+    {
+      "id": "lobby__Camera_Right_Head",
+      "kind": "rotate",
+      "pivot": [
+        1243,
+        175
+      ],
+      "amount": 12
+    },
+    {
+      "id": "lobby__LoungePlant_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        1570,
+        581
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__LoungePlant_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        1570,
+        581
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__LoungePlant_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        1570,
+        581
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__LoungePlant_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        1570,
+        581
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__LoungePlant_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        1570,
+        581
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__LoungePlant_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        1570,
+        581
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__LoungePlant_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        1570,
+        581
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__LoungePlant_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        1570,
+        581
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__ReceptionMonitor_Display",
+      "kind": "opacity",
+      "pivot": [
+        228.99999999999997,
+        434
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "lobby__ReceptionFiles_Book_1",
+      "kind": "translateY",
+      "pivot": [
+        347,
+        484.00000000000006
+      ],
+      "amount": -8
+    },
+    {
+      "id": "lobby__ReceptionFiles_Book_2",
+      "kind": "translateY",
+      "pivot": [
+        347,
+        484.00000000000006
+      ],
+      "amount": -8
+    },
+    {
+      "id": "lobby__ReceptionMug_Steam_0",
+      "kind": "steam",
+      "pivot": [
+        175,
+        526
+      ],
+      "amount": 8
+    },
+    {
+      "id": "lobby__ReceptionMug_Steam_1",
+      "kind": "steam",
+      "pivot": [
+        175,
+        526
+      ],
+      "amount": 8
+    },
+    {
+      "id": "lobby__ForegroundReceptionPlant_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        47,
+        520
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__ForegroundReceptionPlant_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        47,
+        520
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__ForegroundReceptionPlant_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        47,
+        520
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__ForegroundReceptionPlant_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        47,
+        520
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__ForegroundReceptionPlant_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        47,
+        520
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__ForegroundReceptionPlant_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        47,
+        520
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__ForegroundReceptionPlant_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        47,
+        520
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__ForegroundReceptionPlant_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        47,
+        520
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__ForegroundPalm_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        1606,
+        850
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__ForegroundPalm_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        1606,
+        850
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__ForegroundPalm_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        1606,
+        850
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__ForegroundPalm_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        1606,
+        850
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__ForegroundPalm_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        1606,
+        850
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__ForegroundPalm_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        1606,
+        850
+      ],
+      "amount": 2
+    },
+    {
+      "id": "lobby__ForegroundPalm_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        1606,
+        850
+      ],
+      "amount": -2
+    },
+    {
+      "id": "lobby__ForegroundPalm_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        1606,
+        850
+      ],
+      "amount": 2
+    }
+  ],
+  "hotspots": [
+    {
+      "id": "door-IT",
+      "label": "IT SERVICES",
+      "rect": [
+        550,
+        240,
+        182,
+        304
+      ],
+      "pageId": "capability.business-it",
+      "section": ""
+    },
+    {
+      "id": "door-Gov",
+      "label": "GOV SOLUTIONS",
+      "rect": [
+        791,
+        240,
+        182,
+        304
+      ],
+      "pageId": "audience.government",
+      "section": ""
+    },
+    {
+      "id": "door-Cyber",
+      "label": "CYBERSECURITY",
+      "rect": [
+        1032,
+        240,
+        182,
+        304
+      ],
+      "pageId": "capability.cybersecurity",
+      "section": ""
+    },
+    {
+      "id": "reception",
+      "label": "Request a briefing",
+      "rect": [
+        40,
+        470,
+        430,
+        190
+      ],
+      "pageId": "contact",
+      "section": ""
+    },
+    {
+      "id": "lounge",
+      "label": "Company",
+      "rect": [
+        1310,
+        510,
+        290,
+        150
+      ],
+      "pageId": "company",
+      "section": ""
+    }
+  ],
+  "lettering": [
+    {
+      "id": "lobby__TXT_001",
+      "text": "thatdeveloperguy.com"
+    },
+    {
+      "id": "lobby__TXT_002",
+      "text": "GOVERNMENT IT. SECURITY. REAL SOLUTIONS."
+    },
+    {
+      "id": "lobby__TXT_003",
+      "text": "SECURE SYSTEMS."
+    },
+    {
+      "id": "lobby__TXT_004",
+      "text": "STRONGER SERVICES."
+    },
+    {
+      "id": "lobby__TXT_005",
+      "text": "A BETTER TOMORROW."
+    },
+    {
+      "id": "lobby__TXT_006",
+      "text": "SAME"
+    },
+    {
+      "id": "lobby__TXT_007",
+      "text": "WORLD."
+    },
+    {
+      "id": "lobby__TXT_008",
+      "text": "DIFFERENT"
+    },
+    {
+      "id": "lobby__TXT_009",
+      "text": "MISSION."
+    },
+    {
+      "id": "lobby__TXT_010",
+      "text": "TRUST"
+    },
+    {
+      "id": "lobby__TXT_011",
+      "text": "SERVICE"
+    },
+    {
+      "id": "lobby__TXT_012",
+      "text": "SECURITY"
+    },
+    {
+      "id": "lobby__TXT_013",
+      "text": "PEOPLE"
+    },
+    {
+      "id": "lobby__TXT_014",
+      "text": "IT SERVICES"
+    },
+    {
+      "id": "lobby__TXT_015",
+      "text": "GOV SOLUTIONS"
+    },
+    {
+      "id": "lobby__TXT_016",
+      "text": "CYBERSECURITY"
+    },
+    {
+      "id": "lobby__TXT_017",
+      "text": "DETECT"
+    },
+    {
+      "id": "lobby__TXT_018",
+      "text": "PROTECT"
+    },
+    {
+      "id": "lobby__TXT_019",
+      "text": "RESPOND"
+    },
+    {
+      "id": "lobby__TXT_020",
+      "text": "INQUIRIES"
+    },
+    {
+      "id": "lobby__TXT_021",
+      "text": "BRIEFING"
+    },
+    {
+      "id": "lobby__TXT_022",
+      "text": "TDG"
+    },
+    {
+      "id": "lobby__TXT_023",
+      "text": "PEOPLE  /  SOLUTIONS  /  SERVICE"
+    }
+  ]
 }

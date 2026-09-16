@@ -8,7 +8,7 @@ interface Props { label: string; hotspots: ResolvedHotspot[]; onFocus: (id: stri
 /** Real anchors drawn as invisible hit shapes in room coordinates. Modified clicks and new-tab opens are left to the browser. */
 export function HotspotOverlay({ label, hotspots, onFocus, onActivate }: Props) {
   return (
-    <svg className="scene-hits" viewBox={VIEWBOX} role="navigation" aria-label={`${label} destinations`}>
+    <svg className="scene-hits" viewBox={VIEWBOX} preserveAspectRatio="xMidYMid meet" role="navigation" aria-label={`${label} destinations`}>
       {hotspots.map(h => (
         <a key={h.id} href={h.href} aria-label={h.label} className="scene-hit" data-hit={h.id} tabIndex={0}
           onMouseEnter={() => onFocus(h.id)} onMouseLeave={() => onFocus(null)} onFocus={() => onFocus(h.id)} onBlur={() => onFocus(null)}

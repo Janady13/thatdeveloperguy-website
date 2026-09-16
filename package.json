@@ -18,14 +18,14 @@
     "typecheck": "react-router typegen && tsc --noEmit",
     "test": "node --test --import tsx tests/unit/*.test.ts tests/api/*.test.ts",
     "test:browser": "playwright test",
-    "refine": "node --import tsx tools/refine-vectors.ts",
     "rive:author": "node --import tsx tools/rive-author.ts",
     "rive:verify": "node --import tsx tools/verify-riv.ts",
     "truth": "node --import tsx tools/import-truth.ts",
     "shots": "node --import tsx tools/shots.ts",
     "publish:demo": "bash deploy/publish-demo.sh",
     "build:api": "node --import tsx scripts/build-api.ts",
-    "publish:api": "bash deploy/publish-api.sh"
+    "publish:api": "bash deploy/publish-api.sh",
+    "rooms": "node --import tsx tools/import-rooms.ts"
   },
   "dependencies": {
     "@fastify/formbody": "9.0.0",

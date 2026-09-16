@@ -1,34 +1,12 @@
 {
-  "root": "/Users/josephanady/Desktop/ThatDeveloperGuy",
+  "root": "/Users/josephanady/Desktop/ThatDeveloperGuy/TDG_VECTOR_ROOMS_REBUILD_v3/TDG_VECTOR_ROOMS_REBUILD_v3",
+  "package": "TDG_VECTOR_ROOMS_REBUILD_v3 3.0.0-review.1 (hand-authored vector, no tracing)",
   "canvas": { "width": 1648, "height": 928 },
   "rooms": {
-    "lobby": {
-      "dir": "TDG_LOBBY_ANIMATION_KIT",
-      "svg": "svg/tdg-lobby.rive-import.svg",
-      "manifest": "docs/scene-manifest.json",
-      "hotspots": "web/hotspots.json",
-      "reference": "source/tdg-lobby.reference.png"
-    },
-    "it-services": {
-      "dir": "TDG_IT_SERVICES_ANIMATION_KIT",
-      "svg": "svg/tdg-it-services.rive-import.svg",
-      "manifest": "docs/scene-manifest.json",
-      "hotspots": "web/hotspots.json",
-      "reference": "source/tdg-it-services.reference.png"
-    },
-    "government-solutions": {
-      "dir": "TDG_GOVERNMENT_SOLUTIONS_ANIMATION_KIT",
-      "svg": "svg/tdg-government-solutions.rive-import.svg",
-      "manifest": "docs/scene-manifest.json",
-      "hotspots": "web/hotspots.json",
-      "reference": "source/tdg-government-solutions.reference.png"
-    },
-    "cybersecurity": {
-      "dir": "TDG_CYBERSECURITY_ANIMATION_KIT",
-      "svg": "svg/tdg-cybersecurity.rive-import.svg",
-      "manifest": "docs/scene-manifest.json",
-      "hotspots": "web/hotspots.json",
-      "reference": "source/tdg-cybersecurity.reference.png"
-    }
-  }
+    "lobby": { "dir": "rooms/lobby", "svg": "lobby.rive-import.svg", "manifest": "scene-manifest.json", "hotspots": "hotspots.json", "pivots": "pivots-artboard.json", "preview": "../../qa/lobby.png" },
+    "it-services": { "dir": "rooms/it-services", "svg": "it-services.rive-import.svg", "manifest": "scene-manifest.json", "hotspots": "hotspots.json", "pivots": "pivots-artboard.json", "preview": "../../qa/it-services.png" },
+    "government": { "dir": "rooms/government", "svg": "government.rive-import.svg", "manifest": "scene-manifest.json", "hotspots": "hotspots.json", "pivots": "pivots-artboard.json", "preview": "../../qa/government.png" },
+    "cybersecurity": { "dir": "rooms/cybersecurity", "svg": "cybersecurity.rive-import.svg", "manifest": "scene-manifest.json", "hotspots": "hotspots.json", "pivots": "pivots-artboard.json", "preview": "../../qa/cybersecurity.png" }
+  },
+  "superseded": { "tracedKits": "/Users/josephanady/Desktop/ThatDeveloperGuy/TDG_*_ANIMATION_KIT (auto-traced, replaced 2026-09-16 by the v3 rebuild; kept for reference only)" }
 }

@@ -1,0 +1,1046 @@
+{
+  "room": "government",
+  "canvas": {
+    "width": 1648,
+    "height": 928
+  },
+  "package": "TDG_VECTOR_ROOMS_REBUILD_v3 3.0.0-review.1 (hand-authored vector, no tracing)",
+  "source": {
+    "svg": "rooms/government/government.rive-import.svg",
+    "sha256": "1967669cd8f495439949d6d92c86baae10645d88a32a9ea919d750d834d2acee",
+    "paths": 461,
+    "bytes": 206561
+  },
+  "floorAnchor": [
+    846,
+    826
+  ],
+  "doors": [
+    {
+      "id": "BriefingDoor",
+      "leafId": "government__BriefingDoor_Leaf",
+      "pivot": [
+        228,
+        300
+      ],
+      "accessLightId": null,
+      "hotspotId": "briefing"
+    }
+  ],
+  "ambient": [
+    {
+      "id": "government__LightLevel",
+      "kind": "opacity",
+      "pivot": [
+        0,
+        0
+      ],
+      "amount": 0.3
+    },
+    {
+      "id": "government__BriefingDisplay_Focus",
+      "kind": "opacity",
+      "pivot": [
+        0,
+        0
+      ],
+      "amount": 0.3
+    },
+    {
+      "id": "government__RearStorage_L_Drawer_1",
+      "kind": "drawer",
+      "pivot": [
+        585,
+        503.00000000000006
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__RearStorage_L_Drawer_2",
+      "kind": "drawer",
+      "pivot": [
+        585,
+        539.5
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__RearStorage_R_Drawer_1",
+      "kind": "drawer",
+      "pivot": [
+        1068,
+        503.00000000000006
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__RearStorage_R_Drawer_2",
+      "kind": "drawer",
+      "pivot": [
+        1068,
+        539.5
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__GovRearPlant_L_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        606.0000000000001,
+        471
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovRearPlant_L_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        606.0000000000001,
+        471
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovRearPlant_L_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        606.0000000000001,
+        471
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovRearPlant_L_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        606.0000000000001,
+        471
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovRearPlant_L_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        606.0000000000001,
+        471
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovRearPlant_L_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        606.0000000000001,
+        471
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovRearPlant_L_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        606.0000000000001,
+        471
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovRearPlant_L_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        606.0000000000001,
+        471
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovRearPlant_R_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        1117,
+        471
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovRearPlant_R_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        1117,
+        471
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovRearPlant_R_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        1117,
+        471
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovRearPlant_R_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        1117,
+        471
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovRearPlant_R_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        1117,
+        471
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovRearPlant_R_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        1117,
+        471
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovRearPlant_R_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        1117,
+        471
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovRearPlant_R_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        1117,
+        471
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovReference_Book_1",
+      "kind": "translateY",
+      "pivot": [
+        793,
+        457.00000000000006
+      ],
+      "amount": -8
+    },
+    {
+      "id": "government__GovReference_Book_2",
+      "kind": "translateY",
+      "pivot": [
+        793,
+        457.00000000000006
+      ],
+      "amount": -8
+    },
+    {
+      "id": "government__GovReference_Book_3",
+      "kind": "translateY",
+      "pivot": [
+        793,
+        457.00000000000006
+      ],
+      "amount": -8
+    },
+    {
+      "id": "government__DeskGlobe_Sphere",
+      "kind": "rotate",
+      "pivot": [
+        1013,
+        443.00000000000006
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__ContractFiles_Drawer_1",
+      "kind": "drawer",
+      "pivot": [
+        344,
+        455.00000000000006
+      ],
+      "amount": 12
+    },
+    {
+      "id": "government__ContractFiles_Drawer_2",
+      "kind": "drawer",
+      "pivot": [
+        344,
+        499
+      ],
+      "amount": 12
+    },
+    {
+      "id": "government__ContractFiles_Drawer_3",
+      "kind": "drawer",
+      "pivot": [
+        344,
+        543.0000000000001
+      ],
+      "amount": 12
+    },
+    {
+      "id": "government__ContractFiles_Drawer_4",
+      "kind": "drawer",
+      "pivot": [
+        344,
+        587
+      ],
+      "amount": 12
+    },
+    {
+      "id": "government__ContractFiles_Drawer_5",
+      "kind": "drawer",
+      "pivot": [
+        344,
+        631
+      ],
+      "amount": 12
+    },
+    {
+      "id": "government__PrinterPlant_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        391,
+        398
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__PrinterPlant_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        391,
+        398
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__PrinterPlant_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        391,
+        398
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__PrinterPlant_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        391,
+        398
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__PrinterPlant_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        391,
+        398
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__PrinterPlant_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        391,
+        398
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__PrinterPlant_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        391,
+        398
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__PrinterPlant_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        391,
+        398
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__ConferenceRear_L_Shift",
+      "kind": "translateX",
+      "pivot": [
+        705,
+        565
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__ConferenceRear_R_Shift",
+      "kind": "translateX",
+      "pivot": [
+        997.0000000000001,
+        565
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__ConferenceHead_Shift",
+      "kind": "translateX",
+      "pivot": [
+        847.0000000000001,
+        566
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__Conference_L_Far_Shift",
+      "kind": "translateX",
+      "pivot": [
+        622,
+        648
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__Conference_L_Near_Shift",
+      "kind": "translateX",
+      "pivot": [
+        555,
+        700
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__Conference_R_Far_Shift",
+      "kind": "translateX",
+      "pivot": [
+        1057.0000000000002,
+        648
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__Conference_R_Near_Shift",
+      "kind": "translateX",
+      "pivot": [
+        1123,
+        700
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__GovWorkCabinet_Drawer_1",
+      "kind": "drawer",
+      "pivot": [
+        1313,
+        579
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__GovWorkCabinet_Drawer_2",
+      "kind": "drawer",
+      "pivot": [
+        1313,
+        632.5
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__GovOfficeMonitor_1_Display",
+      "kind": "opacity",
+      "pivot": [
+        1374,
+        454
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "government__GovOfficeMonitor_2_Display",
+      "kind": "opacity",
+      "pivot": [
+        1510.0000000000002,
+        442
+      ],
+      "amount": 0.25
+    },
+    {
+      "id": "government__GovMug_Steam_0",
+      "kind": "steam",
+      "pivot": [
+        1575,
+        622
+      ],
+      "amount": 8
+    },
+    {
+      "id": "government__GovMug_Steam_1",
+      "kind": "steam",
+      "pivot": [
+        1575,
+        622
+      ],
+      "amount": 8
+    },
+    {
+      "id": "government__GovOfficeChair_Shift",
+      "kind": "translateX",
+      "pivot": [
+        1441,
+        689
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__GovWindowPlant_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        1275,
+        464
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovWindowPlant_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        1275,
+        464
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovWindowPlant_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        1275,
+        464
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovWindowPlant_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        1275,
+        464
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovWindowPlant_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        1275,
+        464
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovWindowPlant_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        1275,
+        464
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovWindowPlant_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        1275,
+        464
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovWindowPlant_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        1275,
+        464
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovBackPlant_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        531,
+        481
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovBackPlant_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        531,
+        481
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovBackPlant_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        531,
+        481
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovBackPlant_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        531,
+        481
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovBackPlant_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        531,
+        481
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovBackPlant_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        531,
+        481
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovBackPlant_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        531,
+        481
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovBackPlant_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        531,
+        481
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__ForegroundFiles_Drawer_1",
+      "kind": "drawer",
+      "pivot": [
+        6,
+        746.0000000000001
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__ForegroundFiles_Drawer_2",
+      "kind": "drawer",
+      "pivot": [
+        6,
+        834
+      ],
+      "amount": 10
+    },
+    {
+      "id": "government__ForegroundBooks_Book_1",
+      "kind": "translateY",
+      "pivot": [
+        11,
+        710
+      ],
+      "amount": -8
+    },
+    {
+      "id": "government__ForegroundBooks_Book_2",
+      "kind": "translateY",
+      "pivot": [
+        11,
+        710
+      ],
+      "amount": -8
+    },
+    {
+      "id": "government__ForegroundBooks_Book_3",
+      "kind": "translateY",
+      "pivot": [
+        11,
+        710
+      ],
+      "amount": -8
+    },
+    {
+      "id": "government__GovForegroundPlant_L_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        36.00000000000001,
+        665
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovForegroundPlant_L_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        36.00000000000001,
+        665
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovForegroundPlant_L_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        36.00000000000001,
+        665
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovForegroundPlant_L_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        36.00000000000001,
+        665
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovForegroundPlant_L_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        36.00000000000001,
+        665
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovForegroundPlant_L_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        36.00000000000001,
+        665
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovForegroundPlant_L_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        36.00000000000001,
+        665
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovForegroundPlant_L_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        36.00000000000001,
+        665
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovForegroundPlant_R_Leaf_1",
+      "kind": "rotate",
+      "pivot": [
+        1598.0000000000002,
+        844
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovForegroundPlant_R_Leaf_2",
+      "kind": "rotate",
+      "pivot": [
+        1598.0000000000002,
+        844
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovForegroundPlant_R_Leaf_3",
+      "kind": "rotate",
+      "pivot": [
+        1598.0000000000002,
+        844
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovForegroundPlant_R_Leaf_4",
+      "kind": "rotate",
+      "pivot": [
+        1598.0000000000002,
+        844
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovForegroundPlant_R_Leaf_5",
+      "kind": "rotate",
+      "pivot": [
+        1598.0000000000002,
+        844
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovForegroundPlant_R_Leaf_6",
+      "kind": "rotate",
+      "pivot": [
+        1598.0000000000002,
+        844
+      ],
+      "amount": 2
+    },
+    {
+      "id": "government__GovForegroundPlant_R_Leaf_7",
+      "kind": "rotate",
+      "pivot": [
+        1598.0000000000002,
+        844
+      ],
+      "amount": -2
+    },
+    {
+      "id": "government__GovForegroundPlant_R_Leaf_8",
+      "kind": "rotate",
+      "pivot": [
+        1598.0000000000002,
+        844
+      ],
+      "amount": 2
+    }
+  ],
+  "hotspots": [
+    {
+      "id": "briefing",
+      "label": "Request a briefing",
+      "rect": [
+        216,
+        286,
+        112,
+        268
+      ],
+      "pageId": "contact",
+      "section": ""
+    },
+    {
+      "id": "display",
+      "label": "Government solutions",
+      "rect": [
+        698,
+        205,
+        365,
+        210
+      ],
+      "pageId": "audience.government",
+      "section": "#overview"
+    },
+    {
+      "id": "files",
+      "label": "Capability statement",
+      "rect": [
+        338,
+        439,
+        150,
+        235
+      ],
+      "pageId": "capability-statement",
+      "section": ""
+    },
+    {
+      "id": "table",
+      "label": "Delivery approach",
+      "rect": [
+        540,
+        531,
+        600,
+        146
+      ],
+      "pageId": "approach",
+      "section": ""
+    }
+  ],
+  "lettering": [
+    {
+      "id": "government__TXT_001",
+      "text": "PEOPLE  /  SOLUTIONS  /  PUBLIC SERVICE"
+    },
+    {
+      "id": "government__TXT_002",
+      "text": "thatdeveloperguy.com"
+    },
+    {
+      "id": "government__TXT_003",
+      "text": "GOVERNMENT IT. SECURITY."
+    },
+    {
+      "id": "government__TXT_004",
+      "text": "PUBLIC"
+    },
+    {
+      "id": "government__TXT_005",
+      "text": "SERVICE"
+    },
+    {
+      "id": "government__TXT_006",
+      "text": "THROUGH"
+    },
+    {
+      "id": "government__TXT_007",
+      "text": "TECHNOLOGY"
+    },
+    {
+      "id": "government__TXT_008",
+      "text": "BRIEFING"
+    },
+    {
+      "id": "government__TXT_009",
+      "text": "PLAN"
+    },
+    {
+      "id": "government__TXT_010",
+      "text": "COORDINATE"
+    },
+    {
+      "id": "government__TXT_011",
+      "text": "IMPLEMENT"
+    },
+    {
+      "id": "government__TXT_012",
+      "text": "DELIVER"
+    },
+    {
+      "id": "government__TXT_013",
+      "text": "PROJECT"
+    },
+    {
+      "id": "government__TXT_014",
+      "text": "SCOPE"
+    },
+    {
+      "id": "government__TXT_015",
+      "text": "REQUIREMENTS"
+    },
+    {
+      "id": "government__TXT_016",
+      "text": "DELIVERY"
+    },
+    {
+      "id": "government__TXT_017",
+      "text": "REVIEW"
+    },
+    {
+      "id": "government__TXT_018",
+      "text": "REVIEW"
+    },
+    {
+      "id": "government__TXT_019",
+      "text": "SECURITY"
+    },
+    {
+      "id": "government__TXT_020",
+      "text": "ACCESSIBILITY"
+    },
+    {
+      "id": "government__TXT_021",
+      "text": "DOCUMENTATION"
+    },
+    {
+      "id": "government__TXT_022",
+      "text": "HANDOVER"
+    },
+    {
+      "id": "government__TXT_023",
+      "text": "GOVERNMENT"
+    },
+    {
+      "id": "government__TXT_024",
+      "text": "SOLUTIONS"
+    },
+    {
+      "id": "government__TXT_025",
+      "text": "PLAN WITH CARE."
+    },
+    {
+      "id": "government__TXT_026",
+      "text": "DELIVER WITH PURPOSE."
+    },
+    {
+      "id": "government__TXT_027",
+      "text": "REQUIREMENTS"
+    },
+    {
+      "id": "government__TXT_028",
+      "text": "PROJECT NOTES"
+    },
+    {
+      "id": "government__TXT_029",
+      "text": "DELIVERY"
+    },
+    {
+      "id": "government__TXT_030",
+      "text": "RFPs"
+    },
+    {
+      "id": "government__TXT_031",
+      "text": "CONTRACTS"
+    },
+    {
+      "id": "government__TXT_032",
+      "text": "POLICIES"
+    },
+    {
+      "id": "government__TXT_033",
+      "text": "PROGRAMS"
+    },
+    {
+      "id": "government__TXT_034",
+      "text": "REPORTS"
+    },
+    {
+      "id": "government__TXT_035",
+      "text": "TDG"
+    },
+    {
+      "id": "government__TXT_036",
+      "text": "COMMUNITY"
+    },
+    {
+      "id": "government__TXT_037",
+      "text": "OPERATIONS"
+    },
+    {
+      "id": "government__TXT_038",
+      "text": "STRATEGY"
+    }
+  ]
+}

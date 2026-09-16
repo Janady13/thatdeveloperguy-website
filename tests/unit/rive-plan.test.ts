@@ -1,28 +1,25 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { planLobby } from '../../tools/rive-plan.ts';
+import { planRoom } from '../../tools/rive-plan.ts';
 
-const manifest = JSON.parse(readFileSync(new URL('../../creative-source/refined/lobby/manifest.json', import.meta.url), 'utf8'));
+const lobby = JSON.parse(readFileSync(new URL('../../creative-source/refined/lobby/manifest.json', import.meta.url), 'utf8'));
 
-test('planLobby derives three doors with hinges, hits and routes from the kit hotspots', () => {
-  const plan = planLobby(manifest);
+test('the lobby plan names three doors with hinges at the package pivots and hotspots that carry the site page ids', () => {
+  const plan = planRoom(lobby);
   assert.equal(plan.artboard, 'Lobby');
-  assert.deepEqual(plan.doors.map(d => d.id), ['it', 'government', 'cyber']);
-  assert.deepEqual(plan.doors[0], { id: 'it', leafId: 'door_it_leaf', hinge: [564, 529], hit: { x: 542, y: 229, width: 176, height: 302 }, href: '/it-services/', label: 'IT SERVICES' });
+  assert.deepEqual(plan.doors.map(d => [d.id, d.hinge, d.trigger]), [['Door_IT', [562, 301], 'openDoor_IT'], ['Door_Gov', [803, 301], 'openDoor_Gov'], ['Door_Cyber', [1044, 301], 'openDoor_Cyber']]);
+  assert.deepEqual(plan.hotspots.map(h => [h.id, h.pageId, h.trigger]), [['door-IT', 'capability.business-it', 'openDoor_IT'], ['door-Gov', 'audience.government', 'openDoor_Gov'], ['door-Cyber', 'capability.cybersecurity', 'openDoor_Cyber'], ['reception', 'contact', null], ['lounge', 'company', null]]);
+  assert.deepEqual(plan.enum.values, ['none', 'door-IT', 'door-Gov', 'door-Cyber', 'reception', 'lounge']);
 });
 
-test('planLobby names every animation, view-model property and state-machine layer the site relies on', () => {
-  const plan = planLobby(manifest);
-  assert.deepEqual(plan.animations.map(a => a.name), ['Ambient', 'DoorOpenIt', 'DoorOpenGovernment', 'DoorOpenCyber', 'FocusIt', 'FocusGovernment', 'FocusCyber']);
-  assert.deepEqual(plan.viewModel.properties, [
-    { name: 'focus', type: 'enum' }, { name: 'openIt', type: 'trigger' }, { name: 'openGovernment', type: 'trigger' }, { name: 'openCyber', type: 'trigger' }, { name: 'reducedMotion', type: 'boolean' },
-  ]);
-  assert.deepEqual(plan.layers.map(l => l.name), ['Ambient', 'DoorIt', 'DoorGovernment', 'DoorCyber', 'Focus']);
-  const door = plan.layers[1]!;
-  assert.deepEqual(door.transitions, [{ from: '{Entry State}', to: 'Closed' }, { from: 'Closed', to: 'Open', when: { property: 'openIt' } }]); // a layer without an Entry transition never enters Closed, so the trigger never fires
-  const open = plan.animations.find(a => a.name === 'DoorOpenIt')!;
+test('every door layer enters Closed and opens on its trigger; focus is driven from Any State', () => {
+  const plan = planRoom(lobby);
+  const door = plan.layers.find(l => l.name === 'Door_Door_IT')!;
+  assert.deepEqual(door.transitions, [{ from: '{Entry State}', to: 'Closed' }, { from: 'Closed', to: 'Open', when: { property: 'openDoor_IT' } }]);
+  const open = plan.animations.find(a => a.name === 'DoorOpen_Door_IT')!;
   assert.equal(open.loop, 'oneShot');
-  assert.deepEqual(open.keys[0], { target: 'hinge', door: 'it', property: 'scaleX', frame: 0, value: 100, interpolation: 'cubic' });
-  assert.deepEqual(open.keys[1], { target: 'hinge', door: 'it', property: 'scaleX', frame: 26, value: 22, interpolation: 'cubic' });
+  assert.deepEqual(open.keys.slice(0, 2).map(k => [k.target, k.property, k.frame, k.value]), [['hinge:Door_IT', 'scaleX', 0, 100], ['hinge:Door_IT', 'scaleX', 26, 22]]);
+  const focus = plan.layers.find(l => l.name === 'Focus')!;
+  assert.ok(focus.transitions.some(t => t.from === '{Any State}' && t.to === 'Focus_door-Gov' && t.when?.equals === 'door-Gov'));
 });
