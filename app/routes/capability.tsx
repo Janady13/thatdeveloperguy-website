@@ -13,7 +13,7 @@ import cyberScene from '../experience/scenes/cybersecurity/scene.json';
 import type { SceneRecord } from '../../src/contracts/scene';
 import { usePage, Missing } from './_page';
 
-const SCENES: Record<string, SceneRecord> = { 'it-services': itScene as SceneRecord, cybersecurity: cyberScene as SceneRecord };
+const SCENES: Record<string, SceneRecord> = { 'it-services': itScene as unknown as SceneRecord, cybersecurity: cyberScene as unknown as SceneRecord };
 export function meta({ location }: { location: { pathname: string } }) { return pageMeta(location.pathname); }
 
 export default function Capability() {

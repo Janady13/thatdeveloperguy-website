@@ -29,7 +29,7 @@
     },
     "renders": {
       "ok": true,
-      "detail": "75 frames advanced in 1.2 s; 100.0% of pixels drawn"
+      "detail": "78 frames advanced in 1.2 s; 100.0% of pixels drawn"
     },
     "matchesPoster": {
       "ok": true,
@@ -41,12 +41,12 @@
     },
     "focusTransition": {
       "ok": true,
-      "detail": "focus=government changed 0.284% of pixels"
+      "detail": "focus=government changed 0.285% of pixels"
     },
     "doorTransition": {
       "ok": true,
       "detail": "openGovernment changed 0.945% of pixels after 0.8 s"
     }
   },
-  "at": "2026-09-16T01:27:14.845Z"
+  "at": "2026-09-16T02:13:41.973Z"
 }

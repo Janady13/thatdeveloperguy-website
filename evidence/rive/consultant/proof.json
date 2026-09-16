@@ -1,0 +1,56 @@
+{
+  "room": "consultant",
+  "file": "patch.riv",
+  "sha256": "a24ad85ae0a7337e23055636003cd5668bd0cb0af431e83aade11e7f6a80de6d",
+  "bytes": 829267,
+  "runtime": "@rive-app/webgl2 2.42.1",
+  "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+  "artboards": [
+    {
+      "name": "Patch",
+      "animations": [
+        "Patch_Blink",
+        "Patch_Neutral",
+        "Patch_Happy",
+        "Patch_Focused",
+        "Patch_Talking",
+        "Patch_WaveGesture",
+        "Patch_ThumbsUp",
+        "Patch_Idle",
+        "Patch_Walk",
+        "Patch_Wave",
+        "Patch_Work",
+        "Patch_Enter",
+        "Patch_Exit",
+        "Timeline 1"
+      ],
+      "stateMachines": [
+        "PatchMachine",
+        "State Machine 1"
+      ]
+    }
+  ],
+  "checks": {
+    "loads": {
+      "ok": true,
+      "detail": "loaded with 2.42.1"
+    },
+    "renders": {
+      "ok": true,
+      "detail": "26 frames advanced in 1.2 s; 23.8% of pixels drawn"
+    },
+    "contract": {
+      "ok": true,
+      "detail": "13/13 controller-required timelines present"
+    },
+    "timelineTransition": {
+      "ok": true,
+      "detail": "Patch_Wave + Happy + WaveGesture changed 13.952% of pixels"
+    },
+    "secondTransition": {
+      "ok": true,
+      "detail": "Patch_Walk + Focused changed 15.669% of pixels"
+    }
+  },
+  "at": "2026-09-16T02:13:34.237Z"
+}

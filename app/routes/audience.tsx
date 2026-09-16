@@ -10,7 +10,7 @@ import governmentScene from '../experience/scenes/government/scene.json';
 import type { SceneRecord } from '../../src/contracts/scene';
 import { usePage, Missing } from './_page';
 
-const SCENES: Record<string, SceneRecord> = { government: governmentScene as SceneRecord };
+const SCENES: Record<string, SceneRecord> = { government: governmentScene as unknown as SceneRecord };
 export function meta({ location }: { location: { pathname: string } }) { return pageMeta(location.pathname); }
 
 export default function Audience() {

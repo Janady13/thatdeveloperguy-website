@@ -17,7 +17,7 @@ type Status = { kind: 'idle' } | { kind: 'sending' } | { kind: 'done'; response:
  * Plain HTML form posting to the same-origin inquiry endpoint; it works with JavaScript off (303 to the generic receipt).
  * With JavaScript, the same POST is made with fetch and the backend's outcome is shown verbatim — success only on provider acceptance.
  */
-export function InquiryForm({ delivery }: { delivery: 'connected' | 'not-connected' }) {
+export function InquiryForm({ delivery, onOutcome }: { delivery: 'connected' | 'not-connected'; onOutcome?: (outcome: Outcome) => void }) {
   const [params] = useSearchParams();
   const preset = params.get('project') ?? 'general';
   const from = params.get('from') ?? '';
@@ -38,6 +38,7 @@ export function InquiryForm({ delivery }: { delivery: 'connected' | 'not-connect
       const response = await fetch(form.action, { method: 'POST', headers: { 'content-type': 'application/json', accept: 'application/json' }, body: JSON.stringify(data), credentials: 'same-origin' });
       const body = (await response.json()) as ApiResponse;
       setStatus({ kind: 'done', response: body });
+      onOutcome?.(body.outcome);
       if (body.outcome === 'provider_accepted') form.reset();
     } catch {
       setStatus({ kind: 'failed', message: 'The request could not be sent from this browser. Nothing was stored. Call or write to the address in the footer.' });

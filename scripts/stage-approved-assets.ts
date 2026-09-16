@@ -5,7 +5,7 @@
  */
 import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import type { SceneHotspot, SceneRecord } from '../src/contracts/scene.ts';
+import type { SceneConsultant, SceneHotspot, SceneRecord } from '../src/contracts/scene.ts';
 import destinations from '../content/site/scene-destinations.json' with { type: 'json' };
 
 const root = resolve(import.meta.dirname, '..');
@@ -30,6 +30,14 @@ function hotspotsFor(sceneId: string, kitHotspots: any): SceneHotspot[] {
 
 mkdirSync(resolve(root, 'public/images/posters'), { recursive: true });
 mkdirSync(resolve(root, 'public/animation/rooms'), { recursive: true });
+mkdirSync(resolve(root, 'public/animation/consultant'), { recursive: true });
+// The Consultant ships only from a verified export (rive-cli or editor-ui), placed per room from the kit's motion plane.
+const consultantManifestPath = resolve(root, 'creative-source/consultant/patch/rive-manifest.json');
+let consultant: SceneConsultant | null = null;
+if (existsSync(consultantManifestPath)) {
+  const cm = JSON.parse(readFileSync(consultantManifestPath, 'utf8'));
+  if (cm.exportedBy === 'rive-cli' || cm.exportedBy === 'editor-ui') { copyFileSync(resolve(root, 'creative-source/consultant/patch', cm.file), resolve(root, 'public/animation/consultant/patch.riv')); consultant = { file: '/animation/consultant/patch.riv', sha256: cm.sha256, artboard: cm.artboard, stateMachine: cm.stateMachine, placement: { feet: [0, 0], scale: 1, artboard: { width: 515, height: 805 } } }; }
+}
 for (const [sceneId, kit] of Object.entries(KITS)) {
   const refined = resolve(root, 'creative-source/refined', kit.room);
   const manifest = JSON.parse(readFileSync(resolve(refined, 'manifest.json'), 'utf8'));
@@ -40,8 +48,12 @@ for (const [sceneId, kit] of Object.entries(KITS)) {
     const rm = JSON.parse(readFileSync(rivePath, 'utf8'));
     if (rm.exportedBy === 'editor-ui' || rm.exportedBy === 'rive-cli') { copyFileSync(resolve(root, 'creative-source/rive', kit.room, rm.file), resolve(root, `public/animation/rooms/${sceneId}.riv`)); rive = { file: `/animation/rooms/${sceneId}.riv`, artboard: rm.artboard, stateMachine: rm.stateMachine, viewModel: rm.viewModel, sha256: rm.sha256 }; }
   }
-  const scene: SceneRecord = { id: sceneId, poster: `/images/posters/${sceneId}.svg`, posterAlt: kit.poster, rive, hotspots: hotspotsFor(sceneId, manifest.hotspots), captionRest: (destinations as any)[sceneId].captionRest, captions: kit.captions };
+  const kitManifest = JSON.parse(readFileSync(resolve(root, 'creative-source/kits.config.json'), 'utf8'));
+  const sceneManifest = JSON.parse(readFileSync(resolve(kitManifest.root, kitManifest.rooms[kit.room].dir, kitManifest.rooms[kit.room].manifest), 'utf8'));
+  const plane = sceneManifest.motionPlane ?? sceneManifest.mascot ?? null;
+  const placed = consultant && plane?.suggestedSpawn ? { ...consultant, placement: { feet: plane.suggestedSpawn as [number, number], scale: 0.55, artboard: { width: 515, height: 805 } } } : null;
+  const scene: SceneRecord = { id: sceneId, poster: `/images/posters/${sceneId}.svg`, posterAlt: kit.poster, rive, consultant: placed, hotspots: hotspotsFor(sceneId, manifest.hotspots), captionRest: (destinations as any)[sceneId].captionRest, captions: kit.captions };
   const out = resolve(root, 'app/experience/scenes', sceneId); mkdirSync(out, { recursive: true });
   writeFileSync(resolve(out, 'scene.json'), JSON.stringify(scene, null, 2) + '\n');
-  console.log(`${sceneId}: poster staged, ${scene.hotspots.length} hotspots, rive ${rive ? 'staged' : 'not staged (no editor export yet)'}`);
+  console.log(`${sceneId}: poster staged, ${scene.hotspots.length} hotspots, rive ${rive ? 'staged' : 'not staged (no verified export)'}, consultant ${placed ? `at ${placed.placement.feet.join(',')}` : 'not placed'}`);
 }

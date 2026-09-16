@@ -18,7 +18,7 @@ import { renderSvg } from './svg/diff.ts';
 const require = createRequire(import.meta.url);
 const arg = (k: string, d: string) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1]! : d; };
 const room = arg('--room', 'lobby');
-const dir = resolve(repoRoot, 'creative-source/rive', room);
+const dir = room === 'consultant' ? resolve(repoRoot, 'creative-source/consultant/patch') : resolve(repoRoot, 'creative-source/rive', room);
 const manifest = JSON.parse(readFileSync(join(dir, 'rive-manifest.json'), 'utf8'));
 const runtimeDir = resolve(require.resolve('@rive-app/webgl2'), '..');
 const runtimeVersion = require('@rive-app/webgl2/package.json').version as string;
@@ -50,12 +50,14 @@ const ev = async (expr: string) => { const r = await send('Runtime.evaluate', { 
 const wait = (ms: number) => new Promise(r => setTimeout(r, ms));
 await send('Page.enable'); await send('Runtime.enable');
 await send('Emulation.setDeviceMetricsOverride', { width: 1700, height: 1000, deviceScaleFactor: 1, mobile: false });
-await send('Page.navigate', { url: `http://127.0.0.1:${port}/harness.html?src=/scene.riv&artboard=${encodeURIComponent(manifest.artboard)}&sm=${encodeURIComponent(manifest.stateMachine)}` });
+const timelines = room === 'consultant'; // Patch is driven by timelines; its state machine is not run (see its manifest)
+await send('Page.navigate', { url: `http://127.0.0.1:${port}/harness.html?src=/scene.riv&artboard=${encodeURIComponent(manifest.artboard)}${timelines ? '' : `&sm=${encodeURIComponent(manifest.stateMachine)}`}` });
 let loaded = false; for (let i = 0; i < 100; i++) { await wait(200); if (await ev('window.__proof.loaded || window.__proof.error')) { loaded = Boolean(await ev('window.__proof.loaded')); break; } }
 const error = await ev('window.__proof.error');
 const artboards = await ev('JSON.stringify(window.__proof.artboards || null)');
 /** WebGL canvases read back blank after present; the compositor screenshot is what the visitor sees. */
-const screenshot = async () => { const r = await send('Page.captureScreenshot', { format: 'png', clip: { x: 0, y: 0, width: 1648, height: 928, scale: 1 } }); return PNG.sync.read(Buffer.from(r.result.data, 'base64')); };
+const clip = room === 'consultant' ? { x: 0, y: 0, width: 1648, height: 928, scale: 1 } : { x: 0, y: 0, width: 1648, height: 928, scale: 1 };
+const screenshot = async () => { const r = await send('Page.captureScreenshot', { format: 'png', clip }); return PNG.sync.read(Buffer.from(r.result.data, 'base64')); };
 const diff = (a: PNG, b: PNG) => pixelmatch(a.data, b.data, undefined, a.width, a.height, { threshold: 0.1 }) / (a.width * a.height);
 const save = (name: string, image: PNG) => writeFileSync(join(out, name), PNG.sync.write(image));
 const checks: Record<string, { ok: boolean; detail: string }> = {};
@@ -65,19 +67,33 @@ if (loaded) {
   await wait(1200); frames = await ev('window.__proof.frames');
   idle = await screenshot(); save('frame-idle.png', idle);
   const nonWhite = (() => { let n = 0; for (let i = 0; i < idle!.data.length; i += 4) if (idle!.data[i]! < 250 || idle!.data[i + 1]! < 250 || idle!.data[i + 2]! < 250) n++; return n / (idle!.width * idle!.height); })();
-  checks.renders = { ok: frames > 10 && nonWhite > 0.3, detail: `${frames} frames advanced in 1.2 s; ${(nonWhite * 100).toFixed(1)}% of pixels drawn` };
-  const poster = PNG.sync.read(Buffer.from(renderSvg(readFileSync(resolve(repoRoot, 'creative-source/refined', room === 'lobby' ? 'lobby' : room, 'scene.svg'), 'utf8'), idle.width)));
-  const posterDiff = poster.height === idle.height ? diff(idle, poster) : NaN;
-  checks.matchesPoster = { ok: !Number.isNaN(posterDiff) && posterDiff < 0.25, detail: `idle frame differs from the vector poster on ${(posterDiff * 100).toFixed(1)}% of pixels` };
-  checks.viewModel = { ok: Boolean((await ev('JSON.stringify(window.__proof.vm())')).includes('"ok":true')), detail: 'autoBind view-model instance present' };
-  await ev(`window.__proof.setEnum('focus', 'government')`); await wait(500);
-  focused = await screenshot(); save('frame-focus-government.png', focused);
-  const focusDiff = diff(idle, focused);
-  checks.focusTransition = { ok: focusDiff > 0.0005, detail: `focus=government changed ${(focusDiff * 100).toFixed(3)}% of pixels` };
-  await ev(`window.__proof.fire('openGovernment')`); await wait(800);
-  opened = await screenshot(); save('frame-open-government.png', opened);
-  const openDiff = diff(focused, opened);
-  checks.doorTransition = { ok: openDiff > 0.002, detail: `openGovernment changed ${(openDiff * 100).toFixed(3)}% of pixels after 0.8 s` };
+  checks.renders = { ok: frames > 10 && nonWhite > (timelines ? 0.02 : 0.3), detail: `${frames} frames advanced in 1.2 s; ${(nonWhite * 100).toFixed(1)}% of pixels drawn` };
+  if (timelines) {
+    const names = JSON.parse(await ev('JSON.stringify(window.__proof.artboards)'))?.[0]?.animations ?? [];
+    const required = ['Patch_Idle', 'Patch_Walk', 'Patch_Wave', 'Patch_Work', 'Patch_Enter', 'Patch_Exit', 'Patch_Blink', 'Patch_Neutral', 'Patch_Happy', 'Patch_Focused', 'Patch_Talking', 'Patch_WaveGesture', 'Patch_ThumbsUp'];
+    checks.contract = { ok: required.every(n => names.includes(n)), detail: `${required.filter(n => names.includes(n)).length}/${required.length} controller-required timelines present` };
+    await ev(`window.__proof.play(['Patch_Wave', 'Patch_Happy', 'Patch_WaveGesture'])`); await wait(600);
+    focused = await screenshot(); save('frame-wave.png', focused);
+    const waveDiff = diff(idle, focused);
+    checks.timelineTransition = { ok: waveDiff > 0.002, detail: `Patch_Wave + Happy + WaveGesture changed ${(waveDiff * 100).toFixed(3)}% of pixels` };
+    await ev(`window.__proof.play(['Patch_Walk', 'Patch_Focused'])`); await wait(600);
+    opened = await screenshot(); save('frame-walk.png', opened);
+    const walkDiff = diff(focused, opened);
+    checks.secondTransition = { ok: walkDiff > 0.002, detail: `Patch_Walk + Focused changed ${(walkDiff * 100).toFixed(3)}% of pixels` };
+  } else {
+    const poster = PNG.sync.read(Buffer.from(renderSvg(readFileSync(resolve(repoRoot, 'creative-source/refined', room === 'lobby' ? 'lobby' : room, 'scene.svg'), 'utf8'), idle.width)));
+    const posterDiff = poster.height === idle.height ? diff(idle, poster) : NaN;
+    checks.matchesPoster = { ok: !Number.isNaN(posterDiff) && posterDiff < 0.25, detail: `idle frame differs from the vector poster on ${(posterDiff * 100).toFixed(1)}% of pixels` };
+    checks.viewModel = { ok: Boolean((await ev('JSON.stringify(window.__proof.vm())')).includes('"ok":true')), detail: 'autoBind view-model instance present' };
+    await ev(`window.__proof.setEnum('focus', 'government')`); await wait(500);
+    focused = await screenshot(); save('frame-focus-government.png', focused);
+    const focusDiff = diff(idle, focused);
+    checks.focusTransition = { ok: focusDiff > 0.0005, detail: `focus=government changed ${(focusDiff * 100).toFixed(3)}% of pixels` };
+    await ev(`window.__proof.fire('openGovernment')`); await wait(800);
+    opened = await screenshot(); save('frame-open-government.png', opened);
+    const openDiff = diff(focused, opened);
+    checks.doorTransition = { ok: openDiff > 0.002, detail: `openGovernment changed ${(openDiff * 100).toFixed(3)}% of pixels after 0.8 s` };
+  }
 }
 const proof = { room, file: manifest.file, sha256: manifest.sha256, bytes: manifest.bytes, runtime: `@rive-app/webgl2 ${runtimeVersion}`, renderer: await ev(`(() => { const c = document.createElement('canvas'); const g = c.getContext('webgl2'); const d = g && g.getExtension('WEBGL_debug_renderer_info'); return d ? g.getParameter(d.UNMASKED_RENDERER_WEBGL) : 'no webgl2'; })()`), artboards: artboards ? JSON.parse(artboards) : null, checks, at: new Date().toISOString() };
 writeFileSync(join(out, 'proof.json'), JSON.stringify(proof, null, 2) + '\n');

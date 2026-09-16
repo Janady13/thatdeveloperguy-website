@@ -8,8 +8,9 @@
   const params = new URLSearchParams(location.search);
   const canvas = document.getElementById('c');
   window.__proof = { loaded: false, error: null, frames: 0 };
+  const sm = params.get('sm');
   const r = new rive.Rive({
-    src: params.get('src'), canvas, artboard: params.get('artboard'), stateMachines: params.get('sm'), autoplay: true, autoBind: true, enableRiveAssetCDN: false,
+    src: params.get('src'), canvas, artboard: params.get('artboard'), ...(sm ? { stateMachines: sm, autoBind: true } : {}), autoplay: true, enableRiveAssetCDN: false,
     layout: new rive.Layout({ fit: rive.Fit.Contain, alignment: rive.Alignment.Center }),
     onLoad: () => { window.__proof.loaded = true; window.__proof.rive = r; window.__proof.artboards = r.contents?.artboards?.map(a => ({ name: a.name, animations: a.animations, stateMachines: a.stateMachines?.map(s => s.name) })); },
     onLoadError: e => { window.__proof.error = String(e?.data ?? e); },
@@ -19,5 +20,6 @@
   window.__proof.setEnum = (name, value) => { const p = r.viewModelInstance?.enum(name); if (!p) throw new Error('no enum ' + name); p.value = value; return p.value; };
   window.__proof.setBool = (name, value) => { const p = r.viewModelInstance?.boolean(name); if (!p) throw new Error('no boolean ' + name); p.value = value; return p.value; };
   window.__proof.fire = name => { const p = r.viewModelInstance?.trigger(name); if (!p) throw new Error('no trigger ' + name); p.trigger(); return true; };
+  window.__proof.play = names => { r.stop(); r.play(names); return r.playingAnimationNames; };
   window.__proof.vm = () => r.viewModelInstance ? { name: r.viewModelInstance.name ?? null, ok: true } : { ok: false };
 </script></body></html>

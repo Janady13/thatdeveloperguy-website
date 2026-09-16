@@ -14,3 +14,6 @@
   .scene-rive { display: none; }
   .scene-bar { flex-direction: column; gap: 8px; }
 }
+.consultant { position: absolute; z-index: 1; transform: translateX(-50%); pointer-events: none; }
+.tdg-patch-rive { width: 100%; height: 100%; transform: scaleX(var(--patch-facing, 1)); transform-origin: 50% 100%; } .tdg-patch-rive canvas { width: 100% !important; height: 100% !important; }
+@media (max-width: 767px) { .consultant { display: none; } }

@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <JsonLd page={page} />
       <h1 className="sr-only">{page.heading} — {page.summary}</h1>
-      <SceneShell scene={scene as SceneRecord} page={page} />
+      <SceneShell scene={scene as unknown as SceneRecord} page={page} />
       <div className="page-wrap">
         <ContentSections page={page} />
         <RelatedPages page={page} />

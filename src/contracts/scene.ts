@@ -4,4 +4,6 @@ export interface Hitbox { x: number; y: number; width: number; height: number }
 export type HotspotTarget = { kind: 'page'; pageId: string; project?: string } | { kind: 'anchor'; anchor: string };
 export interface SceneHotspot { id: string; label: string; hit: Hitbox; target: HotspotTarget; focusValue: string; trigger?: string }
 export interface SceneRive { file: string; artboard: string; stateMachine: string; viewModel: string; sha256: string }
-export interface SceneRecord { id: string; poster: string; posterAlt: string; rive: SceneRive | null; hotspots: SceneHotspot[]; captionRest: string; captions: Record<string, string> }
+export interface ConsultantPlacement { feet: [number, number]; scale: number; artboard: { width: number; height: number } }
+export interface SceneConsultant { file: string; sha256: string; artboard: string; stateMachine: string; placement: ConsultantPlacement }
+export interface SceneRecord { id: string; poster: string; posterAlt: string; rive: SceneRive | null; consultant: SceneConsultant | null; hotspots: SceneHotspot[]; captionRest: string; captions: Record<string, string> }

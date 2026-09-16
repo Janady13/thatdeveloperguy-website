@@ -1,0 +1,47 @@
+{
+  "asset": "consultant-patch",
+  "file": "patch.riv",
+  "sha256": "a24ad85ae0a7337e23055636003cd5668bd0cb0af431e83aade11e7f6a80de6d",
+  "bytes": 829267,
+  "artboard": "Patch",
+  "stateMachine": "PatchMachine",
+  "animations": [
+    "Patch_Blink",
+    "Patch_Neutral",
+    "Patch_Happy",
+    "Patch_Focused",
+    "Patch_Talking",
+    "Patch_WaveGesture",
+    "Patch_ThumbsUp",
+    "Patch_Idle",
+    "Patch_Walk",
+    "Patch_Wave",
+    "Patch_Work",
+    "Patch_Enter",
+    "Patch_Exit"
+  ],
+  "exportedBy": "rive-cli",
+  "compiler": "rive 1.0.3",
+  "document": {
+    "rev": "document.rev",
+    "bytes": 13033713,
+    "sha256": "d601142a200ae413308af39b965b862663e8c21473ba3bf911128e961495306b"
+  },
+  "comparedWith": {
+    "editorExport": {
+      "file": "editor-export-2016.riv",
+      "sameAnimationsAndStateMachines": true
+    },
+    "ownerExport": {
+      "file": "owner-export-1751.riv",
+      "animations": 7,
+      "note": "stale: predates the expression and gesture timelines"
+    }
+  },
+  "contract": "animation-contract.json",
+  "authoredAt": "2026-09-16T02:12:34.327Z",
+  "siteEdits": [
+    "artboard background fill alpha set to 0 (was #ff282828) so the Consultant can stand in a room"
+  ],
+  "stateMachineNote": "PatchMachine layer Motion has unconditioned zero-exit-time transitions in both directions and loops (runtime: exceeded max iterations); the site plays the coordinated timelines through PatchController and does not run the state machine. Owner decision: author inputs/conditions or leave unused."
+}

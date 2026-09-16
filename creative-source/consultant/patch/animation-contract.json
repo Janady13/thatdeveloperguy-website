@@ -1,0 +1,140 @@
+{
+  "id": "tdg-it-services-specialist",
+  "source": "svg/tdg-it-services-specialist-master.svg",
+  "canvas": {
+    "width": 515,
+    "height": 805,
+    "viewBox": "0 0 515 805"
+  },
+  "motions": [
+    "idle",
+    "blink",
+    "wave",
+    "thumbs-up",
+    "walk",
+    "work",
+    "enter",
+    "exit"
+  ],
+  "expressions": [
+    "neutral",
+    "happy",
+    "focused",
+    "talking"
+  ],
+  "gestures": [
+    "none",
+    "wave",
+    "thumbs-up"
+  ],
+  "runtimeControls": {
+    "x": "number, pixels relative to the mounting zone",
+    "y": "number, pixels relative to the mounting zone",
+    "facing": "left | right",
+    "scale": "number >= 0.1",
+    "paused": "boolean",
+    "reducedMotion": "boolean",
+    "decorative": "boolean",
+    "onMotionEnd": "callback"
+  },
+  "motionTiming": {
+    "idle": "continuous",
+    "blink": "3.8s loop",
+    "wave": "1.2s loop",
+    "thumbs-up": "1.5s loop",
+    "walk": "0.9s loop",
+    "work": "3.2s loop",
+    "enter": "0.8s one-shot",
+    "exit": "0.8s one-shot"
+  },
+  "depthZones": [
+    "background",
+    "mascot-behind-desk",
+    "desk-occluder",
+    "mascot-front",
+    "foreground"
+  ],
+  "futureRiveInputs": {
+    "motion": "enum",
+    "expression": "enum: neutral | happy | focused | talking",
+    "gesture": "enum: none | wave | thumbs-up",
+    "blink": "trigger",
+    "talking": "boolean",
+    "reducedMotion": "boolean",
+    "x": "number",
+    "y": "number",
+    "facing": "number"
+  },
+  "manualSeparationRequired": [
+    "head",
+    "screen-face",
+    "eyes",
+    "mouth",
+    "left-arm",
+    "right-arm",
+    "left-hand",
+    "right-hand",
+    "tool-belt",
+    "badge",
+    "legs",
+    "shoes",
+    "shadow"
+  ],
+  "currentRigBoundary": "Whole-character vector motion remains the canonical base. Facial and gesture behaviors are implemented as named additive vector overlays reconstructed from the approved reference artwork; they are intentionally documented as overlays rather than recovered source separation."
+  ,
+  "controller": {
+    "source": "controller/PatchController.ts",
+    "ownership": {
+      "motion": "base body layer",
+      "expression": "face layer",
+      "gesture": "gesture layer",
+      "blink": "one-shot face timeline"
+    },
+    "statePrecedence": [
+      "reduced-motion and pause gate playback",
+      "base motion selects body timeline",
+      "expression selects face timeline",
+      "gesture selects hand timeline",
+      "blink is an explicit one-shot trigger"
+    ],
+    "failurePolicy": "Missing artboard, state machine, or required animation is reported through the controller error callback; no silent playback fallback is allowed."
+    ,"runtimeMode": "coordinated linear timelines; migrate to authored Rive view-model inputs when the document gains those inputs"
+  },
+  "rive": {
+    "file": "rive/tdg-patch.riv",
+    "artboard": "Patch",
+    "stateMachine": "PatchMachine",
+    "defaultPlayback": "Patch_Idle",
+    "automaticCycle": [
+      "Patch_Idle",
+      "Patch_Walk"
+    ],
+    "animations": [
+      "Patch_Idle",
+      "Patch_Walk",
+      "Patch_Wave",
+      "Patch_Work",
+      "Patch_Enter",
+      "Patch_Exit",
+      "Patch_Blink",
+      "Patch_Neutral",
+      "Patch_Happy",
+      "Patch_Focused",
+      "Patch_Talking",
+      "Patch_WaveGesture",
+      "Patch_ThumbsUp"
+    ],
+    "expressionStateLayer": "Layer 1",
+    "exportVerified": true,
+    "overlayAssets": [
+      "svg/PatchFaceOverlays.svg",
+      "svg/PatchBlinkFace.svg",
+      "svg/PatchHappyFace.svg",
+      "svg/PatchFocusedFace.svg",
+      "svg/PatchTalkingFace.svg",
+      "svg/PatchWaveGesture.svg",
+      "svg/PatchThumbsUpGesture.svg",
+      "svg/PatchTalkingMouth.svg"
+    ]
+  }
+}
