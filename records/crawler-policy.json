@@ -1,0 +1,94 @@
+{
+  "source": "thatdeveloperguy-truth/properties/engine-policy.json",
+  "approval_status": "approved",
+  "approved_by": "Joseph W. Anady (owner)",
+  "approved_at": "2026-09-13T11:30:00-05:00",
+  "approval_basis": "Owner directive 2026-09-13: one universal robots policy for the organization, built out per property. Bot decisions are the matrix the owner's properties already carried (thatdeveloperguy.com, www.thatdevpro.com, thataiguy.org, feedthejoe.com, reviewed 2026-09-07/13); training crawlers allowed on public pages by publisher choice, independent of search eligibility.",
+  "bots": [
+    {
+      "token": "Googlebot",
+      "role": "search",
+      "decision": "allow"
+    },
+    {
+      "token": "Bingbot",
+      "role": "search",
+      "decision": "allow"
+    },
+    {
+      "token": "OAI-SearchBot",
+      "role": "search",
+      "decision": "allow"
+    },
+    {
+      "token": "Claude-SearchBot",
+      "role": "search",
+      "decision": "allow"
+    },
+    {
+      "token": "PerplexityBot",
+      "role": "search",
+      "decision": "allow"
+    },
+    {
+      "token": "ChatGPT-User",
+      "role": "user-fetch",
+      "decision": "allow"
+    },
+    {
+      "token": "Claude-User",
+      "role": "user-fetch",
+      "decision": "allow"
+    },
+    {
+      "token": "Perplexity-User",
+      "role": "user-fetch",
+      "decision": "allow"
+    },
+    {
+      "token": "GPTBot",
+      "role": "training",
+      "decision": "allow"
+    },
+    {
+      "token": "ClaudeBot",
+      "role": "training",
+      "decision": "allow"
+    },
+    {
+      "token": "Google-Extended",
+      "role": "training",
+      "decision": "allow"
+    },
+    {
+      "token": "Googlebot-Image",
+      "role": "search",
+      "decision": "allow"
+    },
+    {
+      "token": "Googlebot-News",
+      "role": "search",
+      "decision": "allow"
+    },
+    {
+      "token": "Applebot",
+      "role": "search",
+      "decision": "allow"
+    },
+    {
+      "token": "DuckDuckBot",
+      "role": "search",
+      "decision": "allow"
+    },
+    {
+      "token": "OAI-AdsBot",
+      "role": "ads",
+      "decision": "allow"
+    }
+  ],
+  "protected_paths": [
+    "/api/",
+    "/contact/received"
+  ],
+  "note": "Reviewed owner decision (node, 2026-09-13): every named search, user-fetch and training bot is allowed. This file mirrors the node; change it there first. Robots is cooperative, not authorization \u2014 nginx and the service protect private paths."
+}

@@ -21,7 +21,8 @@ const send = (method: string, params: Record<string, unknown> = {}) => { const n
 const ev = async (expr: string) => (await send('Runtime.evaluate', { expression: expr, awaitPromise: true, returnByValue: true })).result?.result?.value;
 const shot = async (name: string) => { const r = await send('Page.captureScreenshot', { format: 'jpeg', quality: 85 }); writeFileSync(join(OUT, `${name}.jpg`), Buffer.from(r.result.data, 'base64')); };
 const wait = (ms: number) => new Promise(r => setTimeout(r, ms));
-await send('Page.enable'); await send('Runtime.enable');
+await send('Page.enable'); await send('Runtime.enable'); await send('Network.enable');
+if (process.env.TDG_STAGING_AUTH) await send('Network.setExtraHTTPHeaders', { headers: { Authorization: 'Basic ' + Buffer.from(process.env.TDG_STAGING_AUTH).toString('base64') } });
 await send('Emulation.setDeviceMetricsOverride', { width: W, height: H, deviceScaleFactor: 1, mobile: false });
 await send('Emulation.setCPUThrottlingRate', { rate: CPU });
 await send('Page.navigate', { url: `${BASE}/` });

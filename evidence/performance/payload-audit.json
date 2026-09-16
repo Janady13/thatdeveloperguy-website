@@ -1,27 +1,27 @@
 {
   "base": "https://tdg.thatwebhostingguy.com",
-  "at": "2026-09-16T01:59:00.061Z",
+  "at": "2026-09-16T02:05:37.442Z",
   "routes": {
     "/": {
       "html": {
         "transfer": 3816,
         "decoded": 11000
       },
-      "domContentLoaded": 214,
-      "load": 341,
+      "domContentLoaded": 341,
+      "load": 347,
       "paints": {
-        "first-paint": 248,
-        "first-contentful-paint": 248
+        "first-paint": 300,
+        "first-contentful-paint": 300
       },
       "lcp": {
-        "ms": 352,
+        "ms": 368,
         "element": "IMG.scene-poster",
         "url": "/images/posters/lobby.svg"
       },
       "poster": {
-        "loadMs": 330,
-        "renderMs": 352,
-        "decodeMs": 22
+        "loadMs": 322,
+        "renderMs": 368,
+        "decodeMs": 46
       },
       "resources": [
         {
@@ -29,119 +29,119 @@
           "type": "link",
           "transfer": 399875,
           "decoded": 2216410,
-          "ms": 152
+          "ms": 155
         },
         {
           "url": "/assets/manifest-62c39d56.js",
           "type": "other",
           "transfer": 1042,
           "decoded": 6180,
-          "ms": 116
-        },
-        {
-          "url": "/assets/entry.client-C-cxeaxP.js",
-          "type": "other",
-          "transfer": 62911,
-          "decoded": 214752,
-          "ms": 146
+          "ms": 117
         },
         {
           "url": "/assets/root-D-eqycXd.js",
           "type": "other",
           "transfer": 1376,
           "decoded": 2800,
-          "ms": 148
-        },
-        {
-          "url": "/assets/not-found-BnJLTIbr.js",
-          "type": "other",
-          "transfer": 12673,
-          "decoded": 41830,
-          "ms": 149
+          "ms": 119
         },
         {
           "url": "/assets/jsx-runtime-BArjmnWf.js",
           "type": "other",
           "transfer": 37614,
           "decoded": 120502,
-          "ms": 148
+          "ms": 123
         },
         {
-          "url": "/assets/_page-BOl_-X_F.js",
+          "url": "/assets/entry.client-C-cxeaxP.js",
           "type": "other",
-          "transfer": 859,
-          "decoded": 1305,
-          "ms": 149
+          "transfer": 62911,
+          "decoded": 214752,
+          "ms": 123
         },
         {
-          "url": "/assets/JsonLd-C1P4qVoX.js",
+          "url": "/assets/not-found-BnJLTIbr.js",
           "type": "other",
-          "transfer": 1070,
-          "decoded": 1762,
-          "ms": 149
+          "transfer": 12673,
+          "decoded": 41830,
+          "ms": 119
         },
         {
           "url": "/assets/home-4o7MT4SV.js",
           "type": "other",
           "transfer": 1203,
           "decoded": 1924,
-          "ms": 149
+          "ms": 119
+        },
+        {
+          "url": "/assets/_page-BOl_-X_F.js",
+          "type": "other",
+          "transfer": 859,
+          "decoded": 1305,
+          "ms": 120
+        },
+        {
+          "url": "/assets/JsonLd-C1P4qVoX.js",
+          "type": "other",
+          "transfer": 1070,
+          "decoded": 1762,
+          "ms": 120
         },
         {
           "url": "/assets/RelatedPages-Cvuui_QK.js",
           "type": "other",
           "transfer": 532,
           "decoded": 407,
-          "ms": 149
-        },
-        {
-          "url": "/fonts/fonts.css",
-          "type": "link",
-          "transfer": 445,
-          "decoded": 334,
-          "ms": 18
+          "ms": 120
         },
         {
           "url": "/assets/ContactAction-BPt52DWP.js",
           "type": "other",
           "transfer": 469,
           "decoded": 270,
-          "ms": 149
+          "ms": 120
         },
         {
           "url": "/assets/OwnerToSupply-C2lM_Nbc.js",
           "type": "other",
           "transfer": 537,
           "decoded": 422,
-          "ms": 150
+          "ms": 120
         },
         {
-          "url": "/assets/SceneShell-CjvsrYpp.js",
-          "type": "other",
-          "transfer": 2074,
-          "decoded": 3794,
-          "ms": 150
+          "url": "/fonts/fonts.css",
+          "type": "link",
+          "transfer": 445,
+          "decoded": 334,
+          "ms": 115
         },
         {
           "url": "/assets/root-iqFZ3UjQ.css",
           "type": "link",
           "transfer": 2461,
           "decoded": 7389,
-          "ms": 19
+          "ms": 115
+        },
+        {
+          "url": "/assets/SceneShell-CjvsrYpp.js",
+          "type": "other",
+          "transfer": 2074,
+          "decoded": 3794,
+          "ms": 121
         },
         {
           "url": "/fonts/public-sans-latin.woff2",
           "type": "css",
           "transfer": 26936,
           "decoded": 26636,
-          "ms": 70
+          "ms": 32
         },
         {
           "url": "/fonts/archivo-black-400-latin.woff2",
           "type": "css",
           "transfer": 10092,
           "decoded": 9792,
-          "ms": 63
+          "ms": 30
         },
         {
           "url": "/assets/RiveCanvas.client-xAsJIpyC.js",
@@ -155,14 +155,14 @@
           "type": "fetch",
           "transfer": 797146,
           "decoded": 2159033,
-          "ms": 143
+          "ms": 160
         },
         {
           "url": "/animation/rooms/lobby.riv",
           "type": "fetch",
           "transfer": 822962,
           "decoded": 3643725,
-          "ms": 179
+          "ms": 185
         }
       ],
       "posters": [
@@ -180,20 +180,20 @@
         "decoded": 24118
       },
       "domContentLoaded": 68,
-      "load": 241,
+      "load": 250,
       "paints": {
-        "first-paint": 76,
-        "first-contentful-paint": 76
+        "first-paint": 108,
+        "first-contentful-paint": 108
       },
       "lcp": {
-        "ms": 268,
+        "ms": 272,
         "element": "IMG.scene-poster",
         "url": "/images/posters/cybersecurity.svg"
       },
       "poster": {
-        "loadMs": 233,
-        "renderMs": 268,
-        "decodeMs": 35
+        "loadMs": 242,
+        "renderMs": 272,
+        "decodeMs": 30
       },
       "resources": [
         {
@@ -215,105 +215,105 @@
           "type": "other",
           "transfer": 62911,
           "decoded": 214752,
-          "ms": 94
+          "ms": 97
         },
         {
           "url": "/assets/jsx-runtime-BArjmnWf.js",
           "type": "other",
           "transfer": 37614,
           "decoded": 120502,
-          "ms": 123
+          "ms": 97
         },
         {
           "url": "/assets/root-D-eqycXd.js",
           "type": "other",
           "transfer": 1376,
           "decoded": 2800,
-          "ms": 125
+          "ms": 94
         },
         {
           "url": "/assets/not-found-BnJLTIbr.js",
           "type": "other",
           "transfer": 12673,
           "decoded": 41830,
-          "ms": 126
+          "ms": 95
         },
         {
           "url": "/assets/capability-B0FVHMG2.js",
           "type": "other",
           "transfer": 2007,
           "decoded": 6020,
-          "ms": 126
+          "ms": 95
         },
         {
           "url": "/assets/_page-BOl_-X_F.js",
           "type": "other",
           "transfer": 859,
           "decoded": 1305,
-          "ms": 126
-        },
-        {
-          "url": "/assets/JsonLd-C1P4qVoX.js",
-          "type": "other",
-          "transfer": 1070,
-          "decoded": 1762,
-          "ms": 126
-        },
-        {
-          "url": "/assets/PageHeading-Cff663vA.js",
-          "type": "other",
-          "transfer": 615,
-          "decoded": 689,
-          "ms": 126
-        },
-        {
-          "url": "/assets/RelatedPages-Cvuui_QK.js",
-          "type": "other",
-          "transfer": 532,
-          "decoded": 407,
-          "ms": 127
-        },
-        {
-          "url": "/assets/ContactAction-BPt52DWP.js",
-          "type": "other",
-          "transfer": 469,
-          "decoded": 270,
-          "ms": 127
-        },
-        {
-          "url": "/assets/SceneShell-CjvsrYpp.js",
-          "type": "other",
-          "transfer": 2074,
-          "decoded": 3794,
-          "ms": 127
+          "ms": 95
         },
         {
           "url": "/fonts/fonts.css",
           "type": "link",
           "transfer": 445,
           "decoded": 334,
-          "ms": 10
+          "ms": 20
+        },
+        {
+          "url": "/assets/JsonLd-C1P4qVoX.js",
+          "type": "other",
+          "transfer": 1070,
+          "decoded": 1762,
+          "ms": 95
+        },
+        {
+          "url": "/assets/PageHeading-Cff663vA.js",
+          "type": "other",
+          "transfer": 615,
+          "decoded": 689,
+          "ms": 96
+        },
+        {
+          "url": "/assets/RelatedPages-Cvuui_QK.js",
+          "type": "other",
+          "transfer": 532,
+          "decoded": 407,
+          "ms": 96
+        },
+        {
+          "url": "/assets/ContactAction-BPt52DWP.js",
+          "type": "other",
+          "transfer": 469,
+          "decoded": 270,
+          "ms": 96
+        },
+        {
+          "url": "/assets/SceneShell-CjvsrYpp.js",
+          "type": "other",
+          "transfer": 2074,
+          "decoded": 3794,
+          "ms": 96
         },
         {
           "url": "/assets/root-iqFZ3UjQ.css",
           "type": "link",
           "transfer": 2461,
           "decoded": 7389,
-          "ms": 10
-        },
-        {
-          "url": "/fonts/public-sans-latin.woff2",
-          "type": "css",
-          "transfer": 26936,
-          "decoded": 26636,
-          "ms": 73
+          "ms": 21
         },
         {
           "url": "/fonts/archivo-black-400-latin.woff2",
           "type": "css",
           "transfer": 10092,
           "decoded": 9792,
-          "ms": 70
+          "ms": 65
+        },
+        {
+          "url": "/fonts/public-sans-latin.woff2",
+          "type": "css",
+          "transfer": 26936,
+          "decoded": 26636,
+          "ms": 65
         }
       ],
       "posters": [
@@ -328,21 +328,21 @@
         "transfer": 4207,
         "decoded": 12677
       },
-      "domContentLoaded": 60,
-      "load": 242,
+      "domContentLoaded": 173,
+      "load": 250,
       "paints": {
-        "first-paint": 72,
-        "first-contentful-paint": 72
+        "first-paint": 184,
+        "first-contentful-paint": 184
       },
       "lcp": {
-        "ms": 256,
+        "ms": 280,
         "element": "IMG.scene-poster",
         "url": "/images/posters/government.svg"
       },
       "poster": {
-        "loadMs": 236,
-        "renderMs": 256,
-        "decodeMs": 20
+        "loadMs": 246,
+        "renderMs": 280,
+        "decodeMs": 34
       },
       "resources": [
         {
@@ -350,126 +350,126 @@
           "type": "link",
           "transfer": 384338,
           "decoded": 2156215,
-          "ms": 150
+          "ms": 141
         },
         {
           "url": "/assets/manifest-62c39d56.js",
           "type": "other",
           "transfer": 1042,
           "decoded": 6180,
-          "ms": 112
+          "ms": 109
         },
         {
           "url": "/assets/entry.client-C-cxeaxP.js",
           "type": "other",
           "transfer": 62911,
           "decoded": 214752,
-          "ms": 142
-        },
-        {
-          "url": "/assets/root-D-eqycXd.js",
-          "type": "other",
-          "transfer": 1376,
-          "decoded": 2800,
-          "ms": 145
+          "ms": 111
         },
         {
           "url": "/assets/jsx-runtime-BArjmnWf.js",
           "type": "other",
           "transfer": 37614,
           "decoded": 120502,
-          "ms": 145
+          "ms": 116
+        },
+        {
+          "url": "/assets/root-D-eqycXd.js",
+          "type": "other",
+          "transfer": 1376,
+          "decoded": 2800,
+          "ms": 116
         },
         {
           "url": "/assets/audience-B7goZBmd.js",
           "type": "other",
           "transfer": 1231,
           "decoded": 2421,
-          "ms": 145
-        },
-        {
-          "url": "/assets/not-found-BnJLTIbr.js",
-          "type": "other",
-          "transfer": 12673,
-          "decoded": 41830,
-          "ms": 145
+          "ms": 117
         },
         {
           "url": "/assets/_page-BOl_-X_F.js",
           "type": "other",
           "transfer": 859,
           "decoded": 1305,
-          "ms": 145
+          "ms": 117
         },
         {
-          "url": "/fonts/fonts.css",
-          "type": "link",
-          "transfer": 445,
-          "decoded": 334,
-          "ms": 10
-        },
-        {
-          "url": "/assets/root-iqFZ3UjQ.css",
-          "type": "link",
-          "transfer": 2461,
-          "decoded": 7389,
-          "ms": 13
-        },
-        {
-          "url": "/assets/RelatedPages-Cvuui_QK.js",
+          "url": "/assets/not-found-BnJLTIbr.js",
           "type": "other",
-          "transfer": 532,
-          "decoded": 407,
-          "ms": 148
+          "transfer": 12673,
+          "decoded": 41830,
+          "ms": 117
         },
         {
           "url": "/assets/JsonLd-C1P4qVoX.js",
           "type": "other",
           "transfer": 1070,
           "decoded": 1762,
-          "ms": 145
+          "ms": 117
         },
         {
           "url": "/assets/PageHeading-Cff663vA.js",
           "type": "other",
           "transfer": 615,
           "decoded": 689,
-          "ms": 148
+          "ms": 117
+        },
+        {
+          "url": "/assets/RelatedPages-Cvuui_QK.js",
+          "type": "other",
+          "transfer": 532,
+          "decoded": 407,
+          "ms": 117
         },
         {
           "url": "/assets/ContactAction-BPt52DWP.js",
           "type": "other",
           "transfer": 469,
           "decoded": 270,
-          "ms": 149
+          "ms": 118
         },
         {
           "url": "/assets/OwnerToSupply-C2lM_Nbc.js",
           "type": "other",
           "transfer": 537,
           "decoded": 422,
-          "ms": 149
+          "ms": 118
+        },
+        {
+          "url": "/fonts/fonts.css",
+          "type": "link",
+          "transfer": 445,
+          "decoded": 334,
+          "ms": 105
+        },
+        {
+          "url": "/assets/root-iqFZ3UjQ.css",
+          "type": "link",
+          "transfer": 2461,
+          "decoded": 7389,
+          "ms": 105
         },
         {
           "url": "/assets/SceneShell-CjvsrYpp.js",
           "type": "other",
           "transfer": 2074,
           "decoded": 3794,
-          "ms": 149
+          "ms": 118
         },
         {
           "url": "/fonts/public-sans-latin.woff2",
           "type": "css",
           "transfer": 26936,
           "decoded": 26636,
-          "ms": 90
+          "ms": 29
         },
         {
           "url": "/fonts/archivo-black-400-latin.woff2",
           "type": "css",
           "transfer": 10092,
           "decoded": 9792,
-          "ms": 88
+          "ms": 32
         }
       ],
       "posters": [
@@ -484,14 +484,14 @@
         "transfer": 3023,
         "decoded": 8415
       },
-      "domContentLoaded": 53,
-      "load": 88,
+      "domContentLoaded": 105,
+      "load": 123,
       "paints": {
-        "first-paint": 84,
-        "first-contentful-paint": 84
+        "first-paint": 144,
+        "first-contentful-paint": 144
       },
       "lcp": {
-        "ms": 84,
+        "ms": 144,
         "element": "P",
         "url": ""
       },
@@ -502,112 +502,112 @@
           "type": "other",
           "transfer": 1042,
           "decoded": 6180,
-          "ms": 14
-        },
-        {
-          "url": "/assets/root-D-eqycXd.js",
-          "type": "other",
-          "transfer": 1376,
-          "decoded": 2800,
-          "ms": 52
+          "ms": 10
         },
         {
           "url": "/assets/entry.client-C-cxeaxP.js",
           "type": "other",
           "transfer": 62911,
           "decoded": 214752,
-          "ms": 51
+          "ms": 40
         },
         {
           "url": "/assets/jsx-runtime-BArjmnWf.js",
           "type": "other",
           "transfer": 37614,
           "decoded": 120502,
-          "ms": 57
+          "ms": 45
         },
         {
           "url": "/assets/company-DA7fvDHJ.js",
           "type": "other",
           "transfer": 890,
           "decoded": 1547,
-          "ms": 53
+          "ms": 49
+        },
+        {
+          "url": "/assets/root-D-eqycXd.js",
+          "type": "other",
+          "transfer": 1376,
+          "decoded": 2800,
+          "ms": 48
         },
         {
           "url": "/assets/_page-BOl_-X_F.js",
           "type": "other",
           "transfer": 859,
           "decoded": 1305,
-          "ms": 54
-        },
-        {
-          "url": "/assets/not-found-BnJLTIbr.js",
-          "type": "other",
-          "transfer": 12673,
-          "decoded": 41830,
-          "ms": 53
+          "ms": 49
         },
         {
           "url": "/assets/JsonLd-C1P4qVoX.js",
           "type": "other",
           "transfer": 1070,
           "decoded": 1762,
-          "ms": 55
+          "ms": 49
         },
         {
-          "url": "/fonts/fonts.css",
-          "type": "link",
-          "transfer": 445,
-          "decoded": 334,
-          "ms": 9
-        },
-        {
-          "url": "/assets/root-iqFZ3UjQ.css",
-          "type": "link",
-          "transfer": 2461,
-          "decoded": 7389,
-          "ms": 13
+          "url": "/assets/not-found-BnJLTIbr.js",
+          "type": "other",
+          "transfer": 12673,
+          "decoded": 41830,
+          "ms": 49
         },
         {
           "url": "/assets/PageHeading-Cff663vA.js",
           "type": "other",
           "transfer": 615,
           "decoded": 689,
-          "ms": 55
+          "ms": 50
         },
         {
           "url": "/assets/RelatedPages-Cvuui_QK.js",
           "type": "other",
           "transfer": 532,
           "decoded": 407,
-          "ms": 56
+          "ms": 50
         },
         {
           "url": "/assets/ContactAction-BPt52DWP.js",
           "type": "other",
           "transfer": 469,
           "decoded": 270,
-          "ms": 57
+          "ms": 50
         },
         {
           "url": "/assets/OwnerToSupply-C2lM_Nbc.js",
           "type": "other",
           "transfer": 537,
           "decoded": 422,
-          "ms": 57
+          "ms": 50
+        },
+        {
+          "url": "/fonts/fonts.css",
+          "type": "link",
+          "transfer": 445,
+          "decoded": 334,
+          "ms": 47
+        },
+        {
+          "url": "/assets/root-iqFZ3UjQ.css",
+          "type": "link",
+          "transfer": 2461,
+          "decoded": 7389,
+          "ms": 47
         },
         {
           "url": "/fonts/public-sans-latin.woff2",
           "type": "css",
           "transfer": 26936,
           "decoded": 26636,
-          "ms": 39
+          "ms": 20
         },
         {
           "url": "/fonts/archivo-black-400-latin.woff2",
           "type": "css",
           "transfer": 10092,
           "decoded": 9792,
-          "ms": 38
+          "ms": 19
         }
       ],
       "posters": [],

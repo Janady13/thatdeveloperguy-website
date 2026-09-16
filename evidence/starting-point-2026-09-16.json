@@ -1,0 +1,72 @@
+{
+  "recordedAt": "2026-09-16T02:10:00Z",
+  "gitRevisionAtStart": "3ed55c97f48f3ea7b2c1b4731814690e6126d253",
+  "uncommittedAtStart": 0,
+  "node": "v24.21.0",
+  "npm": "11.19.0",
+  "stagingReleaseAtStart": {
+    "commit": "b7988d6d",
+    "builtAt": "2026-09-16T01:03:36.271Z",
+    "host": "tdg.thatwebhostingguy.com",
+    "root": "/var/www/sites/tdg",
+    "files": 45
+  },
+  "routesAtStart": {
+    "published": [
+      "/",
+      "/accessibility",
+      "/capabilities",
+      "/capabilities/business-it",
+      "/capabilities/cybersecurity",
+      "/company",
+      "/contact",
+      "/contact/received",
+      "/government",
+      "/privacy"
+    ],
+    "withheld": [
+      "approach",
+      "audience.business",
+      "capability-statement"
+    ]
+  },
+  "sourceAssetsAtStart": {
+    "kits": [
+      "TDG_LOBBY_ANIMATION_KIT",
+      "TDG_IT_SERVICES_ANIMATION_KIT",
+      "TDG_GOVERNMENT_SOLUTIONS_ANIMATION_KIT",
+      "TDG_CYBERSECURITY_ANIMATION_KIT",
+      "TDG_MASCOT_IT_SERVICES_SPECIALIST (+ Patch package: controller, PatchMascotRive, tdg-patch.riv sha a1e98660a7ab2f22f7c49425cf69a95df3e6e12243d683329ddaf3f0b1933c2f, tdg-patch.rev)"
+    ],
+    "refined": [
+      "lobby",
+      "it-services",
+      "government-solutions",
+      "cybersecurity"
+    ],
+    "nativeExports": {
+      "lobby.riv": {
+        "bytes": 567404,
+        "sha256": "72dd2512c7dcfb5d\u2026",
+        "exportedBy": "mcp",
+        "valid": false,
+        "reason": "MCP riv export omits MCP-created artboards"
+      }
+    }
+  },
+  "riveEditor": {
+    "app": "Rive Early Access 0.8.5804",
+    "mcp": "rive 0.6 at http://127.0.0.1:9791/mcp",
+    "document": {
+      "name": "TDG-Patch",
+      "fileId": 2583647,
+      "url": "https://editor.rive.app/file/tdg-patch/2583647"
+    },
+    "cli": "rive 1.0.3 darwin-arm64 (evidence/rive-cli-provenance.json)"
+  },
+  "reproducedChecksAtStart": {
+    "unit": "25 pass",
+    "browser": "23 pass on staging",
+    "fps": "60 idle (poster only)"
+  }
+}

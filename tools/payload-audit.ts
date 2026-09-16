@@ -7,7 +7,8 @@ const routes = ['/', '/capabilities/cybersecurity', '/government', '/company'];
 const browser = await chromium.launch({ args: ['--use-angle=metal', '--ignore-gpu-blocklist'] });
 const report: Record<string, unknown> = {};
 for (const route of routes) {
-  const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+  const auth = process.env.TDG_STAGING_AUTH?.split(':');
+  const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, ...(auth ? { httpCredentials: { username: auth[0]!, password: auth[1]! } } : {}) });
   const page = await context.newPage();
   await page.addInitScript(() => {
     (window as any).__lcp = null; (window as any).__poster = null;
