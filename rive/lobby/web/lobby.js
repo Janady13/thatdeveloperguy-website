@@ -1,6 +1,6 @@
 // Lobby runtime: Rive scene + HTML signage glued to the same camera/parallax math as the .riv (rive/lobby/build-scene.py)
 (function(){
-const W=1672,H=941,CAMX=870,CAMY=400,PLANE_ROOM=[-6,-3],WALK_SCALE=0.24,WALK_Y=28;
+const W=1672,H=941,CAMX=870,CAMY=400,PLANE_ROOM=[0,0],WALK_SCALE=0.24,WALK_Y=28;
 const canvas=document.getElementById('lobby'),world=document.getElementById('world'),cam=document.getElementById('cam');
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 rive.RuntimeLoader.setWasmUrl('/rive/rive-2.42.2.wasm');

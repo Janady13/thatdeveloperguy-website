@@ -50,7 +50,7 @@ def bind(prop,keyid,conv=None):
 convs=[]
 def mapper(name,mi,ma,mo0,mo1):
     c=nid(); convs.append(f'    <DataConverterRangeMapper minInput="{mi}" maxInput="{ma}" minOutput="{mo0:.2f}" maxOutput="{mo1:.2f}" clampLower="true" clampUpper="true" name="{name}" id="{c}"/>'); return c
-PL={"near":(-26,-13),"mid":(-9,-5),"far":(-3,-1.5),"room":(-6,-3)}
+PL={"near":(-8,-4),"mid":(-3,-1.5),"far":(-2,-1),"room":(0,0)}
 mappers={}
 for plane,(kx,ky) in PL.items():
     mappers[plane]=(mapper(f"px_{plane}",-1,1,-CAMX-kx,-CAMX+kx), mapper(f"py_{plane}",-1,1,-CAMY-ky,-CAMY+ky))
@@ -79,9 +79,7 @@ def sway_plant(name,anim,amp,phase):
     elif phase==1: key(anim,n,"rotation",[(0,a,"cubic"),(None,-a,"linear")])
     else: key(anim,n,"rotation",[(0,0,"cubic"),(0.5,a*0.9,"cubic"),(None,-a*0.6,"linear")])
 A={n:asset(n) for n in M}; A["bg_plate"]=asset("bg_plate")   # all image assets
-sway_plant("plant_right_fg","Sway A",0.016,0)
-sway_plant("plant_left_fg","Sway B",0.014,1)
-image("arch_right_fg",A["arch_right_fg"],M["arch_right_fg"]["x"],M["arch_right_fg"]["y"])
+sway_plant("plant_right_fg","Sway A",0.010,0)
 # camera REC dots (front so nothing covers them)
 recs=[]
 for k in ("cam_left","cam_right"):
@@ -91,8 +89,8 @@ emit('</Node>')
 
 # ===== MID plane: free-standing plants only (in front of the wall) =====
 plane_open("mid")
-sway_plant("plant_left_rear","Sway C",0.018,2); sway_plant("plant_gov_left","Sway A",0.015,1); sway_plant("plant_gov_right","Sway B",0.017,2)
-sway_plant("plant_cyber_right","Sway C",0.014,0); sway_plant("plant_window_mid","Sway A",0.02,2); sway_plant("plant_table","Sway B",0.012,0)
+sway_plant("plant_left_rear","Sway C",0.011,2); sway_plant("plant_gov_left","Sway A",0.009,1); sway_plant("plant_gov_right","Sway B",0.010,2)
+sway_plant("plant_cyber_right","Sway C",0.008,0); sway_plant("plant_window_mid","Sway A",0.012,2); sway_plant("plant_table","Sway B",0.007,0)
 emit('</Node>')  # mid
 
 # ===== FAR plane: clouds =====
@@ -103,6 +101,8 @@ emit('</Node>')
 
 # ===== ROOM plane: wall fixtures, doors, readers, light, and the plate =====
 plane_open("room")
+image("plant_left_fg",A["plant_left_fg"],M["plant_left_fg"]["x"],M["plant_left_fg"]["y"])
+image("arch_right_fg",A["arch_right_fg"],M["arch_right_fg"]["x"],M["arch_right_fg"]["y"])
 # sun shaft from the window across the lounge
 shaft=rect("sun_shaft",1440,300,330,900,linear([("00FFFFFF",0),("8AF1EDFF",0.5),("00FFFFFF",1)],-165,0,165,0),"screen",0,ox=0.5,oy=0,rotation=0.42)
 key("Lights On",shaft,"opacity",[(0,0,"cubic"),(110,0.5,"linear"),(None,0.5,"hold")]); key("Lights Breathe",shaft,"opacity",[(0,0.35,"cubic"),(None,0.6,"linear")])
@@ -163,7 +163,7 @@ for d,leaf,reader,plate,gx,gy in DOORS:
 for d,leaf,reader,plate,gx,gy in DOORS:
     rd=M[reader]; image(reader,A[reader],rd["x"],rd["y"])
 # the plate, slightly oversized so parallax never shows an edge
-image("bg_plate",A["bg_plate"],-14,-8,scale=0.5085)
+image("bg_plate",A["bg_plate"],0,0)
 emit('</Node>')  # room
 emit('</Node>')  # camera
 
