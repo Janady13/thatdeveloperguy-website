@@ -1,0 +1,32 @@
+{
+  "at": "2026-09-16T03:05:00Z",
+  "host": "https://tdg.thatwebhostingguy.com",
+  "machine": "Apple M2, ANGLE Metal, emulated (not a physical device)",
+  "bar": {
+    "1x": 55,
+    "4x": 30
+  },
+  "lobby": {
+    "1x_headless_chrome": [
+      60,
+      60
+    ],
+    "4x_headless_chrome": [
+      25,
+      27,
+      23
+    ],
+    "4x_playwright_chromium_breakdown": {
+      "room+consultant": 32,
+      "room_only": 32,
+      "consultant_only": 61,
+      "poster_only": 61
+    }
+  },
+  "verdict": "1\u00d7 meets the bar; 4\u00d7 CPU throttle is below the bar on the headless-Chrome probe (23\u201327) and at the bar in Playwright Chromium (32). Cause: the room's 118,887-vertex vector scene; the Consultant adds no measurable cost.",
+  "options": [
+    "reduce the rig's vertex count (refine tolerance) after a visual review",
+    "accept for launch and record field data before deciding",
+    "nested Consultant in one canvas \u2014 would not help (Consultant is free)"
+  ]
+}
