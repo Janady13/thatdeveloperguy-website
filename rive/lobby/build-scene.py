@@ -126,6 +126,41 @@ halo=ellipse("sign_halo",852,135,820,230,radial("FFDACFFF","00DACFFF",410,115),"
 ms=FX["monitor_screen"]; mon=rect("monitor_glow",ms[0],ms[1],ms[2],ms[3],solid("FF8FB3FF"),"screen",0,radius=4)
 key("Lights On",mon,"opacity",[(0,0,"hold"),(70,0,"hold"),(72,0.22,"hold"),(None,0.18,"hold")])
 key("Screen Flicker",mon,"opacity",[(0,0.16,"hold"),(40,0.22,"hold"),(70,0.15,"hold"),(110,0.2,"hold"),(None,0.16,"hold")])
+# monitor screen content: five "code lines" typing in, then clearing (loop)
+for i in range(5):
+    ln=rect(f"code_line_{i}",ms[0]+14,ms[1]+18+i*17,ms[2]*(0.45+0.11*((i*3)%5)),6,solid("FFD9CFFF"),"screen",0,radius=3)
+    key("Screen Flicker",ln,"opacity",[(0,0,"hold"),(14+i*18,0,"hold"),(16+i*18,0.75,"hold"),(150,0.75,"hold"),(156,0,"hold"),(None,0,"hold")])
+# mug steam: three wisps rising from the mug, staggered
+mug=(185,478)
+for i,(dx,dur,ph) in enumerate([(-10,190,0),(4,230,70),(16,210,140)]):
+    w=ellipse(f"steam_{i}",mug[0]+dx,mug[1],14,34,radial("FFFFFFFF","00FFFFFF",7,17),"screen",0)
+    key("Steam",w,"y",[(0,mug[1]+2,"linear"),(None,mug[1]-46,"linear")])
+    key("Steam",w,"x",[(0,mug[0]+dx,"cubic"),(0.5,mug[0]+dx+5,"cubic"),(None,mug[0]+dx-4,"linear")])
+    key("Steam",w,"opacity",[(0,0,"cubic"),(0.25,0.55,"cubic"),(None,0,"linear")])
+    key("Steam",w,"scaleX",[(0,0.6,"linear"),(None,1.6,"linear")]); key("Steam",w,"scaleY",[(0,0.7,"linear"),(None,1.3,"linear")])
+# security pillar: a soft highlight stepping DETECT -> PROTECT -> RESPOND
+scan=rect("pillar_scan",1381,230,96,48,radial("FFDACFFF","00DACFFF",48,24),"screen",0,ox=0.5,oy=0.5,radius=10)
+key("Pillar Scan",scan,"y",[(0,232,"hold"),(70,232,"cubic"),(92,318,"hold"),(162,318,"cubic"),(184,405,"hold"),(254,405,"hold"),(None,405,"hold")])
+key("Pillar Scan",scan,"opacity",[(0,0,"cubic"),(12,0.55,"hold"),(66,0.55,"cubic"),(70,0.2,"cubic"),(92,0.55,"hold"),(158,0.55,"cubic"),(162,0.2,"cubic"),(184,0.55,"hold"),(250,0.55,"cubic"),(266,0,"hold"),(None,0,"hold")])
+# camera lens glint: a quick sparkle on each dome
+for k in ("cam_left","cam_right"):
+    cx,cy,w,h=FX[k]; gl=ellipse(f"glint_{k}",cx+w*0.12,cy-h*0.1,10,10,radial("FFFFFFFF","00FFFFFF",5),"screen",0)
+    key("Camera Blink",gl,"opacity",[(0,0,"hold"),(200,0,"cubic"),(206,0.95,"cubic"),(222,0,"hold"),(None,0,"hold")])
+    key("Camera Blink",gl,"scaleX",[(0,0.4,"hold"),(200,0.4,"cubic"),(222,2.2,"hold")]); key("Camera Blink",gl,"scaleY",[(0,0.4,"hold"),(200,0.4,"cubic"),(222,2.2,"hold")])
+# mission poster backlight breathing
+post=rect("poster_glow",18,195,162,255,linear([("40FFFFFF",0),("00FFFFFF",1)],0,0,162,0),"screen",0)
+glows.append((post,0.25,0.6))
+# window glass glint: a diagonal band sweeping the glazing, clipped to the glass
+gclip=nid(); emit(f'<Shape x="1462" y="60" name="glass_clip" id="{gclip}"><Rectangle width="210" height="500" originX="0" originY="0" name="Path"/></Shape>')
+glint=nid(); emit(f'<Shape x="1420" y="300" opacity="0" blendModeValue="screen" rotation="0.6" name="glass_glint" id="{glint}"><Rectangle width="70" height="700" originX="0.5" originY="0.5" name="Path"/>{linear([("00FFFFFF",0),("99FFFFFF",0.5),("00FFFFFF",1)],-35,0,35,0)}<ClippingShape sourceId="{gclip}" name="Clip"/></Shape>')
+key("Glass Glint",glint,"x",[(0,1400,"linear"),(None,1760,"linear")]); key("Glass Glint",glint,"opacity",[(0,0,"cubic"),(0.5,0.45,"cubic"),(None,0,"linear")])
+# dust motes drifting in the sun shaft
+import random; random.seed(7)
+for i in range(14):
+    x0=random.uniform(1330,1660); y0=random.uniform(280,900); r=random.uniform(2.2,4.5); mote=ellipse(f"mote_{i}",x0,y0,r*2,r*2,radial("FFFFFFFF","00FFFFFF",r),"screen",0)
+    an=["Motes A","Motes B","Motes C"][i%3]; drift=random.uniform(-40,-70); side=random.uniform(-25,25); ph=random.random()
+    key(an,mote,"y",[(0,y0,"linear"),(None,y0+drift,"linear")]); key(an,mote,"x",[(0,x0,"cubic"),(0.5,x0+side,"cubic"),(None,x0-side*0.5,"linear")])
+    key(an,mote,"opacity",[(0,0,"cubic"),(min(0.95,ph*0.5+0.15),random.uniform(0.35,0.7),"cubic"),(None,0,"linear")])
 # door header green strips + reader LEDs + hover rings + leaves + reveals
 DOORS=[("it","door_it_leaf","reader_it","024_it_header",636,239),("gov","door_gov_leaf","reader_gov","027_gov_header",883,240),("cyber","door_cyber_leaf","reader_cyber","030_cyber_header",1131,241)]
 door_objs={}
@@ -174,8 +209,8 @@ for i,(g,lo,hi) in enumerate(glows):
     key("Lights Breathe",g,"opacity",[(0,lo,"cubic"),(None,hi,"linear")])
 
 # ---------- animations ----------
-DUR={"Sway A":324,"Sway B":390,"Sway C":456,"Clouds":2880,"Lights On":150,"Lights Breathe":330,"Floor Shimmer":1440,"Camera Blink":480,"Screen Flicker":180}
-LOOP={"Sway A":"pingPong","Sway B":"pingPong","Sway C":"pingPong","Clouds":"pingPong","Lights On":"oneShot","Lights Breathe":"pingPong","Floor Shimmer":"loop","Camera Blink":"loop","Screen Flicker":"loop"}
+DUR={"Sway A":324,"Sway B":390,"Sway C":456,"Clouds":2880,"Lights On":150,"Lights Breathe":330,"Floor Shimmer":1440,"Camera Blink":480,"Screen Flicker":240,"Steam":210,"Pillar Scan":360,"Glass Glint":840,"Motes A":540,"Motes B":690,"Motes C":810}
+LOOP={"Sway A":"pingPong","Sway B":"pingPong","Sway C":"pingPong","Clouds":"pingPong","Lights On":"oneShot","Lights Breathe":"pingPong","Floor Shimmer":"loop","Camera Blink":"loop","Screen Flicker":"loop","Steam":"loop","Pillar Scan":"loop","Glass Glint":"loop","Motes A":"loop","Motes B":"loop","Motes C":"loop"}
 for d,*_ in DOORS:
     P=d.capitalize() if d!="it" else "It"
     for s,n,lp in [("Closed",1,"oneShot"),("Hover",16,"oneShot")]: DUR[f"Door {P} {s}"]=n; LOOP[f"Door {P} {s}"]=lp
@@ -202,7 +237,7 @@ def icond(d,val): return f'<TransitionBoolCondition inputId="{inputs[d]}" opValu
 layers=[]
 def simple_layer(name,anim):
     s=nid(); return f'<StateMachineLayer name="{name}" id="{nid()}"><AnyState x="60" y="-120"/><ExitState x="420" y="-120"/><EntryState x="-60" y="0"><StateTransition stateToId="{s}"/></EntryState><AnimationState x="160" y="0" animationId="{anim_ids[anim]}" id="{s}"/></StateMachineLayer>'
-for n in ["Sway A","Sway B","Sway C","Clouds","Floor Shimmer","Camera Blink","Screen Flicker"]: layers.append(simple_layer(n,n))
+for n in ["Sway A","Sway B","Sway C","Clouds","Floor Shimmer","Camera Blink","Screen Flicker","Steam","Pillar Scan","Glass Glint","Motes A","Motes B","Motes C"]: layers.append(simple_layer(n,n))
 s_on=nid(); s_br=nid()
 layers.append(f'<StateMachineLayer name="Lights" id="{nid()}"><AnyState x="60" y="-120"/><ExitState x="520" y="-120"/><EntryState x="-60" y="0"><StateTransition stateToId="{s_on}"/></EntryState>'
               f'<AnimationState x="160" y="0" animationId="{anim_ids["Lights On"]}" id="{s_on}"><StateTransition stateToId="{s_br}" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100" duration="400"/></AnimationState>'

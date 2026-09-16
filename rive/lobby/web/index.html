@@ -9,8 +9,9 @@
 @font-face{font-family:'Public Sans';font-weight:400 700;font-display:swap;src:url(/fonts/public-sans-latin.woff2) format('woff2')}
 :root{--ink:#0D0A14;--violet:#5A36B8;--deep:#2A1856;--white:#F2F0FA;--green:#31E07F}
 *{box-sizing:border-box}html{background:#e9e5f3}body{margin:0;min-height:260vh;font-family:'Public Sans',system-ui,sans-serif;color:var(--ink)}
-#stage{position:fixed;inset:0;overflow:hidden;background:#2a1f4a url(/assets/2x/bg_plate.webp) center/cover no-repeat}
-#stage.live{background-image:none}
+#stage{position:fixed;inset:0;overflow:hidden;background:#1c1533}
+#stage::before{content:"";position:absolute;inset:0;background:url(/assets/2x/bg_plate.webp) center/cover no-repeat;opacity:.42}
+#stage.live::before{display:none}
 canvas#lobby{opacity:0;transition:opacity .4s ease}#stage.live canvas#lobby{opacity:1}
 canvas#lobby{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none}
 #world{position:absolute;left:0;top:0;width:1672px;height:941px;transform-origin:0 0;pointer-events:none}
@@ -20,7 +21,9 @@ canvas#lobby{position:absolute;inset:0;width:100%;height:100%;display:block;touc
 .label span{font-weight:700;font-size:19px;letter-spacing:.01em;text-transform:uppercase;color:#1c1436;line-height:1;white-space:nowrap;transform-origin:50% 50%}
 .sign{left:535px;top:82px;width:635px;height:106px;display:flex;align-items:center;justify-content:center;text-align:center}
 .sign p{margin:0;font-weight:500;font-size:16.5px;line-height:1.35;letter-spacing:.24em;text-transform:uppercase;color:#2a1f4a}
-.sign .star{position:absolute;top:50%;width:26px;height:26px;transform:translateY(-50%);color:#5A36B8}.sign .star.l{left:44px}.sign .star.r{right:44px}
+.sign .star{position:absolute;top:50%;width:26px;height:26px;transform:translateY(-50%);color:#5A36B8;animation:twinkle 5.2s ease-in-out infinite}.sign .star.r{animation-delay:2.6s}
+@keyframes twinkle{0%,100%{opacity:.85;filter:drop-shadow(0 0 0 rgba(201,190,242,0))}50%{opacity:1;filter:drop-shadow(0 0 6px rgba(201,190,242,.9))}}
+@media (prefers-reduced-motion:reduce){.sign .star{animation:none}}.sign .star.l{left:44px}.sign .star.r{right:44px}
 .site-header{position:fixed;left:0;right:0;top:0;display:flex;align-items:center;gap:32px;padding:22px 48px;z-index:10}
 nav{margin-left:auto;display:flex;gap:28px}nav a{color:#241a3f;text-decoration:none;font-weight:600;font-size:15px;text-shadow:0 1px 0 rgba(255,255,255,.5)}
 .cta{background:var(--deep);color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:12px 22px;border-radius:999px}
