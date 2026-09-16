@@ -22,10 +22,10 @@ let hidden=false,offscreen=false;const gate=()=>{if(hidden||offscreen)r.pause();
 document.addEventListener('visibilitychange',()=>{hidden=document.hidden;gate()});
 new IntersectionObserver(es=>{offscreen=!es[0].isIntersecting;gate()},{threshold:0}).observe(document.getElementById('stage'));
 // touch: no hover, so a tap on a door counts as its click; a slow drift keeps the parallax alive without a pointer
-if(matchMedia('(hover: none)').matches&&!reduce){let t=0;setInterval(()=>{t+=.02;tx=Math.sin(t)*.35;ty=Math.cos(t*.7)*.2},40)}
+
 // pointer -> parallax
-if(!reduce){addEventListener('pointermove',e=>{tx=(e.clientX/innerWidth-.5)*2;ty=(e.clientY/innerHeight-.5)*2},{passive:true});
-  addEventListener('scroll',()=>{walkT=Math.min(1,Math.max(0,scrollY/(innerHeight*1.3)))},{passive:true})}
+// pointer parallax is off: a single painted plate cannot survive layers sliding against their baked shadows (owner feedback 2026-09-16)
+if(!reduce){addEventListener('scroll',()=>{walkT=Math.min(1,Math.max(0,scrollY/(innerHeight*1.3)))},{passive:true})}
 (function loop(){px+=(tx-px)*.05;py+=(ty-py)*.05;walk+=(walkT-walk)*.08;
   if(vmi){vmi.number('parallaxX').value=px;vmi.number('parallaxY').value=py;vmi.number('walk').value=walk}
   tickDoors(performance.now());camera();requestAnimationFrame(loop)})();
