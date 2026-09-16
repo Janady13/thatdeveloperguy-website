@@ -1,0 +1,218 @@
+/* The supplied Cybersecurity kit is the page: one full-viewport, independently animated room. */
+body.cybersecurity-route,
+body:has(.scene-cybersecurity) {
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
+body.cybersecurity-route .site-header,
+body:has(.scene-cybersecurity) .site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 30;
+  background: linear-gradient(to bottom, rgba(244, 241, 250, .94), rgba(244, 241, 250, .4) 68%, transparent);
+  border: 0;
+  backdrop-filter: blur(5px);
+}
+
+body.cybersecurity-route .site-footer,
+body:has(.scene-cybersecurity) .site-footer { display: none; }
+
+body.cybersecurity-route main,
+body:has(.scene-cybersecurity) main,
+body.cybersecurity-route .scene-cybersecurity,
+body:has(.scene-cybersecurity) .scene-cybersecurity {
+  width: 100%;
+  min-height: 100dvh;
+  height: 100dvh;
+}
+
+body.cybersecurity-route main,
+body:has(.scene-cybersecurity) main {
+  position: fixed;
+  inset: 0;
+  display: block;
+}
+
+body.cybersecurity-route .scene-cybersecurity,
+body:has(.scene-cybersecurity) .scene-cybersecurity {
+  position: absolute;
+  inset: 0;
+  max-width: none;
+  margin: 0;
+  border: 0;
+  background: #f2eef8;
+}
+
+.scene-cybersecurity,
+.scene-cybersecurity .scene-plane,
+.scene-cybersecurity .scene-poster,
+.scene-cybersecurity .cybersecurity-vector,
+.scene-cybersecurity .scene-hits,
+.scene-cybersecurity .scene-hit {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.scene-cybersecurity .scene-poster,
+.scene-cybersecurity .scene-hit {
+  -webkit-user-drag: none;
+}
+
+.scene-cybersecurity .scene-hit {
+  touch-action: manipulation;
+}
+
+.scene-cybersecurity .scene-poster {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .18s ease, visibility 0s linear .18s;
+}
+
+.scene-cybersecurity.scene-vector-ready .scene-poster {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scene-cybersecurity .cybersecurity-vector {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+
+.scene-cybersecurity.scene-vector-ready .cybersecurity-vector { opacity: 1; }
+.scene-cybersecurity .cybersecurity-vector > .cybersecurity-vector-pass {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-cybersecurity .cybersecurity-vector-pass[data-pass="scene"] { z-index: 1; }
+
+.scene-cybersecurity .cybersecurity-rive {
+  z-index: 3;
+  background: transparent;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .28s ease;
+}
+
+.scene-cybersecurity.scene-native-ready .cybersecurity-rive { opacity: .84; }
+.scene-cybersecurity .cybersecurity-rive canvas { display: block; width: 100% !important; height: 100% !important; }
+
+.cyber-atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cyber-ceiling-bloom,
+.cyber-floor-bloom,
+.cyber-pointer-light,
+.cyber-focus-wash { position: absolute; pointer-events: none; }
+
+.cyber-ceiling-bloom {
+  left: 17%;
+  top: 4%;
+  width: 67%;
+  height: 26%;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, .16), transparent 69%);
+  filter: blur(18px);
+  opacity: .32;
+  animation: cyberRoomBreathe 17s ease-in-out infinite alternate;
+}
+
+.cyber-floor-bloom {
+  left: 17%;
+  bottom: 1%;
+  width: 69%;
+  height: 25%;
+  background: radial-gradient(ellipse at center, rgba(103, 80, 171, .13), transparent 69%);
+  filter: blur(19px);
+  opacity: .24;
+  animation: cyberFloorBreathe 21s ease-in-out infinite alternate;
+}
+
+.cyber-pointer-light {
+  left: var(--pointer-x-pct);
+  top: var(--pointer-y-pct);
+  width: 24%;
+  height: 36%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(88, 255, 177, .085), transparent 68%);
+  filter: blur(13px);
+  opacity: .45;
+  transform: translate(-50%, -50%);
+  transition: left .18s ease-out, top .18s ease-out;
+}
+
+.cyber-focus-wash {
+  border-radius: 18px;
+  background: radial-gradient(ellipse at center, rgba(70, 255, 164, .16), rgba(103, 80, 171, .055) 48%, transparent 74%);
+  box-shadow: inset 0 0 28px rgba(117, 87, 183, .08);
+  opacity: 0;
+  transform: scale(.98);
+  transition: opacity .24s ease, transform .24s ease;
+}
+
+.scene-cybersecurity[data-focus="monitoring"] .cyber-focus-monitoring,
+.scene-cybersecurity[data-selected="monitoring"] .cyber-focus-monitoring,
+.scene-cybersecurity[data-focus="health"] .cyber-focus-health,
+.scene-cybersecurity[data-selected="health"] .cyber-focus-health,
+.scene-cybersecurity[data-focus="response"] .cyber-focus-response,
+.scene-cybersecurity[data-selected="response"] .cyber-focus-response,
+.scene-cybersecurity[data-focus="infrastructure"] .cyber-focus-infrastructure,
+.scene-cybersecurity[data-selected="infrastructure"] .cyber-focus-infrastructure,
+.scene-cybersecurity[data-focus="briefing"] .cyber-focus-briefing,
+.scene-cybersecurity[data-selected="briefing"] .cyber-focus-briefing,
+.scene-cybersecurity[data-focus="process"] .cyber-focus-process,
+.scene-cybersecurity[data-selected="process"] .cyber-focus-process,
+.scene-cybersecurity[data-focus="return-lobby"] .cyber-focus-return-lobby,
+.scene-cybersecurity[data-selected="return-lobby"] .cyber-focus-return-lobby {
+  opacity: 1;
+  transform: scale(1.015);
+}
+
+.scene-cybersecurity[data-focus="return-lobby"] .cyber-focus-return-lobby,
+.scene-cybersecurity[data-selected="return-lobby"] .cyber-focus-return-lobby {
+  background: radial-gradient(ellipse at center, rgba(158, 128, 226, .18), transparent 72%);
+}
+
+.scene-cybersecurity .scene-hits { z-index: 5; }
+.scene-cybersecurity .scene-ui { z-index: 6; }
+.scene-cybersecurity .scene-caption { max-width: min(850px, 74vw); }
+.scene-cybersecurity.scene-leaving .cybersecurity-vector,
+.scene-cybersecurity.scene-leaving .cyber-atmosphere { filter: brightness(.9) saturate(.95); }
+
+@keyframes cyberRoomBreathe { from { opacity: .22; transform: scale(.985); } to { opacity: .39; transform: scale(1.018); } }
+@keyframes cyberFloorBreathe { from { opacity: .16; transform: translateX(-.4%); } to { opacity: .29; transform: translateX(.5%); } }
+
+@media (max-width: 767px) {
+  body.cybersecurity-route .site-header,
+  body:has(.scene-cybersecurity) .site-header { padding-block: 12px; }
+  .scene-cybersecurity .scene-ui { padding: 14px 16px 16px; }
+  .scene-cybersecurity .scene-caption { max-width: 84%; font-size: .9rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scene-cybersecurity .scene-poster,
+  .scene-cybersecurity .cybersecurity-vector,
+  .scene-cybersecurity .cybersecurity-rive,
+  .cyber-focus-wash,
+  .cyber-pointer-light { transition: none; }
+}
+
+.scene-cybersecurity[data-motion="reduced"] .cyber-ceiling-bloom,
+.scene-cybersecurity[data-motion="reduced"] .cyber-floor-bloom { animation: none; }
+.scene-cybersecurity[data-motion="reduced"] .cyber-pointer-light { display: none; }

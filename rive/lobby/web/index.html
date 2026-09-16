@@ -4,13 +4,13 @@
 <meta name="robots" content="noindex,nofollow">
 <link rel="preload" href="/rive/rive-2.42.2.wasm" as="fetch" crossorigin="anonymous">
 
-<link rel="preload" href="/assets/2x/bg_plate.webp" as="image">
+<link rel="preload" href="/animation/rooms/lobby-plates/2x/bg_plate.webp" as="image">
 <style>
 @font-face{font-family:'Public Sans';font-weight:400 700;font-display:swap;src:url(/fonts/public-sans-latin.woff2) format('woff2')}
 :root{--ink:#0D0A14;--violet:#5A36B8;--deep:#2A1856;--white:#F2F0FA;--green:#31E07F}
 *{box-sizing:border-box}html{background:#e9e5f3}body{margin:0;min-height:260vh;font-family:'Public Sans',system-ui,sans-serif;color:var(--ink)}
 #stage{position:fixed;inset:0;overflow:hidden;background:#1c1533}
-#stage::before{content:"";position:absolute;inset:0;background:url(/assets/2x/bg_plate.webp) center/cover no-repeat;opacity:.42}
+#stage::before{content:"";position:absolute;inset:0;background:url(/animation/rooms/lobby-plates/2x/bg_plate.webp) center/cover no-repeat;opacity:.42}
 #stage.live::before{display:none}
 canvas#lobby{opacity:0;transition:opacity .4s ease}#stage.live canvas#lobby{opacity:1}
 canvas#lobby{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none}

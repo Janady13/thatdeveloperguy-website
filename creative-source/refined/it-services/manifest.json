@@ -6,10 +6,11 @@
   },
   "package": "TDG_VECTOR_ROOMS_REBUILD_v3 3.0.0-review.1 (hand-authored vector, no tracing)",
   "source": {
-    "svg": "rooms/it-services/it-services.rive-import.svg",
-    "sha256": "0a64c1258e7dc8e9e98aa5b3638e0dff9110e7bc2b47e395644e13a8689389b0",
+    "svg": "TDG_IT_SERVICES_ANIMATION_KIT/svg/tdg-it-services.rive-import.svg",
+    "sha256": "c11268fdc550d1fba2e95dad2fb1075bac1f7c4cfca459b77ed91ee6b1027626",
     "paths": 401,
-    "bytes": 204385
+    "bytes": 5406030,
+    "package": "TDG_IT_SERVICES_ANIMATION_KIT"
   },
   "floorAnchor": [
     834,
@@ -935,60 +936,72 @@
       "label": "IT service overview",
       "rect": [
         615,
-        217,
-        431,
-        203
+        213,
+        420,
+        200
       ],
       "pageId": "capability.business-it",
       "section": "#overview"
     },
     {
-      "id": "deployment",
-      "label": "Our approach",
+      "id": "helpdesk",
+      "label": "IT support",
       "rect": [
-        1092,
-        298,
-        109,
-        247
-      ],
-      "pageId": "approach",
-      "section": ""
-    },
-    {
-      "id": "toolcart",
-      "label": "Delivery process",
-      "rect": [
-        1371,
-        625,
-        150,
-        248
-      ],
-      "pageId": "approach",
-      "section": ""
-    },
-    {
-      "id": "workstations",
-      "label": "Support and management",
-      "rect": [
-        16,
-        402,
-        435,
-        153
+        568,
+        473,
+        511,
+        142
       ],
       "pageId": "capability.business-it",
       "section": "#support"
     },
     {
-      "id": "racks",
-      "label": "Infrastructure",
+      "id": "workstations",
+      "label": "Workstations and endpoints",
       "rect": [
-        1365,
-        209,
-        278,
-        380
+        112,
+        413,
+        280,
+        126
+      ],
+      "pageId": "capability.business-it",
+      "section": "#workstations"
+    },
+    {
+      "id": "racks",
+      "label": "Network and infrastructure",
+      "rect": [
+        1351,
+        258,
+        195,
+        274
       ],
       "pageId": "capability.business-it",
       "section": "#infrastructure"
+    },
+    {
+      "id": "deployment",
+      "label": "Deployment and maintenance",
+      "rect": [
+        1062,
+        282,
+        126,
+        272
+      ],
+      "pageId": "capability.business-it",
+      "section": "#deployment"
+    },
+    {
+      "id": "toolcart",
+      "label": "IT service process",
+      "rect": [
+        1377,
+        545,
+        160,
+        248
+      ],
+      "pageId": "capability.business-it",
+      "section": "#deployment"
     }
   ],
   "lettering": [

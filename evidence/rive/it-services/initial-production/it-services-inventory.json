@@ -1,0 +1,882 @@
+{
+  "sourceKit": "/Users/josephanady/Desktop/ThatDeveloperGuy/TDG_IT_SERVICES_ANIMATION_KIT",
+  "approvedReference": {
+    "file": "/Users/josephanady/Desktop/ThatDeveloperGuy/TDG_IT_SERVICES_ANIMATION_KIT/source/tdg-it-services.reference.png",
+    "originalDimensions": [
+      1672,
+      941
+    ],
+    "sha256": "c2042a91f1b16a861aab82b2ed4c439680857e807365152a4dff058ee7c87b2d"
+  },
+  "currentRoute": "/capabilities/business-it",
+  "currentPosterInRepo": "public/images/posters/it-services.svg",
+  "kitCanvas": {
+    "width": 1648,
+    "height": 928
+  },
+  "sourceReferenceDimensions": [
+    1672,
+    941
+  ],
+  "alignmentNote": "Kit vector/react coordinate system is 1648x928 while reference PNG is 1672x941. Current first pass keeps the existing staged SVG coordinate system and uses the kit as source inventory; next asset-production pass should decide whether to restage IT from the 1672x941 PNG master or keep the 1648x928 vector master.",
+  "layerCount": 286,
+  "groups": {
+    "architecture": {
+      "count": 5,
+      "sample": [
+        "back_wall",
+        "floor_tiles",
+        "ceiling",
+        "left_wall",
+        "right_wall"
+      ]
+    },
+    "board_row_1": {
+      "count": 3,
+      "sample": [
+        "board_row_1_label",
+        "board_row_1_value",
+        "board_row_1_signal"
+      ]
+    },
+    "board_row_2": {
+      "count": 3,
+      "sample": [
+        "board_row_2_label",
+        "board_row_2_value",
+        "board_row_2_signal"
+      ]
+    },
+    "board_row_3": {
+      "count": 3,
+      "sample": [
+        "board_row_3_label",
+        "board_row_3_value",
+        "board_row_3_signal"
+      ]
+    },
+    "board_row_4": {
+      "count": 3,
+      "sample": [
+        "board_row_4_label",
+        "board_row_4_value",
+        "board_row_4_signal"
+      ]
+    },
+    "cable_board": {
+      "count": 3,
+      "sample": [
+        "cable_pegboard",
+        "cable_loop_left",
+        "cable_loop_right"
+      ]
+    },
+    "ceiling_lights": {
+      "count": 10,
+      "sample": [
+        "ceiling_light_panel_1",
+        "ceiling_light_panel_2",
+        "ceiling_light_panel_3",
+        "ceiling_light_panel_4",
+        "ceiling_downlight_1",
+        "ceiling_downlight_2",
+        "ceiling_downlight_3",
+        "ceiling_downlight_4",
+        "ceiling_downlight_5",
+        "ceiling_downlight_6"
+      ]
+    },
+    "chair_far": {
+      "count": 9,
+      "sample": [
+        "chair_far_post",
+        "chair_far_base",
+        "chair_far_wheel_1",
+        "chair_far_wheel_2",
+        "chair_far_wheel_3",
+        "chair_far_seat",
+        "chair_far_back",
+        "chair_far_arm_1",
+        "chair_far_arm_2"
+      ]
+    },
+    "chair_near": {
+      "count": 9,
+      "sample": [
+        "chair_near_post",
+        "chair_near_base",
+        "chair_near_wheel_1",
+        "chair_near_wheel_2",
+        "chair_near_wheel_3",
+        "chair_near_seat",
+        "chair_near_back",
+        "chair_near_arm_1",
+        "chair_near_arm_2"
+      ]
+    },
+    "coffee_mug": {
+      "count": 3,
+      "sample": [
+        "coffee_mug_handle",
+        "coffee_mug_body",
+        "coffee_mug_lettering"
+      ]
+    },
+    "columns": {
+      "count": 3,
+      "sample": [
+        "front_left_column",
+        "rear_left_column",
+        "rear_right_column"
+      ]
+    },
+    "deployment_door": {
+      "count": 1,
+      "sample": [
+        "deployment_door_frame"
+      ]
+    },
+    "deployment_door_leaf": {
+      "count": 5,
+      "sample": [
+        "deployment_door_panel",
+        "deployment_door_plaque",
+        "deployment_door_handle_left",
+        "deployment_door_handle_right",
+        "deployment_door_kickplate"
+      ]
+    },
+    "desk_reader": {
+      "count": 3,
+      "sample": [
+        "desk_reader_base",
+        "desk_reader_head",
+        "desk_reader_indicator"
+      ]
+    },
+    "floor_equipment": {
+      "count": 3,
+      "sample": [
+        "printer_cabinet",
+        "floor_endpoint_tower",
+        "floor_endpoint_leds"
+      ]
+    },
+    "hanging_sign": {
+      "count": 6,
+      "sample": [
+        "sign_cable_left",
+        "sign_cable_right",
+        "sign_housing",
+        "sign_server_icon",
+        "sign_title",
+        "sign_subtitle"
+      ]
+    },
+    "laptop_lid": {
+      "count": 2,
+      "sample": [
+        "laptop_lid_housing",
+        "laptop_screen"
+      ]
+    },
+    "left_cabinet": {
+      "count": 1,
+      "sample": [
+        "left_cabinet_shell"
+      ]
+    },
+    "left_cabinet_drawer_1": {
+      "count": 1,
+      "sample": [
+        "left_cabinet_drawer_1_face"
+      ]
+    },
+    "left_cabinet_drawer_2": {
+      "count": 1,
+      "sample": [
+        "left_cabinet_drawer_2_face"
+      ]
+    },
+    "left_cabinet_drawer_3": {
+      "count": 1,
+      "sample": [
+        "left_cabinet_drawer_3_face"
+      ]
+    },
+    "left_workbench": {
+      "count": 3,
+      "sample": [
+        "workbench_left_top",
+        "workbench_left_apron",
+        "workbench_left_support"
+      ]
+    },
+    "network_appliance": {
+      "count": 3,
+      "sample": [
+        "network_appliance_chassis",
+        "network_appliance_front",
+        "network_appliance_leds"
+      ]
+    },
+    "outdoor": {
+      "count": 5,
+      "sample": [
+        "exterior_sky",
+        "exterior_clouds",
+        "exterior_capitol",
+        "exterior_city",
+        "exterior_trees"
+      ]
+    },
+    "plant_foreground": {
+      "count": 4,
+      "sample": [
+        "plant_foreground_pot",
+        "plant_foreground_foliage_crown",
+        "plant_foreground_foliage_left",
+        "plant_foreground_foliage_right"
+      ]
+    },
+    "plant_rear_cabinet_left": {
+      "count": 4,
+      "sample": [
+        "plant_rear_cabinet_left_pot",
+        "plant_rear_cabinet_left_foliage_crown",
+        "plant_rear_cabinet_left_foliage_left",
+        "plant_rear_cabinet_left_foliage_right"
+      ]
+    },
+    "plant_rear_cabinet_right": {
+      "count": 4,
+      "sample": [
+        "plant_rear_cabinet_right_pot",
+        "plant_rear_cabinet_right_foliage_crown",
+        "plant_rear_cabinet_right_foliage_left",
+        "plant_rear_cabinet_right_foliage_right"
+      ]
+    },
+    "plant_rear_left": {
+      "count": 4,
+      "sample": [
+        "plant_rear_left_pot",
+        "plant_rear_left_foliage_crown",
+        "plant_rear_left_foliage_left",
+        "plant_rear_left_foliage_right"
+      ]
+    },
+    "plant_server_corner": {
+      "count": 4,
+      "sample": [
+        "plant_server_corner_pot",
+        "plant_server_corner_foliage_crown",
+        "plant_server_corner_foliage_left",
+        "plant_server_corner_foliage_right"
+      ]
+    },
+    "plant_service_desk": {
+      "count": 4,
+      "sample": [
+        "plant_service_desk_pot",
+        "plant_service_desk_foliage_crown",
+        "plant_service_desk_foliage_left",
+        "plant_service_desk_foliage_right"
+      ]
+    },
+    "plant_workstation": {
+      "count": 4,
+      "sample": [
+        "plant_workstation_pot",
+        "plant_workstation_foliage_crown",
+        "plant_workstation_foliage_left",
+        "plant_workstation_foliage_right"
+      ]
+    },
+    "rear_storage": {
+      "count": 6,
+      "sample": [
+        "rear_cabinet_chassis",
+        "rear_storage_drawer_1",
+        "rear_storage_drawer_2",
+        "rear_storage_drawer_3",
+        "rear_storage_drawer_4",
+        "rear_storage_drawer_5"
+      ]
+    },
+    "right_workbench": {
+      "count": 2,
+      "sample": [
+        "workbench_right_top",
+        "workbench_right_frame"
+      ]
+    },
+    "server_rack_01": {
+      "count": 19,
+      "sample": [
+        "server_rack_01_chassis",
+        "server_rack_01_bay_01",
+        "server_rack_01_led_row_01",
+        "server_rack_01_bay_02",
+        "server_rack_01_led_row_02",
+        "server_rack_01_bay_03",
+        "server_rack_01_led_row_03",
+        "server_rack_01_bay_04",
+        "server_rack_01_led_row_04",
+        "server_rack_01_bay_05",
+        "server_rack_01_led_row_05",
+        "server_rack_01_bay_06"
+      ]
+    },
+    "server_rack_02": {
+      "count": 19,
+      "sample": [
+        "server_rack_02_chassis",
+        "server_rack_02_bay_01",
+        "server_rack_02_led_row_01",
+        "server_rack_02_bay_02",
+        "server_rack_02_led_row_02",
+        "server_rack_02_bay_03",
+        "server_rack_02_led_row_03",
+        "server_rack_02_bay_04",
+        "server_rack_02_led_row_04",
+        "server_rack_02_bay_05",
+        "server_rack_02_led_row_05",
+        "server_rack_02_bay_06"
+      ]
+    },
+    "server_rack_03": {
+      "count": 19,
+      "sample": [
+        "server_rack_03_chassis",
+        "server_rack_03_bay_01",
+        "server_rack_03_led_row_01",
+        "server_rack_03_bay_02",
+        "server_rack_03_led_row_02",
+        "server_rack_03_bay_03",
+        "server_rack_03_led_row_03",
+        "server_rack_03_bay_04",
+        "server_rack_03_led_row_04",
+        "server_rack_03_bay_05",
+        "server_rack_03_led_row_05",
+        "server_rack_03_bay_06"
+      ]
+    },
+    "server_rack_04": {
+      "count": 19,
+      "sample": [
+        "server_rack_04_chassis",
+        "server_rack_04_bay_01",
+        "server_rack_04_led_row_01",
+        "server_rack_04_bay_02",
+        "server_rack_04_led_row_02",
+        "server_rack_04_bay_03",
+        "server_rack_04_led_row_03",
+        "server_rack_04_bay_04",
+        "server_rack_04_led_row_04",
+        "server_rack_04_bay_05",
+        "server_rack_04_led_row_05",
+        "server_rack_04_bay_06"
+      ]
+    },
+    "service_chair": {
+      "count": 2,
+      "sample": [
+        "service_chair_back",
+        "service_chair_seat"
+      ]
+    },
+    "service_desk": {
+      "count": 5,
+      "sample": [
+        "service_desk_body",
+        "service_desk_countertop",
+        "service_desk_trim",
+        "service_desk_title",
+        "service_desk_caption"
+      ]
+    },
+    "service_desk_props": {
+      "count": 5,
+      "sample": [
+        "desk_paper_tray_1",
+        "desk_paper_tray_2",
+        "desk_paper_tray_3",
+        "desk_small_tower",
+        "desk_help_sign"
+      ]
+    },
+    "service_monitor_left": {
+      "count": 3,
+      "sample": [
+        "service_monitor_left_housing",
+        "service_monitor_left_back",
+        "service_monitor_left_stand"
+      ]
+    },
+    "service_monitor_right": {
+      "count": 3,
+      "sample": [
+        "service_monitor_right_housing",
+        "service_monitor_right_back",
+        "service_monitor_right_stand"
+      ]
+    },
+    "shelf": {
+      "count": 6,
+      "sample": [
+        "shelf_board",
+        "shelf_binder_1",
+        "shelf_binder_2",
+        "shelf_binder_3",
+        "shelf_binder_4",
+        "shelf_binder_5"
+      ]
+    },
+    "status_board": {
+      "count": 8,
+      "sample": [
+        "board_bezel",
+        "board_screen_left",
+        "board_screen_right",
+        "board_heading",
+        "board_heading_signal",
+        "board_mission_heading",
+        "board_mission_icon",
+        "board_mission_caption"
+      ]
+    },
+    "storage_bin_1": {
+      "count": 3,
+      "sample": [
+        "storage_bin_1_body",
+        "storage_bin_1_lid",
+        "storage_bin_1_label"
+      ]
+    },
+    "storage_bin_2": {
+      "count": 3,
+      "sample": [
+        "storage_bin_2_body",
+        "storage_bin_2_lid",
+        "storage_bin_2_label"
+      ]
+    },
+    "tool_cart": {
+      "count": 5,
+      "sample": [
+        "tool_cart_shell",
+        "tool_cart_top",
+        "tool_cart_side",
+        "tool_cart_wheel_1",
+        "tool_cart_wheel_2"
+      ]
+    },
+    "tool_cart_drawer_1": {
+      "count": 3,
+      "sample": [
+        "tool_cart_drawer_1_face",
+        "tool_cart_drawer_1_label",
+        "tool_cart_drawer_1_handle"
+      ]
+    },
+    "tool_cart_drawer_2": {
+      "count": 3,
+      "sample": [
+        "tool_cart_drawer_2_face",
+        "tool_cart_drawer_2_label",
+        "tool_cart_drawer_2_handle"
+      ]
+    },
+    "tool_cart_drawer_3": {
+      "count": 3,
+      "sample": [
+        "tool_cart_drawer_3_face",
+        "tool_cart_drawer_3_label",
+        "tool_cart_drawer_3_handle"
+      ]
+    },
+    "tool_cart_drawer_4": {
+      "count": 3,
+      "sample": [
+        "tool_cart_drawer_4_face",
+        "tool_cart_drawer_4_label",
+        "tool_cart_drawer_4_handle"
+      ]
+    },
+    "tool_cart_drawer_5": {
+      "count": 3,
+      "sample": [
+        "tool_cart_drawer_5_face",
+        "tool_cart_drawer_5_label",
+        "tool_cart_drawer_5_handle"
+      ]
+    },
+    "wall_signage": {
+      "count": 4,
+      "sample": [
+        "column_values",
+        "rear_mission_poster",
+        "right_motto",
+        "right_service_list"
+      ]
+    },
+    "windows": {
+      "count": 5,
+      "sample": [
+        "window_mullion_1",
+        "window_mullion_2",
+        "window_mullion_3",
+        "window_mullion_4",
+        "window_mullion_5"
+      ]
+    },
+    "workbench_laptop": {
+      "count": 1,
+      "sample": [
+        "laptop_base"
+      ]
+    },
+    "workstation_monitor_01": {
+      "count": 3,
+      "sample": [
+        "workstation_monitor_01_stand",
+        "workstation_monitor_01_bezel",
+        "workstation_monitor_01_screen"
+      ]
+    },
+    "workstation_monitor_02": {
+      "count": 3,
+      "sample": [
+        "workstation_monitor_02_stand",
+        "workstation_monitor_02_bezel",
+        "workstation_monitor_02_screen"
+      ]
+    },
+    "workstation_monitor_03": {
+      "count": 3,
+      "sample": [
+        "workstation_monitor_03_stand",
+        "workstation_monitor_03_bezel",
+        "workstation_monitor_03_screen"
+      ]
+    },
+    "workstation_monitor_04": {
+      "count": 3,
+      "sample": [
+        "workstation_monitor_04_stand",
+        "workstation_monitor_04_bezel",
+        "workstation_monitor_04_screen"
+      ]
+    },
+    "workstation_phone": {
+      "count": 2,
+      "sample": [
+        "workstation_phone_body",
+        "workstation_phone_handset"
+      ]
+    },
+    "workstation_props": {
+      "count": 3,
+      "sample": [
+        "workstation_keyboard_near",
+        "workstation_keyboard_far",
+        "workstation_mouse"
+      ]
+    }
+  },
+  "motionKinds": {
+    "door_hinge": {
+      "count": 1,
+      "sample": [
+        "deployment_door_panel"
+      ]
+    },
+    "drawer_pull": {
+      "count": 8,
+      "sample": [
+        "left_cabinet_drawer_1_face",
+        "left_cabinet_drawer_2_face",
+        "left_cabinet_drawer_3_face",
+        "tool_cart_drawer_1_face",
+        "tool_cart_drawer_2_face",
+        "tool_cart_drawer_3_face",
+        "tool_cart_drawer_4_face",
+        "tool_cart_drawer_5_face"
+      ]
+    },
+    "drift_small": {
+      "count": 1,
+      "sample": [
+        "exterior_clouds"
+      ]
+    },
+    "laptop_hinge": {
+      "count": 1,
+      "sample": [
+        "laptop_lid_housing"
+      ]
+    },
+    "lift_small": {
+      "count": 2,
+      "sample": [
+        "storage_bin_1_lid",
+        "storage_bin_2_lid"
+      ]
+    },
+    "light_intensity": {
+      "count": 10,
+      "sample": [
+        "ceiling_light_panel_1",
+        "ceiling_light_panel_2",
+        "ceiling_light_panel_3",
+        "ceiling_light_panel_4",
+        "ceiling_downlight_1",
+        "ceiling_downlight_2",
+        "ceiling_downlight_3",
+        "ceiling_downlight_4",
+        "ceiling_downlight_5",
+        "ceiling_downlight_6"
+      ]
+    },
+    "opacity": {
+      "count": 8,
+      "sample": [
+        "sign_server_icon",
+        "sign_title",
+        "board_row_1_value",
+        "board_row_2_value",
+        "board_row_3_value",
+        "board_row_4_value",
+        "board_mission_icon",
+        "desk_help_sign"
+      ]
+    },
+    "phone_ring": {
+      "count": 1,
+      "sample": [
+        "workstation_phone_handset"
+      ]
+    },
+    "pulse": {
+      "count": 44,
+      "sample": [
+        "board_heading_signal",
+        "board_row_1_signal",
+        "board_row_2_signal",
+        "board_row_3_signal",
+        "board_row_4_signal",
+        "server_rack_01_led_row_01",
+        "server_rack_01_led_row_02",
+        "server_rack_01_led_row_03",
+        "server_rack_01_led_row_04",
+        "server_rack_01_led_row_05",
+        "server_rack_01_led_row_06",
+        "server_rack_01_led_row_07"
+      ]
+    },
+    "rotate": {
+      "count": 8,
+      "sample": [
+        "chair_far_wheel_1",
+        "chair_far_wheel_2",
+        "chair_far_wheel_3",
+        "chair_near_wheel_1",
+        "chair_near_wheel_2",
+        "chair_near_wheel_3",
+        "tool_cart_wheel_1",
+        "tool_cart_wheel_2"
+      ]
+    },
+    "rotate_small": {
+      "count": 2,
+      "sample": [
+        "deployment_door_handle_left",
+        "deployment_door_handle_right"
+      ]
+    },
+    "screen_refresh": {
+      "count": 5,
+      "sample": [
+        "workstation_monitor_01_screen",
+        "workstation_monitor_02_screen",
+        "workstation_monitor_03_screen",
+        "workstation_monitor_04_screen",
+        "laptop_screen"
+      ]
+    },
+    "static": {
+      "count": 144,
+      "sample": [
+        "back_wall",
+        "floor_tiles",
+        "ceiling",
+        "left_wall",
+        "right_wall",
+        "exterior_sky",
+        "exterior_capitol",
+        "exterior_city",
+        "exterior_trees",
+        "window_mullion_1",
+        "window_mullion_2",
+        "window_mullion_3"
+      ]
+    },
+    "sway_small": {
+      "count": 24,
+      "sample": [
+        "rear_mission_poster",
+        "cable_loop_left",
+        "cable_loop_right",
+        "plant_rear_left_foliage_crown",
+        "plant_rear_left_foliage_left",
+        "plant_rear_left_foliage_right",
+        "plant_rear_cabinet_left_foliage_crown",
+        "plant_rear_cabinet_left_foliage_left",
+        "plant_rear_cabinet_left_foliage_right",
+        "plant_rear_cabinet_right_foliage_crown",
+        "plant_rear_cabinet_right_foliage_left",
+        "plant_rear_cabinet_right_foliage_right"
+      ]
+    },
+    "tilt_small": {
+      "count": 10,
+      "sample": [
+        "service_chair_back",
+        "service_monitor_left_housing",
+        "service_monitor_right_housing",
+        "desk_reader_head",
+        "workstation_monitor_01_bezel",
+        "workstation_monitor_02_bezel",
+        "workstation_monitor_03_bezel",
+        "workstation_monitor_04_bezel",
+        "chair_far_back",
+        "chair_near_back"
+      ]
+    },
+    "translate_small": {
+      "count": 17,
+      "sample": [
+        "shelf_binder_1",
+        "shelf_binder_2",
+        "shelf_binder_3",
+        "shelf_binder_4",
+        "shelf_binder_5",
+        "rear_storage_drawer_1",
+        "rear_storage_drawer_2",
+        "rear_storage_drawer_3",
+        "rear_storage_drawer_4",
+        "rear_storage_drawer_5",
+        "desk_paper_tray_1",
+        "desk_paper_tray_2"
+      ]
+    }
+  },
+  "hotspots": [
+    {
+      "id": "status-board",
+      "label": "System status illustration",
+      "href": "#monitoring",
+      "target": "status_board",
+      "hitbox": [
+        615,
+        213,
+        420,
+        200
+      ],
+      "effect": "board-refresh"
+    },
+    {
+      "id": "helpdesk",
+      "label": "IT support",
+      "href": "#support",
+      "target": "service_desk",
+      "hitbox": [
+        568,
+        473,
+        511,
+        142
+      ],
+      "effect": "reader-pulse"
+    },
+    {
+      "id": "workstations",
+      "label": "Workstations and endpoints",
+      "href": "#workstations",
+      "target": "workstation_monitor_02",
+      "hitbox": [
+        112,
+        413,
+        280,
+        126
+      ],
+      "effect": "screen-refresh"
+    },
+    {
+      "id": "infrastructure",
+      "label": "Network and infrastructure",
+      "href": "#infrastructure",
+      "target": "server_rack_02",
+      "hitbox": [
+        1351,
+        258,
+        195,
+        274
+      ],
+      "effect": "rack-ripple"
+    },
+    {
+      "id": "deployment",
+      "label": "Deployment and maintenance",
+      "href": "#deployment",
+      "target": "deployment_door_leaf",
+      "hitbox": [
+        1062,
+        282,
+        126,
+        272
+      ],
+      "effect": "door-open"
+    },
+    {
+      "id": "toolkit",
+      "label": "IT service process",
+      "href": "#process",
+      "target": "tool_cart",
+      "hitbox": [
+        1377,
+        545,
+        160,
+        248
+      ],
+      "effect": "drawers"
+    },
+    {
+      "id": "contact",
+      "label": "Request IT support",
+      "href": "/contact/?project=itsupport&from=it-room#request",
+      "target": null,
+      "hitbox": null,
+      "effect": null
+    }
+  ],
+  "safeFirstPassEffectsImplemented": [
+    "ceiling/room light breathing",
+    "status board glow and scan",
+    "workstation monitor glow",
+    "server rack LEDs",
+    "rack glass highlight",
+    "floor ambient/status/workstation/rack/toolcart reflections",
+    "focus washes for status/workstations/racks/deployment/toolcart",
+    "Pause Motion and reduced-motion gating",
+    "debug overlay for interaction zones"
+  ],
+  "deferredNativeRive": "SPECIFICATION_ONLY_NOT_COMPILED",
+  "nextProductionTasks": [
+    "Resolve 1672x941 PNG vs 1648x928 vector coordinate source decision.",
+    "If exact PNG parity is required, create IT static base from the PNG and scale/re-author hotspots.",
+    "Promote safe SVG layer assemblies only after visual parity and no-rectangle QA.",
+    "Add true object isolation for server LEDs, monitors, tool drawers and deployment door only where clean source supports it.",
+    "Keep mascot hooks only; do not insert mascot until character package is rebuilt."
+  ]
+}

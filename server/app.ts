@@ -1,4 +1,4 @@
-import Fastify, { type FastifyInstance, type FastifyReply, type FastifyRequest } from 'fastify';
+import Fastify, { LogController, type FastifyInstance, type FastifyReply, type FastifyRequest } from 'fastify';
 import formbody from '@fastify/formbody';
 import rateLimit from '@fastify/rate-limit';
 import { randomUUID } from 'node:crypto';
@@ -21,7 +21,7 @@ export async function buildApp({ config, provider, contact, logger = true }: App
     logger: logger ? { level: 'info', serializers: redactingSerializers as never, redact: { paths: ['req.headers', 'req.body', 'res.headers'], remove: true } } : false, // serializers narrow pino's shapes on purpose: no raw IP, no body, no headers
     bodyLimit: BODY_LIMIT, requestTimeout: 30_000, connectionTimeout: 30_000, keepAliveTimeout: 5_000, trustProxy: config.trustProxy,
     genReqId: () => randomUUID(),
-    disableRequestLogging: true,
+    logController: new LogController({ disableRequestLogging: true }),
   });
   const duplicates = new DuplicatePolicy(config.duplicateWindowMs);
   await app.register(formbody, { bodyLimit: BODY_LIMIT });

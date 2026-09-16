@@ -1,0 +1,4871 @@
+{
+  "canvas": {
+    "width": 1648,
+    "height": 928
+  },
+  "summary": {},
+  "objects": [
+    {
+      "id": "back_wall",
+      "group": "architecture",
+      "label": "Rear wall",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 74031,
+      "sourceOrder": 0,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "floor_tiles",
+      "group": "architecture",
+      "label": "Tiled walking plane",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 423888,
+      "sourceOrder": 1,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "ceiling",
+      "group": "architecture",
+      "label": "Ceiling",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 157268,
+      "sourceOrder": 2,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "left_wall",
+      "group": "architecture",
+      "label": "Left wall",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 5386,
+      "sourceOrder": 3,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "right_wall",
+      "group": "architecture",
+      "label": "Right wall",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 16442,
+      "sourceOrder": 4,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "exterior_sky",
+      "group": "outdoor",
+      "label": "Window sky",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 13565,
+      "sourceOrder": 5,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "exterior_clouds",
+      "group": "outdoor",
+      "label": "Exterior cloud silhouettes",
+      "pivot": [
+        185,
+        252
+      ],
+      "motion": "drift_small",
+      "sourcePixels": 24429,
+      "sourceOrder": 6,
+      "visible": true,
+      "classification": "PARALLAX",
+      "animation_responsibility": "tiny exterior/window depth only",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "exterior_capitol",
+      "group": "outdoor",
+      "label": "Capitol illustration",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 5355,
+      "sourceOrder": 7,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "exterior_city",
+      "group": "outdoor",
+      "label": "City silhouettes",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 4798,
+      "sourceOrder": 8,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "exterior_trees",
+      "group": "outdoor",
+      "label": "Exterior trees",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 14994,
+      "sourceOrder": 9,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "window_mullion_1",
+      "group": "windows",
+      "label": "Window Mullion 1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 7314,
+      "sourceOrder": 10,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "window_mullion_2",
+      "group": "windows",
+      "label": "Window Mullion 2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 2311,
+      "sourceOrder": 11,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "window_mullion_3",
+      "group": "windows",
+      "label": "Window Mullion 3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1696,
+      "sourceOrder": 12,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "window_mullion_4",
+      "group": "windows",
+      "label": "Window Mullion 4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 3081,
+      "sourceOrder": 13,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "window_mullion_5",
+      "group": "windows",
+      "label": "Window Mullion 5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1241,
+      "sourceOrder": 14,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "front_left_column",
+      "group": "columns",
+      "label": "Left foreground column",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 31564,
+      "sourceOrder": 15,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "rear_left_column",
+      "group": "columns",
+      "label": "Left rear column",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 7282,
+      "sourceOrder": 16,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "rear_right_column",
+      "group": "columns",
+      "label": "Right rear column",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1433,
+      "sourceOrder": 17,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "column_values",
+      "group": "wall_signage",
+      "label": "Column values and stars",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 17325,
+      "sourceOrder": 18,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "rear_mission_poster",
+      "group": "wall_signage",
+      "label": "Keep systems running poster",
+      "pivot": [
+        514,
+        236
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 22848,
+      "sourceOrder": 19,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "right_motto",
+      "group": "wall_signage",
+      "label": "Right wall motto",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 41764,
+      "sourceOrder": 20,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "right_service_list",
+      "group": "wall_signage",
+      "label": "Right wall service labels",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 18556,
+      "sourceOrder": 21,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "ceiling_light_panel_1",
+      "group": "ceiling_lights",
+      "label": "Ceiling Light Panel 1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity",
+      "sourcePixels": 2991,
+      "sourceOrder": 22,
+      "visible": true,
+      "classification": "LIGHTING",
+      "animation_responsibility": "localized emission and floor/wall response",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "ceiling_light_panel_2",
+      "group": "ceiling_lights",
+      "label": "Ceiling Light Panel 2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity",
+      "sourcePixels": 1271,
+      "sourceOrder": 23,
+      "visible": true,
+      "classification": "LIGHTING",
+      "animation_responsibility": "localized emission and floor/wall response",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "ceiling_light_panel_3",
+      "group": "ceiling_lights",
+      "label": "Ceiling Light Panel 3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity",
+      "sourcePixels": 1264,
+      "sourceOrder": 24,
+      "visible": true,
+      "classification": "LIGHTING",
+      "animation_responsibility": "localized emission and floor/wall response",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "ceiling_light_panel_4",
+      "group": "ceiling_lights",
+      "label": "Ceiling Light Panel 4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity",
+      "sourcePixels": 3541,
+      "sourceOrder": 25,
+      "visible": true,
+      "classification": "LIGHTING",
+      "animation_responsibility": "localized emission and floor/wall response",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "ceiling_downlight_1",
+      "group": "ceiling_lights",
+      "label": "Ceiling Downlight 1",
+      "pivot": [
+        461,
+        44
+      ],
+      "motion": "light_intensity",
+      "sourcePixels": 549,
+      "sourceOrder": 26,
+      "visible": true,
+      "classification": "LIGHTING",
+      "animation_responsibility": "localized emission and floor/wall response",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "ceiling_downlight_2",
+      "group": "ceiling_lights",
+      "label": "Ceiling Downlight 2",
+      "pivot": [
+        470,
+        169
+      ],
+      "motion": "light_intensity",
+      "sourcePixels": 385,
+      "sourceOrder": 27,
+      "visible": true,
+      "classification": "LIGHTING",
+      "animation_responsibility": "localized emission and floor/wall response",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "ceiling_downlight_3",
+      "group": "ceiling_lights",
+      "label": "Ceiling Downlight 3",
+      "pivot": [
+        677,
+        170
+      ],
+      "motion": "light_intensity",
+      "sourcePixels": 385,
+      "sourceOrder": 28,
+      "visible": true,
+      "classification": "LIGHTING",
+      "animation_responsibility": "localized emission and floor/wall response",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "ceiling_downlight_4",
+      "group": "ceiling_lights",
+      "label": "Ceiling Downlight 4",
+      "pivot": [
+        968,
+        170
+      ],
+      "motion": "light_intensity",
+      "sourcePixels": 385,
+      "sourceOrder": 29,
+      "visible": true,
+      "classification": "LIGHTING",
+      "animation_responsibility": "localized emission and floor/wall response",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "ceiling_downlight_5",
+      "group": "ceiling_lights",
+      "label": "Ceiling Downlight 5",
+      "pivot": [
+        1167,
+        170
+      ],
+      "motion": "light_intensity",
+      "sourcePixels": 385,
+      "sourceOrder": 30,
+      "visible": true,
+      "classification": "LIGHTING",
+      "animation_responsibility": "localized emission and floor/wall response",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "ceiling_downlight_6",
+      "group": "ceiling_lights",
+      "label": "Ceiling Downlight 6",
+      "pivot": [
+        1180,
+        44
+      ],
+      "motion": "light_intensity",
+      "sourcePixels": 549,
+      "sourceOrder": 31,
+      "visible": true,
+      "classification": "LIGHTING",
+      "animation_responsibility": "localized emission and floor/wall response",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "sign_cable_left",
+      "group": "hanging_sign",
+      "label": "Sign left suspension cable",
+      "pivot": [
+        570,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 880,
+      "sourceOrder": 32,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "sign_cable_right",
+      "group": "hanging_sign",
+      "label": "Sign right suspension cable",
+      "pivot": [
+        1075,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 864,
+      "sourceOrder": 33,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "sign_housing",
+      "group": "hanging_sign",
+      "label": "IT Services hanging sign housing",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 32659,
+      "sourceOrder": 34,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "sign_server_icon",
+      "group": "hanging_sign",
+      "label": "Sign server icon",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity",
+      "sourcePixels": 3300,
+      "sourceOrder": 35,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "sign_title",
+      "group": "hanging_sign",
+      "label": "IT SERVICES outlined title",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity",
+      "sourcePixels": 14056,
+      "sourceOrder": 36,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "sign_subtitle",
+      "group": "hanging_sign",
+      "label": "Sign supporting text",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 8308,
+      "sourceOrder": 37,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_bezel",
+      "group": "status_board",
+      "label": "System status display bezel",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 14634,
+      "sourceOrder": 38,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_screen_left",
+      "group": "status_board",
+      "label": "Left status-screen backplane",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 21596,
+      "sourceOrder": 39,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_screen_right",
+      "group": "status_board",
+      "label": "Right mission-screen backplane",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 10451,
+      "sourceOrder": 40,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_heading",
+      "group": "status_board",
+      "label": "System status heading",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 4300,
+      "sourceOrder": 41,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_heading_signal",
+      "group": "status_board",
+      "label": "Heading status indicator",
+      "pivot": [
+        648,
+        245
+      ],
+      "motion": "pulse",
+      "sourcePixels": 702,
+      "sourceOrder": 42,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_row_1_label",
+      "group": "board_row_1",
+      "label": "IT services outlined label",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1995,
+      "sourceOrder": 43,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_row_1_value",
+      "group": "board_row_1",
+      "label": "IT services illustrated operational value",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity",
+      "sourcePixels": 1672,
+      "sourceOrder": 44,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_row_1_signal",
+      "group": "board_row_1",
+      "label": "IT services status indicator",
+      "pivot": [
+        649,
+        287
+      ],
+      "motion": "pulse",
+      "sourcePixels": 675,
+      "sourceOrder": 45,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_row_2_label",
+      "group": "board_row_2",
+      "label": "Network outlined label",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1995,
+      "sourceOrder": 46,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_row_2_value",
+      "group": "board_row_2",
+      "label": "Network illustrated operational value",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity",
+      "sourcePixels": 1672,
+      "sourceOrder": 47,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_row_2_signal",
+      "group": "board_row_2",
+      "label": "Network status indicator",
+      "pivot": [
+        649,
+        319
+      ],
+      "motion": "pulse",
+      "sourcePixels": 675,
+      "sourceOrder": 48,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_row_3_label",
+      "group": "board_row_3",
+      "label": "Applications outlined label",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1995,
+      "sourceOrder": 49,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_row_3_value",
+      "group": "board_row_3",
+      "label": "Applications illustrated operational value",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity",
+      "sourcePixels": 1672,
+      "sourceOrder": 50,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_row_3_signal",
+      "group": "board_row_3",
+      "label": "Applications status indicator",
+      "pivot": [
+        649,
+        350
+      ],
+      "motion": "pulse",
+      "sourcePixels": 675,
+      "sourceOrder": 51,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_row_4_label",
+      "group": "board_row_4",
+      "label": "Infrastructure outlined label",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1995,
+      "sourceOrder": 52,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_row_4_value",
+      "group": "board_row_4",
+      "label": "Infrastructure illustrated operational value",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity",
+      "sourcePixels": 1672,
+      "sourceOrder": 53,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_row_4_signal",
+      "group": "board_row_4",
+      "label": "Infrastructure status indicator",
+      "pivot": [
+        649,
+        381
+      ],
+      "motion": "pulse",
+      "sourcePixels": 675,
+      "sourceOrder": 54,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_mission_heading",
+      "group": "status_board",
+      "label": "Serving our mission heading",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 4000,
+      "sourceOrder": 55,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_mission_icon",
+      "group": "status_board",
+      "label": "Board civic icon",
+      "pivot": [
+        948,
+        315
+      ],
+      "motion": "opacity",
+      "sourcePixels": 6364,
+      "sourceOrder": 56,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "board_mission_caption",
+      "group": "status_board",
+      "label": "Board mission caption",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 4995,
+      "sourceOrder": 57,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "deployment_door_frame",
+      "group": "deployment_door",
+      "label": "Deployment door fixed frame",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 8093,
+      "sourceOrder": 58,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "deployment_door_panel",
+      "group": "deployment_door_leaf",
+      "label": "Deployment door moving panel",
+      "pivot": [
+        1075,
+        550
+      ],
+      "motion": "door_hinge",
+      "sourcePixels": 14681,
+      "sourceOrder": 59,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "deployment_door_plaque",
+      "group": "deployment_door_leaf",
+      "label": "Door label and gear",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 7482,
+      "sourceOrder": 60,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "deployment_door_handle_left",
+      "group": "deployment_door_leaf",
+      "label": "Door left illustrated handle",
+      "pivot": [
+        1081,
+        438
+      ],
+      "motion": "rotate_small",
+      "sourcePixels": 667,
+      "sourceOrder": 61,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "deployment_door_handle_right",
+      "group": "deployment_door_leaf",
+      "label": "Door right illustrated handle",
+      "pivot": [
+        1165,
+        438
+      ],
+      "motion": "rotate_small",
+      "sourcePixels": 918,
+      "sourceOrder": 62,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "deployment_door_kickplate",
+      "group": "deployment_door_leaf",
+      "label": "Door kickplate",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1960,
+      "sourceOrder": 63,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "shelf_board",
+      "group": "shelf",
+      "label": "Rear wall shelf",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1449,
+      "sourceOrder": 64,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "shelf_binder_1",
+      "group": "shelf",
+      "label": "Shelf Binder 1",
+      "pivot": [
+        1320,
+        248
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 603,
+      "sourceOrder": 65,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "shelf_binder_2",
+      "group": "shelf",
+      "label": "Shelf Binder 2",
+      "pivot": [
+        1320,
+        248
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 789,
+      "sourceOrder": 66,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "shelf_binder_3",
+      "group": "shelf",
+      "label": "Shelf Binder 3",
+      "pivot": [
+        1320,
+        248
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 883,
+      "sourceOrder": 67,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "shelf_binder_4",
+      "group": "shelf",
+      "label": "Shelf Binder 4",
+      "pivot": [
+        1320,
+        248
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 945,
+      "sourceOrder": 68,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "shelf_binder_5",
+      "group": "shelf",
+      "label": "Shelf Binder 5",
+      "pivot": [
+        1320,
+        248
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 1204,
+      "sourceOrder": 69,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "server_rack_01_chassis",
+      "group": "server_rack_01",
+      "label": "Server cabinet 1 chassis",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 6658,
+      "sourceOrder": 70,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_bay_01",
+      "group": "server_rack_01",
+      "label": "Rack 1 equipment bay 1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 860,
+      "sourceOrder": 71,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_led_row_01",
+      "group": "server_rack_01",
+      "label": "Rack 1 LED row 1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 90,
+      "sourceOrder": 72,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_bay_02",
+      "group": "server_rack_01",
+      "label": "Rack 1 equipment bay 2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 863,
+      "sourceOrder": 73,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_led_row_02",
+      "group": "server_rack_01",
+      "label": "Rack 1 LED row 2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 87,
+      "sourceOrder": 74,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_bay_03",
+      "group": "server_rack_01",
+      "label": "Rack 1 equipment bay 3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 766,
+      "sourceOrder": 75,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_led_row_03",
+      "group": "server_rack_01",
+      "label": "Rack 1 LED row 3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 184,
+      "sourceOrder": 76,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_bay_04",
+      "group": "server_rack_01",
+      "label": "Rack 1 equipment bay 4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 801,
+      "sourceOrder": 77,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_led_row_04",
+      "group": "server_rack_01",
+      "label": "Rack 1 LED row 4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 149,
+      "sourceOrder": 78,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_bay_05",
+      "group": "server_rack_01",
+      "label": "Rack 1 equipment bay 5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 721,
+      "sourceOrder": 79,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_led_row_05",
+      "group": "server_rack_01",
+      "label": "Rack 1 LED row 5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 116,
+      "sourceOrder": 80,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_bay_06",
+      "group": "server_rack_01",
+      "label": "Rack 1 equipment bay 6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 609,
+      "sourceOrder": 81,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_led_row_06",
+      "group": "server_rack_01",
+      "label": "Rack 1 LED row 6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 92,
+      "sourceOrder": 82,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_bay_07",
+      "group": "server_rack_01",
+      "label": "Rack 1 equipment bay 7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 624,
+      "sourceOrder": 83,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_led_row_07",
+      "group": "server_rack_01",
+      "label": "Rack 1 LED row 7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 55,
+      "sourceOrder": 84,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_bay_08",
+      "group": "server_rack_01",
+      "label": "Rack 1 equipment bay 8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 735,
+      "sourceOrder": 85,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_led_row_08",
+      "group": "server_rack_01",
+      "label": "Rack 1 LED row 8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 72,
+      "sourceOrder": 86,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_bay_09",
+      "group": "server_rack_01",
+      "label": "Rack 1 equipment bay 9",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 794,
+      "sourceOrder": 87,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_01_led_row_09",
+      "group": "server_rack_01",
+      "label": "Rack 1 LED row 9",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 141,
+      "sourceOrder": 88,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_chassis",
+      "group": "server_rack_02",
+      "label": "Server cabinet 2 chassis",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 7614,
+      "sourceOrder": 89,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_bay_01",
+      "group": "server_rack_02",
+      "label": "Rack 2 equipment bay 1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1344,
+      "sourceOrder": 90,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_led_row_01",
+      "group": "server_rack_02",
+      "label": "Rack 2 LED row 1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 81,
+      "sourceOrder": 91,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_bay_02",
+      "group": "server_rack_02",
+      "label": "Rack 2 equipment bay 2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1279,
+      "sourceOrder": 92,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_led_row_02",
+      "group": "server_rack_02",
+      "label": "Rack 2 LED row 2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 146,
+      "sourceOrder": 93,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_bay_03",
+      "group": "server_rack_02",
+      "label": "Rack 2 equipment bay 3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1304,
+      "sourceOrder": 94,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_led_row_03",
+      "group": "server_rack_02",
+      "label": "Rack 2 LED row 3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 121,
+      "sourceOrder": 95,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_bay_04",
+      "group": "server_rack_02",
+      "label": "Rack 2 equipment bay 4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1188,
+      "sourceOrder": 96,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_led_row_04",
+      "group": "server_rack_02",
+      "label": "Rack 2 LED row 4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 237,
+      "sourceOrder": 97,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_bay_05",
+      "group": "server_rack_02",
+      "label": "Rack 2 equipment bay 5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1257,
+      "sourceOrder": 98,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_led_row_05",
+      "group": "server_rack_02",
+      "label": "Rack 2 LED row 5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 168,
+      "sourceOrder": 99,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_bay_06",
+      "group": "server_rack_02",
+      "label": "Rack 2 equipment bay 6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1209,
+      "sourceOrder": 100,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_led_row_06",
+      "group": "server_rack_02",
+      "label": "Rack 2 LED row 6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 216,
+      "sourceOrder": 101,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_bay_07",
+      "group": "server_rack_02",
+      "label": "Rack 2 equipment bay 7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1297,
+      "sourceOrder": 102,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_led_row_07",
+      "group": "server_rack_02",
+      "label": "Rack 2 LED row 7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 128,
+      "sourceOrder": 103,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_bay_08",
+      "group": "server_rack_02",
+      "label": "Rack 2 equipment bay 8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1121,
+      "sourceOrder": 104,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_led_row_08",
+      "group": "server_rack_02",
+      "label": "Rack 2 LED row 8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 162,
+      "sourceOrder": 105,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_bay_09",
+      "group": "server_rack_02",
+      "label": "Rack 2 equipment bay 9",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 377,
+      "sourceOrder": 106,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_02_led_row_09",
+      "group": "server_rack_02",
+      "label": "Rack 2 LED row 9",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 13,
+      "sourceOrder": 107,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_chassis",
+      "group": "server_rack_03",
+      "label": "Server cabinet 3 chassis",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 7568,
+      "sourceOrder": 108,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_bay_01",
+      "group": "server_rack_03",
+      "label": "Rack 3 equipment bay 1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1390,
+      "sourceOrder": 109,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_led_row_01",
+      "group": "server_rack_03",
+      "label": "Rack 3 LED row 1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 60,
+      "sourceOrder": 110,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_bay_02",
+      "group": "server_rack_03",
+      "label": "Rack 3 equipment bay 2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1282,
+      "sourceOrder": 111,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_led_row_02",
+      "group": "server_rack_03",
+      "label": "Rack 3 LED row 2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 168,
+      "sourceOrder": 112,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_bay_03",
+      "group": "server_rack_03",
+      "label": "Rack 3 equipment bay 3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1295,
+      "sourceOrder": 113,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_led_row_03",
+      "group": "server_rack_03",
+      "label": "Rack 3 LED row 3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 155,
+      "sourceOrder": 114,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_bay_04",
+      "group": "server_rack_03",
+      "label": "Rack 3 equipment bay 4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1313,
+      "sourceOrder": 115,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_led_row_04",
+      "group": "server_rack_03",
+      "label": "Rack 3 LED row 4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 137,
+      "sourceOrder": 116,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_bay_05",
+      "group": "server_rack_03",
+      "label": "Rack 3 equipment bay 5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1328,
+      "sourceOrder": 117,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_led_row_05",
+      "group": "server_rack_03",
+      "label": "Rack 3 LED row 5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 122,
+      "sourceOrder": 118,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_bay_06",
+      "group": "server_rack_03",
+      "label": "Rack 3 equipment bay 6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1266,
+      "sourceOrder": 119,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_led_row_06",
+      "group": "server_rack_03",
+      "label": "Rack 3 LED row 6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 184,
+      "sourceOrder": 120,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_bay_07",
+      "group": "server_rack_03",
+      "label": "Rack 3 equipment bay 7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1340,
+      "sourceOrder": 121,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_led_row_07",
+      "group": "server_rack_03",
+      "label": "Rack 3 LED row 7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 110,
+      "sourceOrder": 122,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_bay_08",
+      "group": "server_rack_03",
+      "label": "Rack 3 equipment bay 8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1284,
+      "sourceOrder": 123,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_led_row_08",
+      "group": "server_rack_03",
+      "label": "Rack 3 LED row 8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 90,
+      "sourceOrder": 124,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_bay_09",
+      "group": "server_rack_03",
+      "label": "Rack 3 equipment bay 9",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 195,
+      "sourceOrder": 125,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_03_led_row_09",
+      "group": "server_rack_03",
+      "label": "Rack 3 LED row 9",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 0,
+      "sourceOrder": 126,
+      "visible": false,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_chassis",
+      "group": "server_rack_04",
+      "label": "Server cabinet 4 chassis",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 6855,
+      "sourceOrder": 127,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_bay_01",
+      "group": "server_rack_04",
+      "label": "Rack 4 equipment bay 1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1960,
+      "sourceOrder": 128,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_led_row_01",
+      "group": "server_rack_04",
+      "label": "Rack 4 LED row 1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 90,
+      "sourceOrder": 129,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_bay_02",
+      "group": "server_rack_04",
+      "label": "Rack 4 equipment bay 2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1848,
+      "sourceOrder": 130,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_led_row_02",
+      "group": "server_rack_04",
+      "label": "Rack 4 LED row 2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 202,
+      "sourceOrder": 131,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_bay_03",
+      "group": "server_rack_04",
+      "label": "Rack 4 equipment bay 3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1978,
+      "sourceOrder": 132,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_led_row_03",
+      "group": "server_rack_04",
+      "label": "Rack 4 LED row 3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 72,
+      "sourceOrder": 133,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_bay_04",
+      "group": "server_rack_04",
+      "label": "Rack 4 equipment bay 4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1645,
+      "sourceOrder": 134,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_led_row_04",
+      "group": "server_rack_04",
+      "label": "Rack 4 LED row 4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 38,
+      "sourceOrder": 135,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_bay_05",
+      "group": "server_rack_04",
+      "label": "Rack 4 equipment bay 5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 25,
+      "sourceOrder": 136,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_led_row_05",
+      "group": "server_rack_04",
+      "label": "Rack 4 LED row 5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 0,
+      "sourceOrder": 137,
+      "visible": false,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_bay_06",
+      "group": "server_rack_04",
+      "label": "Rack 4 equipment bay 6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 33,
+      "sourceOrder": 138,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_led_row_06",
+      "group": "server_rack_04",
+      "label": "Rack 4 LED row 6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 0,
+      "sourceOrder": 139,
+      "visible": false,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_bay_07",
+      "group": "server_rack_04",
+      "label": "Rack 4 equipment bay 7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 50,
+      "sourceOrder": 140,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_led_row_07",
+      "group": "server_rack_04",
+      "label": "Rack 4 LED row 7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 0,
+      "sourceOrder": 141,
+      "visible": false,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_bay_08",
+      "group": "server_rack_04",
+      "label": "Rack 4 equipment bay 8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 58,
+      "sourceOrder": 142,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_led_row_08",
+      "group": "server_rack_04",
+      "label": "Rack 4 LED row 8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 0,
+      "sourceOrder": 143,
+      "visible": false,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_bay_09",
+      "group": "server_rack_04",
+      "label": "Rack 4 equipment bay 9",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 591,
+      "sourceOrder": 144,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "server_rack_04_led_row_09",
+      "group": "server_rack_04",
+      "label": "Rack 4 LED row 9",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 0,
+      "sourceOrder": 145,
+      "visible": false,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "printer_cabinet",
+      "group": "floor_equipment",
+      "label": "Printer and cabinet",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 5174,
+      "sourceOrder": 146,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "floor_endpoint_tower",
+      "group": "floor_equipment",
+      "label": "Floor endpoint tower",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 3730,
+      "sourceOrder": 147,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "floor_endpoint_leds",
+      "group": "floor_equipment",
+      "label": "Endpoint activity indicators",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 315,
+      "sourceOrder": 148,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "rear_cabinet_chassis",
+      "group": "rear_storage",
+      "label": "Rear storage chassis",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 5439,
+      "sourceOrder": 149,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "rear_storage_drawer_1",
+      "group": "rear_storage",
+      "label": "Rear Storage Drawer 1",
+      "pivot": [
+        389,
+        465
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 226,
+      "sourceOrder": 150,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "rear_storage_drawer_2",
+      "group": "rear_storage",
+      "label": "Rear Storage Drawer 2",
+      "pivot": [
+        389,
+        496
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 0,
+      "sourceOrder": 151,
+      "visible": false,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "rear_storage_drawer_3",
+      "group": "rear_storage",
+      "label": "Rear Storage Drawer 3",
+      "pivot": [
+        467,
+        514
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 15,
+      "sourceOrder": 152,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "rear_storage_drawer_4",
+      "group": "rear_storage",
+      "label": "Rear Storage Drawer 4",
+      "pivot": [
+        467,
+        548
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 523,
+      "sourceOrder": 153,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "rear_storage_drawer_5",
+      "group": "rear_storage",
+      "label": "Rear Storage Drawer 5",
+      "pivot": [
+        467,
+        583
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 1326,
+      "sourceOrder": 154,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "service_chair_back",
+      "group": "service_chair",
+      "label": "Service desk chair back",
+      "pivot": [
+        827,
+        478
+      ],
+      "motion": "tilt_small",
+      "sourcePixels": 3035,
+      "sourceOrder": 155,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "service_chair_seat",
+      "group": "service_chair",
+      "label": "Service desk chair seat",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 259,
+      "sourceOrder": 156,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "service_monitor_left_housing",
+      "group": "service_monitor_left",
+      "label": "Service monitor left housing",
+      "pivot": [
+        735,
+        476
+      ],
+      "motion": "tilt_small",
+      "sourcePixels": 1846,
+      "sourceOrder": 157,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "service_monitor_left_back",
+      "group": "service_monitor_left",
+      "label": "Service monitor left rear panel",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 3753,
+      "sourceOrder": 158,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "service_monitor_left_stand",
+      "group": "service_monitor_left",
+      "label": "Service monitor left stand",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 872,
+      "sourceOrder": 159,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "service_monitor_right_housing",
+      "group": "service_monitor_right",
+      "label": "Service monitor right housing",
+      "pivot": [
+        943,
+        476
+      ],
+      "motion": "tilt_small",
+      "sourcePixels": 1220,
+      "sourceOrder": 160,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "service_monitor_right_back",
+      "group": "service_monitor_right",
+      "label": "Service monitor right rear panel",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 2389,
+      "sourceOrder": 161,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "service_monitor_right_stand",
+      "group": "service_monitor_right",
+      "label": "Service monitor right stand",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 601,
+      "sourceOrder": 162,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "desk_paper_tray_1",
+      "group": "service_desk_props",
+      "label": "Desk Paper Tray 1",
+      "pivot": [
+        658,
+        473
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 471,
+      "sourceOrder": 163,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "desk_paper_tray_2",
+      "group": "service_desk_props",
+      "label": "Desk Paper Tray 2",
+      "pivot": [
+        658,
+        473
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 484,
+      "sourceOrder": 164,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "desk_paper_tray_3",
+      "group": "service_desk_props",
+      "label": "Desk Paper Tray 3",
+      "pivot": [
+        658,
+        473
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 454,
+      "sourceOrder": 165,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "desk_reader_base",
+      "group": "desk_reader",
+      "label": "Countertop reader base",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 78,
+      "sourceOrder": 166,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "desk_reader_head",
+      "group": "desk_reader",
+      "label": "Countertop reader head",
+      "pivot": [
+        891,
+        474
+      ],
+      "motion": "tilt_small",
+      "sourcePixels": 170,
+      "sourceOrder": 167,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "desk_reader_indicator",
+      "group": "desk_reader",
+      "label": "Countertop reader indicator",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 108,
+      "sourceOrder": 168,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "desk_small_tower",
+      "group": "service_desk_props",
+      "label": "Service desk small equipment tower",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1443,
+      "sourceOrder": 169,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "desk_help_sign",
+      "group": "service_desk_props",
+      "label": "Help solve deliver tabletop sign",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity",
+      "sourcePixels": 1728,
+      "sourceOrder": 170,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "service_desk_body",
+      "group": "service_desk",
+      "label": "Service desk body",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 41997,
+      "sourceOrder": 171,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "service_desk_countertop",
+      "group": "service_desk",
+      "label": "Service desk countertop",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 8475,
+      "sourceOrder": 172,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "service_desk_trim",
+      "group": "service_desk",
+      "label": "Service desk base trim",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 9090,
+      "sourceOrder": 173,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "service_desk_title",
+      "group": "service_desk",
+      "label": "IT SERVICES front title",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 6541,
+      "sourceOrder": 174,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "service_desk_caption",
+      "group": "service_desk",
+      "label": "Desk support solutions reliability caption",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 6952,
+      "sourceOrder": 175,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workbench_left_top",
+      "group": "left_workbench",
+      "label": "Left workstation worktop",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 12667,
+      "sourceOrder": 176,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workbench_left_apron",
+      "group": "left_workbench",
+      "label": "Workstation apron",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 6590,
+      "sourceOrder": 177,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workbench_left_support",
+      "group": "left_workbench",
+      "label": "Workstation near support",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 2008,
+      "sourceOrder": 178,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "left_cabinet_shell",
+      "group": "left_cabinet",
+      "label": "Left filing cabinet shell",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 8435,
+      "sourceOrder": 179,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "left_cabinet_drawer_1_face",
+      "group": "left_cabinet_drawer_1",
+      "label": "Left cabinet drawer 1",
+      "pivot": [
+        132,
+        627
+      ],
+      "motion": "drawer_pull",
+      "sourcePixels": 3402,
+      "sourceOrder": 180,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "left_cabinet_drawer_2_face",
+      "group": "left_cabinet_drawer_2",
+      "label": "Left cabinet drawer 2",
+      "pivot": [
+        132,
+        670
+      ],
+      "motion": "drawer_pull",
+      "sourcePixels": 3648,
+      "sourceOrder": 181,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "left_cabinet_drawer_3_face",
+      "group": "left_cabinet_drawer_3",
+      "label": "Left cabinet drawer 3",
+      "pivot": [
+        132,
+        720
+      ],
+      "motion": "drawer_pull",
+      "sourcePixels": 5066,
+      "sourceOrder": 182,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "workstation_monitor_01_stand",
+      "group": "workstation_monitor_01",
+      "label": "Monitor 01 stand",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1129,
+      "sourceOrder": 183,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workstation_monitor_01_bezel",
+      "group": "workstation_monitor_01",
+      "label": "Monitor 01 bezel",
+      "pivot": [
+        42.25,
+        552
+      ],
+      "motion": "tilt_small",
+      "sourcePixels": 3266,
+      "sourceOrder": 184,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "workstation_monitor_01_screen",
+      "group": "workstation_monitor_01",
+      "label": "Monitor 01 screen artwork",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh",
+      "sourcePixels": 10679,
+      "sourceOrder": 185,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workstation_monitor_02_stand",
+      "group": "workstation_monitor_02",
+      "label": "Monitor 02 stand",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 220,
+      "sourceOrder": 186,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workstation_monitor_02_bezel",
+      "group": "workstation_monitor_02",
+      "label": "Monitor 02 bezel",
+      "pivot": [
+        170.75,
+        526
+      ],
+      "motion": "tilt_small",
+      "sourcePixels": 3108,
+      "sourceOrder": 187,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "workstation_monitor_02_screen",
+      "group": "workstation_monitor_02",
+      "label": "Monitor 02 screen artwork",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh",
+      "sourcePixels": 8003,
+      "sourceOrder": 188,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workstation_monitor_03_stand",
+      "group": "workstation_monitor_03",
+      "label": "Monitor 03 stand",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 99,
+      "sourceOrder": 189,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workstation_monitor_03_bezel",
+      "group": "workstation_monitor_03",
+      "label": "Monitor 03 bezel",
+      "pivot": [
+        273.5,
+        511
+      ],
+      "motion": "tilt_small",
+      "sourcePixels": 1502,
+      "sourceOrder": 190,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "workstation_monitor_03_screen",
+      "group": "workstation_monitor_03",
+      "label": "Monitor 03 screen artwork",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh",
+      "sourcePixels": 4718,
+      "sourceOrder": 191,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workstation_monitor_04_stand",
+      "group": "workstation_monitor_04",
+      "label": "Monitor 04 stand",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 436,
+      "sourceOrder": 192,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workstation_monitor_04_bezel",
+      "group": "workstation_monitor_04",
+      "label": "Monitor 04 bezel",
+      "pivot": [
+        349.25,
+        507
+      ],
+      "motion": "tilt_small",
+      "sourcePixels": 2056,
+      "sourceOrder": 193,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "workstation_monitor_04_screen",
+      "group": "workstation_monitor_04",
+      "label": "Monitor 04 screen artwork",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh",
+      "sourcePixels": 4420,
+      "sourceOrder": 194,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workstation_keyboard_near",
+      "group": "workstation_props",
+      "label": "Front keyboard",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 1816,
+      "sourceOrder": 195,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "workstation_keyboard_far",
+      "group": "workstation_props",
+      "label": "Rear keyboard",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 678,
+      "sourceOrder": 196,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "workstation_mouse",
+      "group": "workstation_props",
+      "label": "Mouse",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 317,
+      "sourceOrder": 197,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "workstation_phone_body",
+      "group": "workstation_phone",
+      "label": "Desk phone body",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 598,
+      "sourceOrder": 198,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workstation_phone_handset",
+      "group": "workstation_phone",
+      "label": "Desk phone handset",
+      "pivot": [
+        280,
+        508
+      ],
+      "motion": "phone_ring",
+      "sourcePixels": 360,
+      "sourceOrder": 199,
+      "visible": true,
+      "classification": "INTERACTIVE",
+      "animation_responsibility": "focus/select response tied to region state",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "coffee_mug_handle",
+      "group": "coffee_mug",
+      "label": "Coffee mug handle",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 398,
+      "sourceOrder": 200,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "coffee_mug_body",
+      "group": "coffee_mug",
+      "label": "Coffee mug body",
+      "pivot": [
+        135,
+        574
+      ],
+      "motion": "translate_small",
+      "sourcePixels": 2271,
+      "sourceOrder": 201,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "coffee_mug_lettering",
+      "group": "coffee_mug",
+      "label": "Coffee mug outlined lettering",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1850,
+      "sourceOrder": 202,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "chair_far_post",
+      "group": "chair_far",
+      "label": "Far chair central post",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 243,
+      "sourceOrder": 203,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "chair_far_base",
+      "group": "chair_far",
+      "label": "Far chair base",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 955,
+      "sourceOrder": 204,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "chair_far_wheel_1",
+      "group": "chair_far",
+      "label": "Chair Far Wheel 1",
+      "pivot": [
+        405,
+        647
+      ],
+      "motion": "rotate",
+      "sourcePixels": 171,
+      "sourceOrder": 205,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "chair_far_wheel_2",
+      "group": "chair_far",
+      "label": "Chair Far Wheel 2",
+      "pivot": [
+        436,
+        661
+      ],
+      "motion": "rotate",
+      "sourcePixels": 245,
+      "sourceOrder": 206,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "chair_far_wheel_3",
+      "group": "chair_far",
+      "label": "Chair Far Wheel 3",
+      "pivot": [
+        487,
+        660
+      ],
+      "motion": "rotate",
+      "sourcePixels": 245,
+      "sourceOrder": 207,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "chair_far_seat",
+      "group": "chair_far",
+      "label": "Far chair seat",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1314,
+      "sourceOrder": 208,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "chair_far_back",
+      "group": "chair_far",
+      "label": "Far chair back",
+      "pivot": [
+        461,
+        584
+      ],
+      "motion": "tilt_small",
+      "sourcePixels": 3030,
+      "sourceOrder": 209,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "chair_far_arm_1",
+      "group": "chair_far",
+      "label": "Far chair arm 1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 383,
+      "sourceOrder": 210,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "chair_far_arm_2",
+      "group": "chair_far",
+      "label": "Far chair arm 2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 622,
+      "sourceOrder": 211,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "chair_near_post",
+      "group": "chair_near",
+      "label": "Near chair central post",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 586,
+      "sourceOrder": 212,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "chair_near_base",
+      "group": "chair_near",
+      "label": "Near chair base",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 2383,
+      "sourceOrder": 213,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "chair_near_wheel_1",
+      "group": "chair_near",
+      "label": "Chair Near Wheel 1",
+      "pivot": [
+        262,
+        745
+      ],
+      "motion": "rotate",
+      "sourcePixels": 415,
+      "sourceOrder": 214,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "chair_near_wheel_2",
+      "group": "chair_near",
+      "label": "Chair Near Wheel 2",
+      "pivot": [
+        342,
+        753
+      ],
+      "motion": "rotate",
+      "sourcePixels": 415,
+      "sourceOrder": 215,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "chair_near_wheel_3",
+      "group": "chair_near",
+      "label": "Chair Near Wheel 3",
+      "pivot": [
+        411,
+        744
+      ],
+      "motion": "rotate",
+      "sourcePixels": 415,
+      "sourceOrder": 216,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "chair_near_seat",
+      "group": "chair_near",
+      "label": "Near chair seat",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 4423,
+      "sourceOrder": 217,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "chair_near_back",
+      "group": "chair_near",
+      "label": "Near chair back",
+      "pivot": [
+        390,
+        636
+      ],
+      "motion": "tilt_small",
+      "sourcePixels": 8658,
+      "sourceOrder": 218,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "chair_near_arm_1",
+      "group": "chair_near",
+      "label": "Near chair arm 1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1649,
+      "sourceOrder": 219,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "chair_near_arm_2",
+      "group": "chair_near",
+      "label": "Near chair arm 2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1240,
+      "sourceOrder": 220,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workbench_right_top",
+      "group": "right_workbench",
+      "label": "Right equipment workbench top",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 5232,
+      "sourceOrder": 221,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "workbench_right_frame",
+      "group": "right_workbench",
+      "label": "Right workbench supporting frame",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 2190,
+      "sourceOrder": 222,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "network_appliance_chassis",
+      "group": "network_appliance",
+      "label": "Bench network appliance chassis",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 3236,
+      "sourceOrder": 223,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "network_appliance_front",
+      "group": "network_appliance",
+      "label": "Bench network appliance front",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1161,
+      "sourceOrder": 224,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "network_appliance_leds",
+      "group": "network_appliance",
+      "label": "Network appliance indicators",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse",
+      "sourcePixels": 22,
+      "sourceOrder": 225,
+      "visible": true,
+      "classification": "INDICATOR",
+      "animation_responsibility": "deterministic LED/status brightness variation and interaction emphasis",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "laptop_base",
+      "group": "workbench_laptop",
+      "label": "Laptop keyboard base",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1559,
+      "sourceOrder": 226,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "laptop_lid_housing",
+      "group": "laptop_lid",
+      "label": "Laptop hinged lid",
+      "pivot": [
+        1569,
+        511
+      ],
+      "motion": "laptop_hinge",
+      "sourcePixels": 1140,
+      "sourceOrder": 227,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "laptop_screen",
+      "group": "laptop_lid",
+      "label": "Laptop screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh",
+      "sourcePixels": 3630,
+      "sourceOrder": 228,
+      "visible": true,
+      "classification": "DISPLAY",
+      "animation_responsibility": "screen glow, scan, telemetry refresh, no text replacement",
+      "production_enabled": true,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "cable_pegboard",
+      "group": "cable_board",
+      "label": "Cable storage pegboard",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 6190,
+      "sourceOrder": 229,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "cable_loop_left",
+      "group": "cable_board",
+      "label": "Left coiled cable",
+      "pivot": [
+        1581,
+        334
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 2414,
+      "sourceOrder": 230,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "cable_loop_right",
+      "group": "cable_board",
+      "label": "Right coiled cable",
+      "pivot": [
+        1623,
+        334
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 3563,
+      "sourceOrder": 231,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "tool_cart_shell",
+      "group": "tool_cart",
+      "label": "Tool cart fixed shell",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 7168,
+      "sourceOrder": 232,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_top",
+      "group": "tool_cart",
+      "label": "Tool cart top",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 2856,
+      "sourceOrder": 233,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_side",
+      "group": "tool_cart",
+      "label": "Tool cart side",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 5760,
+      "sourceOrder": 234,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_drawer_1_face",
+      "group": "tool_cart_drawer_1",
+      "label": "Plan drawer face",
+      "pivot": [
+        1385,
+        582.5
+      ],
+      "motion": "drawer_pull",
+      "sourcePixels": 864,
+      "sourceOrder": 235,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "tool_cart_drawer_1_label",
+      "group": "tool_cart_drawer_1",
+      "label": "Plan drawer outlined label",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 2646,
+      "sourceOrder": 236,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_drawer_1_handle",
+      "group": "tool_cart_drawer_1",
+      "label": "Plan drawer pull",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 936,
+      "sourceOrder": 237,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_drawer_2_face",
+      "group": "tool_cart_drawer_2",
+      "label": "Configure drawer face",
+      "pivot": [
+        1385,
+        616.0
+      ],
+      "motion": "drawer_pull",
+      "sourcePixels": 723,
+      "sourceOrder": 238,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "tool_cart_drawer_2_label",
+      "group": "tool_cart_drawer_2",
+      "label": "Configure drawer outlined label",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1910,
+      "sourceOrder": 239,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_drawer_2_handle",
+      "group": "tool_cart_drawer_2",
+      "label": "Configure drawer pull",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 936,
+      "sourceOrder": 240,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_drawer_3_face",
+      "group": "tool_cart_drawer_3",
+      "label": "Deploy drawer face",
+      "pivot": [
+        1385,
+        646.5
+      ],
+      "motion": "drawer_pull",
+      "sourcePixels": 732,
+      "sourceOrder": 241,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "tool_cart_drawer_3_label",
+      "group": "tool_cart_drawer_3",
+      "label": "Deploy drawer outlined label",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1959,
+      "sourceOrder": 242,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_drawer_3_handle",
+      "group": "tool_cart_drawer_3",
+      "label": "Deploy drawer pull",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 936,
+      "sourceOrder": 243,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_drawer_4_face",
+      "group": "tool_cart_drawer_4",
+      "label": "Maintain drawer face",
+      "pivot": [
+        1385,
+        677.0
+      ],
+      "motion": "drawer_pull",
+      "sourcePixels": 722,
+      "sourceOrder": 244,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "tool_cart_drawer_4_label",
+      "group": "tool_cart_drawer_4",
+      "label": "Maintain drawer outlined label",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1910,
+      "sourceOrder": 245,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_drawer_4_handle",
+      "group": "tool_cart_drawer_4",
+      "label": "Maintain drawer pull",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 936,
+      "sourceOrder": 246,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_drawer_5_face",
+      "group": "tool_cart_drawer_5",
+      "label": "Improve drawer face",
+      "pivot": [
+        1385,
+        711.5
+      ],
+      "motion": "drawer_pull",
+      "sourcePixels": 1019,
+      "sourceOrder": 247,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "tool_cart_drawer_5_label",
+      "group": "tool_cart_drawer_5",
+      "label": "Improve drawer outlined label",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 2842,
+      "sourceOrder": 248,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_drawer_5_handle",
+      "group": "tool_cart_drawer_5",
+      "label": "Improve drawer pull",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 936,
+      "sourceOrder": 249,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "tool_cart_wheel_1",
+      "group": "tool_cart",
+      "label": "Tool Cart Wheel 1",
+      "pivot": [
+        1394,
+        759
+      ],
+      "motion": "rotate",
+      "sourcePixels": 783,
+      "sourceOrder": 250,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "tool_cart_wheel_2",
+      "group": "tool_cart",
+      "label": "Tool Cart Wheel 2",
+      "pivot": [
+        1503,
+        777
+      ],
+      "motion": "rotate",
+      "sourcePixels": 783,
+      "sourceOrder": 251,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "storage_bin_1_body",
+      "group": "storage_bin_1",
+      "label": "Storage bin 1 body",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 2886,
+      "sourceOrder": 252,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "storage_bin_1_lid",
+      "group": "storage_bin_1",
+      "label": "Storage bin 1 lid",
+      "pivot": [
+        1555,
+        571
+      ],
+      "motion": "lift_small",
+      "sourcePixels": 1941,
+      "sourceOrder": 253,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "storage_bin_1_label",
+      "group": "storage_bin_1",
+      "label": "Storage bin 1 lettering",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 2788,
+      "sourceOrder": 254,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "storage_bin_2_body",
+      "group": "storage_bin_2",
+      "label": "Storage bin 2 body",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 4142,
+      "sourceOrder": 255,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "storage_bin_2_lid",
+      "group": "storage_bin_2",
+      "label": "Storage bin 2 lid",
+      "pivot": [
+        1543,
+        655
+      ],
+      "motion": "lift_small",
+      "sourcePixels": 2060,
+      "sourceOrder": 256,
+      "visible": true,
+      "classification": "MECHANICAL",
+      "animation_responsibility": "prepared from kit pivots; only safe micro response enabled unless clean plate exists",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "storage_bin_2_label",
+      "group": "storage_bin_2",
+      "label": "Storage bin 2 lettering",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 5658,
+      "sourceOrder": 257,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "plant_rear_left_pot",
+      "group": "plant_rear_left",
+      "label": "Rear Left plant pot",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 1062,
+      "sourceOrder": 258,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "plant_rear_left_foliage_crown",
+      "group": "plant_rear_left",
+      "label": "Rear Left crown foliage",
+      "pivot": [
+        417,
+        423
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 826,
+      "sourceOrder": 259,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_rear_left_foliage_left",
+      "group": "plant_rear_left",
+      "label": "Rear Left left foliage",
+      "pivot": [
+        417,
+        423
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 2065,
+      "sourceOrder": 260,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_rear_left_foliage_right",
+      "group": "plant_rear_left",
+      "label": "Rear Left right foliage",
+      "pivot": [
+        417,
+        423
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 2016,
+      "sourceOrder": 261,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_rear_cabinet_left_pot",
+      "group": "plant_rear_cabinet_left",
+      "label": "Rear Cabinet Left plant pot",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 729,
+      "sourceOrder": 262,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "plant_rear_cabinet_left_foliage_crown",
+      "group": "plant_rear_cabinet_left",
+      "label": "Rear Cabinet Left crown foliage",
+      "pivot": [
+        411,
+        491
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 305,
+      "sourceOrder": 263,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_rear_cabinet_left_foliage_left",
+      "group": "plant_rear_cabinet_left",
+      "label": "Rear Cabinet Left left foliage",
+      "pivot": [
+        411,
+        491
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 204,
+      "sourceOrder": 264,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_rear_cabinet_left_foliage_right",
+      "group": "plant_rear_cabinet_left",
+      "label": "Rear Cabinet Left right foliage",
+      "pivot": [
+        411,
+        491
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 78,
+      "sourceOrder": 265,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_rear_cabinet_right_pot",
+      "group": "plant_rear_cabinet_right",
+      "label": "Rear Cabinet Right plant pot",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 733,
+      "sourceOrder": 266,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "plant_rear_cabinet_right_foliage_crown",
+      "group": "plant_rear_cabinet_right",
+      "label": "Rear Cabinet Right crown foliage",
+      "pivot": [
+        500,
+        492
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 344,
+      "sourceOrder": 267,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_rear_cabinet_right_foliage_left",
+      "group": "plant_rear_cabinet_right",
+      "label": "Rear Cabinet Right left foliage",
+      "pivot": [
+        500,
+        492
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 236,
+      "sourceOrder": 268,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_rear_cabinet_right_foliage_right",
+      "group": "plant_rear_cabinet_right",
+      "label": "Rear Cabinet Right right foliage",
+      "pivot": [
+        500,
+        492
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 447,
+      "sourceOrder": 269,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_service_desk_pot",
+      "group": "plant_service_desk",
+      "label": "Service Desk plant pot",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 605,
+      "sourceOrder": 270,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "plant_service_desk_foliage_crown",
+      "group": "plant_service_desk",
+      "label": "Service Desk crown foliage",
+      "pivot": [
+        616,
+        451
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 411,
+      "sourceOrder": 271,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_service_desk_foliage_left",
+      "group": "plant_service_desk",
+      "label": "Service Desk left foliage",
+      "pivot": [
+        616,
+        451
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 332,
+      "sourceOrder": 272,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_service_desk_foliage_right",
+      "group": "plant_service_desk",
+      "label": "Service Desk right foliage",
+      "pivot": [
+        616,
+        451
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 319,
+      "sourceOrder": 273,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_workstation_pot",
+      "group": "plant_workstation",
+      "label": "Workstation plant pot",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 767,
+      "sourceOrder": 274,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "plant_workstation_foliage_crown",
+      "group": "plant_workstation",
+      "label": "Workstation crown foliage",
+      "pivot": [
+        246,
+        508
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 286,
+      "sourceOrder": 275,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_workstation_foliage_left",
+      "group": "plant_workstation",
+      "label": "Workstation left foliage",
+      "pivot": [
+        246,
+        508
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 256,
+      "sourceOrder": 276,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_workstation_foliage_right",
+      "group": "plant_workstation",
+      "label": "Workstation right foliage",
+      "pivot": [
+        246,
+        508
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 237,
+      "sourceOrder": 277,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_server_corner_pot",
+      "group": "plant_server_corner",
+      "label": "Server Corner plant pot",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 3318,
+      "sourceOrder": 278,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "plant_server_corner_foliage_crown",
+      "group": "plant_server_corner",
+      "label": "Server Corner crown foliage",
+      "pivot": [
+        1325,
+        516
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 1262,
+      "sourceOrder": 279,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_server_corner_foliage_left",
+      "group": "plant_server_corner",
+      "label": "Server Corner left foliage",
+      "pivot": [
+        1325,
+        516
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 2554,
+      "sourceOrder": 280,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_server_corner_foliage_right",
+      "group": "plant_server_corner",
+      "label": "Server Corner right foliage",
+      "pivot": [
+        1325,
+        516
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 2788,
+      "sourceOrder": 281,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_foreground_pot",
+      "group": "plant_foreground",
+      "label": "Foreground plant pot",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "static",
+      "sourcePixels": 10470,
+      "sourceOrder": 282,
+      "visible": true,
+      "classification": "STATIC",
+      "animation_responsibility": "rendered by static poster; not animated in V1 unless used as anchor",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": false
+    },
+    {
+      "id": "plant_foreground_foliage_crown",
+      "group": "plant_foreground",
+      "label": "Foreground crown foliage",
+      "pivot": [
+        36,
+        794
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 4719,
+      "sourceOrder": 283,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_foreground_foliage_left",
+      "group": "plant_foreground",
+      "label": "Foreground left foliage",
+      "pivot": [
+        36,
+        794
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 5421,
+      "sourceOrder": 284,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    },
+    {
+      "id": "plant_foreground_foliage_right",
+      "group": "plant_foreground",
+      "label": "Foreground right foliage",
+      "pivot": [
+        36,
+        794
+      ],
+      "motion": "sway_small",
+      "sourcePixels": 12701,
+      "sourceOrder": 285,
+      "visible": true,
+      "classification": "AMBIENT",
+      "animation_responsibility": "candidate plant/prop motion; disabled unless isolation is clean",
+      "production_enabled": false,
+      "requires_clean_plate_for_large_motion": true
+    }
+  ]
+}

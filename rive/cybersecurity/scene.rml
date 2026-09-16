@@ -1,0 +1,85 @@
+<Rive version="1" kind="fragment">
+  <Artboard defaultStateMachineId="0:10" styleId="0:2" width="1648" height="928"
+            name="CybersecurityEffects" id="0:1">
+    <LayoutComponentStyle name="Artboard Style" id="0:2"/>
+
+    <!-- Transparent native effects artboard. The detailed room remains an
+         independently authored vector scene beneath this layer. -->
+    <Shape x="592" y="225" opacity="0" name="Threat Sweep" id="0:100">
+      <Rectangle width="430" height="4" cornerRadiusTL="2" cornerRadiusTR="2"
+                 cornerRadiusBL="2" cornerRadiusBR="2" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF55F5A1" name="Color"/></Fill>
+    </Shape>
+    <Shape x="814" y="744" opacity="0.07" name="Floor Security Wash" id="0:101">
+      <Ellipse width="780" height="235" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="665E43D8" name="Color"/></Fill>
+    </Shape>
+    <Shape x="815" y="162" opacity="0.08" name="Ceiling Operations Wash" id="0:102">
+      <Ellipse width="980" height="92" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="665CFFB3" name="Color"/></Fill>
+    </Shape>
+
+    <!-- Illustrative topology nodes. These are decoration, never live telemetry. -->
+    <Shape x="410" y="314" opacity="0.55" name="Map Node 1" id="0:111"><Ellipse width="13" height="13" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF53F0A0" name="Color"/></Fill></Shape>
+    <Shape x="476" y="286" opacity="0.72" name="Map Node 2" id="0:112"><Ellipse width="13" height="13" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF53F0A0" name="Color"/></Fill></Shape>
+    <Shape x="554" y="337" opacity="0.48" name="Map Node 3" id="0:113"><Ellipse width="13" height="13" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF53F0A0" name="Color"/></Fill></Shape>
+    <Shape x="622" y="290" opacity="0.7" name="Map Node 4" id="0:114"><Ellipse width="13" height="13" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF53F0A0" name="Color"/></Fill></Shape>
+    <Shape x="712" y="342" opacity="0.5" name="Map Node 5" id="0:115"><Ellipse width="13" height="13" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF53F0A0" name="Color"/></Fill></Shape>
+    <Shape x="778" y="306" opacity="0.68" name="Map Node 6" id="0:116"><Ellipse width="13" height="13" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF53F0A0" name="Color"/></Fill></Shape>
+    <Shape x="642" y="402" opacity="0.58" name="Map Node 7" id="0:117"><Ellipse width="13" height="13" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF53F0A0" name="Color"/></Fill></Shape>
+    <Shape x="773" y="419" opacity="0.46" name="Map Node 8" id="0:118"><Ellipse width="13" height="13" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF53F0A0" name="Color"/></Fill></Shape>
+
+    <!-- Display and equipment status lights. -->
+    <Shape x="432" y="159" opacity="0.62" name="Header Signal Left" id="0:121"><Rectangle width="68" height="7" cornerRadiusTL="4" cornerRadiusTR="4" cornerRadiusBL="4" cornerRadiusBR="4" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF55F5A1" name="Color"/></Fill></Shape>
+    <Shape x="856" y="159" opacity="0.52" name="Header Signal Center" id="0:122"><Rectangle width="68" height="7" cornerRadiusTL="4" cornerRadiusTR="4" cornerRadiusBL="4" cornerRadiusBR="4" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF55F5A1" name="Color"/></Fill></Shape>
+    <Shape x="1181" y="159" opacity="0.66" name="Header Signal Right" id="0:123"><Rectangle width="68" height="7" cornerRadiusTL="4" cornerRadiusTR="4" cornerRadiusBL="4" cornerRadiusBR="4" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF55F5A1" name="Color"/></Fill></Shape>
+    <Shape x="1329" y="311" opacity="0.55" name="Rack Signal 1" id="0:131"><Rectangle width="15" height="6" cornerRadiusTL="3" cornerRadiusTR="3" cornerRadiusBL="3" cornerRadiusBR="3" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF55F5A1" name="Color"/></Fill></Shape>
+    <Shape x="1329" y="369" opacity="0.4" name="Rack Signal 2" id="0:132"><Rectangle width="15" height="6" cornerRadiusTL="3" cornerRadiusTR="3" cornerRadiusBL="3" cornerRadiusBR="3" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF55F5A1" name="Color"/></Fill></Shape>
+    <Shape x="1373" y="337" opacity="0.68" name="Rack Signal 3" id="0:133"><Rectangle width="15" height="6" cornerRadiusTL="3" cornerRadiusTR="3" cornerRadiusBL="3" cornerRadiusBR="3" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF55F5A1" name="Color"/></Fill></Shape>
+    <Shape x="1373" y="453" opacity="0.46" name="Rack Signal 4" id="0:134"><Rectangle width="15" height="6" cornerRadiusTL="3" cornerRadiusTR="3" cornerRadiusBL="3" cornerRadiusBR="3" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF55F5A1" name="Color"/></Fill></Shape>
+    <Shape x="1417" y="296" opacity="0.42" name="Rack Signal 5" id="0:135"><Rectangle width="15" height="6" cornerRadiusTL="3" cornerRadiusTR="3" cornerRadiusBL="3" cornerRadiusBR="3" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF55F5A1" name="Color"/></Fill></Shape>
+    <Shape x="1417" y="482" opacity="0.7" name="Rack Signal 6" id="0:136"><Rectangle width="15" height="6" cornerRadiusTL="3" cornerRadiusTR="3" cornerRadiusBL="3" cornerRadiusBR="3" name="Path"/><Fill name="Fill"><SolidColor colorValue="FF55F5A1" name="Color"/></Fill></Shape>
+
+    <StateMachine name="CybersecurityMachine" id="0:10">
+      <StateMachineLayer name="Ambient Security Systems" id="0:11">
+        <AnyState x="200" y="-120"/>
+        <ExitState x="400" y="-120"/>
+        <EntryState><StateTransition stateToId="0:12"/></EntryState>
+        <AnimationState x="200" animationId="0:20" stateName="Ambient" id="0:12"/>
+      </StateMachineLayer>
+    </StateMachine>
+
+    <LinearAnimation loopValue="loop" duration="360" name="Ambient" id="0:20">
+      <KeyedObject objectId="0:100"><KeyedProperty propertyKey="14">
+        <KeyFrameDouble value="225" interpolationType="linear"/>
+        <KeyFrameDouble value="420" interpolationType="linear" frame="270"/>
+        <KeyFrameDouble value="225" interpolationType="hold" frame="360"/>
+      </KeyedProperty><KeyedProperty propertyKey="18">
+        <KeyFrameDouble value="0" interpolationType="linear"/>
+        <KeyFrameDouble value="0.46" interpolationType="linear" frame="35"/>
+        <KeyFrameDouble value="0.18" interpolationType="linear" frame="245"/>
+        <KeyFrameDouble value="0" interpolationType="linear" frame="285"/>
+        <KeyFrameDouble value="0" interpolationType="hold" frame="360"/>
+      </KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:101"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.045" interpolationType="linear"/><KeyFrameDouble value="0.11" interpolationType="linear" frame="180"/><KeyFrameDouble value="0.045" interpolationType="linear" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:102"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.04" interpolationType="linear"/><KeyFrameDouble value="0.12" interpolationType="linear" frame="180"/><KeyFrameDouble value="0.04" interpolationType="linear" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:111"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.35"/><KeyFrameDouble value="1" frame="78"/><KeyFrameDouble value="0.35" frame="170"/><KeyFrameDouble value="0.7" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:112"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.8"/><KeyFrameDouble value="0.3" frame="105"/><KeyFrameDouble value="0.95" frame="235"/><KeyFrameDouble value="0.8" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:113"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.3"/><KeyFrameDouble value="0.92" frame="125"/><KeyFrameDouble value="0.3" frame="260"/><KeyFrameDouble value="0.64" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:114"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.82"/><KeyFrameDouble value="0.28" frame="145"/><KeyFrameDouble value="0.92" frame="285"/><KeyFrameDouble value="0.82" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:115"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.36"/><KeyFrameDouble value="0.96" frame="180"/><KeyFrameDouble value="0.36" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:116"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.9"/><KeyFrameDouble value="0.32" frame="170"/><KeyFrameDouble value="0.9" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:117"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.34"/><KeyFrameDouble value="0.94" frame="210"/><KeyFrameDouble value="0.34" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:118"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.86"/><KeyFrameDouble value="0.26" frame="225"/><KeyFrameDouble value="0.86" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:121"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.4" interpolationType="linear"/><KeyFrameDouble value="0.82" interpolationType="linear" frame="160"/><KeyFrameDouble value="0.4" interpolationType="linear" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:122"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.72" interpolationType="linear"/><KeyFrameDouble value="0.34" interpolationType="linear" frame="205"/><KeyFrameDouble value="0.72" interpolationType="linear" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:123"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.38" interpolationType="linear"/><KeyFrameDouble value="0.78" interpolationType="linear" frame="185"/><KeyFrameDouble value="0.38" interpolationType="linear" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:131"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.25"/><KeyFrameDouble value="1" frame="70"/><KeyFrameDouble value="0.25" frame="190"/><KeyFrameDouble value="0.72" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:132"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.88"/><KeyFrameDouble value="0.22" frame="115"/><KeyFrameDouble value="0.88" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:133"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.3"/><KeyFrameDouble value="0.96" frame="155"/><KeyFrameDouble value="0.3" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:134"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.9"/><KeyFrameDouble value="0.2" frame="185"/><KeyFrameDouble value="0.9" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:135"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.28"/><KeyFrameDouble value="0.94" frame="220"/><KeyFrameDouble value="0.28" frame="360"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:136"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.86"/><KeyFrameDouble value="0.24" frame="250"/><KeyFrameDouble value="0.86" frame="360"/></KeyedProperty></KeyedObject>
+    </LinearAnimation>
+  </Artboard>
+</Rive>

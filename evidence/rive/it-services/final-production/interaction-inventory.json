@@ -1,0 +1,154 @@
+{
+  "source": "web/hotspots.json plus current route manifest",
+  "regions": [
+    {
+      "id": "status-board",
+      "label": "System status illustration",
+      "href": "#monitoring",
+      "target": "status_board",
+      "hitbox": [
+        615,
+        213,
+        420,
+        200
+      ],
+      "effect": "board-refresh",
+      "production_state_model": [
+        "IDLE",
+        "ATTENTION",
+        "HOVER",
+        "FOCUS",
+        "SELECTED",
+        "LEAVING"
+      ],
+      "visual_response": "localized object illumination, display/rack/floor response and semantic caption update"
+    },
+    {
+      "id": "helpdesk",
+      "label": "IT support",
+      "href": "#support",
+      "target": "service_desk",
+      "hitbox": [
+        568,
+        473,
+        511,
+        142
+      ],
+      "effect": "reader-pulse",
+      "production_state_model": [
+        "IDLE",
+        "ATTENTION",
+        "HOVER",
+        "FOCUS",
+        "SELECTED",
+        "LEAVING"
+      ],
+      "visual_response": "localized object illumination, display/rack/floor response and semantic caption update"
+    },
+    {
+      "id": "workstations",
+      "label": "Workstations and endpoints",
+      "href": "#workstations",
+      "target": "workstation_monitor_02",
+      "hitbox": [
+        112,
+        413,
+        280,
+        126
+      ],
+      "effect": "screen-refresh",
+      "production_state_model": [
+        "IDLE",
+        "ATTENTION",
+        "HOVER",
+        "FOCUS",
+        "SELECTED",
+        "LEAVING"
+      ],
+      "visual_response": "localized object illumination, display/rack/floor response and semantic caption update"
+    },
+    {
+      "id": "infrastructure",
+      "label": "Network and infrastructure",
+      "href": "#infrastructure",
+      "target": "server_rack_02",
+      "hitbox": [
+        1351,
+        258,
+        195,
+        274
+      ],
+      "effect": "rack-ripple",
+      "production_state_model": [
+        "IDLE",
+        "ATTENTION",
+        "HOVER",
+        "FOCUS",
+        "SELECTED",
+        "LEAVING"
+      ],
+      "visual_response": "localized object illumination, display/rack/floor response and semantic caption update"
+    },
+    {
+      "id": "deployment",
+      "label": "Deployment and maintenance",
+      "href": "#deployment",
+      "target": "deployment_door_leaf",
+      "hitbox": [
+        1062,
+        282,
+        126,
+        272
+      ],
+      "effect": "door-open",
+      "production_state_model": [
+        "IDLE",
+        "ATTENTION",
+        "HOVER",
+        "FOCUS",
+        "SELECTED",
+        "LEAVING"
+      ],
+      "visual_response": "localized object illumination, display/rack/floor response and semantic caption update"
+    },
+    {
+      "id": "toolkit",
+      "label": "IT service process",
+      "href": "#process",
+      "target": "tool_cart",
+      "hitbox": [
+        1377,
+        545,
+        160,
+        248
+      ],
+      "effect": "drawers",
+      "production_state_model": [
+        "IDLE",
+        "ATTENTION",
+        "HOVER",
+        "FOCUS",
+        "SELECTED",
+        "LEAVING"
+      ],
+      "visual_response": "localized object illumination, display/rack/floor response and semantic caption update"
+    },
+    {
+      "id": "contact",
+      "label": "Request IT support",
+      "href": "/contact/?project=itsupport&from=it-room#request",
+      "target": null,
+      "hitbox": null,
+      "effect": null,
+      "production_state_model": [
+        "IDLE",
+        "ATTENTION",
+        "HOVER",
+        "FOCUS",
+        "SELECTED",
+        "LEAVING"
+      ],
+      "visual_response": "localized object illumination, display/rack/floor response and semantic caption update"
+    }
+  ]
+}

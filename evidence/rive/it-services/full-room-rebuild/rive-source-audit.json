@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-09-16T12:15:37.130Z",
+  "riveDocs": [
+    {
+      "filename": "TDG_MASCOT_IT_SERVICES_SPECIALIST/Patch/rive/tdg-it-services-specialist.riv",
+      "bytes": 995073,
+      "sha256": "47a5832a88bab5a54dbc618a1c0669358c1fe68cf4e261d0e5cc852ac79f46e9",
+      "note": "runtime inspect separately"
+    },
+    {
+      "filename": "TDG_MASCOT_IT_SERVICES_SPECIALIST/Patch/rive/tdg-patch.riv",
+      "bytes": 563333,
+      "sha256": "a1e98660a7ab2f22f7c49425cf69a95df3e6e12243d683329ddaf3f0b1933c2f",
+      "note": "runtime inspect separately"
+    },
+    {
+      "filename": "TDG_MASCOT_IT_SERVICES_SPECIALIST/rive/tdg-it-services-specialist.riv",
+      "bytes": 995073,
+      "sha256": "47a5832a88bab5a54dbc618a1c0669358c1fe68cf4e261d0e5cc852ac79f46e9",
+      "note": "runtime inspect separately"
+    },
+    {
+      "filename": "TDG_MASCOT_IT_SERVICES_SPECIALIST/rive/tdg-patch.riv",
+      "bytes": 563333,
+      "sha256": "a1e98660a7ab2f22f7c49425cf69a95df3e6e12243d683329ddaf3f0b1933c2f",
+      "note": "runtime inspect separately"
+    }
+  ]
+}

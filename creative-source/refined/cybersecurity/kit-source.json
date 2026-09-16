@@ -1,0 +1,24 @@
+{
+  "name": "TDG_CYBERSECURITY_ANIMATION_KIT",
+  "sourcePath": "/Users/josephanady/Desktop/ThatDeveloperGuy/TDG_CYBERSECURITY_ANIMATION_KIT",
+  "approvedReferenceSha256": "62bddf0e27a91f9f52ff87fdeb17b3a4a15cfb64ac846f1c82f141ac2fcb4265",
+  "productionVector": {
+    "file": "public/animation/cybersecurity/cybersecurity-scene.svg",
+    "repoSource": "creative-source/refined/cybersecurity/animation-scene.svg",
+    "source": "svg/tdg-cybersecurity.rive-import.svg",
+    "sha256": "2df455158a8c3efebc48c642ab33d4a12f0d129980afd96c9aea715f7ef334ff",
+    "canvas": { "width": 1648, "height": 928 }
+  },
+  "depthPasses": [
+    { "id": "background", "repoSource": "creative-source/refined/cybersecurity/background.svg", "source": "svg/tdg-cybersecurity.background.svg", "sha256": "0c40b480928c424ac679cc2b8f4a7c968add0c39f39d1e2c570678f73b16b375" },
+    { "id": "desk-occluders", "repoSource": "creative-source/refined/cybersecurity/desk-occluders.svg", "source": "svg/tdg-cybersecurity.desk-occluders.svg", "sha256": "c31782953b545e1ca33891da6a83998bc0cae536b8dece2eeafad1c6c2ea25a2" },
+    { "id": "foreground", "repoSource": "creative-source/refined/cybersecurity/foreground.svg", "source": "svg/tdg-cybersecurity.foreground.svg", "sha256": "f038a16c3d88303797ac986a7ebedaecfd28c0829de974d0cb331759e8554108" },
+    { "id": "effects", "repoSource": "creative-source/refined/cybersecurity/effects.svg", "source": "svg/tdg-cybersecurity.effects.svg", "sha256": "ed6cb3cdab991491354ea67eccad623be993b316fcae95039d96695c7f3d9fed" }
+  ],
+  "interactionContract": "rive/CybersecurityMachine.build-spec.json",
+  "limitations": [
+    "The detailed SVG is a local vector reconstruction, not Adobe output.",
+    "Display values and map activity are illustrative, not live telemetry.",
+    "The Rive layer contains native ambient effects; the detailed room remains SVG until a complete native import is optimized and validated."
+  ]
+}

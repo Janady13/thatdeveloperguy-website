@@ -1,0 +1,131 @@
+{
+  "generatedAt": "2026-09-16T18:07:14.141Z",
+  "runtime": "2.42.1",
+  "results": [
+    {
+      "id": "display-systems",
+      "file": "tdg-it-services-display-systems.riv",
+      "artboard": "ITServicesDisplaySystems",
+      "machine": "ITServicesDisplaySystemsMachine",
+      "focus": 1,
+      "loaded": true,
+      "error": null,
+      "frames": 33,
+      "artboards": [
+        {
+          "name": "ITServicesDisplaySystems",
+          "animations": [],
+          "stateMachines": [
+            "ITServicesDisplaySystemsMachine"
+          ]
+        }
+      ],
+      "vm": {
+        "name": null,
+        "ok": true
+      },
+      "consoleMessages": [
+        "warning: [Rive] The `stateMachines` parameter is deprecated: please use `stateMachine` with a single state machine name instead.",
+        "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "error: ScriptAsset doesn't have a generator function main",
+        "error: ScriptAsset doesn't have a generator function main",
+        "error: ScriptAsset doesn't have a generator function main"
+      ],
+      "changedPixels": 0,
+      "changedRatio": 0
+    },
+    {
+      "id": "environment-fx",
+      "file": "tdg-it-services-environment-fx.riv",
+      "artboard": "ITServicesEnvironmentFX",
+      "machine": "ITServicesEnvironmentFXMachine",
+      "focus": 2,
+      "loaded": true,
+      "error": null,
+      "frames": 33,
+      "artboards": [
+        {
+          "name": "ITServicesEnvironmentFX",
+          "animations": [],
+          "stateMachines": [
+            "ITServicesEnvironmentFXMachine"
+          ]
+        }
+      ],
+      "vm": {
+        "name": null,
+        "ok": true
+      },
+      "consoleMessages": [
+        "warning: [Rive] The `stateMachines` parameter is deprecated: please use `stateMachine` with a single state machine name instead.",
+        "error: ScriptAsset doesn't have a generator function main",
+        "error: ScriptAsset doesn't have a generator function main",
+        "error: ScriptAsset doesn't have a generator function main"
+      ],
+      "changedPixels": 0,
+      "changedRatio": 0
+    },
+    {
+      "id": "mechanics",
+      "file": "tdg-it-services-mechanics.riv",
+      "artboard": "ITServicesMechanics",
+      "machine": "ITServicesMechanicsMachine",
+      "focus": 5,
+      "loaded": true,
+      "error": null,
+      "frames": 32,
+      "artboards": [
+        {
+          "name": "ITServicesMechanics",
+          "animations": [],
+          "stateMachines": [
+            "ITServicesMechanicsMachine"
+          ]
+        }
+      ],
+      "vm": {
+        "name": null,
+        "ok": true
+      },
+      "consoleMessages": [
+        "warning: [Rive] The `stateMachines` parameter is deprecated: please use `stateMachine` with a single state machine name instead.",
+        "error: ScriptAsset doesn't have a generator function main",
+        "error: ScriptAsset doesn't have a generator function main",
+        "error: ScriptAsset doesn't have a generator function main"
+      ],
+      "changedPixels": 0,
+      "changedRatio": 0
+    },
+    {
+      "id": "rack-systems",
+      "file": "tdg-it-services-rack-systems.riv",
+      "artboard": "ITServicesRackSystems",
+      "machine": "ITServicesRackSystemsMachine",
+      "focus": 4,
+      "loaded": true,
+      "error": null,
+      "frames": 32,
+      "artboards": [
+        {
+          "name": "ITServicesRackSystems",
+          "animations": [],
+          "stateMachines": [
+            "ITServicesRackSystemsMachine"
+          ]
+        }
+      ],
+      "vm": {
+        "name": null,
+        "ok": true
+      },
+      "consoleMessages": [
+        "warning: [Rive] The `stateMachines` parameter is deprecated: please use `stateMachine` with a single state machine name instead.",
+        "error: ScriptAsset doesn't have a generator function main",
+        "error: ScriptAsset doesn't have a generator function main",
+        "error: ScriptAsset doesn't have a generator function main"
+      ],
+      "changedPixels": 0,
+      "changedRatio": 0
+    }
+  ]
+}

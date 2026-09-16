@@ -45,6 +45,7 @@ for (const [sceneId, meta] of Object.entries(ROOMS)) {
   let riveManifest: any = null;
   if (existsSync(rivePath)) riveManifest = JSON.parse(readFileSync(rivePath, 'utf8'));
   const canvas = riveManifest?.canvas ?? manifest.canvas;
+  const hotspotScale = { x: canvas.width / manifest.canvas.width, y: canvas.height / manifest.canvas.height };
   const rasterPoster = resolve(root, 'creative-source/rive', sceneId, 'poster.webp');
   const posterExt = existsSync(rasterPoster) ? 'webp' : 'svg';
   if (sceneId === 'lobby') {
@@ -93,12 +94,22 @@ for (const [sceneId, meta] of Object.entries(ROOMS)) {
       const riveFileName = `${sceneId}.${shortHash}.riv`;
       for (const file of readdirSync(roomAnimationDir)) if (file === `${sceneId}.riv` || file.startsWith(`${sceneId}.`) && file.endsWith('.riv')) unlinkSync(resolve(roomAnimationDir, file));
       copyFileSync(sourceRive, resolve(roomAnimationDir, riveFileName));
-      rive = { file: `/animation/rooms/${riveFileName}`, artboard: rm.artboard, stateMachine: rm.stateMachine, viewModel: rm.viewModel, sha256: hash, ...(rm.viewModelOptional ? { viewModelOptional: true } : {}), ...(rm.nativeInputs ? { nativeInputs: rm.nativeInputs } : {}) };
+      const variants: NonNullable<SceneRecord['rive']>['variants'] = {};
+      for (const [density, variant] of Object.entries(rm.variants ?? {}) as Array<['2x' | '4x', { file: string; sha256: string }]>) {
+        const variantSource = resolve(root, 'creative-source/rive', sceneId, variant.file);
+        const variantBytes = readFileSync(variantSource);
+        const variantHash = createHash('sha256').update(variantBytes).digest('hex');
+        if (variantHash !== variant.sha256) throw new Error(`${sceneId}: ${density} Rive hash mismatch: ${variantHash}`);
+        const variantName = `${sceneId}-${density}.${variantHash.slice(0, 12)}.riv`;
+        copyFileSync(variantSource, resolve(roomAnimationDir, variantName));
+        variants[density] = { file: `/animation/rooms/${variantName}`, sha256: variantHash };
+      }
+      rive = { file: `/animation/rooms/${riveFileName}`, artboard: rm.artboard, stateMachine: rm.stateMachine, viewModel: rm.viewModel, sha256: hash, ...(Object.keys(variants).length ? { variants } : {}), ...(rm.viewModelOptional ? { viewModelOptional: true } : {}), ...(rm.nativeInputs ? { nativeInputs: rm.nativeInputs } : {}) };
       for (const h of rm.hotspots ?? []) { if (h.trigger) triggers[h.id] = h.trigger; if (h.focusValue) focusValues[h.id] = h.focusValue; }
     } else if (sceneId === 'lobby') throw new Error('lobby: verified RML source and compiled Rive are required');
     else console.warn(`${sceneId}: rive-manifest present but not a verified export of the current master; not staged`);
   }
-  const hotspots: SceneHotspot[] = manifest.hotspots.map((h: any) => ({ id: h.id, label: h.label, hit: { x: h.rect[0], y: h.rect[1], width: h.rect[2], height: h.rect[3] }, target: h.section ? { kind: 'anchor' as const, anchor: h.section.replace(/^#/, ''), pageId: h.pageId } : { kind: 'page' as const, pageId: h.pageId }, focusValue: focusValues[h.id] ?? (rive ? 'none' : h.id), ...(triggers[h.id] ? { trigger: triggers[h.id] } : {}) }));
+  const hotspots: SceneHotspot[] = manifest.hotspots.map((h: any) => ({ id: h.id, label: h.label, hit: { x: h.rect[0] * hotspotScale.x, y: h.rect[1] * hotspotScale.y, width: h.rect[2] * hotspotScale.x, height: h.rect[3] * hotspotScale.y }, target: h.section ? { kind: 'anchor' as const, anchor: h.section.replace(/^#/, ''), pageId: h.pageId } : { kind: 'page' as const, pageId: h.pageId }, focusValue: focusValues[h.id] ?? (rive ? 'none' : h.id), ...(triggers[h.id] ? { trigger: triggers[h.id] } : {}) }));
   if (sceneId === 'lobby' && !rive) throw new Error('lobby: animation cannot be disabled or replaced by a fallback implementation');
   const scene: SceneRecord = { id: sceneId, canvas, poster: `/images/posters/${sceneId}.${posterExt}`, posterAlt: meta.posterAlt, rive, hotspots, captionRest: meta.captionRest, captions: ROOM_CAPTIONS[sceneId] ?? {} };
   const out = resolve(root, 'app/experience/scenes', sceneId); mkdirSync(out, { recursive: true });

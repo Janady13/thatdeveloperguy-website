@@ -1,0 +1,184 @@
+<Rive version="1" kind="fragment">
+  <Artboard defaultStateMachineId="0:10" width="1648" height="928" styleId="0:2"
+            name="ITServicesOverlay" id="0:1">
+    <LayoutComponentStyle name="Artboard Style" id="0:2"/>
+
+    <!-- Interactive focus washes. They are transparent until the matching
+         host-controlled timeline is played. -->
+    <Shape x="824" y="313" opacity="0" name="Focus Status" id="0:101">
+      <Rectangle width="450" height="220" cornerRadiusTL="28" cornerRadiusTR="28"
+                 cornerRadiusBL="28" cornerRadiusBR="28" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="5535F5A0" name="Color"/></Fill>
+    </Shape>
+    <Shape x="824" y="545" opacity="0" name="Focus Helpdesk" id="0:102">
+      <Ellipse width="630" height="190" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="4458D9FF" name="Color"/></Fill>
+    </Shape>
+    <Shape x="255" y="485" opacity="0" name="Focus Workstations" id="0:103">
+      <Rectangle width="500" height="185" cornerRadiusTL="36" cornerRadiusTR="36"
+                 cornerRadiusBL="36" cornerRadiusBR="36" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="444D7CFF" name="Color"/></Fill>
+    </Shape>
+    <Shape x="1450" y="365" opacity="0" name="Focus Racks" id="0:104">
+      <Rectangle width="310" height="405" cornerRadiusTL="30" cornerRadiusTR="30"
+                 cornerRadiusBL="30" cornerRadiusBR="30" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="5535F5A0" name="Color"/></Fill>
+    </Shape>
+    <Shape x="1126" y="420" opacity="0" name="Focus Deployment" id="0:105">
+      <Rectangle width="180" height="330" cornerRadiusTL="28" cornerRadiusTR="28"
+                 cornerRadiusBL="28" cornerRadiusBR="28" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="554CCBFF" name="Color"/></Fill>
+    </Shape>
+    <Shape x="1450" y="665" opacity="0" name="Focus Toolcart" id="0:106">
+      <Rectangle width="205" height="315" cornerRadiusTL="30" cornerRadiusTR="30"
+                 cornerRadiusBL="30" cornerRadiusBR="30" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="555FE7FF" name="Color"/></Fill>
+    </Shape>
+
+    <!-- Room-wide native ambient effects. -->
+    <Shape x="820" y="272" opacity="0.12" name="Status Scan" id="0:201">
+      <Rectangle width="360" height="4" cornerRadiusTL="2" cornerRadiusTR="2"
+                 cornerRadiusBL="2" cornerRadiusBR="2" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF6CFFBD" name="Color"/></Fill>
+    </Shape>
+    <Shape x="824" y="155" opacity="0.1" name="Ceiling Wash" id="0:202">
+      <Ellipse width="820" height="120" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="886E5BFF" name="Color"/></Fill>
+    </Shape>
+    <Shape x="824" y="770" opacity="0.08" name="Floor Wash" id="0:203">
+      <Ellipse width="1120" height="300" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="665B4CFF" name="Color"/></Fill>
+    </Shape>
+
+    <!-- Status board signals. -->
+    <Shape x="650" y="238" opacity="0.75" name="Status Signal 1" id="0:211">
+      <Ellipse width="25" height="25" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF37F59A" name="Color"/></Fill>
+    </Shape>
+    <Shape x="650" y="280" opacity="0.55" name="Status Signal 2" id="0:212">
+      <Ellipse width="23" height="23" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF37F59A" name="Color"/></Fill>
+    </Shape>
+    <Shape x="650" y="312" opacity="0.65" name="Status Signal 3" id="0:213">
+      <Ellipse width="23" height="23" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF37F59A" name="Color"/></Fill>
+    </Shape>
+    <Shape x="650" y="344" opacity="0.5" name="Status Signal 4" id="0:214">
+      <Ellipse width="23" height="23" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF37F59A" name="Color"/></Fill>
+    </Shape>
+    <Shape x="650" y="376" opacity="0.7" name="Status Signal 5" id="0:215">
+      <Ellipse width="23" height="23" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF37F59A" name="Color"/></Fill>
+    </Shape>
+
+    <!-- Endpoint activity glows. -->
+    <Shape x="70" y="448" opacity="0.12" name="Screen Glow 1" id="0:221">
+      <Rectangle width="108" height="68" cornerRadiusTL="8" cornerRadiusTR="8"
+                 cornerRadiusBL="8" cornerRadiusBR="8" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF63D8FF" name="Color"/></Fill>
+    </Shape>
+    <Shape x="184" y="443" opacity="0.1" name="Screen Glow 2" id="0:222">
+      <Rectangle width="94" height="65" cornerRadiusTL="8" cornerRadiusTR="8"
+                 cornerRadiusBL="8" cornerRadiusBR="8" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF765DFF" name="Color"/></Fill>
+    </Shape>
+    <Shape x="310" y="443" opacity="0.11" name="Screen Glow 3" id="0:223">
+      <Rectangle width="80" height="55" cornerRadiusTL="7" cornerRadiusTR="7"
+                 cornerRadiusBL="7" cornerRadiusBR="7" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF63D8FF" name="Color"/></Fill>
+    </Shape>
+    <Shape x="758" y="442" opacity="0.08" name="Helpdesk Glow 1" id="0:224">
+      <Rectangle width="78" height="52" cornerRadiusTL="7" cornerRadiusTR="7"
+                 cornerRadiusBL="7" cornerRadiusBR="7" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF63D8FF" name="Color"/></Fill>
+    </Shape>
+    <Shape x="936" y="444" opacity="0.09" name="Helpdesk Glow 2" id="0:225">
+      <Rectangle width="68" height="49" cornerRadiusTL="7" cornerRadiusTR="7"
+                 cornerRadiusBL="7" cornerRadiusBR="7" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF63D8FF" name="Color"/></Fill>
+    </Shape>
+
+    <!-- Rack LEDs. -->
+    <Shape x="1354" y="280" opacity="0.7" name="Rack Signal 1" id="0:231">
+      <Rectangle width="15" height="7" cornerRadiusTL="3" cornerRadiusTR="3"
+                 cornerRadiusBL="3" cornerRadiusBR="3" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF37F59A" name="Color"/></Fill>
+    </Shape>
+    <Shape x="1354" y="338" opacity="0.45" name="Rack Signal 2" id="0:232">
+      <Rectangle width="15" height="7" cornerRadiusTL="3" cornerRadiusTR="3"
+                 cornerRadiusBL="3" cornerRadiusBR="3" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF37F59A" name="Color"/></Fill>
+    </Shape>
+    <Shape x="1461" y="276" opacity="0.55" name="Rack Signal 3" id="0:233">
+      <Rectangle width="15" height="7" cornerRadiusTL="3" cornerRadiusTR="3"
+                 cornerRadiusBL="3" cornerRadiusBR="3" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF37F59A" name="Color"/></Fill>
+    </Shape>
+    <Shape x="1461" y="392" opacity="0.72" name="Rack Signal 4" id="0:234">
+      <Rectangle width="15" height="7" cornerRadiusTL="3" cornerRadiusTR="3"
+                 cornerRadiusBL="3" cornerRadiusBR="3" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF37F59A" name="Color"/></Fill>
+    </Shape>
+    <Shape x="1568" y="244" opacity="0.5" name="Rack Signal 5" id="0:235">
+      <Rectangle width="15" height="7" cornerRadiusTL="3" cornerRadiusTR="3"
+                 cornerRadiusBL="3" cornerRadiusBR="3" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF37F59A" name="Color"/></Fill>
+    </Shape>
+    <Shape x="1568" y="418" opacity="0.66" name="Rack Signal 6" id="0:236">
+      <Rectangle width="15" height="7" cornerRadiusTL="3" cornerRadiusTR="3"
+                 cornerRadiusBL="3" cornerRadiusBR="3" name="Path"/>
+      <Fill name="Fill"><SolidColor colorValue="FF37F59A" name="Color"/></Fill>
+    </Shape>
+
+    <StateMachine name="ITServicesOverlayMachine" id="0:10">
+      <StateMachineLayer name="Ambient Layer" id="0:11">
+        <AnyState x="200" y="-120"/>
+        <ExitState x="400" y="-120"/>
+        <EntryState><StateTransition stateToId="0:12"/></EntryState>
+        <AnimationState x="200" animationId="0:20" stateName="Ambient" id="0:12"/>
+      </StateMachineLayer>
+    </StateMachine>
+
+    <LinearAnimation loopValue="loop" duration="240" name="Ambient" id="0:20">
+      <KeyedObject objectId="0:201"><KeyedProperty propertyKey="14">
+        <KeyFrameDouble value="232" interpolationType="linear"/>
+        <KeyFrameDouble value="382" interpolationType="linear" frame="120"/>
+        <KeyFrameDouble value="232" interpolationType="linear" frame="240"/>
+      </KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:202"><KeyedProperty propertyKey="18">
+        <KeyFrameDouble value="0.06" interpolationType="linear"/>
+        <KeyFrameDouble value="0.16" interpolationType="linear" frame="120"/>
+        <KeyFrameDouble value="0.06" interpolationType="linear" frame="240"/>
+      </KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:203"><KeyedProperty propertyKey="18">
+        <KeyFrameDouble value="0.04" interpolationType="linear"/>
+        <KeyFrameDouble value="0.11" interpolationType="linear" frame="120"/>
+        <KeyFrameDouble value="0.04" interpolationType="linear" frame="240"/>
+      </KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:211"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.35"/><KeyFrameDouble value="0.95" frame="80"/><KeyFrameDouble value="0.35" frame="160"/><KeyFrameDouble value="0.8" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:212"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.8"/><KeyFrameDouble value="0.3" frame="90"/><KeyFrameDouble value="0.9" frame="180"/><KeyFrameDouble value="0.8" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:213"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.45"/><KeyFrameDouble value="0.95" frame="70"/><KeyFrameDouble value="0.35" frame="160"/><KeyFrameDouble value="0.45" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:214"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.85"/><KeyFrameDouble value="0.32" frame="100"/><KeyFrameDouble value="0.9" frame="190"/><KeyFrameDouble value="0.85" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:215"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.4"/><KeyFrameDouble value="1" frame="120"/><KeyFrameDouble value="0.4" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:221"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.04"/><KeyFrameDouble value="0.18" frame="75"/><KeyFrameDouble value="0.06" frame="170"/><KeyFrameDouble value="0.04" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:222"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.14"/><KeyFrameDouble value="0.05" frame="85"/><KeyFrameDouble value="0.17" frame="185"/><KeyFrameDouble value="0.14" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:223"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.05"/><KeyFrameDouble value="0.16" frame="110"/><KeyFrameDouble value="0.05" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:224"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.04"/><KeyFrameDouble value="0.15" frame="100"/><KeyFrameDouble value="0.04" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:225"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.13"/><KeyFrameDouble value="0.04" frame="130"/><KeyFrameDouble value="0.13" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:231"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.25"/><KeyFrameDouble value="1" frame="60"/><KeyFrameDouble value="0.25" frame="150"/><KeyFrameDouble value="0.75" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:232"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.9"/><KeyFrameDouble value="0.2" frame="90"/><KeyFrameDouble value="0.9" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:233"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.35"/><KeyFrameDouble value="1" frame="130"/><KeyFrameDouble value="0.35" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:234"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.9"/><KeyFrameDouble value="0.2" frame="110"/><KeyFrameDouble value="0.9" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:235"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.25"/><KeyFrameDouble value="0.95" frame="95"/><KeyFrameDouble value="0.25" frame="240"/></KeyedProperty></KeyedObject>
+      <KeyedObject objectId="0:236"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.85"/><KeyFrameDouble value="0.2" frame="140"/><KeyFrameDouble value="0.85" frame="240"/></KeyedProperty></KeyedObject>
+    </LinearAnimation>
+
+    <LinearAnimation loopValue="pingPong" duration="42" name="FocusStatus" id="0:31"><KeyedObject objectId="0:101"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.08" interpolationType="linear"/><KeyFrameDouble value="0.7" interpolationType="linear" frame="42"/></KeyedProperty></KeyedObject></LinearAnimation>
+    <LinearAnimation loopValue="pingPong" duration="42" name="FocusHelpdesk" id="0:32"><KeyedObject objectId="0:102"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.08" interpolationType="linear"/><KeyFrameDouble value="0.65" interpolationType="linear" frame="42"/></KeyedProperty></KeyedObject></LinearAnimation>
+    <LinearAnimation loopValue="pingPong" duration="42" name="FocusWorkstations" id="0:33"><KeyedObject objectId="0:103"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.08" interpolationType="linear"/><KeyFrameDouble value="0.6" interpolationType="linear" frame="42"/></KeyedProperty></KeyedObject></LinearAnimation>
+    <LinearAnimation loopValue="pingPong" duration="42" name="FocusRacks" id="0:34"><KeyedObject objectId="0:104"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.08" interpolationType="linear"/><KeyFrameDouble value="0.65" interpolationType="linear" frame="42"/></KeyedProperty></KeyedObject></LinearAnimation>
+    <LinearAnimation loopValue="pingPong" duration="42" name="FocusDeployment" id="0:35"><KeyedObject objectId="0:105"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.08" interpolationType="linear"/><KeyFrameDouble value="0.65" interpolationType="linear" frame="42"/></KeyedProperty></KeyedObject></LinearAnimation>
+    <LinearAnimation loopValue="pingPong" duration="42" name="FocusToolcart" id="0:36"><KeyedObject objectId="0:106"><KeyedProperty propertyKey="18"><KeyFrameDouble value="0.08" interpolationType="linear"/><KeyFrameDouble value="0.65" interpolationType="linear" frame="42"/></KeyedProperty></KeyedObject></LinearAnimation>
+  </Artboard>
+</Rive>

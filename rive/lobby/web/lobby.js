@@ -10,7 +10,7 @@ function fitLabels(){for(const l of document.querySelectorAll('.label')){const s
 function camera(){const sc=1+WALK_SCALE*walk,cy=CAMY+WALK_Y*walk,rx=-CAMX+PLANE_ROOM[0]*px,ry=-CAMY+PLANE_ROOM[1]*py;cam.style.transform=`translate(${CAMX}px,${cy}px) scale(${sc}) translate(${rx}px,${ry}px)`}
 // plates: 2x by default, 4x when the device would upscale 2x (4K at 1x, or 3x-DPR phones/tablets); the .riv itself is 12 KB
 const SET=(innerWidth*devicePixelRatio>3400)?'4x':'2x';
-const plate=name=>fetch(`/assets/${SET}/${name}.webp`).then(res=>res.arrayBuffer()).then(buf=>rive.decodeImage(new Uint8Array(buf)));
+const plate=name=>fetch(`/animation/rooms/lobby-plates/${SET}/${name}.webp`).then(res=>res.arrayBuffer()).then(buf=>rive.decodeImage(new Uint8Array(buf)));
 const r=new rive.Rive({src:`/lobby-${SET}.riv`,canvas,
   assetLoader:(asset,bytes)=>{if(!asset.isImage||bytes.length>0)return false;plate(asset.name).then(img=>{asset.setRenderImage(img);img.unref()}).catch(e=>console.error('plate',asset.name,e));return true},artboard:'Lobby',stateMachine:'Lobby',autoplay:true,autoBind:true,
   layout:new rive.Layout({fit:rive.Fit.Cover,alignment:rive.Alignment.Center}),

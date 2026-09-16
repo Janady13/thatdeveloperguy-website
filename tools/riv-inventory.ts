@@ -12,6 +12,16 @@ export async function inventory(path: string): Promise<RivInventory> {
   const bytes = readFileSync(path);
   if (bytes.subarray(0, 4).toString() !== 'RIVE') throw new Error(`${path} is not a RIVE file`);
   if (!('document' in globalThis)) Object.assign(globalThis, { window: globalThis, self: globalThis, document: { createElement: () => ({ getContext: () => null, width: 0, height: 0, style: {} }) }, requestAnimationFrame: (cb: (t: number) => void) => setTimeout(() => cb(performance.now()), 16), cancelAnimationFrame: (id: number) => clearTimeout(id) });
+  if (!('Image' in globalThis)) {
+    Object.assign(globalThis, {
+      Image: class {
+        width = 1;
+        height = 1;
+        onload?: () => void;
+        set src(_value: string) { setTimeout(() => this.onload?.(), 0); }
+      },
+    });
+  }
   const RiveCanvas = (await import('@rive-app/canvas-advanced')).default as (o: { locateFile: (f: string) => string; wasmBinary?: ArrayBuffer }) => Promise<any>;
   const wasm = readFileSync(require.resolve('@rive-app/canvas-advanced/rive.wasm'));
   const rive = await RiveCanvas({ locateFile: f => f, wasmBinary: wasm.buffer.slice(wasm.byteOffset, wasm.byteOffset + wasm.byteLength) as ArrayBuffer });

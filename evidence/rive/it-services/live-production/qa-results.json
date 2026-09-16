@@ -1,0 +1,1262 @@
+{
+  "base": "https://tdg.thatwebhostingguy.com/",
+  "out": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production",
+  "generatedAt": "2026-09-16T18:03:36.164Z",
+  "runCount": 24,
+  "errors": [],
+  "failedRequests": [],
+  "fps": {
+    "min": 26.10966057492051,
+    "avg": 52.136601230793566
+  },
+  "runs": [
+    {
+      "name": "neutral",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/neutral.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 51.11995123701811,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3406
+    },
+    {
+      "name": "ambient-idle",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/ambient-idle.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 50.771334719529854,
+        "minFps": 26.10966057492051,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3283
+    },
+    {
+      "name": "workstations",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/workstations.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "workstations",
+        "motion": "on",
+        "state": "focus",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 5,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 49.33119947669165,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 4126
+    },
+    {
+      "name": "racks",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/racks.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "racks",
+        "motion": "on",
+        "state": "focus",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 5,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 45.00929758847675,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 4103
+    },
+    {
+      "name": "status",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/status.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "status",
+        "motion": "on",
+        "state": "focus",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 5,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 49.62483502908957,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 4071
+    },
+    {
+      "name": "helpdesk",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/helpdesk.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "helpdesk",
+        "motion": "on",
+        "state": "focus",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 3,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 46.11766689873187,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 4089
+    },
+    {
+      "name": "deployment",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/deployment.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "deployment",
+        "motion": "on",
+        "state": "focus",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 1,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 48.57959848804969,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 4040
+    },
+    {
+      "name": "toolcart",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/toolcart.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "toolcart",
+        "motion": "on",
+        "state": "focus",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 6,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 47.913921705656655,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 4114
+    },
+    {
+      "name": "depth-parallax",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/depth-parallax.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "racks",
+        "motion": "on",
+        "state": "focus",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 5,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 50.21945228758925,
+        "minFps": 29.850746268656717,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 4184
+    },
+    {
+      "name": "pause-motion",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/pause-motion.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "reduced",
+        "state": "paused",
+        "counts": {
+          "kitLayers": 0,
+          "visibleKitLayers": 0,
+          "rackLeds": 0,
+          "statusPulses": 0,
+          "screens": 0,
+          "floorEffects": 0,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 0
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 60.004493707204794,
+        "minFps": 59.52380952380888,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3725
+    },
+    {
+      "name": "reduced-motion",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "reduce",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/reduced-motion.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "reduced",
+        "state": "paused",
+        "counts": {
+          "kitLayers": 0,
+          "visibleKitLayers": 0,
+          "rackLeds": 0,
+          "statusPulses": 0,
+          "screens": 0,
+          "floorEffects": 0,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 0
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 60.00456410617717,
+        "minFps": 59.52380952380888,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3187
+    },
+    {
+      "name": "debug-coordinates",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/debug-coordinates.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it?lobbyDebug=1",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 53.26956713463266,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3325
+    },
+    {
+      "name": "responsive-1920x1080",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/responsive-1920x1080.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 53.5032012591194,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1920,
+          "client": 1920
+        }
+      },
+      "elapsedMs": 3389
+    },
+    {
+      "name": "responsive-1728x1117",
+      "viewport": [
+        1728,
+        1117
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/responsive-1728x1117.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1728,
+          "height": 1117
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 48.742680662805654,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1728,
+          "client": 1728
+        }
+      },
+      "elapsedMs": 3434
+    },
+    {
+      "name": "responsive-1440x900",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/responsive-1440x900.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 51.87708345173534,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3356
+    },
+    {
+      "name": "responsive-1366x768",
+      "viewport": [
+        1366,
+        768
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/responsive-1366x768.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 768
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 60.081586981762,
+        "minFps": 59.52380952380888,
+        "bodyScroll": {
+          "width": 1366,
+          "client": 1366
+        }
+      },
+      "elapsedMs": 3285
+    },
+    {
+      "name": "responsive-1280x800",
+      "viewport": [
+        1280,
+        800
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/responsive-1280x800.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 800
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.71792900182366,
+        "minFps": 42.91845493013292,
+        "bodyScroll": {
+          "width": 1280,
+          "client": 1280
+        }
+      },
+      "elapsedMs": 3305
+    },
+    {
+      "name": "responsive-1180x820",
+      "viewport": [
+        1180,
+        820
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/responsive-1180x820.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1180,
+          "height": 820
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.509348709262106,
+        "minFps": 30.030030030030275,
+        "bodyScroll": {
+          "width": 1180,
+          "client": 1180
+        }
+      },
+      "elapsedMs": 3413
+    },
+    {
+      "name": "keyboard-focus",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/keyboard-focus.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 53.63724744248842,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3798
+    },
+    {
+      "name": "click-status",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/click-status.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it#overview",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "status",
+        "motion": "on",
+        "state": "focus",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 5,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 44.97635128252521,
+        "minFps": 29.940119760478552,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 4597
+    },
+    {
+      "name": "click-workstations",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/click-workstations.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it#workstations",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 52.652918771554376,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 4471
+    },
+    {
+      "name": "click-racks",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/click-racks.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it#infrastructure",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 50.80676665375313,
+        "minFps": 29.940119760478552,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 4472
+    },
+    {
+      "name": "click-deployment",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/click-deployment.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it#deployment",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 52.10447842492201,
+        "minFps": 29.940119760478552,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 4512
+    },
+    {
+      "name": "click-toolcart",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/live-production/click-toolcart.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "https://tdg.thatwebhostingguy.com/capabilities/business-it#deployment",
+        "sceneRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 51.70295451844629,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 4480
+    }
+  ]
+}

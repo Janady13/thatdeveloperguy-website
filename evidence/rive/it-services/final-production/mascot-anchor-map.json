@@ -1,0 +1,42 @@
+{
+  "status": "prepared-only-no-character-rendered",
+  "anchors": {
+    "floor_contact_zone": {
+      "x": 260,
+      "y": 560,
+      "width": 1060,
+      "height": 260,
+      "role": "future walking/contact shadow area"
+    },
+    "status_anchor": {
+      "x": 824,
+      "y": 420,
+      "role": "look/point at status board"
+    },
+    "workstation_anchor": {
+      "x": 250,
+      "y": 590,
+      "role": "explain support and endpoints"
+    },
+    "rack_anchor": {
+      "x": 1350,
+      "y": 570,
+      "role": "explain infrastructure"
+    },
+    "deployment_anchor": {
+      "x": 1118,
+      "y": 540,
+      "role": "explain deployment"
+    },
+    "toolcart_anchor": {
+      "x": 1435,
+      "y": 780,
+      "role": "explain delivery process"
+    },
+    "dialogue_anchor": {
+      "x": 880,
+      "y": 360,
+      "role": "speech bubble safe area"
+    }
+  }
+}

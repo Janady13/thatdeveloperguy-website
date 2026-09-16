@@ -1,0 +1,230 @@
+{
+ "ceiling_panel_1": [
+  374,
+  0,
+  90,
+  51
+ ],
+ "ceiling_panel_2": [
+  630,
+  12,
+  414,
+  21
+ ],
+ "ceiling_panel_3": [
+  1215,
+  0,
+  84,
+  51
+ ],
+ "ceiling_panel_4": [
+  610,
+  137,
+  37,
+  17
+ ],
+ "ceiling_panel_5": [
+  733,
+  137,
+  33,
+  17
+ ],
+ "ceiling_panel_6": [
+  820,
+  135,
+  166,
+  25
+ ],
+ "ceiling_panel_7": [
+  1032,
+  137,
+  36,
+  17
+ ],
+ "ceiling_panel_8": [
+  1145,
+  136,
+  40,
+  18
+ ],
+ "ceiling_downlight_1": [
+  336,
+  55,
+  32,
+  12
+ ],
+ "ceiling_downlight_2": [
+  459,
+  122,
+  29,
+  12
+ ],
+ "ceiling_downlight_3": [
+  583,
+  144,
+  19,
+  8
+ ],
+ "ceiling_downlight_4": [
+  1193,
+  144,
+  20,
+  8
+ ],
+ "ceiling_downlight_5": [
+  1322,
+  119,
+  31,
+  12
+ ],
+ "ceiling_downlight_6": [
+  1405,
+  63,
+  37,
+  14
+ ],
+ "policy_row_1_check": [
+  599,
+  258,
+  18,
+  19
+ ],
+ "policy_row_2_check": [
+  599,
+  286,
+  18,
+  18
+ ],
+ "policy_row_3_check": [
+  596,
+  313,
+  21,
+  21
+ ],
+ "policy_row_4_check": [
+  598,
+  341,
+  19,
+  19
+ ],
+ "policy_row_5_check": [
+  599,
+  369,
+  18,
+  20
+ ],
+ "review_row_1_check": [
+  1109,
+  258,
+  17,
+  19
+ ],
+ "review_row_2_check": [
+  1109,
+  286,
+  17,
+  18
+ ],
+ "review_row_3_check": [
+  1110,
+  313,
+  16,
+  19
+ ],
+ "review_row_4_check": [
+  1109,
+  341,
+  17,
+  19
+ ],
+ "review_row_5_check": [
+  1107,
+  369,
+  20,
+  19
+ ],
+ "office_monitor_left_screen": [
+  1384,
+  410,
+  112,
+  98
+ ],
+ "office_monitor_right_screen": [
+  1534,
+  405,
+  132,
+  140
+ ],
+ "office_monitor_rear_screen": [
+  1309,
+  443,
+  61,
+  55
+ ],
+ "printer_indicator": [
+  369,
+  424,
+  18,
+  8
+ ],
+ "table_connection_ports": [
+  872,
+  499,
+  38,
+  6
+ ],
+ "process_plan_icon": [
+  442,
+  157,
+  57,
+  40
+ ],
+ "process_procure_icon": [
+  442,
+  230,
+  57,
+  40
+ ],
+ "process_implement_icon": [
+  442,
+  304,
+  57,
+  40
+ ],
+ "process_coordinate_icon": [
+  442,
+  378,
+  57,
+  40
+ ],
+ "process_deliver_icon": [
+  442,
+  449,
+  57,
+  40
+ ],
+ "presentation_title": [
+  894,
+  225,
+  158,
+  56
+ ],
+ "presentation_rule": [
+  895,
+  286,
+  151,
+  7
+ ],
+ "presentation_caption": [
+  893,
+  301,
+  154,
+  55
+ ],
+ "window_clouds": [
+  1358,
+  8,
+  298,
+  282
+ ]
+}

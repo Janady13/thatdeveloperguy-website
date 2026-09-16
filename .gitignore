@@ -16,3 +16,9 @@ public/animation/
 app/experience/scenes/*/scene.json
 src/generated/
 private/
+
+# generated outputs and local tooling
+build/
+dist/
+.tools/
+rive/*/build/

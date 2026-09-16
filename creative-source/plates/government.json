@@ -1,0 +1,13 @@
+{"name":"government",
+ "source":"/Users/josephanady/Desktop/ThatDeveloperGuy/TDG_GOVERNMENT_SOLUTIONS_ANIMATION_KIT/source/tdg-government-solutions.reference.png",
+ "layers_dir":"/Users/josephanady/Code/thatdeveloperguy-website/creative-source/plates/government/kitmasks",
+ "public_id":"tdg/gov/source",
+ "removals":[
+  {"prompt":"potted plants","layers":["plant_fg_left","plant_fg_right","plant_office","plant_printer","plant_rear_cabinet","plant_rear_left","plant_rear_right","plant_window_floor","plant_window_tall"],"dilate":3},
+  {"prompt":"clouds in the sky","layers":["clouds"],"dilate":3},
+  {"inpaint":true,"layers":["chair_head","chair_left_far","chair_left_mid","chair_left_near","chair_right_far","chair_right_mid","chair_right_near","office_chair","book_1","book_2","book_3","book_4","globe"],"dilate":3},
+  {"cavity":[[36,26,66],[18,12,36]],"layers":["drawer_1","drawer_2","drawer_3","drawer_4","drawer_5"],"dilate":1}],
+ "movers":{"door_leaf":"door_leaf","drawer_1":"drawer_1","drawer_2":"drawer_2","drawer_3":"drawer_3","drawer_4":"drawer_4","drawer_5":"drawer_5",
+  "book_1":"book_1","book_2":"book_2","book_3":"book_3","book_4":"book_4","globe":"globe",
+  "chair_head":"chair_head","chair_left_far":"chair_left_far","chair_left_mid":"chair_left_mid","chair_left_near":"chair_left_near","chair_right_far":"chair_right_far","chair_right_mid":"chair_right_mid","chair_right_near":"chair_right_near","office_chair":"office_chair",
+  "plant_fg_left":"plant_fg_left","plant_fg_right":"plant_fg_right","plant_office":"plant_office","plant_printer":"plant_printer","plant_rear_cabinet":"plant_rear_cabinet","plant_rear_left":"plant_rear_left","plant_rear_right":"plant_rear_right","plant_window_floor":"plant_window_floor","plant_window_tall":"plant_window_tall","clouds":"clouds"}}

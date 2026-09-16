@@ -1,0 +1,288 @@
+{
+  "route": "https://tdg.thatwebhostingguy.com/capabilities/cybersecurity?v=1789586772608",
+  "findings": {
+    "initial": {
+      "vector": "ready",
+      "native": "fallback",
+      "renderer": "software renderer: ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+      "motion": "on",
+      "hotspots": 7,
+      "paths": 5307,
+      "canvases": 0,
+      "documentAnimations": 131,
+      "vectorAnimations": 129,
+      "vectorPasses": [
+        "scene"
+      ]
+    },
+    "monitoring": {
+      "sweepDuration": "1.45s",
+      "sweepName": "cyberMapSweep",
+      "refreshDuration": "1.45s"
+    },
+    "health": {
+      "checkOpacity": "0",
+      "checks": 5
+    },
+    "response": {
+      "cameraTransform": "matrix(0.987688, 0.156434, -0.156434, 0.987688, 0, 0)"
+    },
+    "infrastructure": {
+      "rackTransform": "matrix(0.83, 0, 0, 1, 0, 0)"
+    },
+    "briefing": {
+      "chairTransform": "none",
+      "drawerTransform": "none",
+      "centerMonitorFilter": "brightness(1.16) saturate(1.1)",
+      "drawers": 18
+    },
+    "objectInteractions": {
+      "chairs": {
+        "console_chair_1": {
+          "sceneFocus": "console_chair_1",
+          "vectorFocus": "console_chair_1",
+          "targetTransform": "matrix(1, 0, 0, 1, -3.9976, 3.9976)",
+          "activeTargets": [
+            "console_chair_1"
+          ]
+        },
+        "console_chair_2": {
+          "sceneFocus": "console_chair_2",
+          "vectorFocus": "console_chair_2",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 3.9976)",
+          "activeTargets": [
+            "console_chair_2"
+          ]
+        },
+        "console_chair_3": {
+          "sceneFocus": "console_chair_3",
+          "vectorFocus": "console_chair_3",
+          "targetTransform": "matrix(1, 0, 0, 1, 3.9976, 3.9976)",
+          "activeTargets": [
+            "console_chair_3"
+          ]
+        }
+      },
+      "drawers": {
+        "console_1_left_cabinet_drawer_1": {
+          "sceneFocus": "console_1_left_cabinet_drawer_1",
+          "vectorFocus": "console_1_left_cabinet_drawer_1",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_1_left_cabinet_drawer_1"
+          ]
+        },
+        "console_1_left_cabinet_drawer_2": {
+          "sceneFocus": "console_1_left_cabinet_drawer_2",
+          "vectorFocus": "console_1_left_cabinet_drawer_2",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_1_left_cabinet_drawer_2"
+          ]
+        },
+        "console_1_left_cabinet_drawer_3": {
+          "sceneFocus": "console_1_left_cabinet_drawer_3",
+          "vectorFocus": "console_1_left_cabinet_drawer_3",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_1_left_cabinet_drawer_3"
+          ]
+        },
+        "console_1_right_cabinet_drawer_1": {
+          "sceneFocus": "console_1_right_cabinet_drawer_1",
+          "vectorFocus": "console_1_right_cabinet_drawer_1",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_1_right_cabinet_drawer_1"
+          ]
+        },
+        "console_1_right_cabinet_drawer_2": {
+          "sceneFocus": "console_1_right_cabinet_drawer_2",
+          "vectorFocus": "console_1_right_cabinet_drawer_2",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_1_right_cabinet_drawer_2"
+          ]
+        },
+        "console_1_right_cabinet_drawer_3": {
+          "sceneFocus": "console_1_right_cabinet_drawer_3",
+          "vectorFocus": "console_1_right_cabinet_drawer_3",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_1_right_cabinet_drawer_3"
+          ]
+        },
+        "console_2_left_cabinet_drawer_1": {
+          "sceneFocus": "console_2_left_cabinet_drawer_1",
+          "vectorFocus": "console_2_left_cabinet_drawer_1",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_2_left_cabinet_drawer_1"
+          ]
+        },
+        "console_2_left_cabinet_drawer_2": {
+          "sceneFocus": "console_2_left_cabinet_drawer_2",
+          "vectorFocus": "console_2_left_cabinet_drawer_2",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_2_left_cabinet_drawer_2"
+          ]
+        },
+        "console_2_left_cabinet_drawer_3": {
+          "sceneFocus": "console_2_left_cabinet_drawer_3",
+          "vectorFocus": "console_2_left_cabinet_drawer_3",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_2_left_cabinet_drawer_3"
+          ]
+        },
+        "console_2_right_cabinet_drawer_1": {
+          "sceneFocus": "console_2_right_cabinet_drawer_1",
+          "vectorFocus": "console_2_right_cabinet_drawer_1",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_2_right_cabinet_drawer_1"
+          ]
+        },
+        "console_2_right_cabinet_drawer_2": {
+          "sceneFocus": "console_2_right_cabinet_drawer_2",
+          "vectorFocus": "console_2_right_cabinet_drawer_2",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_2_right_cabinet_drawer_2"
+          ]
+        },
+        "console_2_right_cabinet_drawer_3": {
+          "sceneFocus": "console_2_right_cabinet_drawer_3",
+          "vectorFocus": "console_2_right_cabinet_drawer_3",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_2_right_cabinet_drawer_3"
+          ]
+        },
+        "console_3_left_cabinet_drawer_1": {
+          "sceneFocus": "console_3_left_cabinet_drawer_1",
+          "vectorFocus": "console_3_left_cabinet_drawer_1",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_3_left_cabinet_drawer_1"
+          ]
+        },
+        "console_3_left_cabinet_drawer_2": {
+          "sceneFocus": "console_3_left_cabinet_drawer_2",
+          "vectorFocus": "console_3_left_cabinet_drawer_2",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_3_left_cabinet_drawer_2"
+          ]
+        },
+        "console_3_left_cabinet_drawer_3": {
+          "sceneFocus": "console_3_left_cabinet_drawer_3",
+          "vectorFocus": "console_3_left_cabinet_drawer_3",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 3.99884)",
+          "activeTargets": [
+            "console_3_left_cabinet_drawer_3"
+          ]
+        },
+        "console_3_right_cabinet_drawer_1": {
+          "sceneFocus": "console_3_right_cabinet_drawer_1",
+          "vectorFocus": "console_3_right_cabinet_drawer_1",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_3_right_cabinet_drawer_1"
+          ]
+        },
+        "console_3_right_cabinet_drawer_2": {
+          "sceneFocus": "console_3_right_cabinet_drawer_2",
+          "vectorFocus": "console_3_right_cabinet_drawer_2",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_3_right_cabinet_drawer_2"
+          ]
+        },
+        "console_3_right_cabinet_drawer_3": {
+          "sceneFocus": "console_3_right_cabinet_drawer_3",
+          "vectorFocus": "console_3_right_cabinet_drawer_3",
+          "targetTransform": "matrix(1, 0, 0, 1, 0, 4)",
+          "activeTargets": [
+            "console_3_right_cabinet_drawer_3"
+          ]
+        }
+      },
+      "cleared": {
+        "sceneFocus": "",
+        "activeChairs": 0,
+        "activeDrawers": 0
+      }
+    },
+    "process": {
+      "binderTransform": "matrix(1, 0, 0, 1, 8, -2)"
+    },
+    "kitTiming": {
+      "signalDuration": "4s",
+      "signalStartOpacity": "0.57785",
+      "foliageDuration": "9s",
+      "foliageTargets": 42,
+      "doorOrigin": "1620px 581px"
+    },
+    "ambientSample": {
+      "before": {
+        "pulse": "0.629507",
+        "camera": "matrix(0.999917, 0.0128833, -0.0128833, 0.999917, 0, 0)"
+      },
+      "after": {
+        "pulse": "0.9895",
+        "camera": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    },
+    "ambientChangedPixels": 2752,
+    "paused": {
+      "motion": "reduced",
+      "vectorPaused": "true",
+      "nativePlaying": "not-mounted",
+      "button": "Resume motion"
+    },
+    "door": {
+      "doorTransform": "matrix(0.442061, 0, 0, 1, 0, 0)"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "hotspots": 7,
+      "vector": "ready"
+    },
+    "reduced": {
+      "motion": "reduced",
+      "vectorPaused": "true",
+      "button": "Resume motion"
+    }
+  },
+  "assertions": {
+    "exactHotspotCount": true,
+    "suppliedVectorLoaded": true,
+    "singleAuthoritativeSceneAssembled": true,
+    "nativeRiveReadyOrCorrectFallback": true,
+    "ambientMotionActive": true,
+    "kitMapSweep": true,
+    "kitAmbientSignals": true,
+    "kitFoliage": true,
+    "kitChecks": true,
+    "kitCamera": true,
+    "kitRackGlass": true,
+    "independentFurnitureLayers": true,
+    "allChairsIndependentlyInteractive": true,
+    "allDrawersIndependentlyInteractive": true,
+    "objectMotionClearsCleanly": true,
+    "briefingTargetsCenterScreensOnly": true,
+    "kitBinder": true,
+    "kitDoor": true,
+    "pauseStopsBothLayers": true,
+    "reducedMotionHonored": true,
+    "responsiveMobile": true,
+    "noConsoleErrors": true,
+    "noFailedRequests": true
+  },
+  "errors": [],
+  "failedRequests": [],
+  "passed": true
+}

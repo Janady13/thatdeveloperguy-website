@@ -1,0 +1,538 @@
+{
+  "base": "https://tdg.thatwebhostingguy.com",
+  "results": {
+    "routes": {
+      "/": {
+        "status": 200,
+        "finalPath": "/",
+        "title": "ThatDeveloperGuy — Government IT, cybersecurity and software from Cassville, Missouri",
+        "mainCount": 1,
+        "headerHrefCount": 6
+      },
+      "/capabilities/business-it": {
+        "status": 200,
+        "finalPath": "/capabilities/business-it",
+        "title": "IT Services — business IT support, endpoints, infrastructure and deployment",
+        "mainCount": 1,
+        "headerHrefCount": 6
+      },
+      "/government": {
+        "status": 200,
+        "finalPath": "/government",
+        "title": "Government Solutions — ThatDeveloperGuy",
+        "mainCount": 1,
+        "headerHrefCount": 6
+      },
+      "/capabilities/cybersecurity": {
+        "status": 200,
+        "finalPath": "/capabilities/cybersecurity",
+        "title": "Cyber Security — security review, monitoring, incident response planning and infrastructure protection",
+        "mainCount": 1,
+        "headerHrefCount": 6
+      },
+      "/company": {
+        "status": 200,
+        "finalPath": "/company",
+        "title": "Company — ThatDeveloperGuy LLC",
+        "mainCount": 1,
+        "headerHrefCount": 6
+      },
+      "/contact": {
+        "status": 200,
+        "finalPath": "/contact",
+        "title": "Contact — request a briefing from ThatDeveloperGuy",
+        "mainCount": 1,
+        "headerHrefCount": 6
+      },
+      "/capabilities": {
+        "status": 200,
+        "finalPath": "/capabilities",
+        "title": "Capabilities — ThatDeveloperGuy",
+        "mainCount": 1,
+        "headerHrefCount": 6
+      },
+      "/privacy": {
+        "status": 200,
+        "finalPath": "/privacy",
+        "title": "Privacy — ThatDeveloperGuy",
+        "mainCount": 1,
+        "headerHrefCount": 6
+      },
+      "/accessibility": {
+        "status": 200,
+        "finalPath": "/accessibility",
+        "title": "Accessibility — ThatDeveloperGuy",
+        "mainCount": 1,
+        "headerHrefCount": 6
+      }
+    },
+    "header": {
+      "desktop": {
+        "/": {
+          "/capabilities/business-it": {
+            "href": "/capabilities/business-it",
+            "path": "/capabilities/business-it",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/government": {
+            "href": "/government",
+            "path": "/government",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/capabilities/cybersecurity": {
+            "href": "/capabilities/cybersecurity",
+            "path": "/capabilities/cybersecurity",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/company": {
+            "href": "/company",
+            "path": "/company",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/contact": {
+            "href": "/contact",
+            "path": "/contact",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          }
+        },
+        "/capabilities/business-it": {
+          "/capabilities/business-it": {
+            "href": "/capabilities/business-it",
+            "path": "/capabilities/business-it",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/government": {
+            "href": "/government",
+            "path": "/government",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/capabilities/cybersecurity": {
+            "href": "/capabilities/cybersecurity",
+            "path": "/capabilities/cybersecurity",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/company": {
+            "href": "/company",
+            "path": "/company",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/contact": {
+            "href": "/contact",
+            "path": "/contact",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          }
+        },
+        "/capabilities/cybersecurity": {
+          "/capabilities/business-it": {
+            "href": "/capabilities/business-it",
+            "path": "/capabilities/business-it",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/government": {
+            "href": "/government",
+            "path": "/government",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/capabilities/cybersecurity": {
+            "href": "/capabilities/cybersecurity",
+            "path": "/capabilities/cybersecurity",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/company": {
+            "href": "/company",
+            "path": "/company",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/contact": {
+            "href": "/contact",
+            "path": "/contact",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          }
+        },
+        "/government": {
+          "/capabilities/business-it": {
+            "href": "/capabilities/business-it",
+            "path": "/capabilities/business-it",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/government": {
+            "href": "/government",
+            "path": "/government",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/capabilities/cybersecurity": {
+            "href": "/capabilities/cybersecurity",
+            "path": "/capabilities/cybersecurity",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/company": {
+            "href": "/company",
+            "path": "/company",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/contact": {
+            "href": "/contact",
+            "path": "/contact",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          }
+        }
+      },
+      "mobile": {
+        "/": {
+          "/capabilities/business-it": {
+            "href": "/capabilities/business-it",
+            "path": "/capabilities/business-it",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/government": {
+            "href": "/government",
+            "path": "/government",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/capabilities/cybersecurity": {
+            "href": "/capabilities/cybersecurity",
+            "path": "/capabilities/cybersecurity",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/company": {
+            "href": "/company",
+            "path": "/company",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/contact": {
+            "href": "/contact",
+            "path": "/contact",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          }
+        },
+        "/capabilities/business-it": {
+          "/capabilities/business-it": {
+            "href": "/capabilities/business-it",
+            "path": "/capabilities/business-it",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/government": {
+            "href": "/government",
+            "path": "/government",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/capabilities/cybersecurity": {
+            "href": "/capabilities/cybersecurity",
+            "path": "/capabilities/cybersecurity",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/company": {
+            "href": "/company",
+            "path": "/company",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/contact": {
+            "href": "/contact",
+            "path": "/contact",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          }
+        },
+        "/capabilities/cybersecurity": {
+          "/capabilities/business-it": {
+            "href": "/capabilities/business-it",
+            "path": "/capabilities/business-it",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/government": {
+            "href": "/government",
+            "path": "/government",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/capabilities/cybersecurity": {
+            "href": "/capabilities/cybersecurity",
+            "path": "/capabilities/cybersecurity",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/company": {
+            "href": "/company",
+            "path": "/company",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/contact": {
+            "href": "/contact",
+            "path": "/contact",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          }
+        },
+        "/government": {
+          "/capabilities/business-it": {
+            "href": "/capabilities/business-it",
+            "path": "/capabilities/business-it",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/government": {
+            "href": "/government",
+            "path": "/government",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/capabilities/cybersecurity": {
+            "href": "/capabilities/cybersecurity",
+            "path": "/capabilities/cybersecurity",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/company": {
+            "href": "/company",
+            "path": "/company",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          },
+          "/contact": {
+            "href": "/contact",
+            "path": "/contact",
+            "hash": "",
+            "clickError": null,
+            "passed": true
+          }
+        }
+      }
+    },
+    "lobby": {
+      "door-IT": {
+        "href": "/capabilities/business-it",
+        "path": "/capabilities/business-it",
+        "hash": "",
+        "clickError": null,
+        "expected": "/capabilities/business-it",
+        "passed": true
+      },
+      "door-Gov": {
+        "href": "/government",
+        "path": "/government",
+        "hash": "",
+        "clickError": null,
+        "expected": "/government",
+        "passed": true
+      },
+      "door-Cyber": {
+        "href": "/capabilities/cybersecurity",
+        "path": "/capabilities/cybersecurity",
+        "hash": "",
+        "clickError": null,
+        "expected": "/capabilities/cybersecurity",
+        "passed": true
+      },
+      "reception": {
+        "href": "/contact",
+        "path": "/contact",
+        "hash": "",
+        "clickError": null,
+        "expected": "/contact",
+        "passed": true
+      },
+      "lounge": {
+        "href": "/company",
+        "path": "/company",
+        "hash": "",
+        "clickError": null,
+        "expected": "/company",
+        "passed": true
+      }
+    },
+    "roomAnchors": {
+      "/capabilities/business-it": {
+        "status": {
+          "href": "#overview",
+          "path": "/capabilities/business-it",
+          "hash": "#overview",
+          "clickError": null,
+          "expected": "#overview",
+          "passed": true
+        },
+        "helpdesk": {
+          "href": "#support",
+          "path": "/capabilities/business-it",
+          "hash": "#support",
+          "clickError": null,
+          "expected": "#support",
+          "passed": true
+        },
+        "workstations": {
+          "href": "#workstations",
+          "path": "/capabilities/business-it",
+          "hash": "#workstations",
+          "clickError": null,
+          "expected": "#workstations",
+          "passed": true
+        },
+        "racks": {
+          "href": "#infrastructure",
+          "path": "/capabilities/business-it",
+          "hash": "#infrastructure",
+          "clickError": null,
+          "expected": "#infrastructure",
+          "passed": true
+        },
+        "deployment": {
+          "href": "#deployment",
+          "path": "/capabilities/business-it",
+          "hash": "#deployment",
+          "clickError": null,
+          "expected": "#deployment",
+          "passed": true
+        },
+        "toolcart": {
+          "href": "#deployment",
+          "path": "/capabilities/business-it",
+          "hash": "#deployment",
+          "clickError": null,
+          "expected": "#deployment",
+          "passed": true
+        }
+      },
+      "/capabilities/cybersecurity": {
+        "monitoring": {
+          "href": "#monitoring",
+          "path": "/capabilities/cybersecurity",
+          "hash": "#monitoring",
+          "clickError": null,
+          "expected": "#monitoring",
+          "passed": true
+        },
+        "health": {
+          "href": "#security-review",
+          "path": "/capabilities/cybersecurity",
+          "hash": "#security-review",
+          "clickError": null,
+          "expected": "#security-review",
+          "passed": true
+        },
+        "response": {
+          "href": "#response",
+          "path": "/capabilities/cybersecurity",
+          "hash": "#response",
+          "clickError": null,
+          "expected": "#response",
+          "passed": true
+        },
+        "infrastructure": {
+          "href": "#infrastructure",
+          "path": "/capabilities/cybersecurity",
+          "hash": "#infrastructure",
+          "clickError": null,
+          "expected": "#infrastructure",
+          "passed": true
+        },
+        "process": {
+          "href": "#process",
+          "path": "/capabilities/cybersecurity",
+          "hash": "#process",
+          "clickError": null,
+          "expected": "#process",
+          "passed": true
+        }
+      }
+    },
+    "exits": {
+      "/capabilities/cybersecurity:return-lobby": {
+        "href": "/",
+        "path": "/",
+        "hash": "",
+        "clickError": null,
+        "expected": "/",
+        "passed": true
+      },
+      "/capabilities/cybersecurity:briefing": {
+        "href": "/contact?project=security&from=capability.cybersecurity",
+        "path": "/contact",
+        "hash": "",
+        "clickError": null,
+        "expected": "/contact",
+        "passed": true
+      }
+    },
+    "errors": [],
+    "failedRequests": []
+  },
+  "assertions": {
+    "everyRouteLoads": true,
+    "everyHeaderLinkWorks": true,
+    "everyLobbyDestinationWorks": true,
+    "everyRoomAnchorWorks": true,
+    "everyRoomExitWorks": true,
+    "noConsoleErrors": true,
+    "noFailedRequests": true
+  },
+  "passed": true
+}

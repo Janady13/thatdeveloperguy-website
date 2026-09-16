@@ -1,0 +1,172 @@
+{
+  "generatedAt": "2026-09-16T18:01:42.897Z",
+  "baseUrl": "https://tdg.thatwebhostingguy.com",
+  "pass": true,
+  "failures": [],
+  "results": [
+    {
+      "name": "desktop-1440x900",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/native-page/desktop-1440x900.png",
+      "averageLuma": 166.96954617295015,
+      "interactions": [
+        {
+          "hotspot": "status",
+          "state": "status",
+          "nativeFocus": "status"
+        },
+        {
+          "hotspot": "deployment",
+          "state": "deployment",
+          "nativeFocus": "deployment"
+        },
+        {
+          "hotspot": "toolcart",
+          "state": "toolcart",
+          "nativeFocus": "toolcart"
+        }
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "evidence": {
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "native": "ready",
+        "motion": "on",
+        "rivePlaying": "true",
+        "canvas": {
+          "width": 1598,
+          "height": 900
+        },
+        "canvasRect": {
+          "width": 1598.265625,
+          "height": 900,
+          "left": -79.1328125,
+          "right": 1519.1328125
+        },
+        "riveRect": {
+          "width": 1598.265625,
+          "height": 900,
+          "left": -79.1328125,
+          "right": 1519.1328125
+        },
+        "bodyRect": {
+          "width": 1440,
+          "left": 0,
+          "right": 1440
+        },
+        "posterVisibility": "visible",
+        "posterOpacity": "1",
+        "sceneRect": {
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "left": 0
+        },
+        "planeRect": {
+          "width": 1598.265625,
+          "height": 900,
+          "left": -79.1328125,
+          "right": 1519.1328125,
+          "transform": "matrix(1, 0, 0, 1, -799.133, -450)",
+          "cssLeft": "720px",
+          "marginLeft": "0px",
+          "offsetLeft": 720,
+          "offsetParent": "scene scene-it-services scene-live scene-native-ready"
+        },
+        "hotspots": 6,
+        "bodyOverflow": "hidden",
+        "scroll": {
+          "width": 1440,
+          "height": 900,
+          "clientWidth": 1440,
+          "clientHeight": 900
+        }
+      }
+    },
+    {
+      "name": "mobile-390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/native-page/mobile-390x844.png",
+      "averageLuma": 162.6865321644254,
+      "interactions": [
+        {
+          "hotspot": "status",
+          "state": "status",
+          "nativeFocus": "status"
+        },
+        {
+          "hotspot": "deployment",
+          "state": "deployment",
+          "nativeFocus": "deployment"
+        },
+        {
+          "hotspot": "toolcart",
+          "state": "toolcart",
+          "nativeFocus": "toolcart"
+        }
+      ],
+      "consoleErrors": [],
+      "requestFailures": [],
+      "evidence": {
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+        "native": "ready",
+        "motion": "on",
+        "rivePlaying": "true",
+        "canvas": {
+          "width": 1499,
+          "height": 844
+        },
+        "canvasRect": {
+          "width": 1498.8125,
+          "height": 844,
+          "left": -554.40625,
+          "right": 944.40625
+        },
+        "riveRect": {
+          "width": 1498.8125,
+          "height": 844,
+          "left": -554.40625,
+          "right": 944.40625
+        },
+        "bodyRect": {
+          "width": 390,
+          "left": 0,
+          "right": 390
+        },
+        "posterVisibility": "visible",
+        "posterOpacity": "1",
+        "sceneRect": {
+          "width": 390,
+          "height": 844,
+          "top": 0,
+          "left": 0
+        },
+        "planeRect": {
+          "width": 1498.8125,
+          "height": 844,
+          "left": -554.40625,
+          "right": 944.40625,
+          "transform": "matrix(1, 0, 0, 1, -749.406, -422)",
+          "cssLeft": "195px",
+          "marginLeft": "0px",
+          "offsetLeft": 195,
+          "offsetParent": "scene scene-it-services scene-live scene-native-ready"
+        },
+        "hotspots": 6,
+        "bodyOverflow": "hidden",
+        "scroll": {
+          "width": 390,
+          "height": 844,
+          "clientWidth": 390,
+          "clientHeight": 844
+        }
+      }
+    }
+  ]
+}

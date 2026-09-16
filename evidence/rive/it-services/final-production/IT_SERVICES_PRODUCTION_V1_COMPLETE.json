@@ -1,0 +1,45 @@
+{
+  "milestone": "IT_SERVICES_PRODUCTION_V1_COMPLETE",
+  "status": "production-complete-local-validated-pending-live-deploy",
+  "completedAt": "2026-09-16T11:55:40.721423+00:00",
+  "sourceKit": "/Users/josephanady/Desktop/ThatDeveloperGuy/TDG_IT_SERVICES_ANIMATION_KIT",
+  "architecture": "approved static SVG base plus transparent kit SVG production layers, procedural environmental effects, semantic hotspots, accessibility content",
+  "canvas": {
+    "width": 1648,
+    "height": 928
+  },
+  "systems": {
+    "statusBoard": "display glow, telemetry bars, status pulses, kit row emphasis",
+    "workstations": "screen activity, monitor glow, endpoint focus response",
+    "serverRacks": "rack LED field, rack glass, infrastructure focus response",
+    "deployment": "reader/indicator response and transition emphasis, no fake door opening",
+    "toolcart": "drawer sequence emphasis without destructive geometry",
+    "floor": "10 perspective-safe light/reflection masks tied to source systems",
+    "window": "slow atmospheric depth and daylight response",
+    "reception": "monitor glow, reader LED, support phone notice, coffee steam"
+  },
+  "riveStatus": "No compiled native IT Services .riv supplied; build-spec inventoried and handoff documented in rive-architecture.md.",
+  "qa": {
+    "runCount": 24,
+    "errors": 0,
+    "failedRequests": 0,
+    "fps": {
+      "min": 14.992503748125978,
+      "avg": 59.673635894445944
+    }
+  },
+  "counts": {
+    "kitLayers": 28,
+    "visibleKitLayers": 0,
+    "rackLeds": 16,
+    "statusPulses": 5,
+    "screens": 7,
+    "floorEffects": 10,
+    "debugBoxes": 0,
+    "mascotAnchors": 0,
+    "canvas": 0,
+    "envSprites": 0,
+    "animations": 36
+  },
+  "freezeRule": "Do not modify IT Services unless a regression is discovered."
+}

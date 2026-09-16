@@ -1,0 +1,477 @@
+{
+  "fps": {
+    "min": 26.10966057492051,
+    "avg": 52.136601230793566
+  },
+  "counts": {
+    "kitLayers": 28,
+    "visibleKitLayers": 0,
+    "rackLeds": 16,
+    "statusPulses": 5,
+    "screens": 7,
+    "floorEffects": 10,
+    "debugBoxes": 0,
+    "mascotAnchors": 0,
+    "canvas": 0,
+    "envSprites": 0,
+    "animations": 36
+  },
+  "timings": [
+    {
+      "name": "neutral",
+      "elapsedMs": 3406,
+      "fps": 51.11995123701811,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "ambient-idle",
+      "elapsedMs": 3283,
+      "fps": 50.771334719529854,
+      "minFps": 26.10966057492051,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "workstations",
+      "elapsedMs": 4126,
+      "fps": 49.33119947669165,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 5,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "racks",
+      "elapsedMs": 4103,
+      "fps": 45.00929758847675,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 5,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "status",
+      "elapsedMs": 4071,
+      "fps": 49.62483502908957,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 5,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "helpdesk",
+      "elapsedMs": 4089,
+      "fps": 46.11766689873187,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 3,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "deployment",
+      "elapsedMs": 4040,
+      "fps": 48.57959848804969,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 1,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "toolcart",
+      "elapsedMs": 4114,
+      "fps": 47.913921705656655,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 6,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "depth-parallax",
+      "elapsedMs": 4184,
+      "fps": 50.21945228758925,
+      "minFps": 29.850746268656717,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 5,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "pause-motion",
+      "elapsedMs": 3725,
+      "fps": 60.004493707204794,
+      "minFps": 59.52380952380888,
+      "counts": {
+        "kitLayers": 0,
+        "visibleKitLayers": 0,
+        "rackLeds": 0,
+        "statusPulses": 0,
+        "screens": 0,
+        "floorEffects": 0,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 0
+      }
+    },
+    {
+      "name": "reduced-motion",
+      "elapsedMs": 3187,
+      "fps": 60.00456410617717,
+      "minFps": 59.52380952380888,
+      "counts": {
+        "kitLayers": 0,
+        "visibleKitLayers": 0,
+        "rackLeds": 0,
+        "statusPulses": 0,
+        "screens": 0,
+        "floorEffects": 0,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 0
+      }
+    },
+    {
+      "name": "debug-coordinates",
+      "elapsedMs": 3325,
+      "fps": 53.26956713463266,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "responsive-1920x1080",
+      "elapsedMs": 3389,
+      "fps": 53.5032012591194,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "responsive-1728x1117",
+      "elapsedMs": 3434,
+      "fps": 48.742680662805654,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "responsive-1440x900",
+      "elapsedMs": 3356,
+      "fps": 51.87708345173534,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "responsive-1366x768",
+      "elapsedMs": 3285,
+      "fps": 60.081586981762,
+      "minFps": 59.52380952380888,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "responsive-1280x800",
+      "elapsedMs": 3305,
+      "fps": 59.71792900182366,
+      "minFps": 42.91845493013292,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "responsive-1180x820",
+      "elapsedMs": 3413,
+      "fps": 59.509348709262106,
+      "minFps": 30.030030030030275,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "keyboard-focus",
+      "elapsedMs": 3798,
+      "fps": 53.63724744248842,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "click-status",
+      "elapsedMs": 4597,
+      "fps": 44.97635128252521,
+      "minFps": 29.940119760478552,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 5,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "click-workstations",
+      "elapsedMs": 4471,
+      "fps": 52.652918771554376,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "click-racks",
+      "elapsedMs": 4472,
+      "fps": 50.80676665375313,
+      "minFps": 29.940119760478552,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "click-deployment",
+      "elapsedMs": 4512,
+      "fps": 52.10447842492201,
+      "minFps": 29.940119760478552,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    },
+    {
+      "name": "click-toolcart",
+      "elapsedMs": 4480,
+      "fps": 51.70295451844629,
+      "minFps": 29.94011976047896,
+      "counts": {
+        "kitLayers": 28,
+        "visibleKitLayers": 0,
+        "rackLeds": 16,
+        "statusPulses": 5,
+        "screens": 7,
+        "floorEffects": 10,
+        "debugBoxes": 0,
+        "mascotAnchors": 0,
+        "canvas": 0,
+        "envSprites": 0,
+        "animations": 36
+      }
+    }
+  ]
+}

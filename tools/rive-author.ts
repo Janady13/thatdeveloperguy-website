@@ -14,13 +14,17 @@ import { pathToFileURL } from 'node:url';
 import { repoRoot, ROOM_IDS, type RoomId } from './kits.ts';
 import { RiveEditor, type LogEntry } from './rive-mcp.ts';
 import { exportArtboardViaCli } from './rive-export.ts';
-import { planRoom, type RoomPlan } from './rive-plan.ts';
+import { planRoom, type PlanTarget, type RoomPlan } from './rive-plan.ts';
 import type { RoomManifest } from './import-rooms.ts';
 
 const KEY_ALIAS: Record<string, string[]> = { scaleX: ['sx'], scaleY: ['sy'], rotation: ['r'], x: ['x'], y: ['y'], opacity: ['opacity'], loop: ['loop'], duration: ['duration'], fps: ['fps'] };
 const LOOP_INDEX = { oneShot: 0, loop: 1, pingPong: 2 } as const;
 
 interface Ctx { editor: RiveEditor; plan: RoomPlan; artboardId: string; ids: Map<string, string>; keys: Map<string, Record<string, number>>; vm: { id: string; props: Record<string, string> }; animations: Record<string, string>; stateMachineId: string; stateMachineName: string }
+
+function hasPivot(target: PlanTarget): target is PlanTarget & { pivot: [number, number] } {
+  return target.pivot !== null;
+}
 
 async function propertyKey(ctx: Ctx, objectId: string, name: string): Promise<number> {
   if (!ctx.keys.has(objectId)) { const result = await ctx.editor.call<{ properties: Record<string, Record<string, number>> }>('query_property_keys', { objectIds: [objectId] }); ctx.keys.set(objectId, result.properties[objectId] ?? {}); }
@@ -41,24 +45,23 @@ function targetId(ctx: Ctx, target: string): string {
   return id;
 }
 
-/** Hinge = empty group at the leaf's pivot; the leaf is reparented in (world position kept) and the group takes the leaf's slot. */
-async function hinge(ctx: Ctx, door: RoomPlan['doors'][number]): Promise<void> {
-  const leafId = await findId(ctx, door.leafId);
-  const found = await ctx.editor.call<{ objects: Array<{ id: string; parentId: string }> }>('find_objects', { name: door.leafId });
-  const parentId = found.objects.find(o => o.id === leafId)!.parentId;
-  const group = await ctx.editor.call<{ group: { id: string } }>('group_editor', { name: `hinge_${door.id}`, parentId });
-  const hingeId = group.group.id;
-  await ctx.editor.call('set_property_values', { propertyValues: { [hingeId]: { [await propertyKey(ctx, hingeId, 'x')]: door.hinge[0], [await propertyKey(ctx, hingeId, 'y')]: door.hinge[1] } } });
-  await ctx.editor.call('reparent_objects', { operations: [{ objectId: leafId, newParentId: hingeId, position: 'start' }] });
-  await ctx.editor.call('reparent_objects', { operations: [{ objectId: hingeId, newParentId: parentId, position: 'start' }] });
-  ctx.ids.set(`hinge:${door.id}`, hingeId); ctx.ids.set(door.leafId, leafId);
-  if (door.accessLightId) ctx.ids.set(door.accessLightId, await findId(ctx, door.accessLightId));
+/** Pivot group = empty group at the target's pivot; the target is reparented in (world position kept) and the group takes its slot. */
+async function pivotGroup(ctx: Ctx, target: { id: string; pivot: [number, number] }): Promise<void> {
+  const found = await ctx.editor.call<{ objects: Array<{ id: string; name: string; parentId: string }> }>('find_objects', { name: target.id });
+  const node = found.objects.find(o => o.name === target.id);
+  if (!node) { console.warn(`pivot target ${target.id} not in artboard; skipped`); return; }
+  const group = await ctx.editor.call<{ group: { id: string } }>('group_editor', { name: `pivot_${target.id}`, parentId: node.parentId });
+  const gid = group.group.id;
+  await ctx.editor.call('set_property_values', { propertyValues: { [gid]: { [await propertyKey(ctx, gid, 'x')]: target.pivot[0], [await propertyKey(ctx, gid, 'y')]: target.pivot[1] } } });
+  await ctx.editor.call('reparent_objects', { operations: [{ objectId: node.id, newParentId: gid, position: 'start' }] });
+  await ctx.editor.call('reparent_objects', { operations: [{ objectId: gid, newParentId: node.parentId, position: 'start' }] });
+  ctx.ids.set(`pivot:${target.id}`, gid); ctx.ids.set(target.id, node.id);
 }
 
 async function resolveAmbientTargets(ctx: Ctx): Promise<void> {
   const wanted = new Set<string>();
-  for (const a of ctx.plan.animations) for (const k of a.keys) if (!k.target.startsWith('hinge:') && !ctx.ids.has(k.target)) wanted.add(k.target);
-  for (const name of wanted) { try { ctx.ids.set(name, await findId(ctx, name)); } catch { console.warn(`ambient target ${name} not in artboard; its keys are skipped`); } }
+  for (const a of ctx.plan.animations) for (const k of a.keys) if (!k.target.startsWith('pivot:') && !ctx.ids.has(k.target)) wanted.add(k.target);
+  for (const name of wanted) { try { ctx.ids.set(name, await findId(ctx, name)); } catch { console.warn(`target ${name} not in artboard; its keys are skipped`); } }
 }
 
 async function hitShapes(ctx: Ctx): Promise<void> {
@@ -70,7 +73,7 @@ async function hitShapes(ctx: Ctx): Promise<void> {
 async function viewModel(ctx: Ctx): Promise<void> {
   const enums = await ctx.editor.call<{ dataEnums?: Array<{ id: string; name: string }>; enums?: Array<{ id: string; name: string }> }>('viewmodel_editor', { command: 'listDataEnums', data: { listDataEnums: {} } });
   if (!(enums.dataEnums ?? enums.enums ?? []).some(e => e.name === ctx.plan.enum.name)) await ctx.editor.call('viewmodel_editor', { command: 'createDataEnums', data: { createDataEnums: { dataEnums: [{ name: ctx.plan.enum.name, values: [...ctx.plan.enum.values] }] } } });
-  const vmName = `${ctx.plan.artboard}Room`;
+  const vmName = ctx.plan.viewModel.name;
   const listed0 = await ctx.editor.call<{ viewModels: Array<{ id: string; name: string; properties?: Array<{ id: string; name: string }>; viewModelProperties?: Array<{ id: string; name: string }> }> }>('viewmodel_editor', { command: 'listViewModels', data: { listViewModels: {} } });
   if (!listed0.viewModels.some(v => v.name === vmName)) await ctx.editor.call('viewmodel_editor', { command: 'createViewModels', data: { createViewModels: { viewModels: [{ name: vmName, viewModelProperties: ctx.plan.viewModel.properties.map(p => p.type === 'enum' ? { name: p.name, propertyType: 'enum', enumName: ctx.plan.enum.name } : { name: p.name, propertyType: p.type }) }] } } });
   const listed = await ctx.editor.call<typeof listed0>('viewmodel_editor', { command: 'listViewModels', data: { listViewModels: {} } });
@@ -94,6 +97,7 @@ async function animations(ctx: Ctx): Promise<void> {
   for (const a of ctx.plan.animations) {
     const id = ctx.animations[a.name]; if (!id) throw new Error(`animation ${a.name} was not created`);
     if (!todo.some(t => t.name === a.name)) continue; // already keyed on a previous run
+    if (a.keys.length === 0) continue;
     await ctx.editor.call('set_property_values', { propertyValues: { [id]: { [await propertyKey(ctx, id, 'duration')]: a.durationFrames, [await propertyKey(ctx, id, 'loop')]: LOOP_INDEX[a.loop], [await propertyKey(ctx, id, 'fps')]: 60 } } });
     const add = [];
     for (const key of a.keys) {
@@ -129,6 +133,14 @@ async function stateMachine(ctx: Ctx, outDir: string): Promise<void> {
     for (const t of layer.transitions) { const from = t.from.replace(/[{}]/g, ''); if (have.some(x => x.from === from && x.to === t.to)) continue; const fromId = stateId(t.from), toId = stateId(t.to); if (!fromId || !toId) throw new Error(`cannot resolve ${t.from} → ${t.to} in ${layer.name}`); missingTransitions.push({ id: fromId, transitions: [{ to: toId }] }); }
   }
   if (missingTransitions.length) { await ctx.editor.call('animation_editor', { command: 'createTransitions', data: { createTransitions: { states: missingTransitions } } }); full = await ctx.editor.call<any>('animation_editor', { command: 'queryStateMachine', data: { queryStateMachine: { stateMachineId: machine.id } } }); }
+  // Blend durations on transitions that carry one (focus in/out, ambient gating); the editor exposes `duration` on the transition object in ms.
+  const durations: Record<string, Record<number, number>> = {};
+  for (const layer of ctx.plan.layers) {
+    const live = (full.layers as any[]).find(l => l.layerName === layer.name); if (!live) continue;
+    const liveTransitions = transitionsOf(live);
+    for (const t of layer.transitions) { if (!t.durationMs) continue; const liveT = liveTransitions.find(x => x.from === t.from.replace(/[{}]/g, '') && x.to === t.to); if (liveT) durations[liveT.id] = { [await propertyKey(ctx, liveT.id, 'duration')]: t.durationMs }; }
+  }
+  if (Object.keys(durations).length) await ctx.editor.call('set_property_values', { propertyValues: durations });
   writeFileSync(join(outDir, 'state-machine.json'), JSON.stringify(full, null, 1));
   const conditions: Array<{ id: string; conditions: any[] }> = [];
   for (const layer of ctx.plan.layers) {
@@ -155,7 +167,7 @@ async function stateMachine(ctx: Ctx, outDir: string): Promise<void> {
 
 async function resumeContext(editor: RiveEditor, plan: RoomPlan, artboardId: string): Promise<Ctx> {
   const ctx: Ctx = { editor, plan, artboardId, ids: new Map(), keys: new Map(), vm: { id: '', props: {} }, animations: {}, stateMachineId: '', stateMachineName: '' };
-  for (const d of plan.doors) { ctx.ids.set(`hinge:${d.id}`, await findId(ctx, `hinge_${d.id}`)); ctx.ids.set(d.leafId, await findId(ctx, d.leafId)); if (d.accessLightId) ctx.ids.set(d.accessLightId, await findId(ctx, d.accessLightId)); }
+  for (const target of plan.targets) if (hasPivot(target)) { try { ctx.ids.set(`pivot:${target.id}`, await findId(ctx, `pivot_${target.id}`)); ctx.ids.set(target.id, await findId(ctx, target.id)); } catch { console.warn(`pivot group for ${target.id} missing`); } }
   for (const h of plan.hotspots) ctx.ids.set(`hit:${h.id}`, await findId(ctx, `hit_${h.id}`));
   await resolveAmbientTargets(ctx);
   return ctx;
@@ -191,7 +203,9 @@ export async function authorRoom(room: RoomId, mode: 'build' | 'replace' | 'resu
     const sceneAsset = await editor.uploadSvg(join(refinedDir, plan.scene.file), `${room}-scene`);
     await editor.call('assets_tool', { command: 'addSvgInstance', data: { addSvgInstance: { assetId: sceneAsset, name: plan.scene.nodeName, parentId: artboardId, x: 0, y: 0 } } });
     console.log(`scene imported in ${Date.now() - t} ms`);
-    for (const door of plan.doors) await hinge(ctx, door);
+    const t2 = Date.now();
+    for (const target of plan.targets) if (hasPivot(target)) await pivotGroup(ctx, target);
+    console.log(`${plan.targets.filter(hasPivot).length} pivot groups in ${Date.now() - t2} ms`);
     await resolveAmbientTargets(ctx);
     await hitShapes(ctx);
     await viewModel(ctx);
@@ -204,9 +218,9 @@ export async function authorRoom(room: RoomId, mode: 'build' | 'replace' | 'resu
   writeFileSync(join(outDir, 'inventory.json'), JSON.stringify(exported.inventory, null, 2) + '\n');
   writeFileSync(join(outDir, 'rive-manifest.json'), JSON.stringify({
     room, file: `${room}.riv`, sha256: exported.inventory.sha256, bytes: bytes.length,
-    artboard: plan.artboard, stateMachine: ctx.stateMachineName, viewModel: `${plan.artboard}Room`, enum: { [plan.enum.name]: plan.enum.values },
+    artboard: plan.artboard, stateMachine: ctx.stateMachineName, viewModel: plan.viewModel.name, enum: { [plan.enum.name]: plan.enum.values },
     inputs: Object.fromEntries(plan.viewModel.properties.map(p => [p.name, p.type])), animations: plan.animations.map(a => a.name),
-    doors: plan.doors, hotspots: plan.hotspots, floorAnchor: plan.floorAnchor,
+    doors: plan.doors, hotspots: plan.hotspots, floorAnchor: plan.floorAnchor, targets: plan.targets.length,
     source: manifest.source, editor: { fileId: session.activeFileId, url: session.openTabs.find(t => t.isActive)?.url ?? '' }, authoredAt: new Date().toISOString(),
     exportedBy: 'rive-cli', compiler: exported.compiler, document: { rev: 'document.rev', bytes: exported.rev.bytes, sha256: exported.rev.sha256 },
   }, null, 2) + '\n');

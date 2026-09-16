@@ -1,0 +1,40 @@
+{
+  "kit": "/Users/josephanady/Desktop/ThatDeveloperGuy/TDG_CYBERSECURITY_ANIMATION_KIT",
+  "source": "/Users/josephanady/Code/thatdeveloperguy-website/creative-source/refined/cybersecurity",
+  "passNames": [
+    "background",
+    "desk-occluders",
+    "foreground",
+    "effects"
+  ],
+  "interactiveScene": "animation-scene.svg",
+  "assemblyCount": 103,
+  "animationNames": [
+    "Door",
+    "RackGlass",
+    "CameraLook",
+    "ChairNudge",
+    "BinderOut",
+    "DecorativeChecks",
+    "Drawer",
+    "MapSweep",
+    "AmbientSignals",
+    "Foliage"
+  ],
+  "animationTargetCount": 42,
+  "drawerTargetCount": 18,
+  "chairTargetCount": 3,
+  "pathCount": 5307,
+  "missingAssemblies": [],
+  "missingAnimationTargets": [],
+  "assertions": {
+    "allFourDepthPassesPresent": true,
+    "authoritativeInteractiveScenePresent": true,
+    "allSemanticAssembliesPresent": true,
+    "allAnimationTargetsPresent": true,
+    "allIndependentDrawersPresent": true,
+    "allIndependentChairsPresent": true,
+    "suppliedReducedVectorIntact": true
+  },
+  "passed": true
+}

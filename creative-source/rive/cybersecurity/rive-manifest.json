@@ -1,0 +1,19 @@
+{
+  "room": "cybersecurity",
+  "file": "cybersecurity.riv",
+  "sha256": "dd13f84dc1e790f77e25e6e0af4537f949699adff3f9941f193a6747317bcb99",
+  "exportedBy": "rive-cli",
+  "canvas": { "width": 1648, "height": 928 },
+  "artboard": "CybersecurityEffects",
+  "stateMachine": "CybersecurityMachine",
+  "viewModel": "",
+  "viewModelOptional": true,
+  "nativeInputs": "state-machine-only",
+  "source": {
+    "kind": "rive-rml-project",
+    "path": "rive/cybersecurity/scene.rml",
+    "sha256": "443a2d3e23764c61af4fd742ea3458c2b5f2e068c91eb641834a733355c2e48f"
+  },
+  "role": "Transparent native ambient effects layered over the independently authored vector room",
+  "hotspots": []
+}

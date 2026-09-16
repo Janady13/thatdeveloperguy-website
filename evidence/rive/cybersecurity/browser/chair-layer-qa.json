@@ -1,0 +1,16 @@
+{
+  "route": "https://tdg.thatwebhostingguy.com/capabilities/cybersecurity?v=1789586759663",
+  "passes": [
+    "scene"
+  ],
+  "finding": {
+    "focus": "console_chair_1",
+    "chairTransform": "matrix(1, 0, 0, 1, -4, 4)",
+    "vectorPasses": 1
+  },
+  "assertions": {
+    "singleAuthoritativeScene": true,
+    "chairInteractionStillActive": true
+  },
+  "passed": true
+}

@@ -1,13 +1,12 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo, useState, type CSSProperties, type MouseEvent } from 'react';
-import { useNavigate } from 'react-router';
+import { lazy, Suspense, useEffect, useState, type CSSProperties } from 'react';
 import type { CompiledPage } from '../../src/contracts/page';
 import type { SceneRecord } from '../../src/contracts/scene';
-import { HotspotOverlay, type ResolvedHotspot } from './HotspotOverlay';
+import { HotspotOverlay } from './HotspotOverlay';
 import { ItServicesEnvironment } from './ItServicesEnvironment';
 import { MotionPreferenceControl, useMotionPreference } from './MotionPreferenceControl';
 import { probeRenderer } from './renderer-capability';
-import { resolveDestination } from './resolve-destination';
 import { sceneAspect } from './scene-coordinate-map';
+import { useSceneNavigation } from './useSceneNavigation';
 import '../styles/it-services-rive.css';
 
 const ItServicesRiveCanvas = lazy(() => import('./ItServicesRiveCanvas.client'));
@@ -15,13 +14,11 @@ const ROUTE_TRANSITION_MS = 760;
 
 /** Dedicated full-viewport IT Services room, isolated from the concurrently authored lobby shell. */
 export function ItServicesSceneShell({ scene, page }: { scene: SceneRecord; page: CompiledPage }) {
-  const navigate = useNavigate();
   const [mounted, setMounted] = useState(false);
   const [renderer, setRenderer] = useState('pending');
   const [nativeReady, setNativeReady] = useState(false);
   const [nativeFailed, setNativeFailed] = useState(false);
   const [focus, setFocus] = useState<string | null>(null);
-  const [leaving, setLeaving] = useState(false);
   const [motion, setMotion] = useMotionPreference();
   const [pointer, setPointer] = useState({ x: 0.5, y: 0.5, active: false });
 
@@ -33,19 +30,13 @@ export function ItServicesSceneShell({ scene, page }: { scene: SceneRecord; page
     return () => document.body.classList.remove('it-services-route');
   }, []);
 
-  const hotspots = useMemo<ResolvedHotspot[]>(() => scene.hotspots.flatMap(hotspot => {
-    const href = resolveDestination(hotspot.target, page.id);
-    return href ? [{ ...hotspot, href }] : [];
-  }), [page.id, scene.hotspots]);
-
-  const activate = useCallback((hotspot: ResolvedHotspot, event: MouseEvent<Element>) => {
-    if (hotspot.href.startsWith('#')) return;
-    event.preventDefault();
-    if (leaving) return;
-    setLeaving(true);
-    setFocus(hotspot.id);
-    setTimeout(() => navigate(hotspot.href), motion ? ROUTE_TRANSITION_MS : 0);
-  }, [leaving, motion, navigate]);
+  const { hotspots, activate, leaving, leavingTarget } = useSceneNavigation({
+    hotspots: scene.hotspots,
+    pageId: page.id,
+    motion,
+    transitionMs: ROUTE_TRANSITION_MS,
+    onRouteStart: hotspot => setFocus(hotspot.id),
+  });
 
   const hardware = mounted && !/^no |^software/i.test(renderer) && renderer !== 'pending';
   const showNative = Boolean(hardware && motion && scene.rive && !nativeFailed);
@@ -67,7 +58,7 @@ export function ItServicesSceneShell({ scene, page }: { scene: SceneRecord; page
       data-motion={motion ? 'on' : 'reduced'}
       data-renderer={renderer}
       data-native={nativeReady ? 'ready' : nativeFailed ? 'failed' : showNative ? 'loading' : 'fallback'}
-      data-leaving-target={leaving ? focus ?? '' : ''}
+      data-leaving-target={leavingTarget ?? ''}
       onPointerMove={event => {
         const rect = event.currentTarget.getBoundingClientRect();
         setPointer({

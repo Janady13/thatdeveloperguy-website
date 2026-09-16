@@ -8,6 +8,15 @@ import './styles/tokens.css'; import './styles/reset.css'; import './styles/typo
 import './styles/components.css'; import './styles/scenes.css'; import './styles/reduced-motion.css'; import './styles/print.css';
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const location = useLocation();
+  const roomClass = location.pathname === '/'
+    ? 'lobby-route room-route'
+    : location.pathname === '/capabilities/business-it'
+      ? 'it-services-route room-route'
+      : location.pathname === '/capabilities/cybersecurity'
+        ? 'cybersecurity-route room-route'
+        : undefined;
+  const roomRoute = Boolean(roomClass);
   return (
     <html lang="en">
       <head>
@@ -18,11 +27,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className={roomClass}>
         <SkipLinks />
         <SiteHeader />
         {children}
-        <SiteFooter />
+        {!roomRoute && <SiteFooter />}
         <ScrollRestoration />
         <Scripts />
       </body>

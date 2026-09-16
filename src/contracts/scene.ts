@@ -3,7 +3,17 @@ export const ROOM = { width: 1648, height: 928 } as const;
 export interface Hitbox { x: number; y: number; width: number; height: number }
 export type HotspotTarget = { kind: 'page'; pageId: string; project?: string } | { kind: 'anchor'; anchor: string; pageId?: string };
 export interface SceneHotspot { id: string; label: string; hit: Hitbox; target: HotspotTarget; focusValue: string; trigger?: string }
-export interface SceneRive { file: string; artboard: string; stateMachine: string; viewModel: string; sha256: string }
-export interface ConsultantPlacement { feet: [number, number]; scale: number; artboard: { width: number; height: number } }
-export interface SceneConsultant { file: string; sha256: string; artboard: string; stateMachine: string; placement: ConsultantPlacement }
-export interface SceneRecord { id: string; poster: string; posterAlt: string; rive: SceneRive | null; consultant: SceneConsultant | null; hotspots: SceneHotspot[]; captionRest: string; captions: Record<string, string> }
+export type SceneRiveDensity = '2x' | '4x';
+export interface SceneRiveVariant { file: string; sha256: string }
+export interface SceneRive { file: string; artboard: string; stateMachine: string; viewModel: string; sha256: string; variants?: Partial<Record<SceneRiveDensity, SceneRiveVariant>>; viewModelOptional?: boolean; nativeInputs?: string }
+export interface SceneEnvironmentAsset { production_name: string; file: string; x: number; y: number; width: number; height: number; draw_order: number; z?: number; roles: string[]; compositeSafe?: boolean; alphaAudit?: { nontransparent_pct: number; opaque_pct: number; edge_nontransparent_pct: number; suspicious_full_rect: boolean } }
+export interface SceneEnvironment {
+  staticBase: string;
+  vector: string;
+  sourceHash: string;
+  manifest?: string;
+  assets?: SceneEnvironmentAsset[];
+  referenceMetrics?: { width: number; height: number; rgb_mae: number; max_diff: number; pixels_differing: number };
+}
+export interface SceneCanvas { width: number; height: number }
+export interface SceneRecord { id: string; canvas: SceneCanvas; poster: string; posterAlt: string; rive: SceneRive | null; hotspots: SceneHotspot[]; captionRest: string; captions: Record<string, string>; environment?: SceneEnvironment }

@@ -14,6 +14,16 @@ export async function verifyRiv(room: RoomId) {
   if (bytes.subarray(0, 4).toString() !== 'RIVE') throw new Error('not a RIVE file');
   // The runtime probes a canvas at module load; verification never draws, so a context-less canvas satisfies it.
   if (!('document' in globalThis)) Object.assign(globalThis, { window: globalThis, self: globalThis, document: { createElement: () => ({ getContext: () => null, width: 0, height: 0, style: {} }) }, requestAnimationFrame: (cb: (t: number) => void) => setTimeout(() => cb(performance.now()), 16), cancelAnimationFrame: (id: number) => clearTimeout(id) });
+  if (!('Image' in globalThis)) {
+    Object.assign(globalThis, {
+      Image: class {
+        width = 1;
+        height = 1;
+        onload?: () => void;
+        set src(_value: string) { setTimeout(() => this.onload?.(), 0); }
+      },
+    });
+  }
   const RiveCanvas = (await import('@rive-app/canvas-advanced')).default as (options: { locateFile: (file: string) => string; wasmBinary?: ArrayBuffer }) => Promise<any>;
   // Node's fetch cannot read a path, so hand the runtime its own rive.wasm bytes directly.
   const wasm = readFileSync(require.resolve('@rive-app/canvas-advanced/rive.wasm'));

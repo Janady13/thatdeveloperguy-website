@@ -1,0 +1,7 @@
+{
+  "mode": "neutral/referenceMode/static overlay disabled",
+  "reference": "public/images/posters/it-services.svg generated from supplied kit",
+  "neutralScreenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/final-production/neutral.png",
+  "staticModeQuery": "?referenceMode=1 or ?debugStaticLobby=1",
+  "note": "Approved static poster remains base; production overlay returns null in static/reference mode so neutral source is unaltered."
+}

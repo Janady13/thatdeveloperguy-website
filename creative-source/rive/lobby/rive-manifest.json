@@ -1,96 +1,77 @@
 {
   "room": "lobby",
-  "file": "lobby.riv",
-  "sha256": "6cfc0aeae8e56ac1d5b91ca2e24a1d68c559f889f8078bd2405cd95adb279f6c",
-  "bytes": 3643725,
+  "file": "lobby-2x.riv",
+  "bytes": 18856,
+  "sha256": "a0992694006dcb16fb7e1753c79cc37cc00e8d5afb650b4832ac3b2d2f908534",
   "artboard": "Lobby",
-  "stateMachine": "State Machine 1",
+  "stateMachine": "Lobby",
   "viewModel": "Lobby",
-  "enum": {
-    "LobbyFocus": [
-      "none",
-      "it",
-      "government",
-      "cyber"
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "exportedBy": "rive-cli",
+  "compiler": "rive 1.0.4",
+  "source": {
+    "kind": "rive-rml-project",
+    "path": "rive/lobby/scene.rml",
+    "sha256": "e64eede0cb6aa5997bdee67237db79d34212b6e4ff1d34876d19de03e0b1b649"
+  },
+  "plates": {
+    "base": "/animation/rooms/lobby-plates",
+    "sets": [
+      "2x",
+      "4x"
     ]
   },
-  "inputs": {
-    "focus": "enum",
-    "openIt": "trigger",
-    "openGovernment": "trigger",
-    "openCyber": "trigger",
-    "reducedMotion": "boolean"
+  "variants": {
+    "2x": {
+      "file": "lobby-2x.riv",
+      "sha256": "a0992694006dcb16fb7e1753c79cc37cc00e8d5afb650b4832ac3b2d2f908534"
+    },
+    "4x": {
+      "file": "lobby-4x.riv",
+      "sha256": "4384095d75e60e2b0898269d47042116e4d77aaa3bcf951c41beb4dd330ec2d2"
+    }
   },
   "animations": [
-    "Ambient",
-    "DoorOpenIt",
-    "DoorOpenGovernment",
-    "DoorOpenCyber",
-    "FocusIt",
-    "FocusGovernment",
-    "FocusCyber"
+    "Sway A",
+    "Sway B",
+    "Sway C",
+    "Clouds",
+    "Lights On",
+    "Lights Breathe",
+    "Floor Shimmer",
+    "Camera Blink",
+    "Screen Flicker",
+    "Steam",
+    "Pillar Scan",
+    "Glass Glint",
+    "Motes A",
+    "Motes B",
+    "Motes C",
+    "Door It Closed",
+    "Door It Hover",
+    "Door Gov Closed",
+    "Door Gov Hover",
+    "Door Cyber Closed",
+    "Door Cyber Hover"
   ],
-  "doors": [
-    {
-      "id": "it",
-      "leafId": "door_it_leaf",
-      "hinge": [
-        564,
-        529
-      ],
-      "hit": {
-        "x": 542,
-        "y": 229,
-        "width": 176,
-        "height": 302
-      },
-      "href": "/it-services/",
-      "label": "IT SERVICES"
-    },
-    {
-      "id": "government",
-      "leafId": "door_government_leaf",
-      "hinge": [
-        804,
-        529
-      ],
-      "hit": {
-        "x": 782,
-        "y": 229,
-        "width": 176,
-        "height": 302
-      },
-      "href": "/government-solutions/",
-      "label": "GOV SOLUTIONS"
-    },
-    {
-      "id": "cyber",
-      "leafId": "door_cyber_leaf",
-      "hinge": [
-        1049,
-        529
-      ],
-      "hit": {
-        "x": 1028,
-        "y": 229,
-        "width": 177,
-        "height": 302
-      },
-      "href": "/cybersecurity/",
-      "label": "CYBER SECURITY"
-    }
-  ],
-  "editor": {
-    "fileId": 2583647,
-    "url": "https://editor.rive.app/file/tdg-patch/2583647"
+  "inputs": {
+    "hoverIt": "boolean",
+    "hoverGov": "boolean",
+    "hoverCyber": "boolean",
+    "openIt": "boolean",
+    "openGov": "boolean",
+    "openCyber": "boolean",
+    "parallaxX": "number",
+    "parallaxY": "number",
+    "walk": "number",
+    "doorIt": "number 0-1",
+    "doorGov": "number 0-1",
+    "doorCyber": "number 0-1"
   },
-  "authoredAt": "2026-09-16T01:27:01.482Z",
-  "exportedBy": "rive-cli",
-  "compiler": "rive 1.0.3",
-  "document": {
-    "rev": "document.rev",
-    "bytes": 13033714,
-    "sha256": "53d3718292f7bf001c6f3dad9f1079504f5d1cfed5626fbe2e8536096310eb5d"
-  },
-  "exportNote": "The editor MCP riv export omits MCP-created artboards; this file was compiled by the official Rive CLI from the editor's .rev export of the same document."
+  "nativeInputs": "view model Lobby: hoverIt/Gov/Cyber, openIt/Gov/Cyber, parallaxX/Y, walk, doorIt/Gov/Cyber (0-1)",
+  "viewModelOptional": true,
+  "authoredAt": "2026-09-16"
 }

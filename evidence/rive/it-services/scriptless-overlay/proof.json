@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-09-16T18:15:04.813Z",
+  "runtime": "2.42.1",
+  "structure": {
+    "loaded": true,
+    "error": null,
+    "artboards": [
+      {
+        "name": "ITServicesOverlay",
+        "animations": [
+          "Ambient",
+          "FocusStatus",
+          "FocusHelpdesk",
+          "FocusWorkstations",
+          "FocusRacks",
+          "FocusDeployment",
+          "FocusToolcart"
+        ],
+        "stateMachines": [
+          "ITServicesOverlayMachine"
+        ]
+      }
+    ]
+  },
+  "frames": 363,
+  "consoleMessages": [
+    "warning: [Rive] The `stateMachines` parameter is deprecated: please use `stateMachine` with a single state machine name instead.",
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "error: Could not find a View Model linked to Artboard ITServicesOverlay.",
+    "warning: [Rive] Passing linear animation names to `play()` is deprecated and will be removed in a future major version: Pass a single state machine name to control playback instead.",
+    "warning: [Rive] Passing linear animation names to `stop()` is deprecated and will be removed in a future major version: Pass a single state machine name to control playback instead."
+  ],
+  "results": [
+    {
+      "name": "Ambient",
+      "changedPixels": 23107
+    },
+    {
+      "name": "FocusStatus",
+      "playing": [
+        "FocusStatus"
+      ],
+      "changedPixels": 86962
+    },
+    {
+      "name": "FocusHelpdesk",
+      "playing": [
+        "FocusHelpdesk"
+      ],
+      "changedPixels": 86378
+    },
+    {
+      "name": "FocusWorkstations",
+      "playing": [
+        "FocusWorkstations"
+      ],
+      "changedPixels": 80455
+    },
+    {
+      "name": "FocusRacks",
+      "playing": [
+        "FocusRacks"
+      ],
+      "changedPixels": 87304
+    },
+    {
+      "name": "FocusDeployment",
+      "playing": [
+        "FocusDeployment"
+      ],
+      "changedPixels": 68501
+    },
+    {
+      "name": "FocusToolcart",
+      "playing": [
+        "FocusToolcart"
+      ],
+      "changedPixels": 60863
+    }
+  ]
+}

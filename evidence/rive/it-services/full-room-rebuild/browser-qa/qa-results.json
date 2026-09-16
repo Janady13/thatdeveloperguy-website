@@ -1,0 +1,1262 @@
+{
+  "base": "http://127.0.0.1:4412/",
+  "out": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa",
+  "generatedAt": "2026-09-16T12:21:09.884Z",
+  "runCount": 24,
+  "errors": [],
+  "failedRequests": [],
+  "fps": {
+    "min": 29.94011976047896,
+    "avg": 60.318372597530434
+  },
+  "runs": [
+    {
+      "name": "neutral",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/neutral.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.49732456477997,
+        "minFps": 30.030030030030073,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 2822
+    },
+    {
+      "name": "ambient-idle",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/ambient-idle.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 60.000552538067865,
+        "minFps": 59.52380952381049,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 2696
+    },
+    {
+      "name": "workstations",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/workstations.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "workstations",
+        "motion": "on",
+        "state": "hover",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 5,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.492585919923165,
+        "minFps": 30.120481927710596,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3412
+    },
+    {
+      "name": "racks",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/racks.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "racks",
+        "motion": "on",
+        "state": "hover",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 5,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.50913269108202,
+        "minFps": 30.030030030029867,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3413
+    },
+    {
+      "name": "status",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/status.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "status",
+        "motion": "on",
+        "state": "hover",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 5,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.49520619353911,
+        "minFps": 29.94011976047937,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3429
+    },
+    {
+      "name": "helpdesk",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/helpdesk.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "helpdesk",
+        "motion": "on",
+        "state": "hover",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 3,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 62.92605106365105,
+        "minFps": 59.52380952381049,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3394
+    },
+    {
+      "name": "deployment",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/deployment.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "deployment",
+        "motion": "on",
+        "state": "hover",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 1,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.50312061884097,
+        "minFps": 30.030030030029867,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3395
+    },
+    {
+      "name": "toolcart",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/toolcart.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "toolcart",
+        "motion": "on",
+        "state": "hover",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 6,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.50155054205984,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3429
+    },
+    {
+      "name": "depth-parallax",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/depth-parallax.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "racks",
+        "motion": "on",
+        "state": "hover",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 5,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.50319349244389,
+        "minFps": 30.030030030029867,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3413
+    },
+    {
+      "name": "pause-motion",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/pause-motion.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "reduced",
+        "state": "paused",
+        "counts": {
+          "kitLayers": 0,
+          "visibleKitLayers": 0,
+          "rackLeds": 0,
+          "statusPulses": 0,
+          "screens": 0,
+          "floorEffects": 0,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 0
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 60.004704904121915,
+        "minFps": 59.52380952380888,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3082
+    },
+    {
+      "name": "reduced-motion",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "reduce",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/reduced-motion.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "reduced",
+        "state": "paused",
+        "counts": {
+          "kitLayers": 0,
+          "visibleKitLayers": 0,
+          "rackLeds": 0,
+          "statusPulses": 0,
+          "screens": 0,
+          "floorEffects": 0,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 0
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.99865059249745,
+        "minFps": 59.52380952380888,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 2666
+    },
+    {
+      "name": "debug-coordinates",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/debug-coordinates.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it?lobbyDebug=1",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 6,
+          "mascotAnchors": 7,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.507778632480985,
+        "minFps": 29.940119760479163,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 2711
+    },
+    {
+      "name": "responsive-1920x1080",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/responsive-1920x1080.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 60,
+          "y": 64,
+          "width": 1800,
+          "height": 734.390625
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 60.00463450514953,
+        "minFps": 59.52380952380888,
+        "bodyScroll": {
+          "width": 1920,
+          "client": 1920
+        }
+      },
+      "elapsedMs": 2746
+    },
+    {
+      "name": "responsive-1728x1117",
+      "viewport": [
+        1728,
+        1117
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/responsive-1728x1117.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1728,
+          "height": 759.546875
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.923790895487535,
+        "minFps": 55.24861878453066,
+        "bodyScroll": {
+          "width": 1728,
+          "client": 1728
+        }
+      },
+      "elapsedMs": 2710
+    },
+    {
+      "name": "responsive-1440x900",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/responsive-1440x900.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 60.00055253806784,
+        "minFps": 59.52380952381049,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 2683
+    },
+    {
+      "name": "responsive-1366x768",
+      "viewport": [
+        1366,
+        768
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/responsive-1366x768.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1366,
+          "height": 522.234375
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.66487304311008,
+        "minFps": 39.370078735538044,
+        "bodyScroll": {
+          "width": 1366,
+          "client": 1366
+        }
+      },
+      "elapsedMs": 2678
+    },
+    {
+      "name": "responsive-1280x800",
+      "viewport": [
+        1280,
+        800
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/responsive-1280x800.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1280,
+          "height": 544
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 62.05283002291414,
+        "minFps": 59.52380952380888,
+        "bodyScroll": {
+          "width": 1280,
+          "client": 1280
+        }
+      },
+      "elapsedMs": 2677
+    },
+    {
+      "name": "responsive-1180x820",
+      "viewport": [
+        1180,
+        820
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/responsive-1180x820.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1180,
+          "height": 557.59375
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 61.2685275043393,
+        "minFps": 59.52380952380968,
+        "bodyScroll": {
+          "width": 1180,
+          "client": 1180
+        }
+      },
+      "elapsedMs": 2662
+    },
+    {
+      "name": "keyboard-focus",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/keyboard-focus.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 62.50497384381845,
+        "minFps": 59.52380952380888,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3108
+    },
+    {
+      "name": "click-status",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/click-status.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it#overview",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "status",
+        "motion": "on",
+        "state": "hover",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 5,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.49658320228592,
+        "minFps": 30.030030030029867,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3712
+    },
+    {
+      "name": "click-workstations",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/click-workstations.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it#workstations",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 61.53914581762943,
+        "minFps": 59.52380952380888,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3713
+    },
+    {
+      "name": "click-racks",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/click-racks.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it#infrastructure",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 59.50162211434845,
+        "minFps": 29.94011976047896,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3731
+    },
+    {
+      "name": "click-deployment",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/click-deployment.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it#deployment",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 62.7428614174464,
+        "minFps": 59.52380952381049,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3714
+    },
+    {
+      "name": "click-toolcart",
+      "viewport": [
+        1440,
+        900
+      ],
+      "reducedMotion": "no-preference",
+      "screenshot": "/Users/josephanady/Code/thatdeveloperguy-website/evidence/rive/it-services/full-room-rebuild/browser-qa/click-toolcart.png",
+      "errors": [],
+      "failed": [],
+      "perf": {
+        "url": "http://127.0.0.1:4412/capabilities/business-it#deployment",
+        "sceneRect": {
+          "x": 0,
+          "y": 64,
+          "width": 1440,
+          "height": 612
+        },
+        "sceneId": "it-services",
+        "focus": "",
+        "motion": "on",
+        "state": "idle",
+        "counts": {
+          "kitLayers": 28,
+          "visibleKitLayers": 0,
+          "rackLeds": 16,
+          "statusPulses": 5,
+          "screens": 7,
+          "floorEffects": 10,
+          "debugBoxes": 0,
+          "mascotAnchors": 0,
+          "canvas": 0,
+          "envSprites": 0,
+          "animations": 36
+        },
+        "hotspots": [
+          "status",
+          "helpdesk",
+          "workstations",
+          "racks",
+          "deployment",
+          "toolcart"
+        ],
+        "avgFps": 60.000695682645,
+        "minFps": 59.52380952380888,
+        "bodyScroll": {
+          "width": 1440,
+          "client": 1440
+        }
+      },
+      "elapsedMs": 3754
+    }
+  ]
+}

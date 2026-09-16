@@ -1,0 +1,54 @@
+No WebGL support. Image mesh will not be drawn.
+{
+  "file": "/Users/josephanady/Code/thatdeveloperguy-website/creative-source/rive/it-services/it-services.riv",
+  "bytes": 995073,
+  "sha256": "47a5832a88bab5a54dbc618a1c0669358c1fe68cf4e261d0e5cc852ac79f46e9",
+  "runtime": "@rive-app/canvas-advanced 2.42.1",
+  "artboards": [
+    {
+      "name": "ITServices ",
+      "width": 1648,
+      "height": 928,
+      "animations": [
+        "Ambient",
+        "DeploymentDoor",
+        "ToolDrawers",
+        "DisplaySweep",
+        "Timeline 1"
+      ],
+      "stateMachines": [
+        "ITServicesMachine",
+        "State Machine 1"
+      ]
+    },
+    {
+      "name": "ITServicesMascot",
+      "width": 515,
+      "height": 805,
+      "animations": [
+        "Idle",
+        "Walk",
+        "Wave",
+        "Work",
+        "Enter",
+        "Exit",
+        "Walk",
+        "Wave",
+        "Work",
+        "Enter",
+        "Exit",
+        "Idle"
+      ],
+      "stateMachines": [
+        "ITServicesMascotMachine",
+        "State Machine 1"
+      ]
+    }
+  ],
+  "viewModels": [
+    {
+      "name": "ViewModel1",
+      "properties": []
+    }
+  ]
+}
