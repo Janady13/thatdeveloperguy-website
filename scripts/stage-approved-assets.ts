@@ -70,6 +70,13 @@ for (const [sceneId, meta] of Object.entries(ROOMS)) {
       copyFileSync(passSource, resolve(vectorOutput, `${pass.id}.svg`));
     }
   }
+  // Referenced plates for the native room (contentless ImageAssets in the .riv; the runtime asset loader fetches these by DPR).
+  for (const set of ['2x', '4x']) {
+    const src = resolve(root, 'creative-source/plates', sceneId, set);
+    if (!existsSync(src)) continue;
+    const dst = resolve(roomAnimationDir, `${sceneId}-plates`, set); mkdirSync(dst, { recursive: true });
+    for (const file of readdirSync(src)) if (file.endsWith('.webp')) copyFileSync(resolve(src, file), resolve(dst, file));
+  }
   let rive: SceneRecord['rive'] = null; let triggers: Record<string, string> = {}; let focusValues: Record<string, string> = {};
   if (riveManifest) {
     const rm = riveManifest;
