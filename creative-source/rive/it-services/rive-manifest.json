@@ -1,0 +1,34 @@
+{
+  "room": "it-services",
+  "file": "it-services-2x.riv",
+  "bytes": 30571,
+  "sha256": "aa2afa627bc849c8e7bea157fabece9b1be8b2396f55360358975be81147a6a9",
+  "artboard": "ITServices",
+  "stateMachine": "ITServicesMachine",
+  "viewModel": "ITServices",
+  "exportedBy": "rive-cli",
+  "compiler": "rive 1.0.4",
+  "source": {
+    "kind": "rive-rml-project",
+    "path": "rive/it-services/scene.rml",
+    "sha256": "3e6a14ec55228e53e731e9a7492e0e338a908e87e847c02299b75e21733b1f8d"
+  },
+  "plates": {
+    "base": "/animation/rooms/it-services-plates",
+    "sets": [
+      "2x",
+      "4x"
+    ]
+  },
+  "inputs": {
+    "hoverTarget": "number 0-6 (status-board, helpdesk, workstations, infrastructure, deployment, toolkit)",
+    "doorAmount": "0-1",
+    "drawerNAmount": "0-1 (N=1..5)",
+    "laptopAmount": "0-1",
+    "chairAmount": "0-1",
+    "refreshDisplay": "boolean, host resets",
+    "walk": "0-1"
+  },
+  "authoredTo": "TDG_IT_SERVICES_ANIMATION_KIT/rive/ITServicesMachine.build-spec.json",
+  "authoredAt": "2026-09-16"
+}

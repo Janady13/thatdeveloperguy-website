@@ -1,0 +1,124 @@
+import { lazy, Suspense, useCallback, useEffect, useMemo, useState, type CSSProperties, type MouseEvent } from 'react';
+import { useNavigate } from 'react-router';
+import type { CompiledPage } from '../../src/contracts/page';
+import type { SceneRecord } from '../../src/contracts/scene';
+import { HotspotOverlay, type ResolvedHotspot } from './HotspotOverlay';
+import { ItServicesEnvironment } from './ItServicesEnvironment';
+import { MotionPreferenceControl, useMotionPreference } from './MotionPreferenceControl';
+import { probeRenderer } from './renderer-capability';
+import { resolveDestination } from './resolve-destination';
+import { sceneAspect } from './scene-coordinate-map';
+import '../styles/it-services-rive.css';
+
+const ItServicesRiveCanvas = lazy(() => import('./ItServicesRiveCanvas.client'));
+const ROUTE_TRANSITION_MS = 760;
+
+/** Dedicated full-viewport IT Services room, isolated from the concurrently authored lobby shell. */
+export function ItServicesSceneShell({ scene, page }: { scene: SceneRecord; page: CompiledPage }) {
+  const navigate = useNavigate();
+  const [mounted, setMounted] = useState(false);
+  const [renderer, setRenderer] = useState('pending');
+  const [nativeReady, setNativeReady] = useState(false);
+  const [nativeFailed, setNativeFailed] = useState(false);
+  const [focus, setFocus] = useState<string | null>(null);
+  const [leaving, setLeaving] = useState(false);
+  const [motion, setMotion] = useMotionPreference();
+  const [pointer, setPointer] = useState({ x: 0.5, y: 0.5, active: false });
+
+  useEffect(() => {
+    setMounted(true);
+    document.body.classList.add('it-services-route');
+    const verdict = probeRenderer();
+    setRenderer(verdict.ok ? verdict.renderer : verdict.reason);
+    return () => document.body.classList.remove('it-services-route');
+  }, []);
+
+  const hotspots = useMemo<ResolvedHotspot[]>(() => scene.hotspots.flatMap(hotspot => {
+    const href = resolveDestination(hotspot.target, page.id);
+    return href ? [{ ...hotspot, href }] : [];
+  }), [page.id, scene.hotspots]);
+
+  const activate = useCallback((hotspot: ResolvedHotspot, event: MouseEvent<Element>) => {
+    if (hotspot.href.startsWith('#')) return;
+    event.preventDefault();
+    if (leaving) return;
+    setLeaving(true);
+    setFocus(hotspot.id);
+    setTimeout(() => navigate(hotspot.href), motion ? ROUTE_TRANSITION_MS : 0);
+  }, [leaving, motion, navigate]);
+
+  const hardware = mounted && !/^no |^software/i.test(renderer) && renderer !== 'pending';
+  const showNative = Boolean(hardware && motion && scene.rive && !nativeFailed);
+  const caption = focus ? scene.captions[focus] ?? hotspots.find(hotspot => hotspot.id === focus)?.label ?? '' : scene.captionRest;
+  const planeStyle = {
+    aspectRatio: sceneAspect(scene.canvas),
+    '--scene-w': scene.canvas.width,
+    '--scene-h': scene.canvas.height,
+    '--pointer-x': pointer.x,
+    '--pointer-y': pointer.y,
+  } as CSSProperties;
+
+  return (
+    <section
+      className={`scene scene-it-services${nativeReady ? ' scene-live scene-native-ready' : ''}${leaving ? ' scene-leaving' : ''}`}
+      aria-label={`${page.heading} room`}
+      data-scene="it-services"
+      data-focus={focus ?? ''}
+      data-motion={motion ? 'on' : 'reduced'}
+      data-renderer={renderer}
+      data-native={nativeReady ? 'ready' : nativeFailed ? 'failed' : showNative ? 'loading' : 'fallback'}
+      data-leaving-target={leaving ? focus ?? '' : ''}
+      onPointerMove={event => {
+        const rect = event.currentTarget.getBoundingClientRect();
+        setPointer({
+          x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)),
+          y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)),
+          active: true,
+        });
+      }}
+      onPointerLeave={() => setPointer(current => ({ ...current, active: false }))}
+    >
+      <div className="scene-plane" style={planeStyle}>
+        <img
+          className="scene-poster"
+          src={scene.poster}
+          alt={scene.posterAlt}
+          width={scene.canvas.width}
+          height={scene.canvas.height}
+          decoding="async"
+          fetchPriority="high"
+          {...({ elementtiming: 'it-services-poster' } as Record<string, string>)}
+        />
+        {showNative && (
+          <Suspense fallback={null}>
+            <ItServicesRiveCanvas
+              asset={scene.rive!}
+              focus={focus}
+              onReady={() => setNativeReady(true)}
+              onError={() => { setNativeFailed(true); setNativeReady(false); }}
+            />
+          </Suspense>
+        )}
+        {!nativeReady && (
+          <ItServicesEnvironment
+            focus={focus}
+            motion={motion}
+            pointer={pointer}
+            sceneState={!motion ? 'paused' : leaving ? 'transition' : focus ? 'focus' : 'idle'}
+          />
+        )}
+        <HotspotOverlay
+          label={page.heading}
+          canvas={scene.canvas}
+          hotspots={hotspots}
+          onFocus={id => { if (!leaving) setFocus(id); }}
+          onActivate={activate}
+        />
+      </div>
+      <div className="scene-ui">
+        <p className="scene-caption" aria-live="polite">{caption}</p>
+        {mounted && <MotionPreferenceControl on={motion} onChange={setMotion} />}
+      </div>
+    </section>
+  );
+}

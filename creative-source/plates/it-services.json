@@ -1,0 +1,110 @@
+{
+ "name": "it-services",
+ "source": "/Users/josephanady/Desktop/ThatDeveloperGuy/TDG_IT_SERVICES_ANIMATION_KIT/source/tdg-it-services.reference.png",
+ "layers_dir": "/Users/josephanady/Desktop/ThatDeveloperGuy/it_services_layer_separation_2026-09-16",
+ "public_id": "tdg/it/source",
+ "removals": [
+  {
+   "prompt": "potted plants",
+   "layers": [
+    "adobemasks/plant_back_left",
+    "adobemasks/plant_low_left",
+    "adobemasks/plant_counter",
+    "adobemasks/plant_right",
+    "adobemasks/plant_front_left",
+    "101_left_desktop_plant"
+   ],
+   "dilate": 3
+  },
+  {
+   "region": [
+    552,
+    0,
+    570,
+    172
+   ],
+   "layers": [
+    "047_left_hanger_cable",
+    "048_right_hanger_cable",
+    "049_overhead_sign_panel",
+    "127_overhead_sign_nontext_pixels_overhead_it_services",
+    "128_text_overhead_it_services",
+    "129_overhead_sign_nontext_pixels_overhead_people_solutions",
+    "130_text_overhead_people_solutions",
+    "131_overhead_sign_nontext_pixels_overhead_it_services_sign_residue",
+    "132_text_overhead_it_services_sign_residue"
+   ],
+   "dilate": 5
+  },
+  {
+   "region": [
+    1585,
+    446,
+    87,
+    86
+   ],
+   "layers": [
+    "kitmasks/laptop_lid"
+   ],
+   "dilate": 3
+  },
+  {
+   "inpaint": true,
+   "layers": [
+    "adobemasks/chair_near",
+    "kitmasks/phone"
+   ],
+   "dilate": 3
+  },
+  {
+   "cavity": [
+    [
+     36,
+     26,
+     66
+    ],
+    [
+     18,
+     12,
+     36
+    ]
+   ],
+   "layers": [
+    "kitmasks/drawer_1",
+    "kitmasks/drawer_2",
+    "kitmasks/drawer_3",
+    "kitmasks/drawer_4",
+    "kitmasks/drawer_5"
+   ],
+   "dilate": 1
+  }
+ ],
+ "movers": {
+  "plant_back_left": "adobemasks/plant_back_left",
+  "plant_desk_left": "101_left_desktop_plant",
+  "plant_low_left": "adobemasks/plant_low_left",
+  "plant_counter": "adobemasks/plant_counter",
+  "plant_right": "adobemasks/plant_right",
+  "plant_front_left": "adobemasks/plant_front_left",
+  "sign_panel": [
+   "049_overhead_sign_panel",
+   "127_overhead_sign_nontext_pixels_overhead_it_services",
+   "128_text_overhead_it_services",
+   "129_overhead_sign_nontext_pixels_overhead_people_solutions",
+   "130_text_overhead_people_solutions",
+   "131_overhead_sign_nontext_pixels_overhead_it_services_sign_residue",
+   "132_text_overhead_it_services_sign_residue"
+  ],
+  "cable_left": "047_left_hanger_cable",
+  "cable_right": "048_right_hanger_cable",
+  "door_leaf": "kitmasks/door_leaf",
+  "drawer_1": "kitmasks/drawer_1",
+  "drawer_2": "kitmasks/drawer_2",
+  "drawer_3": "kitmasks/drawer_3",
+  "drawer_4": "kitmasks/drawer_4",
+  "drawer_5": "kitmasks/drawer_5",
+  "laptop_lid": "kitmasks/laptop_lid",
+  "chair_near": "adobemasks/chair_near",
+  "phone": "kitmasks/phone"
+ }
+}
