@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { robotsFor, robotsHeaderFor } from '../../src/engines/seo/crawl/robots-policy.ts';
 import { sitemapEntries, sitemapXml, sitemapIndexXml } from '../../src/engines/seo/sitemaps/build-sitemap.ts';
 import { llmsText } from '../../src/engines/seo/discovery/build-llms.ts';
@@ -41,11 +41,21 @@ test('llms.txt is derived from visible page records and excludes noindex pages',
   assert.doesNotMatch(output, /Private receipt|contact\/received/);
 });
 
-test('the crawler policy record mirrors the node exactly', () => {
+const truthPolicyPath = process.env.TDG_TRUTH_POLICY ?? '/Users/josephanady/Code/thatdeveloperguy-truth/properties/engine-policy.json';
+
+test('the crawler policy record is approved and internally valid', () => {
   const record = JSON.parse(readFileSync(new URL('../../records/crawler-policy.json', import.meta.url), 'utf8'));
-  const node = JSON.parse(readFileSync('/Users/josephanady/Code/thatdeveloperguy-truth/properties/engine-policy.json', 'utf8')).enginePolicy;
-  assert.deepEqual(record.bots, node.bots);
   assert.equal(record.approval_status, 'approved');
+  assert.match(record.source, /engine-policy\.json$/);
+  assert.equal(new Set(record.bots.map((bot: { token: string }) => bot.token)).size, record.bots.length, 'crawler tokens must be unique');
+  for (const bot of record.bots) assert.ok(['allow', 'deny'].includes(bot.decision), `${bot.token} has an invalid decision`);
+  assert.deepEqual(record.protected_paths, ['/api/', '/contact/received']);
+});
+
+test('the crawler policy record mirrors the external truth node when it is available', { skip: !existsSync(truthPolicyPath) ? 'external truth repository is not present in this checkout' : false }, () => {
+  const record = JSON.parse(readFileSync(new URL('../../records/crawler-policy.json', import.meta.url), 'utf8'));
+  const node = JSON.parse(readFileSync(truthPolicyPath, 'utf8')).enginePolicy;
+  assert.deepEqual(record.bots, node.bots);
 });
 
 test('staging directives cannot reach the production host config', async () => {
