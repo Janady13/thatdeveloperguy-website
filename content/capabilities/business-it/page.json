@@ -1,0 +1,133 @@
+{
+  "id": "capability.business-it",
+  "path": "/capabilities/business-it",
+  "template": "capability",
+  "parentId": "capabilities.hub",
+  "audience": [
+    "business",
+    "government"
+  ],
+  "primaryIntent": "Get IT support, endpoints, infrastructure and deployment handled",
+  "title": "IT Services \u2014 business IT support, endpoints, infrastructure and deployment",
+  "description": "IT Services from ThatDeveloperGuy LLC: support desk, workstations and endpoints, network and infrastructure, deployment and maintenance.",
+  "heading": "IT Services",
+  "summary": "Support today, a brighter tomorrow: the systems your people use every day, kept running.",
+  "bodySource": "body.md",
+  "serviceId": "business-it",
+  "sceneId": "it-services",
+  "primaryAction": {
+    "label": "Request IT support",
+    "pageId": "contact",
+    "project": "itsupport"
+  },
+  "relatedPageIds": [
+    "capability.cybersecurity",
+    "audience.government"
+  ],
+  "entityReferences": [
+    "organization"
+  ],
+  "claimReferences": [
+    "org.foundingDate",
+    "org.siteCount"
+  ],
+  "publicationStatus": "demo",
+  "approvalReference": "draft-for-owner-approval-2026-09-15",
+  "indexPolicy": "index",
+  "sections": [
+    {
+      "id": "monitoring",
+      "heading": "System status",
+      "body": "The status board in the room is an illustration, not live telemetry. Real monitoring is scoped per client and reported through agreed channels."
+    },
+    {
+      "id": "support",
+      "heading": "IT support",
+      "body": "A service desk with a named person behind it. Requests are tracked from first contact to closure."
+    },
+    {
+      "id": "workstations",
+      "heading": "Workstations and endpoints",
+      "body": "Laptops, desktops and the accounts on them: provisioning, updates, replacement and retirement."
+    },
+    {
+      "id": "infrastructure",
+      "heading": "Network and infrastructure",
+      "body": "Racks, switches, servers and the cloud services that replaced some of them \u2014 designed, documented and maintained."
+    },
+    {
+      "id": "deployment",
+      "heading": "Deployment and maintenance",
+      "body": "Planned rollouts with a tested rollback, and maintenance windows that are announced before they happen."
+    },
+    {
+      "id": "process",
+      "heading": "IT service process",
+      "body": "Plan, configure, deploy, maintain, improve \u2014 the five drawers of the tool cart, in that order."
+    }
+  ],
+  "serviceDetail": {
+    "problem": "The systems people use every day \u2014 laptops, accounts, the office network, the servers or cloud services behind them \u2014 need someone to answer the phone, keep them patched, replace what breaks and roll out changes without surprises. Small organizations usually have nobody whose job that is.",
+    "audience": [
+      "Small and medium businesses with 5 to 250 people",
+      "City, county and district offices that run their own IT",
+      "Prime contractors that need workplace IT covered on a delivery"
+    ],
+    "included": [
+      "A service desk with a named person behind it; requests tracked from first contact to closure",
+      "Workstations and endpoints: provisioning, updates, replacement and retirement",
+      "Network and infrastructure: design, documentation and maintenance of what you run",
+      "Deployment and maintenance: planned rollouts with a tested rollback and announced maintenance windows"
+    ],
+    "deliverables": [
+      "A request log you can read, with each request's state and owner",
+      "An inventory of the machines, accounts and services in scope, kept current",
+      "Network and infrastructure documentation",
+      "A change record for every rollout: what changed, when, how it was checked, how to roll back"
+    ],
+    "excluded": [
+      "Hardware purchasing on your behalf unless written into the engagement",
+      "24/7 support or guaranteed response times unless written into a specific agreement",
+      "Software development and website work \u2014 those are separate capabilities with their own scope"
+    ],
+    "evidence": [
+      {
+        "claim": "ThatDeveloperGuy LLC has operated as a business since 2017.",
+        "support": "Founding date on the organization record.",
+        "status": "supported"
+      },
+      {
+        "claim": "The organization operates 218 live websites for clients across its hosting.",
+        "support": "Live count of every candidate hostname on the organization record, 2026-09-12.",
+        "status": "supported"
+      },
+      {
+        "claim": "Named IT-services clients and references.",
+        "support": "To be supplied and approved by the owner before publication.",
+        "status": "owner-to-supply"
+      }
+    ],
+    "process": [
+      {
+        "step": "Plan",
+        "detail": "Inventory what you run and agree what is in scope."
+      },
+      {
+        "step": "Configure",
+        "detail": "Standard builds, accounts and monitoring set up on the systems in scope."
+      },
+      {
+        "step": "Deploy",
+        "detail": "Rollouts in announced windows with a tested rollback."
+      },
+      {
+        "step": "Maintain",
+        "detail": "Patching, replacements and the service desk on an agreed schedule."
+      },
+      {
+        "step": "Improve",
+        "detail": "A periodic review of what broke, what was slow, and what to change."
+      }
+    ]
+  }
+}

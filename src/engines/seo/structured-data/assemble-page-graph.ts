@@ -19,6 +19,12 @@ export function assemblePageGraph(page: CompiledPage): Record<string, unknown> {
   const webpage: Record<string, unknown> = { '@type': 'WebPage', '@id': `${page.canonical}#webpage`, url: page.canonical, name: page.title, description: page.description, isPartOf: { '@id': WEBSITE_ID }, about: { '@id': ORGANIZATION_ID } };
   if (page.breadcrumbs.length > 1) webpage.breadcrumb = { '@type': 'BreadcrumbList', itemListElement: page.breadcrumbs.map((crumb, i) => ({ '@type': 'ListItem', position: i + 1, name: crumb.name, item: crumb.path === '/' ? `${PRODUCTION_ORIGIN}/` : `${PRODUCTION_ORIGIN}${crumb.path}` })) };
   graph.push(webpage);
-  if (page.template === 'capability' && page.serviceId) graph.push({ '@type': 'Service', '@id': `${page.canonical}#service`, name: page.heading, description: page.description, serviceType: page.heading, provider: { '@id': ORGANIZATION_ID }, url: page.canonical });
+  if (page.template === 'capability' && page.serviceId) {
+    const service: Record<string, unknown> = { '@type': 'Service', '@id': `${page.canonical}#service`, name: page.heading, description: page.description, serviceType: page.heading, provider: { '@id': ORGANIZATION_ID }, url: page.canonical };
+    if (page.serviceDetail) service.audience = page.serviceDetail.audience.map(a => ({ '@type': 'Audience', audienceType: a }));
+    graph.push(service);
+  }
+  // The visible Q&A, verbatim. Same record, same text; there is no crawler-only version.
+  if (page.questions.length) graph.push({ '@type': 'FAQPage', '@id': `${page.canonical}#questions`, mainEntity: page.questions.map(q => ({ '@type': 'Question', name: q.question, acceptedAnswer: { '@type': 'Answer', text: q.answer } })) });
   return { '@context': 'https://schema.org', '@graph': graph };
 }

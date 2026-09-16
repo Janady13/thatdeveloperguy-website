@@ -1,0 +1,73 @@
+{
+  "id": "capability.cybersecurity",
+  "path": "/capabilities/cybersecurity",
+  "template": "capability",
+  "parentId": "capabilities.hub",
+  "audience": ["government", "prime-contractors", "business"],
+  "primaryIntent": "Get a human security review, monitoring that is read by a person, an incident response plan, and infrastructure protection for a small or mid-sized organization",
+  "title": "Cyber Security — security review, monitoring, incident response planning and infrastructure protection",
+  "description": "Cybersecurity from ThatDeveloperGuy LLC for government organizations, prime contractors and small and medium businesses: a human security review, monitoring a person reads, an incident response plan you can rehearse, and infrastructure protection that is documented.",
+  "heading": "Cyber Security",
+  "summary": "Detect, protect, respond — with a named person reading the results and writing down what should change.",
+  "bodySource": "body.md",
+  "questionsSource": "questions.json",
+  "serviceId": "cybersecurity",
+  "sceneId": "cybersecurity",
+  "primaryAction": { "label": "Request a human security review", "pageId": "contact", "project": "security" },
+  "relatedPageIds": ["capability.business-it", "audience.government", "company"],
+  "entityReferences": ["organization", "person"],
+  "claimReferences": ["org.foundingDate", "org.siteCount", "person.publicRecord"],
+  "publicationStatus": "demo",
+  "approvalReference": "draft-for-owner-approval-2026-09-15",
+  "indexPolicy": "index",
+  "serviceDetail": {
+    "problem": "Most small organizations and local government offices do not have a security person. They have a laptop fleet, a few servers or cloud accounts, a website, email, and vendors — and nobody whose job is to read the logs, check the configuration, or decide in advance what happens when something goes wrong. The exposure is ordinary: reused passwords, unpatched systems, backups that were never restored, and no plan for the day an account is compromised.",
+    "audience": [
+      "City, county and district offices that run their own IT with a small staff or a contractor",
+      "Prime contractors that need a subcontractor to cover the security work on a delivery",
+      "Small and medium businesses with 5 to 250 people and no in-house security role"
+    ],
+    "included": [
+      "Security review: configuration, exposure and access read by a person, across the systems you name in scope",
+      "Monitoring set-up on the systems you already run, with results read and explained in plain language on an agreed schedule",
+      "Incident response plan: who is called, what is isolated, what is preserved, who is told — written for your organization and rehearsed once",
+      "Infrastructure protection: patching cadence, network segmentation, backups that are restore-tested, access granted on purpose and documented"
+    ],
+    "deliverables": [
+      "A written security review with findings ordered by what to fix first, and why",
+      "A monitoring summary you can read without a technical background, on the agreed schedule",
+      "An incident response plan document plus one rehearsal record",
+      "An infrastructure protection checklist with the current state of each item and its owner",
+      "A remediation record: what changed, when, and how it was checked"
+    ],
+    "excluded": [
+      "Compliance certification or attestation of any kind — this work prepares you for a reviewer; it does not certify you",
+      "24/7 monitoring or guaranteed response times unless written into a specific engagement",
+      "Penetration testing against systems you do not own or have not authorized in writing",
+      "Handling of classified or controlled unclassified information; scope is agreed before any such material is discussed",
+      "Legal advice on breach notification — the plan names when to call counsel, it does not replace counsel"
+    ],
+    "evidence": [
+      { "claim": "ThatDeveloperGuy LLC has operated as a business since 2017.", "support": "Founding date on the organization record.", "status": "supported" },
+      { "claim": "The organization operates 218 live websites for clients across its hosting.", "support": "Live count of every candidate hostname on the organization record, 2026-09-12.", "status": "supported" },
+      { "claim": "The founder maintains a public professional record (ORCID, GitHub, published work).", "support": "Person record with verified external identifiers.", "status": "supported" },
+      { "claim": "Named past security engagements and references.", "support": "To be supplied and approved by the owner before publication.", "status": "owner-to-supply" },
+      { "claim": "Certifications, clearances or set-aside status.", "support": "None are claimed. Shown only if and when issued and verified.", "status": "owner-to-supply" }
+    ],
+    "process": [
+      { "step": "Scope", "detail": "A written list of the systems, accounts and people in scope, and what is explicitly out of scope." },
+      { "step": "Collect", "detail": "Read-only access, configuration exports and logs, gathered with your staff present." },
+      { "step": "Read", "detail": "A person reads what was collected. Tools are used; conclusions are written by hand." },
+      { "step": "Report", "detail": "Findings ordered by risk, in plain language, with the evidence for each." },
+      { "step": "Remediate", "detail": "Agreed fixes are made or handed to your staff with instructions; each is checked afterwards." },
+      { "step": "Re-check", "detail": "A second look at the fixed items and a short written close-out." }
+    ]
+  },
+  "sections": [
+    { "id": "monitoring", "heading": "Security monitoring overview", "body": "The threat map and the 100% readout in the room are illustration. Monitoring in practice is scoped to what you run and reported in plain language on an agreed schedule." },
+    { "id": "security-review", "heading": "Security review and system health", "body": "A person reads the configuration, the exposure and the logs, and writes down what should change and why." },
+    { "id": "response", "heading": "Incident response planning", "body": "Who is called, what is isolated, what is preserved, who is told — decided before an incident, rehearsed once." },
+    { "id": "infrastructure", "heading": "Infrastructure protection", "body": "Patching, segmentation, backups that restore, and access that is granted on purpose." },
+    { "id": "process", "heading": "Security review process", "body": "Scope, collect, read, report, remediate, re-check." }
+  ]
+}

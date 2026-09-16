@@ -29,10 +29,22 @@ export interface PageRecord {
   socialImageId?: string;
   /** Optional in-page sections rendered as anchors (rooms link their objects to these). */
   sections?: Array<{ id: string; heading: string; body: string }>;
+  /** Service pages: the eight buyer questions, answered from approved scope. Lists are rendered verbatim. */
+  serviceDetail?: ServiceDetail;
+  /** File name of the visible Q&A record (questions.json) next to page.json. */
+  questionsSource?: string;
 }
+
+export interface ServiceDetail {
+  problem: string; audience: string[]; included: string[]; deliverables: string[]; excluded: string[];
+  evidence: Array<{ claim: string; support: string; status: 'supported' | 'owner-to-supply' }>;
+  process: Array<{ step: string; detail: string }>;
+}
+export interface QuestionAnswer { id: string; question: string; answer: string }
 
 export interface CompiledPage extends PageRecord {
   bodyHtml: string;
+  questions: QuestionAnswer[];
   canonical: string;
   breadcrumbs: Array<{ name: string; path: string }>;
   related: Array<{ id: string; path: string; title: string }>;

@@ -4,6 +4,9 @@ import { PageHeading } from '../components/content/PageHeading';
 import { ContentSections } from '../components/content/ContentSections';
 import { RelatedPages } from '../components/content/RelatedPages';
 import { ContactAction } from '../components/content/ContactAction';
+import { ServiceDeliverables } from '../components/content/ServiceDeliverables';
+import { EvidenceBlock } from '../components/content/EvidenceBlock';
+import { QuestionsAndAnswers } from '../components/content/QuestionsAndAnswers';
 import { SceneShell } from '../experience/SceneShell';
 import itScene from '../experience/scenes/it-services/scene.json';
 import cyberScene from '../experience/scenes/cybersecurity/scene.json';
@@ -24,8 +27,11 @@ export default function Capability() {
       {scene && <SceneShell scene={scene} page={page} />}
       <div className="page-wrap">
         <ContentSections page={page} />
-        <RelatedPages page={page} />
+        <ServiceDeliverables page={page} />
+        <EvidenceBlock page={page} />
+        <QuestionsAndAnswers page={page} />
         <ContactAction page={page} />
+        <RelatedPages page={page} />
       </div>
     </>
   );
