@@ -15,6 +15,7 @@ import { join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { repoRoot } from './kits.ts';
 import { RiveEditor, type LogEntry } from './rive-mcp.ts';
+import { exportArtboardViaCli } from './rive-export.ts';
 import { planLobby, TITLE, type DoorId, type LobbyPlan } from './rive-plan.ts';
 import type { RefinedManifest } from './refine-vectors.ts';
 
@@ -118,9 +119,27 @@ async function stateMachine(ctx: Ctx): Promise<void> {
   if (missing.length) await ctx.editor.call('animation_editor', { command: 'createStateMachineLayers', data: { createStateMachineLayers: { stateMachineId: machine.id, layers: missing.map(layer => ({ name: layer.name, states: layer.states.map((s, i) => ({ name: s.name, x: 120 + i * 240, y: 140, ...(s.animation ? { linearAnimationName: s.animation } : {}) })), otherTransitions: layer.transitions.map(t => ({ from: t.from, to: t.to })) })) } } });
   const full = await ctx.editor.call<any>('animation_editor', { command: 'queryStateMachine', data: { queryStateMachine: { stateMachineId: machine.id } } });
   writeFileSync(join(resolve(repoRoot, 'creative-source/rive/lobby'), 'state-machine.json'), JSON.stringify(full, null, 1));
-  const conditions: Array<{ id: string; conditions: any[] }> = [];
+  // Layers that already existed may lack transitions added to the plan later (e.g. Entry → Closed); create them by state id.
+  const missingTransitions: Array<{ id: string; transitions: Array<{ to: string }> }> = [];
   for (const layer of ctx.plan.layers) {
     const live = (full.layers as any[]).find(l => l.layerName === layer.name);
+    if (!live) continue;
+    const stateId = (name: string) => { const n = name.replace(/[{}]/g, ''); const s = (live.states as any[]).find(st => (n === 'Entry State' && st.type === 'entry') || (n === 'Any State' && st.type === 'any') || (st.type !== 'entry' && st.type !== 'any' && st.type !== 'exit' && (st.stateName ?? st.name) === n)); return s?.id as string | undefined; };
+    const have = transitionsOf(live);
+    for (const t of layer.transitions) {
+      const from = t.from.replace(/[{}]/g, '');
+      if (have.some(x => x.from === from && x.to === t.to)) continue;
+      const fromId = stateId(t.from), toId = stateId(t.to);
+      if (!fromId || !toId) throw new Error(`cannot resolve ${t.from} → ${t.to} in ${layer.name}`);
+      missingTransitions.push({ id: fromId, transitions: [{ to: toId }] });
+    }
+  }
+  if (missingTransitions.length) await ctx.editor.call('animation_editor', { command: 'createTransitions', data: { createTransitions: { states: missingTransitions } } });
+  const refreshed = missingTransitions.length ? await ctx.editor.call<any>('animation_editor', { command: 'queryStateMachine', data: { queryStateMachine: { stateMachineId: machine.id } } }) : full;
+  writeFileSync(join(resolve(repoRoot, 'creative-source/rive/lobby'), 'state-machine.json'), JSON.stringify(refreshed, null, 1));
+  const conditions: Array<{ id: string; conditions: any[] }> = [];
+  for (const layer of ctx.plan.layers) {
+    const live = (refreshed.layers as any[]).find(l => l.layerName === layer.name);
     if (!live) throw new Error(`layer ${layer.name} missing after creation`);
     const liveTransitions = transitionsOf(live);
     for (const t of layer.transitions) {
@@ -134,7 +153,7 @@ async function stateMachine(ctx: Ctx): Promise<void> {
     }
   }
   if (conditions.length) await ctx.editor.call('animation_editor', { command: 'createConditions', data: { createConditions: { transitions: conditions } } });
-  const existingListeners = new Set((full.listeners as any[]).map(l => l.name));
+  const existingListeners = new Set((refreshed.listeners as any[]).map(l => l.name));
   const listeners = ctx.plan.doors.flatMap(door => [
     { name: `hover_${door.id}`, targetId: ctx.ids.get(`hit:${door.id}`), listenerTypes: ['enter'], actions: [{ type: 'viewModelChange', viewModelPropertyId: ctx.vm.props.focus, value: door.id }] },
     { name: `leave_${door.id}`, targetId: ctx.ids.get(`hit:${door.id}`), listenerTypes: ['exit'], actions: [{ type: 'viewModelChange', viewModelPropertyId: ctx.vm.props.focus, value: 'none' }] },
@@ -212,19 +231,19 @@ export async function authorLobby(mode: 'build' | 'replace' | 'resume' = 'build'
   }
   await stateMachine(ctx);
   await editor.capture(plan.artboard, join(outDir, 'capture.png'));
-  const exported = await editor.exportRiv(outDir);
-  const finalPath = join(outDir, 'lobby.riv');
-  if (exported.path !== finalPath) { if (existsSync(finalPath)) renameSync(finalPath, join(outDir, 'lobby.previous.riv')); renameSync(exported.path, finalPath); }
+  const exported = await exportArtboardViaCli(editor, plan.artboard, outDir, 'lobby');
+  const finalPath = exported.riv;
   const bytes = readFileSync(finalPath);
+  writeFileSync(join(outDir, 'inventory.json'), JSON.stringify(exported.inventory, null, 2) + '\n');
   writeFileSync(join(outDir, 'rive-manifest.json'), JSON.stringify({
-    room: 'lobby', file: 'lobby.riv', sha256: createHash('sha256').update(bytes).digest('hex'), bytes: bytes.length,
+    room: 'lobby', file: 'lobby.riv', sha256: exported.inventory.sha256, bytes: bytes.length,
     artboard: plan.artboard, stateMachine: ctx.stateMachineName, viewModel: plan.viewModel.name, enum: { [plan.enum.name]: plan.enum.values },
     inputs: Object.fromEntries(plan.viewModel.properties.map(p => [p.name, p.type])), animations: plan.animations.map(a => a.name),
     doors: plan.doors, editor: { fileId: session.activeFileId, url: session.openTabs.find(t => t.isActive)?.url ?? '' }, authoredAt: new Date().toISOString(),
-    exportedBy: 'mcp', exportNote: 'The editor MCP export omits MCP-created artboards (probed 2026-09-15). Export from the editor UI and ingest with --riv <path>.',
+    exportedBy: 'rive-cli', compiler: exported.compiler, document: { rev: 'document.rev', bytes: exported.rev.bytes, sha256: exported.rev.sha256 },
+    exportNote: 'The editor MCP riv export omits MCP-created artboards; this file was compiled by the official Rive CLI from the editor\'s .rev export of the same document.',
   }, null, 2) + '\n');
-  console.log(`exported ${finalPath} (${bytes.length} bytes), state machine "${ctx.stateMachineName}", ${log.length} editor calls`);
-  console.log('NOTE: the MCP export omits MCP-created artboards; export from the editor UI (File → Export → For Runtime) and run: npm run rive:author -- --room lobby --riv <path>');
+  console.log(`built ${finalPath} (${bytes.length} bytes, sha ${exported.inventory.sha256.slice(0, 12)}…) with ${exported.compiler} from a ${exported.rev.bytes}-byte .rev; artboards ${exported.inventory.artboards.map(a => a.name).join(', ')}; ${log.length} editor calls`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

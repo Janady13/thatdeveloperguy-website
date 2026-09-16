@@ -44,8 +44,9 @@ export function planLobby(manifest: RefinedManifest): LobbyPlan {
   ];
   const layers: PlanLayer[] = [
     { name: 'Ambient', states: [{ name: 'Ambient', animation: 'Ambient' }], transitions: [{ from: '{Entry State}', to: 'Ambient' }] },
-    ...doors.map(d => ({ name: `Door${TITLE[d.id]}`, states: [{ name: 'Closed' }, { name: 'Open', animation: `DoorOpen${TITLE[d.id]}` }], transitions: [{ from: 'Closed', to: 'Open', when: { property: `open${TITLE[d.id]}` } }] })),
+    ...doors.map(d => ({ name: `Door${TITLE[d.id]}`, states: [{ name: 'Closed' }, { name: 'Open', animation: `DoorOpen${TITLE[d.id]}` }], transitions: [{ from: '{Entry State}', to: 'Closed' }, { from: 'Closed', to: 'Open', when: { property: `open${TITLE[d.id]}` } }] })),
     { name: 'Focus', states: [{ name: 'None' }, ...doors.map(d => ({ name: `Focus${TITLE[d.id]}`, animation: `Focus${TITLE[d.id]}` }))], transitions: [
+      { from: '{Entry State}', to: 'None' },
       ...doors.map(d => ({ from: '{Any State}', to: `Focus${TITLE[d.id]}`, when: { property: 'focus', equals: d.id } })),
       { from: '{Any State}', to: 'None', when: { property: 'focus', equals: 'none' } },
     ] },

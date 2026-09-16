@@ -1,0 +1,26 @@
+/** Install the official Rive CLI (checksum-verified from releases.rive.app) into .tools/rive without running any installer script. */
+import { createHash } from 'node:crypto';
+import { mkdtempSync, writeFileSync, mkdirSync, copyFileSync, chmodSync, lstatSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { spawnSync } from 'node:child_process';
+const root = fileURLToPath(new URL('..', import.meta.url));
+const version = process.env.RIVE_CLI_VERSION ?? '1.0.3', base = 'https://releases.rive.app/cli';
+const platform = process.platform === 'darwin' && process.arch === 'arm64' ? 'darwin-arm64' : process.platform === 'linux' && process.arch === 'x64' ? 'linux-x64' : null;
+if (!platform) throw new Error('supported: macOS arm64, Linux x64');
+const get = async url => { const r = await fetch(url, { signal: AbortSignal.timeout(120000) }); if (!r.ok) throw new Error(`${r.status} ${url}`); return r; };
+const manifest = await (await get(`${base}/v${version}/manifest.json`)).json();
+const artifact = manifest.artifacts?.[platform];
+if (manifest.version !== version || !artifact || !/^[a-f0-9]{64}$/.test(artifact.sha256)) throw new Error('unexpected manifest');
+const bytes = Buffer.from(await (await get(`${base}/${artifact.path}`)).arrayBuffer());
+const sha = createHash('sha256').update(bytes).digest('hex');
+if (sha !== artifact.sha256) throw new Error('checksum mismatch');
+const temp = mkdtempSync(resolve(tmpdir(), 'tdg-rive-')), archive = resolve(temp, 'rive.tar.gz'); writeFileSync(archive, bytes);
+const list = spawnSync('tar', ['-tzf', archive], { encoding: 'utf8' }); if (list.status !== 0 || list.stdout.split('\n').some(p => p.startsWith('/') || p.split('/').includes('..'))) throw new Error('unsafe archive');
+const unpack = spawnSync('tar', ['-xzf', archive, '-C', temp], { encoding: 'utf8' }); if (unpack.status !== 0) throw new Error(unpack.stderr);
+const binary = resolve(temp, 'rive'); if (!lstatSync(binary).isFile()) throw new Error('no rive binary in archive');
+const out = resolve(root, '.tools/rive'); mkdirSync(out, { recursive: true }); copyFileSync(binary, resolve(out, 'rive')); chmodSync(resolve(out, 'rive'), 0o755);
+mkdirSync(resolve(root, 'evidence'), { recursive: true });
+writeFileSync(resolve(root, 'evidence/rive-cli-provenance.json'), JSON.stringify({ version, platform, url: `${base}/${artifact.path}`, sha256: sha, installedAt: new Date().toISOString() }, null, 2) + '\n');
+console.log(`official Rive CLI ${version} (${platform}) sha256 ${sha.slice(0, 12)}… → ${resolve(out, 'rive')}`);

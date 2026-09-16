@@ -20,7 +20,7 @@ test('planLobby names every animation, view-model property and state-machine lay
   ]);
   assert.deepEqual(plan.layers.map(l => l.name), ['Ambient', 'DoorIt', 'DoorGovernment', 'DoorCyber', 'Focus']);
   const door = plan.layers[1]!;
-  assert.deepEqual(door.transitions, [{ from: 'Closed', to: 'Open', when: { property: 'openIt' } }]);
+  assert.deepEqual(door.transitions, [{ from: '{Entry State}', to: 'Closed' }, { from: 'Closed', to: 'Open', when: { property: 'openIt' } }]); // a layer without an Entry transition never enters Closed, so the trigger never fires
   const open = plan.animations.find(a => a.name === 'DoorOpenIt')!;
   assert.equal(open.loop, 'oneShot');
   assert.deepEqual(open.keys[0], { target: 'hinge', door: 'it', property: 'scaleX', frame: 0, value: 100, interpolation: 'cubic' });

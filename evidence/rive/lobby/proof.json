@@ -1,0 +1,52 @@
+{
+  "room": "lobby",
+  "file": "lobby.riv",
+  "sha256": "6cfc0aeae8e56ac1d5b91ca2e24a1d68c559f889f8078bd2405cd95adb279f6c",
+  "bytes": 3643725,
+  "runtime": "@rive-app/webgl2 2.42.1",
+  "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+  "artboards": [
+    {
+      "name": "Lobby",
+      "animations": [
+        "DoorOpenIt",
+        "DoorOpenGovernment",
+        "DoorOpenCyber",
+        "FocusIt",
+        "FocusGovernment",
+        "FocusCyber",
+        "Ambient"
+      ],
+      "stateMachines": [
+        "State Machine 1"
+      ]
+    }
+  ],
+  "checks": {
+    "loads": {
+      "ok": true,
+      "detail": "loaded with 2.42.1"
+    },
+    "renders": {
+      "ok": true,
+      "detail": "75 frames advanced in 1.2 s; 100.0% of pixels drawn"
+    },
+    "matchesPoster": {
+      "ok": true,
+      "detail": "idle frame differs from the vector poster on 0.8% of pixels"
+    },
+    "viewModel": {
+      "ok": true,
+      "detail": "autoBind view-model instance present"
+    },
+    "focusTransition": {
+      "ok": true,
+      "detail": "focus=government changed 0.284% of pixels"
+    },
+    "doorTransition": {
+      "ok": true,
+      "detail": "openGovernment changed 0.945% of pixels after 0.8 s"
+    }
+  },
+  "at": "2026-09-16T01:27:14.845Z"
+}

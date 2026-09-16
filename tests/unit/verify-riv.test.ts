@@ -7,7 +7,7 @@ const manifestUrl = new URL('../../creative-source/rive/lobby/rive-manifest.json
 const exportedBy = existsSync(manifestUrl) ? JSON.parse(readFileSync(manifestUrl, 'utf8')).exportedBy : null;
 
 // The editor MCP's own export omits MCP-created artboards; only a UI export can pass. `npm run rive:verify` reports the raw state.
-test('the exported lobby.riv matches its rive-manifest', { skip: exportedBy !== 'editor-ui' ? `lobby.riv exportedBy=${exportedBy}; needs an editor-UI export` : false }, async () => {
+test('the exported lobby.riv matches its rive-manifest', { skip: !['editor-ui', 'rive-cli'].includes(exportedBy) ? `lobby.riv exportedBy=${exportedBy}; needs an editor-UI or CLI export` : false }, async () => {
   const result = await verifyRiv('lobby');
   assert.equal(result.artboard, 'Lobby');
   for (const name of ['Ambient', 'DoorOpenIt', 'DoorOpenGovernment', 'DoorOpenCyber', 'FocusIt', 'FocusGovernment', 'FocusCyber']) assert.ok(result.animations.includes(name), `missing animation ${name}`);

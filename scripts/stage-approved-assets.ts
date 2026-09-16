@@ -1,7 +1,7 @@
 /**
  * creative-source → public/ + app/experience/scenes/<id>/scene.json.
- * Posters (refined scene SVGs) always ship. A .riv ships only when its manifest says it came from an editor export (`exportedBy: editor-ui`);
- * the MCP's own export omits MCP-created artboards, so it is never staged.
+ * Posters (refined scene SVGs) always ship. A .riv ships only when its manifest says it came from the editor UI or the official CLI
+ * (`exportedBy: editor-ui | rive-cli`); the MCP's own riv export omits MCP-created artboards, so it is never staged.
  */
 import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -38,7 +38,7 @@ for (const [sceneId, kit] of Object.entries(KITS)) {
   let rive: SceneRecord['rive'] = null;
   if (existsSync(rivePath)) {
     const rm = JSON.parse(readFileSync(rivePath, 'utf8'));
-    if (rm.exportedBy === 'editor-ui') { copyFileSync(resolve(root, 'creative-source/rive', kit.room, rm.file), resolve(root, `public/animation/rooms/${sceneId}.riv`)); rive = { file: `/animation/rooms/${sceneId}.riv`, artboard: rm.artboard, stateMachine: rm.stateMachine, viewModel: rm.viewModel, sha256: rm.sha256 }; }
+    if (rm.exportedBy === 'editor-ui' || rm.exportedBy === 'rive-cli') { copyFileSync(resolve(root, 'creative-source/rive', kit.room, rm.file), resolve(root, `public/animation/rooms/${sceneId}.riv`)); rive = { file: `/animation/rooms/${sceneId}.riv`, artboard: rm.artboard, stateMachine: rm.stateMachine, viewModel: rm.viewModel, sha256: rm.sha256 }; }
   }
   const scene: SceneRecord = { id: sceneId, poster: `/images/posters/${sceneId}.svg`, posterAlt: kit.poster, rive, hotspots: hotspotsFor(sceneId, manifest.hotspots), captionRest: (destinations as any)[sceneId].captionRest, captions: kit.captions };
   const out = resolve(root, 'app/experience/scenes', sceneId); mkdirSync(out, { recursive: true });

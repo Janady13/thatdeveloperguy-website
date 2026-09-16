@@ -1,8 +1,8 @@
 {
   "room": "lobby",
   "file": "lobby.riv",
-  "sha256": "72dd2512c7dcfb5d53961e19178318baf9137a555899b2f7bfaa814b65b815c7",
-  "bytes": 567404,
+  "sha256": "6cfc0aeae8e56ac1d5b91ca2e24a1d68c559f889f8078bd2405cd95adb279f6c",
+  "bytes": 3643725,
   "artboard": "Lobby",
   "stateMachine": "State Machine 1",
   "viewModel": "Lobby",
@@ -84,7 +84,13 @@
     "fileId": 2583647,
     "url": "https://editor.rive.app/file/tdg-patch/2583647"
   },
-  "authoredAt": "2026-09-15T23:28:16.105Z",
-  "exportedBy": "mcp",
-  "exportNote": "The editor MCP export omits MCP-created artboards (probed 2026-09-15). Export from the editor UI and ingest with --riv <path>."
+  "authoredAt": "2026-09-16T01:27:01.482Z",
+  "exportedBy": "rive-cli",
+  "compiler": "rive 1.0.3",
+  "document": {
+    "rev": "document.rev",
+    "bytes": 13033714,
+    "sha256": "53d3718292f7bf001c6f3dad9f1079504f5d1cfed5626fbe2e8536096310eb5d"
+  },
+  "exportNote": "The editor MCP riv export omits MCP-created artboards; this file was compiled by the official Rive CLI from the editor's .rev export of the same document."
 }

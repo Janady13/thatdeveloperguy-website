@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Rive proof harness</title>
+<style>html,body{margin:0;background:#fff}canvas{display:block;width:1648px;height:928px}</style>
+<script src="/runtime/rive.js"></script></head>
+<body><canvas id="c" width="1648" height="928"></canvas>
+<script>
+  // Drives the pinned @rive-app/webgl2 runtime exactly as the site does (state machine + autoBind view model), exposing captures to the proof script.
+  rive.RuntimeLoader.setWasmUrl('/runtime/rive.wasm');
+  const params = new URLSearchParams(location.search);
+  const canvas = document.getElementById('c');
+  window.__proof = { loaded: false, error: null, frames: 0 };
+  const r = new rive.Rive({
+    src: params.get('src'), canvas, artboard: params.get('artboard'), stateMachines: params.get('sm'), autoplay: true, autoBind: true, enableRiveAssetCDN: false,
+    layout: new rive.Layout({ fit: rive.Fit.Contain, alignment: rive.Alignment.Center }),
+    onLoad: () => { window.__proof.loaded = true; window.__proof.rive = r; window.__proof.artboards = r.contents?.artboards?.map(a => ({ name: a.name, animations: a.animations, stateMachines: a.stateMachines?.map(s => s.name) })); },
+    onLoadError: e => { window.__proof.error = String(e?.data ?? e); },
+    onAdvance: () => { window.__proof.frames++; },
+  });
+  window.__proof.capture = () => canvas.toDataURL('image/png');
+  window.__proof.setEnum = (name, value) => { const p = r.viewModelInstance?.enum(name); if (!p) throw new Error('no enum ' + name); p.value = value; return p.value; };
+  window.__proof.setBool = (name, value) => { const p = r.viewModelInstance?.boolean(name); if (!p) throw new Error('no boolean ' + name); p.value = value; return p.value; };
+  window.__proof.fire = name => { const p = r.viewModelInstance?.trigger(name); if (!p) throw new Error('no trigger ' + name); p.trigger(); return true; };
+  window.__proof.vm = () => r.viewModelInstance ? { name: r.viewModelInstance.name ?? null, ok: true } : { ok: false };
+</script></body></html>

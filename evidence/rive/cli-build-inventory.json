@@ -1,0 +1,77 @@
+{
+  "file": "/tmp/tdg-rev-probe/build/tdg-rev-probe.riv",
+  "bytes": 4472606,
+  "sha256": "34b4b70317e30b5d03b54f51df9e0191a99aaada8b49fc73af702e52bcf89dc4",
+  "runtime": "@rive-app/canvas-advanced 2.42.1",
+  "artboards": [
+    {
+      "name": "Patch",
+      "width": 515,
+      "height": 805,
+      "animations": [
+        "Patch_Blink",
+        "Patch_Neutral",
+        "Patch_Happy",
+        "Patch_Focused",
+        "Patch_Talking",
+        "Patch_WaveGesture",
+        "Patch_ThumbsUp",
+        "Patch_Idle",
+        "Patch_Walk",
+        "Patch_Wave",
+        "Patch_Work",
+        "Patch_Enter",
+        "Patch_Exit",
+        "Timeline 1"
+      ],
+      "stateMachines": [
+        "PatchMachine",
+        "State Machine 1"
+      ]
+    },
+    {
+      "name": "Lobby",
+      "width": 1648,
+      "height": 928,
+      "animations": [
+        "DoorOpenIt",
+        "DoorOpenGovernment",
+        "DoorOpenCyber",
+        "FocusIt",
+        "FocusGovernment",
+        "FocusCyber",
+        "Ambient"
+      ],
+      "stateMachines": [
+        "State Machine 1"
+      ]
+    }
+  ],
+  "viewModels": [
+    {
+      "name": "Lobby",
+      "properties": [
+        {
+          "name": "focus",
+          "type": "enumType"
+        },
+        {
+          "name": "openIt",
+          "type": "trigger"
+        },
+        {
+          "name": "openGovernment",
+          "type": "trigger"
+        },
+        {
+          "name": "openCyber",
+          "type": "trigger"
+        },
+        {
+          "name": "reducedMotion",
+          "type": "boolean"
+        }
+      ]
+    }
+  ]
+}
