@@ -1,0 +1,1 @@
+Cyber Security here means the work of watching, reviewing and responding — done by a person who explains what they found. No certification, staffing level, clearance or 24/7 coverage is claimed on this page; those are stated per engagement, in writing, when they are true.

@@ -30,7 +30,7 @@ export function project(node: any, sourceCommit: string): Projection {
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const node = JSON.parse(readFileSync(resolve(NODE_ROOT, 'organization.json'), 'utf8'));
   const commit = execFileSync('git', ['-C', NODE_ROOT, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
-  const out = resolve(repoRoot, 'apps/web/src/truth'); mkdirSync(out, { recursive: true });
-  writeFileSync(resolve(out, 'projection.json'), JSON.stringify(project(node, commit), null, 2) + '\n');
+  const out = resolve(repoRoot, 'build-inputs/authority'); mkdirSync(out, { recursive: true });
+  writeFileSync(resolve(out, 'public-projection.json'), JSON.stringify(project(node, commit), null, 2) + '\n');
   console.log(`truth projected from ${NODE_ROOT}@${commit.slice(0, 8)}`);
 }

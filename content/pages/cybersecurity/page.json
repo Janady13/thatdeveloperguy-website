@@ -1,0 +1,15 @@
+{ "id": "capability.cybersecurity", "path": "/capabilities/cybersecurity", "template": "capability", "parentId": "capabilities.hub", "audience": ["government", "prime-contractors", "business"], "primaryIntent": "Get security monitoring, review, response planning and infrastructure protection",
+  "title": "Cyber Security — monitoring, security review, incident response and infrastructure protection", "description": "Cybersecurity from ThatDeveloperGuy LLC: security monitoring, human security review, incident response planning and infrastructure protection.",
+  "heading": "Cyber Security", "summary": "Detect, protect, respond — with a human reading the results.",
+  "bodySource": "body.md", "serviceId": "cybersecurity", "sceneId": "cybersecurity",
+  "primaryAction": { "label": "Request a human security review", "pageId": "contact", "project": "security" },
+  "relatedPageIds": ["capability.business-it", "audience.government"],
+  "entityReferences": ["organization"], "claimReferences": [],
+  "publicationStatus": "demo", "approvalReference": "owner-demo-2026-09-15", "indexPolicy": "index",
+  "sections": [
+    { "id": "monitoring", "heading": "Security monitoring overview", "body": "The threat map and the 100% readout in the room are illustration. Monitoring in practice is scoped to what a client runs and reported in plain language." },
+    { "id": "security-review", "heading": "Security review and system health", "body": "A person reads the configuration, the exposure and the logs, and writes down what should change and why." },
+    { "id": "response", "heading": "Incident response planning", "body": "Who is called, what is isolated, what is preserved, who is told — decided before an incident, rehearsed after." },
+    { "id": "infrastructure", "heading": "Infrastructure protection", "body": "Patching, segmentation, backups that restore, and access that is granted on purpose." },
+    { "id": "process", "heading": "Security review process", "body": "Scope, collect, read, report, remediate, re-check." }
+  ] }

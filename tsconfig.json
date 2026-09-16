@@ -10,8 +10,31 @@
     "allowImportingTsExtensions": true,
     "noEmit": true,
     "skipLibCheck": true,
-    "types": ["node"],
-    "lib": ["ES2023", "DOM", "DOM.Iterable"]
+    "types": [
+      "node",
+      "vite/client",
+      "react",
+      "react-dom"
+    ],
+    "lib": [
+      "ES2023",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "rootDirs": [
+      ".",
+      "./.react-router/types"
+    ]
   },
-  "include": ["apps/web/src", "tools", "tests", "scripts"]
+  "include": [
+    "app",
+    "src",
+    "tools",
+    "tests",
+    "scripts",
+    "content/**/*.json",
+    "react-router.config.ts",
+    "vite.config.ts",
+    ".react-router/types/**/*"
+  ]
 }

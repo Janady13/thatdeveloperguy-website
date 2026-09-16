@@ -1,0 +1,3 @@
+Government organizations and the prime contractors that serve them buy differently from a small business: the requirement is written first, the reviewer matters as much as the user, and the records have to survive the project. This page is the pathway for that kind of buyer. The capability pages describe the work itself; this page describes how it is scoped, contracted and handed over.
+
+Registry facts that only the owner can confirm — CAGE code, SAM.gov active date, NAICS approval, set-aside certifications — are shown on this site only after they have been verified. Nothing here should be read as a certification claim.

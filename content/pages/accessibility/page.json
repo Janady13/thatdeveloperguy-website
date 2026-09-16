@@ -1,0 +1,8 @@
+{ "id": "policy.accessibility", "path": "/accessibility", "template": "policy", "parentId": "home", "audience": ["government", "prime-contractors", "business"], "primaryIntent": "Know how this website is tested for accessibility",
+  "title": "Accessibility — ThatDeveloperGuy", "description": "How thatdeveloperguy.com is built and tested for keyboard, screen-reader and reduced-motion use.",
+  "heading": "Accessibility", "summary": "Every door and control is a real HTML link or button; the animation is decoration over a complete page.",
+  "bodySource": "body.md",
+  "primaryAction": { "label": "Report a barrier", "pageId": "contact" },
+  "relatedPageIds": ["policy.privacy"],
+  "entityReferences": ["organization"], "claimReferences": [],
+  "publicationStatus": "demo", "approvalReference": "owner-demo-2026-09-15", "indexPolicy": "index" }

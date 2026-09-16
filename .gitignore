@@ -7,3 +7,12 @@ test-results/
 shots/
 *.log
 .DS_Store
+
+.react-router/
+build/
+dist/
+public/images/posters/
+public/animation/
+app/experience/scenes/*/scene.json
+src/generated/
+private/

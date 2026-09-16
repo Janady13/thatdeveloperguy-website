@@ -1,0 +1,1 @@
+The organization, the brand and the person are three different things and this site keeps them apart: the legal organization signs contracts, the brand is the name on the door, and the founder is a person with his own public record.

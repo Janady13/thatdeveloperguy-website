@@ -1,0 +1,9 @@
+{ "id": "home", "path": "/", "template": "home", "parentId": null, "audience": ["government", "prime-contractors", "business"], "primaryIntent": "Choose the room for the work you need",
+  "title": "ThatDeveloperGuy — Government IT, cybersecurity and software from Cassville, Missouri",
+  "description": "ThatDeveloperGuy LLC builds and runs IT, cybersecurity and software for government organizations, prime contractors and small and medium businesses.",
+  "heading": "ThatDeveloperGuy", "summary": "Three doors: IT Services, Government Solutions, Cyber Security. Every door is a real link; the room behind it is the page.",
+  "bodySource": "body.md", "sceneId": "lobby",
+  "primaryAction": { "label": "Request a briefing", "pageId": "contact" },
+  "relatedPageIds": ["capability.business-it", "audience.government", "capability.cybersecurity"],
+  "entityReferences": ["organization", "person"], "claimReferences": [],
+  "publicationStatus": "demo", "approvalReference": "owner-demo-2026-09-15", "indexPolicy": "index" }

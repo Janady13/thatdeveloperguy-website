@@ -1,0 +1,8 @@
+{ "id": "contact", "path": "/contact", "template": "contact", "parentId": "home", "audience": ["government", "prime-contractors", "business"], "primaryIntent": "Send a non-sensitive inquiry",
+  "title": "Contact — request a briefing from ThatDeveloperGuy", "description": "Request a briefing, IT support or a security review from ThatDeveloperGuy LLC. Non-sensitive inquiries only.",
+  "heading": "Request a briefing", "summary": "Tell us the room you came from and what you need. Do not include passwords, incident files or sensitive government material.",
+  "bodySource": "body.md",
+  "primaryAction": { "label": "Call instead", "pageId": "contact" },
+  "relatedPageIds": ["capability.business-it", "audience.government", "capability.cybersecurity"],
+  "entityReferences": ["organization"], "claimReferences": [],
+  "publicationStatus": "demo", "approvalReference": "owner-demo-2026-09-15", "indexPolicy": "index" }

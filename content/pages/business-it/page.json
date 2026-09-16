@@ -1,0 +1,16 @@
+{ "id": "capability.business-it", "path": "/capabilities/business-it", "template": "capability", "parentId": "capabilities.hub", "audience": ["business", "government"], "primaryIntent": "Get IT support, endpoints, infrastructure and deployment handled",
+  "title": "IT Services — business IT support, endpoints, infrastructure and deployment", "description": "IT Services from ThatDeveloperGuy LLC: support desk, workstations and endpoints, network and infrastructure, deployment and maintenance.",
+  "heading": "IT Services", "summary": "Support today, a brighter tomorrow: the systems your people use every day, kept running.",
+  "bodySource": "body.md", "serviceId": "business-it", "sceneId": "it-services",
+  "primaryAction": { "label": "Request IT support", "pageId": "contact", "project": "itsupport" },
+  "relatedPageIds": ["capability.cybersecurity", "audience.government"],
+  "entityReferences": ["organization"], "claimReferences": [],
+  "publicationStatus": "demo", "approvalReference": "owner-demo-2026-09-15", "indexPolicy": "index",
+  "sections": [
+    { "id": "monitoring", "heading": "System status", "body": "The status board in the room is an illustration, not live telemetry. Real monitoring is scoped per client and reported through agreed channels." },
+    { "id": "support", "heading": "IT support", "body": "A service desk with a named person behind it. Requests are tracked from first contact to closure." },
+    { "id": "workstations", "heading": "Workstations and endpoints", "body": "Laptops, desktops and the accounts on them: provisioning, updates, replacement and retirement." },
+    { "id": "infrastructure", "heading": "Network and infrastructure", "body": "Racks, switches, servers and the cloud services that replaced some of them — designed, documented and maintained." },
+    { "id": "deployment", "heading": "Deployment and maintenance", "body": "Planned rollouts with a tested rollback, and maintenance windows that are announced before they happen." },
+    { "id": "process", "heading": "IT service process", "body": "Plan, configure, deploy, maintain, improve — the five drawers of the tool cart, in that order." }
+  ] }

@@ -1,0 +1,5 @@
+:root {
+  --paper: #f4f1fa; --lavender: #d9d1ea; --lavender-deep: #c5b9de; --purple: #4a2f8a; --purple-deep: #2f1f5e; --ink: #2a1f4a; --muted: #5c4d85; --status: #33c26b; --white: #ffffff;
+  --font-body: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; --font-display: 'Archivo Black', 'Public Sans', sans-serif;
+  --header-h: 64px; --wrap: 1100px; --gutter: 24px; --radius: 10px;
+}

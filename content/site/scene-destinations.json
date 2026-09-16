@@ -1,0 +1,6 @@
+{
+  "lobby": { "captionRest": "Three doors. Pick the room you need.", "doors": { "it": "capability.business-it", "government": "audience.government", "cyber": "capability.cybersecurity" } },
+  "it-services": { "captionRest": "Every object in the room is a section of this page.", "contactPage": "contact", "lobbyPage": "home" },
+  "government": { "captionRest": "Every object in the room is a section of this page.", "contactPage": "contact", "lobbyPage": "home" },
+  "cybersecurity": { "captionRest": "Every object in the room is a section of this page.", "contactPage": "contact", "lobbyPage": "home" }
+}

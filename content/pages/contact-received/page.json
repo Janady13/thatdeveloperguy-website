@@ -1,0 +1,8 @@
+{ "id": "contact.received", "path": "/contact/received", "template": "contact-received", "parentId": "contact", "audience": ["government", "prime-contractors", "business"], "primaryIntent": "Confirm that an inquiry was accepted for delivery",
+  "title": "Message received — ThatDeveloperGuy", "description": "Your inquiry was accepted for delivery.",
+  "heading": "Message received", "summary": "The inquiry was accepted for delivery by the email service. That is not yet proof it has been read.",
+  "bodySource": "body.md",
+  "primaryAction": { "label": "Back to the lobby", "pageId": "home" },
+  "relatedPageIds": ["home"],
+  "entityReferences": [], "claimReferences": [],
+  "publicationStatus": "demo", "approvalReference": "owner-demo-2026-09-15", "indexPolicy": "noindex" }

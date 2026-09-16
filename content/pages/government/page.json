@@ -1,0 +1,16 @@
+{ "id": "audience.government", "path": "/government", "template": "audience", "parentId": "home", "audience": ["government", "prime-contractors"], "primaryIntent": "Understand how a government organization or prime contractor buys from ThatDeveloperGuy",
+  "title": "Government Solutions — ThatDeveloperGuy", "description": "How government organizations and prime contractors scope, contract and receive IT, cybersecurity and software work from ThatDeveloperGuy LLC.",
+  "heading": "Government Solutions", "summary": "Planning, requirements, contracting and delivery for agencies and the primes that serve them.",
+  "bodySource": "body.md", "sceneId": "government",
+  "primaryAction": { "label": "Request a project briefing", "pageId": "contact", "project": "govweb" },
+  "relatedPageIds": ["capability.business-it", "capability.cybersecurity", "company"],
+  "entityReferences": ["organization"], "claimReferences": [],
+  "publicationStatus": "demo", "approvalReference": "owner-demo-2026-09-15", "indexPolicy": "index",
+  "sections": [
+    { "id": "solutions", "heading": "Government solutions", "body": "Websites, internal applications, workplace IT and security work for public organizations, scoped to the requirement and delivered with the records a reviewer expects." },
+    { "id": "planning", "heading": "Project planning", "body": "Scope, schedule and acceptance criteria are written down before work starts. Changes are recorded, not absorbed." },
+    { "id": "requirements", "heading": "Review requirements", "body": "Accessibility, records retention, security review and hosting constraints are read from the solicitation and confirmed with the buyer." },
+    { "id": "contracting", "heading": "Contracting and capability statement", "body": "Procurement identifiers (CAGE, SAM.gov registration status, NAICS codes, set-aside status) are shown here only once the owner supplies and verifies them." },
+    { "id": "process", "heading": "Delivery process", "body": "Discovery, build, review, handover. Each step ends with something the buyer can inspect." },
+    { "id": "delivery", "heading": "Government websites and workplace IT", "body": "Public sites, staff tools and the machines and networks that run them." }
+  ] }

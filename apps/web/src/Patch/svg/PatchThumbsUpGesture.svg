@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="515" height="805" viewBox="0 0 515 805">
-  <g id="PatchThumbsUpGesture" transform="translate(0 0)">
-    <path id="ThumbArm" d="M391 442c18-16 35-25 50-23 17 2 22 16 14 27-5 7-14 11-22 15l-20 16z" fill="#203a5c" stroke="#102641" stroke-linejoin="round" stroke-width="8"/>
-    <path id="ThumbHand" d="M425 436c-4-13 0-25 9-31l10-7c8-6 16-3 17 4 1 5-3 10-8 14l15-7c9-4 16 0 16 7 0 5-5 9-12 12l13-2c9-1 14 4 12 11-1 5-7 7-15 8l-12 2c8 2 12 7 10 12-2 6-10 7-19 5l-18-4c-10-2-16-9-18-22z" fill="#f1f2ef" stroke="#102641" stroke-linejoin="round" stroke-width="7"/>
-    <path d="M451 434c9 5 18 6 27 3" fill="none" stroke="#cbd4db" stroke-linecap="round" stroke-width="5"/>
-  </g>
-</svg>

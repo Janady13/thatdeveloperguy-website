@@ -1,0 +1,10 @@
+.button { display: inline-block; padding: 12px 20px; border-radius: 999px; background: var(--purple); color: #fff; text-decoration: none; font-weight: 700; border: 0; cursor: pointer; } .button:disabled { background: var(--lavender-deep); color: var(--ink); cursor: not-allowed; }
+.contact-action { margin-top: 32px; }
+.related-pages { margin-top: 32px; } .related-pages ul { padding-left: 1.2em; }
+.owner-to-supply { margin-top: 32px; border: 2px dashed var(--purple); border-radius: var(--radius); padding: 14px 18px; background: var(--white); } .owner-to-supply h2 { font-size: 1.1rem; }
+.capability-list { list-style: none; padding: 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); } .capability-list li { background: var(--white); border: 1px solid var(--lavender); border-radius: var(--radius); padding: 18px 20px; }
+.fact-list { display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; margin: 24px 0; } .fact-list dt { font-weight: 700; } .fact-list dd { margin: 0; }
+.inquiry-form { max-width: 640px; display: grid; gap: 16px; margin-top: 24px; } .field { display: grid; gap: 6px; } .field input, .field select, .field textarea { padding: 10px 12px; border: 1px solid var(--lavender-deep); border-radius: 8px; background: #fff; } .field-hp { position: absolute; left: -9999px; }
+.form-notice { padding: 12px 14px; background: var(--white); border-left: 4px solid var(--purple); border-radius: 6px; }
+.contact-alternatives { margin-top: 24px; }
+.not-found ul { padding-left: 1.2em; }

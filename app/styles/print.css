@@ -1,0 +1,1 @@
+@media print { .site-header, .site-footer-nav, .scene-bar, .skip-link, .contact-action, .motion-control { display: none !important; } .scene-frame { max-height: none; } body { background: #fff; color: #000; } }

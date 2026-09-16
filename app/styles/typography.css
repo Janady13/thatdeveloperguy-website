@@ -1,0 +1,7 @@
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.01em; line-height: 1.1; margin: 0 0 .5em; color: var(--purple-deep); }
+h1 { font-size: clamp(2rem, 4.5vw, 3.25rem); } h2 { font-size: clamp(1.35rem, 2.4vw, 1.75rem); } h3 { font-size: 1.15rem; }
+p { margin: 0 0 1em; } a { color: var(--purple); }
+.page-summary { font-size: 1.15rem; color: var(--muted); max-width: 60ch; }
+.page-prose { max-width: 68ch; } .page-prose p { font-size: 1.05rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+:focus-visible { outline: 3px dashed var(--purple); outline-offset: 3px; }

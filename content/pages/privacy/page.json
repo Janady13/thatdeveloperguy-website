@@ -1,0 +1,8 @@
+{ "id": "policy.privacy", "path": "/privacy", "template": "policy", "parentId": "home", "audience": ["government", "prime-contractors", "business"], "primaryIntent": "Know what this website does with data",
+  "title": "Privacy — ThatDeveloperGuy", "description": "What the thatdeveloperguy.com website collects, stores and sends, described from tested behaviour.",
+  "heading": "Privacy", "summary": "Described from what the site actually does, not from a template.",
+  "bodySource": "body.md",
+  "primaryAction": { "label": "Contact", "pageId": "contact" },
+  "relatedPageIds": ["policy.accessibility"],
+  "entityReferences": ["organization"], "claimReferences": [],
+  "publicationStatus": "demo", "approvalReference": "owner-demo-2026-09-15", "indexPolicy": "index" }

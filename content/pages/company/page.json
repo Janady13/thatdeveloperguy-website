@@ -1,0 +1,8 @@
+{ "id": "company", "path": "/company", "template": "company", "parentId": "home", "audience": ["government", "prime-contractors", "business"], "primaryIntent": "Confirm who ThatDeveloperGuy is",
+  "title": "Company — ThatDeveloperGuy LLC", "description": "ThatDeveloperGuy LLC, founded 2017 in Cassville, Missouri. Founder and principal engineer Joseph W. Anady.",
+  "heading": "Company", "summary": "The legal organization, the person behind it, and the facts the owner still has to supply.",
+  "bodySource": "body.md",
+  "primaryAction": { "label": "Request a briefing", "pageId": "contact" },
+  "relatedPageIds": ["audience.government", "capabilities.hub"],
+  "entityReferences": ["organization", "person"], "claimReferences": [],
+  "publicationStatus": "demo", "approvalReference": "owner-demo-2026-09-15", "indexPolicy": "index" }

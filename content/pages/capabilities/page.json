@@ -1,0 +1,8 @@
+{ "id": "capabilities.hub", "path": "/capabilities", "template": "capabilities", "parentId": "home", "audience": ["government", "prime-contractors", "business"], "primaryIntent": "Compare the capabilities and pick the right one",
+  "title": "Capabilities — ThatDeveloperGuy", "description": "Business IT, cybersecurity and software engineering from ThatDeveloperGuy LLC, compared side by side.",
+  "heading": "Capabilities", "summary": "One list, no duplicates: each capability has one page, linked from every pathway.",
+  "bodySource": "body.md",
+  "primaryAction": { "label": "Request a briefing", "pageId": "contact" },
+  "relatedPageIds": ["capability.business-it", "capability.cybersecurity"],
+  "entityReferences": ["organization"], "claimReferences": [],
+  "publicationStatus": "demo", "approvalReference": "owner-demo-2026-09-15", "indexPolicy": "index" }
