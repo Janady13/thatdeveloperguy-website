@@ -1,0 +1,2243 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "digital-steward-hero",
+  "displayName": "Digital Steward \u00b7 hero",
+  "artboard": [
+    640,
+    960
+  ],
+  "sourceImage": "references/digital-steward-source.png",
+  "sourceCrop": [
+    71,
+    117,
+    420,
+    859
+  ],
+  "sourceOffset": [
+    110,
+    44
+  ],
+  "nativeCharacterHeight": 833,
+  "recommendedMaxCssHeightAt2x": 416,
+  "nodes": [
+    {
+      "id": "root",
+      "parent": null,
+      "pivot": [
+        336,
+        885
+      ]
+    },
+    {
+      "id": "body",
+      "parent": "root",
+      "pivot": [
+        336,
+        492
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "id": "torso",
+      "label": "Jacket and shirt foundation",
+      "parent": "body",
+      "pivot": [
+        328,
+        482
+      ],
+      "rect": [
+        116,
+        200,
+        408,
+        596
+      ],
+      "image": "art/hero/parts/torso.png",
+      "aligned": "art/hero/aligned/torso.png",
+      "kind": "source-raster",
+      "z": 0,
+      "sourceNativeRect": [
+        77,
+        273,
+        408,
+        593
+      ],
+      "sourcePolygon": [
+        [
+          0,
+          195
+        ],
+        [
+          350,
+          195
+        ],
+        [
+          350,
+          510
+        ],
+        [
+          0,
+          510
+        ]
+      ],
+      "sourcePartitionRect": [
+        116,
+        200,
+        408,
+        593
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "hips",
+      "label": "Pelvis and belt zone",
+      "parent": "root",
+      "pivot": [
+        336,
+        515
+      ],
+      "rect": [
+        222,
+        473,
+        223,
+        67
+      ],
+      "image": "art/hero/parts/hips.png",
+      "aligned": "art/hero/aligned/hips.png",
+      "kind": "source-raster",
+      "z": 1,
+      "sourceNativeRect": [
+        186,
+        549,
+        217,
+        61
+      ],
+      "sourcePolygon": [
+        [
+          115,
+          432
+        ],
+        [
+          330,
+          432
+        ],
+        [
+          332,
+          529
+        ],
+        [
+          217,
+          552
+        ],
+        [
+          116,
+          543
+        ]
+      ],
+      "sourcePartitionRect": [
+        225,
+        476,
+        217,
+        61
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "leg_R_thigh",
+      "label": "Right thigh (screen right)",
+      "parent": "hips",
+      "pivot": [
+        383,
+        540
+      ],
+      "rect": [
+        334,
+        529,
+        100,
+        123
+      ],
+      "image": "art/hero/parts/leg_R_thigh.png",
+      "aligned": "art/hero/aligned/leg_R_thigh.png",
+      "kind": "source-raster",
+      "z": 2,
+      "sourceNativeRect": [
+        297,
+        605,
+        97,
+        117
+      ],
+      "sourcePolygon": [
+        [
+          224,
+          493
+        ],
+        [
+          336,
+          487
+        ],
+        [
+          340,
+          622
+        ],
+        [
+          233,
+          630
+        ],
+        [
+          216,
+          556
+        ]
+      ],
+      "sourcePartitionRect": [
+        336,
+        532,
+        97,
+        117
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "leg_R_shin",
+      "label": "Right shin and cuff",
+      "parent": "leg_R_thigh",
+      "pivot": [
+        388,
+        658
+      ],
+      "rect": [
+        345,
+        644,
+        109,
+        130
+      ],
+      "image": "art/hero/parts/leg_R_shin.png",
+      "aligned": "art/hero/aligned/leg_R_shin.png",
+      "kind": "source-raster",
+      "z": 3,
+      "sourceNativeRect": [
+        306,
+        720,
+        109,
+        124
+      ],
+      "sourcePolygon": [
+        [
+          232,
+          603
+        ],
+        [
+          340,
+          605
+        ],
+        [
+          350,
+          735
+        ],
+        [
+          242,
+          750
+        ]
+      ],
+      "sourcePartitionRect": [
+        345,
+        647,
+        109,
+        124
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "shoe_R",
+      "label": "Right shoe",
+      "parent": "leg_R_shin",
+      "pivot": [
+        401,
+        773
+      ],
+      "rect": [
+        346,
+        764,
+        162,
+        111
+      ],
+      "image": "art/hero/parts/shoe_R.png",
+      "aligned": "art/hero/aligned/shoe_R.png",
+      "kind": "source-raster",
+      "z": 4,
+      "sourceNativeRect": [
+        307,
+        840,
+        162,
+        108
+      ],
+      "sourcePolygon": [
+        [
+          236,
+          724
+        ],
+        [
+          336,
+          723
+        ],
+        [
+          348,
+          747
+        ],
+        [
+          418,
+          777
+        ],
+        [
+          418,
+          856
+        ],
+        [
+          232,
+          856
+        ]
+      ],
+      "sourcePartitionRect": [
+        346,
+        767,
+        162,
+        108
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "leg_L_thigh",
+      "label": "Left thigh (screen left)",
+      "parent": "hips",
+      "pivot": [
+        290,
+        541
+      ],
+      "rect": [
+        218,
+        524,
+        126,
+        133
+      ],
+      "image": "art/hero/parts/leg_L_thigh.png",
+      "aligned": "art/hero/aligned/leg_L_thigh.png",
+      "kind": "source-raster",
+      "z": 5,
+      "sourceNativeRect": [
+        179,
+        600,
+        123,
+        127
+      ],
+      "sourcePolygon": [
+        [
+          106,
+          480
+        ],
+        [
+          230,
+          493
+        ],
+        [
+          224,
+          554
+        ],
+        [
+          203,
+          617
+        ],
+        [
+          177,
+          637
+        ],
+        [
+          93,
+          618
+        ]
+      ],
+      "sourcePartitionRect": [
+        218,
+        527,
+        123,
+        127
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "leg_L_shin",
+      "label": "Left shin and cuff",
+      "parent": "leg_L_thigh",
+      "pivot": [
+        256,
+        661
+      ],
+      "rect": [
+        178,
+        647,
+        131,
+        134
+      ],
+      "image": "art/hero/parts/leg_L_shin.png",
+      "aligned": "art/hero/aligned/leg_L_shin.png",
+      "kind": "source-raster",
+      "z": 6,
+      "sourceNativeRect": [
+        139,
+        723,
+        131,
+        131
+      ],
+      "sourcePolygon": [
+        [
+          100,
+          606
+        ],
+        [
+          204,
+          610
+        ],
+        [
+          195,
+          680
+        ],
+        [
+          182,
+          741
+        ],
+        [
+          70,
+          743
+        ],
+        [
+          65,
+          667
+        ]
+      ],
+      "sourcePartitionRect": [
+        178,
+        650,
+        131,
+        131
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "shoe_L",
+      "label": "Left shoe",
+      "parent": "leg_L_shin",
+      "pivot": [
+        234,
+        781
+      ],
+      "rect": [
+        136,
+        759,
+        147,
+        132
+      ],
+      "image": "art/hero/parts/shoe_L.png",
+      "aligned": "art/hero/aligned/shoe_L.png",
+      "kind": "source-raster",
+      "z": 7,
+      "sourceNativeRect": [
+        97,
+        835,
+        144,
+        129
+      ],
+      "sourcePolygon": [
+        [
+          20,
+          743
+        ],
+        [
+          73,
+          728
+        ],
+        [
+          118,
+          718
+        ],
+        [
+          168,
+          732
+        ],
+        [
+          181,
+          768
+        ],
+        [
+          181,
+          856
+        ],
+        [
+          9,
+          856
+        ]
+      ],
+      "sourcePartitionRect": [
+        136,
+        762,
+        144,
+        129
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "pocket_L",
+      "label": "Left cargo pocket",
+      "parent": "leg_L_thigh",
+      "pivot": [
+        245,
+        548
+      ],
+      "rect": [
+        216,
+        541,
+        67,
+        85
+      ],
+      "image": "art/hero/parts/pocket_L.png",
+      "aligned": "art/hero/aligned/pocket_L.png",
+      "kind": "source-raster",
+      "z": 8,
+      "sourceNativeRect": [
+        177,
+        617,
+        64,
+        79
+      ],
+      "sourcePolygon": [
+        [
+          127,
+          500
+        ],
+        [
+          169,
+          501
+        ],
+        [
+          156,
+          567
+        ],
+        [
+          140,
+          578
+        ],
+        [
+          105,
+          577
+        ],
+        [
+          112,
+          536
+        ],
+        [
+          111,
+          529
+        ]
+      ],
+      "sourcePartitionRect": [
+        216,
+        544,
+        64,
+        79
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "pocket_R",
+      "label": "Right cargo pocket",
+      "parent": "leg_R_thigh",
+      "pivot": [
+        429,
+        548
+      ],
+      "rect": [
+        420,
+        541,
+        20,
+        94
+      ],
+      "image": "art/hero/parts/pocket_R.png",
+      "aligned": "art/hero/aligned/pocket_R.png",
+      "kind": "source-raster",
+      "z": 9,
+      "sourceNativeRect": [
+        384,
+        617,
+        17,
+        88
+      ],
+      "sourcePolygon": [
+        [
+          313,
+          500
+        ],
+        [
+          327,
+          499
+        ],
+        [
+          332,
+          579
+        ],
+        [
+          321,
+          587
+        ]
+      ],
+      "sourcePartitionRect": [
+        423,
+        544,
+        17,
+        88
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "shirt",
+      "label": "White shirt",
+      "parent": "torso",
+      "pivot": [
+        347,
+        338
+      ],
+      "rect": [
+        292,
+        276,
+        119,
+        214
+      ],
+      "image": "art/hero/parts/shirt.png",
+      "aligned": "art/hero/aligned/shirt.png",
+      "kind": "source-raster",
+      "z": 10,
+      "sourceNativeRect": [
+        256,
+        352,
+        113,
+        208
+      ],
+      "sourcePolygon": [
+        [
+          174,
+          214
+        ],
+        [
+          207,
+          226
+        ],
+        [
+          239,
+          241
+        ],
+        [
+          263,
+          233
+        ],
+        [
+          281,
+          254
+        ],
+        [
+          279,
+          294
+        ],
+        [
+          289,
+          355
+        ],
+        [
+          298,
+          442
+        ],
+        [
+          209,
+          430
+        ],
+        [
+          224,
+          360
+        ],
+        [
+          217,
+          294
+        ]
+      ],
+      "sourcePartitionRect": [
+        295,
+        279,
+        113,
+        208
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "zip_L",
+      "label": "Left front jacket and zipper",
+      "parent": "torso",
+      "pivot": [
+        315,
+        322
+      ],
+      "rect": [
+        259,
+        257,
+        85,
+        258
+      ],
+      "image": "art/hero/parts/zip_L.png",
+      "aligned": "art/hero/aligned/zip_L.png",
+      "kind": "source-raster",
+      "z": 11,
+      "sourceNativeRect": [
+        223,
+        330,
+        79,
+        255
+      ],
+      "sourcePolygon": [
+        [
+          152,
+          213
+        ],
+        [
+          191,
+          216
+        ],
+        [
+          216,
+          242
+        ],
+        [
+          230,
+          284
+        ],
+        [
+          227,
+          352
+        ],
+        [
+          212,
+          422
+        ],
+        [
+          197,
+          465
+        ],
+        [
+          183,
+          467
+        ],
+        [
+          199,
+          416
+        ],
+        [
+          211,
+          355
+        ],
+        [
+          215,
+          293
+        ],
+        [
+          204,
+          251
+        ],
+        [
+          173,
+          224
+        ]
+      ],
+      "sourcePartitionRect": [
+        262,
+        257,
+        79,
+        255
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "jacket_R",
+      "label": "Right front jacket panel",
+      "parent": "torso",
+      "pivot": [
+        401,
+        344
+      ],
+      "rect": [
+        383,
+        290,
+        60,
+        239
+      ],
+      "image": "art/hero/parts/jacket_R.png",
+      "aligned": "art/hero/aligned/jacket_R.png",
+      "kind": "source-raster",
+      "z": 12,
+      "sourceNativeRect": [
+        347,
+        363,
+        54,
+        237
+      ],
+      "sourcePolygon": [
+        [
+          276,
+          246
+        ],
+        [
+          293,
+          253
+        ],
+        [
+          292,
+          288
+        ],
+        [
+          305,
+          326
+        ],
+        [
+          312,
+          435
+        ],
+        [
+          329,
+          470
+        ],
+        [
+          323,
+          483
+        ],
+        [
+          302,
+          479
+        ],
+        [
+          297,
+          432
+        ],
+        [
+          288,
+          354
+        ]
+      ],
+      "sourcePartitionRect": [
+        386,
+        290,
+        54,
+        237
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "lanyard",
+      "label": "Lanyard strap",
+      "parent": "shirt",
+      "pivot": [
+        344,
+        339
+      ],
+      "rect": [
+        314,
+        300,
+        70,
+        87
+      ],
+      "image": "art/hero/parts/lanyard.png",
+      "aligned": "art/hero/aligned/lanyard.png",
+      "kind": "source-raster",
+      "z": 13,
+      "sourceNativeRect": [
+        278,
+        376,
+        64,
+        81
+      ],
+      "sourcePolygon": [
+        [
+          207,
+          259
+        ],
+        [
+          239,
+          302
+        ],
+        [
+          255,
+          332
+        ],
+        [
+          263,
+          284
+        ],
+        [
+          263,
+          269
+        ],
+        [
+          270,
+          280
+        ],
+        [
+          269,
+          313
+        ],
+        [
+          264,
+          343
+        ],
+        [
+          251,
+          344
+        ],
+        [
+          242,
+          322
+        ],
+        [
+          231,
+          300
+        ],
+        [
+          217,
+          281
+        ]
+      ],
+      "sourcePartitionRect": [
+        317,
+        303,
+        64,
+        81
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "badge",
+      "label": "Service badge",
+      "parent": "lanyard",
+      "pivot": [
+        365,
+        383
+      ],
+      "rect": [
+        346,
+        377,
+        48,
+        76
+      ],
+      "image": "art/hero/parts/badge.png",
+      "aligned": "art/hero/aligned/badge.png",
+      "kind": "source-raster",
+      "z": 14,
+      "sourceNativeRect": [
+        310,
+        453,
+        42,
+        70
+      ],
+      "sourcePolygon": [
+        [
+          243,
+          337
+        ],
+        [
+          263,
+          336
+        ],
+        [
+          265,
+          348
+        ],
+        [
+          279,
+          351
+        ],
+        [
+          280,
+          405
+        ],
+        [
+          240,
+          405
+        ],
+        [
+          239,
+          349
+        ],
+        [
+          245,
+          348
+        ]
+      ],
+      "sourcePartitionRect": [
+        349,
+        380,
+        42,
+        70
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "arm_R_upper",
+      "label": "Right upper sleeve",
+      "parent": "torso",
+      "pivot": [
+        408,
+        330
+      ],
+      "rect": [
+        394,
+        309,
+        51,
+        118
+      ],
+      "image": "art/hero/parts/arm_R_upper.png",
+      "aligned": "art/hero/aligned/arm_R_upper.png",
+      "kind": "source-raster",
+      "z": 15,
+      "sourceNativeRect": [
+        358,
+        385,
+        45,
+        112
+      ],
+      "sourcePolygon": [
+        [
+          287,
+          268
+        ],
+        [
+          310,
+          282
+        ],
+        [
+          323,
+          302
+        ],
+        [
+          331,
+          329
+        ],
+        [
+          335,
+          355
+        ],
+        [
+          319,
+          384
+        ],
+        [
+          304,
+          375
+        ],
+        [
+          296,
+          346
+        ]
+      ],
+      "sourcePartitionRect": [
+        397,
+        312,
+        45,
+        112
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "arm_R_fore",
+      "label": "Right forearm and cuff",
+      "parent": "arm_R_upper",
+      "pivot": [
+        434,
+        428
+      ],
+      "rect": [
+        422,
+        432,
+        95,
+        93
+      ],
+      "image": "art/hero/parts/arm_R_fore.png",
+      "aligned": "art/hero/aligned/arm_R_fore.png",
+      "kind": "source-raster",
+      "z": 16,
+      "sourceNativeRect": [
+        386,
+        508,
+        89,
+        90
+      ],
+      "sourcePolygon": [
+        [
+          315,
+          374
+        ],
+        [
+          377,
+          379
+        ],
+        [
+          404,
+          420
+        ],
+        [
+          405,
+          450
+        ],
+        [
+          395,
+          469
+        ],
+        [
+          366,
+          480
+        ],
+        [
+          345,
+          478
+        ],
+        [
+          326,
+          469
+        ],
+        [
+          316,
+          451
+        ]
+      ],
+      "sourcePartitionRect": [
+        425,
+        435,
+        89,
+        90
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "tablet",
+      "label": "Tablet",
+      "parent": "arm_R_fore",
+      "pivot": [
+        455,
+        467
+      ],
+      "rect": [
+        417,
+        360,
+        107,
+        118
+      ],
+      "image": "art/hero/parts/tablet.png",
+      "aligned": "art/hero/aligned/tablet.png",
+      "kind": "source-raster",
+      "z": 17,
+      "sourceNativeRect": [
+        381,
+        433,
+        88,
+        115
+      ],
+      "sourcePolygon": [
+        [
+          311,
+          339
+        ],
+        [
+          362,
+          316
+        ],
+        [
+          371,
+          317
+        ],
+        [
+          376,
+          324
+        ],
+        [
+          402,
+          420
+        ],
+        [
+          397,
+          432
+        ],
+        [
+          379,
+          437
+        ],
+        [
+          333,
+          449
+        ],
+        [
+          310,
+          372
+        ]
+      ],
+      "sourcePartitionRect": [
+        420,
+        360,
+        88,
+        115
+      ],
+      "seamBleedPx": 3,
+      "rectBeforeRepair": [
+        417,
+        360,
+        94,
+        118
+      ]
+    },
+    {
+      "id": "hand_R_hold",
+      "label": "Right holding hand",
+      "parent": "arm_R_fore",
+      "pivot": [
+        478,
+        512
+      ],
+      "rect": [
+        435,
+        451,
+        79,
+        68
+      ],
+      "image": "art/hero/parts/hand_R_hold.png",
+      "aligned": "art/hero/aligned/hand_R_hold.png",
+      "kind": "source-raster",
+      "z": 18,
+      "sourceNativeRect": [
+        399,
+        527,
+        75,
+        62
+      ],
+      "sourcePolygon": [
+        [
+          328,
+          431
+        ],
+        [
+          335,
+          423
+        ],
+        [
+          346,
+          422
+        ],
+        [
+          353,
+          412
+        ],
+        [
+          363,
+          410
+        ],
+        [
+          374,
+          421
+        ],
+        [
+          381,
+          430
+        ],
+        [
+          399,
+          425
+        ],
+        [
+          402,
+          440
+        ],
+        [
+          396,
+          454
+        ],
+        [
+          382,
+          464
+        ],
+        [
+          363,
+          471
+        ],
+        [
+          349,
+          469
+        ],
+        [
+          339,
+          463
+        ],
+        [
+          331,
+          450
+        ]
+      ],
+      "sourcePartitionRect": [
+        438,
+        454,
+        75,
+        62
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "tablet_finger",
+      "label": "Right finger behind tablet",
+      "parent": "tablet",
+      "pivot": [
+        511,
+        458
+      ],
+      "rect": [
+        504,
+        437,
+        20,
+        39
+      ],
+      "image": "art/hero/parts/tablet_finger.png",
+      "aligned": "art/hero/aligned/tablet_finger.png",
+      "kind": "source-raster",
+      "z": 19,
+      "sourceNativeRect": [
+        468,
+        513,
+        17,
+        36
+      ],
+      "sourcePolygon": [
+        [
+          397,
+          396
+        ],
+        [
+          407,
+          398
+        ],
+        [
+          414,
+          410
+        ],
+        [
+          413,
+          421
+        ],
+        [
+          404,
+          431
+        ],
+        [
+          398,
+          424
+        ]
+      ],
+      "sourcePartitionRect": [
+        507,
+        440,
+        17,
+        36
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "arm_L_upper",
+      "label": "Left upper sleeve",
+      "parent": "torso",
+      "pivot": [
+        266,
+        301
+      ],
+      "rect": [
+        203,
+        271,
+        89,
+        129
+      ],
+      "image": "art/hero/parts/arm_L_upper.png",
+      "aligned": "art/hero/aligned/arm_L_upper.png",
+      "kind": "source-raster",
+      "z": 20,
+      "sourceNativeRect": [
+        167,
+        347,
+        83,
+        123
+      ],
+      "sourcePolygon": [
+        [
+          105,
+          241
+        ],
+        [
+          119,
+          235
+        ],
+        [
+          139,
+          230
+        ],
+        [
+          166,
+          236
+        ],
+        [
+          177,
+          250
+        ],
+        [
+          178,
+          282
+        ],
+        [
+          158,
+          329
+        ],
+        [
+          143,
+          344
+        ],
+        [
+          120,
+          352
+        ],
+        [
+          96,
+          347
+        ]
+      ],
+      "sourcePartitionRect": [
+        206,
+        274,
+        83,
+        123
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "arm_L_fore",
+      "label": "Left forearm sleeve",
+      "parent": "arm_L_upper",
+      "pivot": [
+        215,
+        351
+      ],
+      "rect": [
+        116,
+        260,
+        112,
+        132
+      ],
+      "image": "art/hero/parts/arm_L_fore.png",
+      "aligned": "art/hero/aligned/arm_L_fore.png",
+      "kind": "source-raster",
+      "z": 21,
+      "sourceNativeRect": [
+        78,
+        336,
+        108,
+        126
+      ],
+      "sourcePolygon": [
+        [
+          7,
+          252
+        ],
+        [
+          20,
+          226
+        ],
+        [
+          45,
+          215
+        ],
+        [
+          74,
+          221
+        ],
+        [
+          105,
+          234
+        ],
+        [
+          114,
+          256
+        ],
+        [
+          112,
+          287
+        ],
+        [
+          104,
+          310
+        ],
+        [
+          92,
+          336
+        ],
+        [
+          67,
+          344
+        ],
+        [
+          44,
+          339
+        ],
+        [
+          27,
+          327
+        ],
+        [
+          17,
+          309
+        ],
+        [
+          9,
+          281
+        ]
+      ],
+      "sourcePartitionRect": [
+        117,
+        263,
+        108,
+        126
+      ],
+      "seamBleedPx": 3,
+      "rectBeforeRepair": [
+        117,
+        260,
+        111,
+        132
+      ]
+    },
+    {
+      "id": "cuff_L",
+      "label": "Left cuff shell",
+      "parent": "arm_L_fore",
+      "pivot": [
+        166,
+        342
+      ],
+      "rect": [
+        124,
+        303,
+        87,
+        79
+      ],
+      "image": "art/hero/parts/cuff_L.png",
+      "aligned": "art/hero/aligned/cuff_L.png",
+      "kind": "source-raster",
+      "z": 22,
+      "sourceNativeRect": [
+        88,
+        379,
+        81,
+        73
+      ],
+      "sourcePolygon": [
+        [
+          17,
+          264
+        ],
+        [
+          55,
+          250
+        ],
+        [
+          83,
+          266
+        ],
+        [
+          97,
+          290
+        ],
+        [
+          97,
+          309
+        ],
+        [
+          87,
+          327
+        ],
+        [
+          65,
+          334
+        ],
+        [
+          41,
+          325
+        ],
+        [
+          24,
+          307
+        ]
+      ],
+      "sourcePartitionRect": [
+        127,
+        306,
+        81,
+        73
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "hand_L_thumb",
+      "label": "Left thumbs up hand",
+      "parent": "cuff_L",
+      "pivot": [
+        167,
+        337
+      ],
+      "rect": [
+        131,
+        200,
+        91,
+        147
+      ],
+      "image": "art/hero/parts/hand_L_thumb.png",
+      "aligned": "art/hero/aligned/hand_L_thumb.png",
+      "kind": "source-raster",
+      "z": 23,
+      "sourceNativeRect": [
+        95,
+        273,
+        85,
+        144
+      ],
+      "sourcePolygon": [
+        [
+          50,
+          201
+        ],
+        [
+          56,
+          189
+        ],
+        [
+          56,
+          166
+        ],
+        [
+          61,
+          158
+        ],
+        [
+          69,
+          156
+        ],
+        [
+          79,
+          160
+        ],
+        [
+          87,
+          173
+        ],
+        [
+          91,
+          188
+        ],
+        [
+          88,
+          200
+        ],
+        [
+          86,
+          209
+        ],
+        [
+          96,
+          211
+        ],
+        [
+          103,
+          218
+        ],
+        [
+          110,
+          230
+        ],
+        [
+          107,
+          245
+        ],
+        [
+          99,
+          249
+        ],
+        [
+          104,
+          258
+        ],
+        [
+          102,
+          271
+        ],
+        [
+          96,
+          276
+        ],
+        [
+          96,
+          283
+        ],
+        [
+          87,
+          292
+        ],
+        [
+          63,
+          299
+        ],
+        [
+          44,
+          297
+        ],
+        [
+          30,
+          291
+        ],
+        [
+          25,
+          280
+        ],
+        [
+          24,
+          258
+        ],
+        [
+          28,
+          236
+        ],
+        [
+          36,
+          218
+        ],
+        [
+          47,
+          211
+        ]
+      ],
+      "sourcePartitionRect": [
+        134,
+        200,
+        85,
+        144
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "neck",
+      "label": "Neck connector",
+      "parent": "torso",
+      "pivot": [
+        332,
+        277
+      ],
+      "rect": [
+        274,
+        254,
+        103,
+        47
+      ],
+      "image": "art/hero/parts/neck.png",
+      "aligned": "art/hero/aligned/neck.png",
+      "kind": "source-raster",
+      "z": 24,
+      "sourceNativeRect": [
+        238,
+        330,
+        97,
+        41
+      ],
+      "sourcePolygon": [
+        [
+          150,
+          201
+        ],
+        [
+          220,
+          214
+        ],
+        [
+          266,
+          224
+        ],
+        [
+          263,
+          242
+        ],
+        [
+          240,
+          253
+        ],
+        [
+          194,
+          233
+        ],
+        [
+          177,
+          221
+        ]
+      ],
+      "sourcePartitionRect": [
+        277,
+        257,
+        97,
+        41
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "head",
+      "label": "Head housing",
+      "parent": "neck",
+      "pivot": [
+        336,
+        263
+      ],
+      "rect": [
+        201,
+        56,
+        262,
+        223
+      ],
+      "image": "art/hero/parts/head.png",
+      "aligned": "art/hero/aligned/head.png",
+      "kind": "source-raster",
+      "z": 25,
+      "sourceNativeRect": [
+        162,
+        129,
+        262,
+        220
+      ],
+      "sourcePolygon": [
+        [
+          83,
+          9
+        ],
+        [
+          359,
+          9
+        ],
+        [
+          359,
+          205
+        ],
+        [
+          328,
+          223
+        ],
+        [
+          294,
+          230
+        ],
+        [
+          249,
+          231
+        ],
+        [
+          199,
+          220
+        ],
+        [
+          150,
+          207
+        ],
+        [
+          117,
+          191
+        ],
+        [
+          100,
+          171
+        ],
+        [
+          85,
+          147
+        ]
+      ],
+      "sourcePartitionRect": [
+        201,
+        56,
+        262,
+        220
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "ear_L",
+      "label": "Left ear module",
+      "parent": "head",
+      "pivot": [
+        220,
+        155
+      ],
+      "rect": [
+        198,
+        98,
+        46,
+        108
+      ],
+      "image": "art/hero/parts/ear_L.png",
+      "aligned": "art/hero/aligned/ear_L.png",
+      "kind": "source-raster",
+      "z": 26,
+      "sourceNativeRect": [
+        159,
+        174,
+        43,
+        102
+      ],
+      "sourcePolygon": [
+        [
+          99,
+          71
+        ],
+        [
+          109,
+          58
+        ],
+        [
+          122,
+          57
+        ],
+        [
+          129,
+          68
+        ],
+        [
+          130,
+          94
+        ],
+        [
+          127,
+          122
+        ],
+        [
+          119,
+          146
+        ],
+        [
+          109,
+          158
+        ],
+        [
+          98,
+          157
+        ],
+        [
+          89,
+          148
+        ],
+        [
+          86,
+          130
+        ],
+        [
+          89,
+          108
+        ]
+      ],
+      "sourcePartitionRect": [
+        198,
+        101,
+        43,
+        102
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "ear_R",
+      "label": "Right ear module",
+      "parent": "head",
+      "pivot": [
+        453,
+        218
+      ],
+      "rect": [
+        433,
+        179,
+        30,
+        74
+      ],
+      "image": "art/hero/parts/ear_R.png",
+      "aligned": "art/hero/aligned/ear_R.png",
+      "kind": "source-raster",
+      "z": 27,
+      "sourceNativeRect": [
+        397,
+        255,
+        27,
+        71
+      ],
+      "sourcePolygon": [
+        [
+          347,
+          138
+        ],
+        [
+          355,
+          144
+        ],
+        [
+          355,
+          163
+        ],
+        [
+          348,
+          186
+        ],
+        [
+          337,
+          204
+        ],
+        [
+          325,
+          210
+        ],
+        [
+          331,
+          192
+        ],
+        [
+          340,
+          165
+        ]
+      ],
+      "sourcePartitionRect": [
+        436,
+        182,
+        27,
+        71
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "crown",
+      "label": "Crown connector",
+      "parent": "head",
+      "pivot": [
+        320,
+        67
+      ],
+      "rect": [
+        254,
+        56,
+        146,
+        41
+      ],
+      "image": "art/hero/parts/crown.png",
+      "aligned": "art/hero/aligned/crown.png",
+      "kind": "source-raster",
+      "z": 28,
+      "sourceNativeRect": [
+        218,
+        129,
+        140,
+        38
+      ],
+      "sourcePolygon": [
+        [
+          147,
+          27
+        ],
+        [
+          158,
+          20
+        ],
+        [
+          179,
+          11
+        ],
+        [
+          196,
+          10
+        ],
+        [
+          220,
+          17
+        ],
+        [
+          253,
+          26
+        ],
+        [
+          276,
+          34
+        ],
+        [
+          286,
+          45
+        ],
+        [
+          279,
+          49
+        ],
+        [
+          248,
+          37
+        ],
+        [
+          219,
+          29
+        ],
+        [
+          189,
+          22
+        ],
+        [
+          162,
+          28
+        ]
+      ],
+      "sourcePartitionRect": [
+        257,
+        56,
+        140,
+        38
+      ],
+      "seamBleedPx": 3
+    },
+    {
+      "id": "visor_painted",
+      "label": "Original painted face",
+      "parent": "head",
+      "pivot": [
+        355,
+        180
+      ],
+      "rect": [
+        257,
+        84,
+        197,
+        170
+      ],
+      "image": "art/hero/parts/visor_painted.png",
+      "aligned": "art/hero/aligned/visor_painted.png",
+      "kind": "source-raster",
+      "z": 29,
+      "sourceNativeRect": [
+        221,
+        160,
+        191,
+        164
+      ],
+      "sourcePolygon": [
+        [
+          163,
+          47
+        ],
+        [
+          184,
+          43
+        ],
+        [
+          212,
+          49
+        ],
+        [
+          248,
+          60
+        ],
+        [
+          287,
+          74
+        ],
+        [
+          317,
+          86
+        ],
+        [
+          335,
+          101
+        ],
+        [
+          340,
+          114
+        ],
+        [
+          338,
+          136
+        ],
+        [
+          329,
+          167
+        ],
+        [
+          316,
+          194
+        ],
+        [
+          306,
+          202
+        ],
+        [
+          291,
+          206
+        ],
+        [
+          267,
+          203
+        ],
+        [
+          235,
+          196
+        ],
+        [
+          205,
+          184
+        ],
+        [
+          173,
+          170
+        ],
+        [
+          159,
+          161
+        ],
+        [
+          152,
+          150
+        ],
+        [
+          150,
+          130
+        ],
+        [
+          153,
+          89
+        ],
+        [
+          157,
+          60
+        ]
+      ],
+      "sourcePartitionRect": [
+        260,
+        87,
+        191,
+        164
+      ],
+      "seamBleedPx": 3
+    }
+  ],
+  "faceSurface": "visor_painted",
+  "defaultHand": "hand_L_thumb",
+  "view": "hero_three_quarter",
+  "coordinateConvention": "screen-left/right; artboard pixels; rotations in degrees in source tracks",
+  "nativeRiveStatus": "not-compiled",
+  "partExportPolicy": "Native-sized transparent tiles with opaque-source seam bleed. Exact disjoint source partitions are retained for audit.",
+  "sourceImageIncluded": true,
+  "alignedLayers": "art/hero/aligned/",
+  "psd": "psd/Digital_Steward_HERO_640x960.psd",
+  "revision": {
+    "date": "2026-09-16",
+    "notes": "Seam slivers reassigned to their owning parts, sleeve interior plate baked into arm_L_fore (hero), rects updated where a tile grew. See docs/REPAIR_LOG.md."
+  }
+}

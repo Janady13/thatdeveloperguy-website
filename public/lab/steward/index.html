@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digital Steward | rig lab</title><meta name="robots" content="noindex,nofollow">
+<link rel="preload" href="/animation/runtime/rive.wasm" as="fetch" crossorigin="anonymous">
+<style>
+:root{--ink:#0b1524;--panel:#101c30;--line:#1f3352;--cyan:#32cafa;--text:#dce7f5;--muted:#7f93b0}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:radial-gradient(120% 90% at 50% 20%,#17284a 0%,#0b1524 55%,#070d18 100%);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+#app{display:grid;grid-template-columns:1fr 360px;height:100vh}
+#stage{position:relative;overflow:hidden}
+canvas#hero{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none}
+#panel{background:var(--panel);border-left:1px solid var(--line);padding:18px 18px 28px;overflow:auto;font-size:13px}
+#panel h1{font-size:15px;margin:0 0 4px;letter-spacing:.04em;text-transform:uppercase}#panel p.sub{margin:0 0 14px;color:var(--muted)}
+.row{display:flex;gap:8px;align-items:center;margin:8px 0}.row label{width:96px;color:var(--muted)}
+select,button{font:inherit;color:var(--text);background:#0c1626;border:1px solid var(--line);border-radius:6px;padding:6px 9px;cursor:pointer}
+button:hover{border-color:var(--cyan)}button.on{background:var(--cyan);color:#06111e;border-color:var(--cyan)}
+.group{margin:12px 0}.group h3{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}.btns{display:flex;flex-wrap:wrap;gap:6px}.btns button{padding:5px 8px;font-size:12px}
+#status{position:absolute;left:16px;bottom:14px;font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+@media (max-width:820px){#app{grid-template-columns:1fr}#stage{height:62vh}#panel{border-left:0;border-top:1px solid var(--line)}}
+</style></head>
+<body><div id="app">
+<div id="stage"><canvas id="hero" role="img" aria-label="The Digital Steward, animated"></canvas><div id="status">loading…</div></div>
+<aside id="panel">
+<h1>Digital Steward</h1><p class="sub">Native Rive rig · 36 clips · 12 faces · gloves · props · gaze follows the pointer</p>
+<div class="row"><label>Idle</label><select id="idle"><option value="0">Idle</option><option value="1">Breathe</option><option value="2">Attentive</option></select></div>
+<div class="row"><label>Expression</label><select id="expression"><option value="0">neutral</option><option value="1">happy</option><option value="2">excited</option><option value="3">confident</option><option value="4">thoughtful</option><option value="5">curious</option><option value="6">concerned</option><option value="7">delighted</option><option value="8">focused</option><option value="9">blink</option><option value="10">sleep</option><option value="11">surprised</option></select></div>
+<div class="row"><label>Blink</label><button data-blink="1">Blink</button><button data-blink="2">Double</button></div>
+<div class="row"><label>Face</label><button id="painted">Painted visor</button><button id="follow" class="on">Follow pointer</button></div>
+<div class="row"><label>Demo</label><button id="demo">Auto demo</button></div>
+<div class="group"><h3>Face</h3><div class="btns"><button data-gesture="1" title="Blink">Blink</button><button data-gesture="2" title="Double blink">DoubleBlink</button><button data-gesture="3" title="Look left">LookLeft</button><button data-gesture="4" title="Look right">LookRight</button><button data-gesture="5" title="Look up">LookUp</button><button data-gesture="6" title="Look down">LookDown</button></div></div><div class="group"><h3>Conversation</h3><div class="btns"><button data-gesture="7" title="Acknowledge / nod">Nod</button><button data-gesture="8" title="Yes / two nods">NodYes</button><button data-gesture="9" title="No / gentle response">ShakeNo</button><button data-gesture="10" title="Curious tilt">Curious</button><button data-gesture="11" title="Listen">Listen</button><button data-gesture="12" title="Explain a solution">Explain</button></div></div><div class="group"><h3>Gestures</h3><div class="btns"><button data-gesture="13" title="Open welcome">Welcome</button><button data-gesture="14" title="Wave hello">Wave</button><button data-gesture="15" title="Thumbs up">ThumbsUp</button><button data-gesture="16" title="Point to screen left">PointLeft</button><button data-gesture="17" title="Point to screen right">PointRight</button><button data-gesture="18" title="Point upward">PointUp</button><button data-gesture="19" title="Present an option">Present</button><button data-gesture="20" title="Okay / confirmation">Okay</button><button data-gesture="21" title="Two finger greeting">Peace</button><button data-gesture="22" title="Ready to help">Ready</button></div></div><div class="group"><h3>Service props</h3><div class="btns"><button data-gesture="23" title="Illustrative protection">Protect</button><button data-gesture="24" title="An idea">Idea</button><button data-gesture="25" title="Present results">Results</button><button data-gesture="26" title="Connection illustration">Connected</button></div></div><div class="group"><h3>Feedback</h3><div class="btns"><button data-gesture="27" title="Success acknowledgement">Success</button><button data-gesture="28" title="Concern / attention">Concern</button><button data-gesture="29" title="Focus">Focus</button><button data-gesture="30" title="Restrained celebration">Delight</button></div></div><div class="group"><h3>Tablet</h3><div class="btns"><button data-gesture="31" title="Present the tablet">TabletPresent</button><button data-gesture="32" title="Review the tablet">TabletReview</button></div></div><div class="group"><h3>Movement</h3><div class="btns"><button data-gesture="33" title="Slide in from left">SlideInLeft</button><button data-gesture="34" title="Slide out to left">SlideOutLeft</button><button data-gesture="35" title="Slide in from right">SlideInRight</button><button data-gesture="36" title="Slide out to right">SlideOutRight</button></div></div>
+</aside></div>
+<script src="/lab/steward/rive-2.42.2.js" defer></script>
+<script src="/lab/steward/steward.js" defer></script>
+</body></html>

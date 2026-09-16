@@ -1,0 +1,392 @@
+{
+ "torso": {
+  "origin": [
+   112,
+   196
+  ],
+  "size4x": [
+   1664,
+   1332
+  ]
+ },
+ "hips": {
+  "origin": [
+   218,
+   469
+  ],
+  "size4x": [
+   912,
+   300
+  ]
+ },
+ "leg_R_thigh": {
+  "origin": [
+   330,
+   525
+  ],
+  "size4x": [
+   432,
+   524
+  ]
+ },
+ "leg_R_shin": {
+  "origin": [
+   341,
+   640
+  ],
+  "size4x": [
+   468,
+   552
+  ]
+ },
+ "shoe_R": {
+  "origin": [
+   342,
+   760
+  ],
+  "size4x": [
+   680,
+   476
+  ]
+ },
+ "leg_L_thigh": {
+  "origin": [
+   214,
+   520
+  ],
+  "size4x": [
+   536,
+   564
+  ]
+ },
+ "leg_L_shin": {
+  "origin": [
+   174,
+   643
+  ],
+  "size4x": [
+   556,
+   568
+  ]
+ },
+ "shoe_L": {
+  "origin": [
+   132,
+   755
+  ],
+  "size4x": [
+   620,
+   560
+  ]
+ },
+ "pocket_L": {
+  "origin": [
+   212,
+   537
+  ],
+  "size4x": [
+   300,
+   372
+  ]
+ },
+ "pocket_R": {
+  "origin": [
+   416,
+   537
+  ],
+  "size4x": [
+   112,
+   408
+  ]
+ },
+ "shirt": {
+  "origin": [
+   288,
+   272
+  ],
+  "size4x": [
+   508,
+   888
+  ]
+ },
+ "zip_L": {
+  "origin": [
+   255,
+   253
+  ],
+  "size4x": [
+   372,
+   1064
+  ]
+ },
+ "jacket_R": {
+  "origin": [
+   379,
+   286
+  ],
+  "size4x": [
+   272,
+   988
+  ]
+ },
+ "lanyard": {
+  "origin": [
+   310,
+   296
+  ],
+  "size4x": [
+   312,
+   380
+  ]
+ },
+ "badge": {
+  "origin": [
+   342,
+   373
+  ],
+  "size4x": [
+   224,
+   336
+  ]
+ },
+ "arm_R_upper": {
+  "origin": [
+   390,
+   305
+  ],
+  "size4x": [
+   236,
+   504
+  ]
+ },
+ "arm_R_fore": {
+  "origin": [
+   418,
+   428
+  ],
+  "size4x": [
+   412,
+   404
+  ]
+ },
+ "tablet": {
+  "origin": [
+   413,
+   356
+  ],
+  "size4x": [
+   460,
+   504
+  ]
+ },
+ "hand_R_hold": {
+  "origin": [
+   431,
+   447
+  ],
+  "size4x": [
+   348,
+   304
+  ]
+ },
+ "tablet_finger": {
+  "origin": [
+   500,
+   433
+  ],
+  "size4x": [
+   112,
+   188
+  ]
+ },
+ "arm_L_upper": {
+  "origin": [
+   199,
+   267
+  ],
+  "size4x": [
+   388,
+   548
+  ]
+ },
+ "arm_L_fore": {
+  "origin": [
+   112,
+   256
+  ],
+  "size4x": [
+   480,
+   560
+  ]
+ },
+ "cuff_L": {
+  "origin": [
+   120,
+   299
+  ],
+  "size4x": [
+   380,
+   348
+  ]
+ },
+ "hand_L_thumb": {
+  "origin": [
+   127,
+   196
+  ],
+  "size4x": [
+   396,
+   620
+  ]
+ },
+ "neck": {
+  "origin": [
+   270,
+   250
+  ],
+  "size4x": [
+   444,
+   220
+  ]
+ },
+ "head": {
+  "origin": [
+   197,
+   52
+  ],
+  "size4x": [
+   1080,
+   924
+  ]
+ },
+ "ear_L": {
+  "origin": [
+   194,
+   94
+  ],
+  "size4x": [
+   216,
+   464
+  ]
+ },
+ "ear_R": {
+  "origin": [
+   429,
+   175
+  ],
+  "size4x": [
+   152,
+   328
+  ]
+ },
+ "crown": {
+  "origin": [
+   250,
+   52
+  ],
+  "size4x": [
+   616,
+   196
+  ]
+ },
+ "visor_painted": {
+  "origin": [
+   253,
+   80
+  ],
+  "size4x": [
+   820,
+   712
+  ]
+ },
+ "glove_fist": {
+  "origin": [
+   -4,
+   -4
+  ],
+  "size4x": [
+   304,
+   296
+  ]
+ },
+ "glove_focus": {
+  "origin": [
+   -4,
+   -4
+  ],
+  "size4x": [
+   224,
+   344
+  ]
+ },
+ "glove_ok": {
+  "origin": [
+   -4,
+   -4
+  ],
+  "size4x": [
+   268,
+   332
+  ]
+ },
+ "glove_open_palm": {
+  "origin": [
+   -4,
+   -4
+  ],
+  "size4x": [
+   404,
+   332
+  ]
+ },
+ "glove_peace": {
+  "origin": [
+   -4,
+   -4
+  ],
+  "size4x": [
+   216,
+   328
+  ]
+ },
+ "glove_point": {
+  "origin": [
+   -4,
+   -4
+  ],
+  "size4x": [
+   308,
+   300
+  ]
+ },
+ "glove_present": {
+  "origin": [
+   -4,
+   -4
+  ],
+  "size4x": [
+   384,
+   288
+  ]
+ },
+ "glove_thumbs_up": {
+  "origin": [
+   -4,
+   -4
+  ],
+  "size4x": [
+   264,
+   324
+  ]
+ },
+ "glove_wave": {
+  "origin": [
+   -4,
+   -4
+  ],
+  "size4x": [
+   300,
+   324
+  ]
+ }
+}

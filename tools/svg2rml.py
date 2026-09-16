@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Adobe Illustrator image-trace SVG -> RML shapes (native Rive paths; the CLI cannot import SVG).
+"""SVG -> RML shapes (native Rive paths; the CLI cannot import SVG).
 
-Handles the trace's dialect exactly: absolute M/C/Z only, no transforms/clips/strokes, fills as rgb()/url(#gradient),
+Handles the Adobe image-trace dialect and simple hand-authored SVG: M/L/H/V/C/Q/Z (absolute or relative), no transforms/clips, fills as rgb()/#hex/url(#gradient), solid strokes (width/cap/join/opacity),
 linear/radial gradients in userSpaceOnUse. Output: a list of <Shape> strings, FRONT-MOST FIRST (RML paint order is the
 reverse of SVG document order), with vertices in artboard space after (scale, dx, dy). Verify with rive . --verify / inspect.
 
@@ -47,37 +47,51 @@ def parse_gradients(svg):
 
 
 def _subpaths(d):
-    """Split an M/C/Z path into contours: list of (points, controls) where controls[i] = (c1, c2) for segment i->i+1."""
-    tokens = re.findall(r"[MCZmcz]|" + _num, d)
+    """Split a path (M/L/H/V/C/Q/Z, absolute or relative; Q is elevated to a cubic) into contours:
+    (points, controls, closed) where controls[i] = (c1, c2) for the segment points[i] -> points[i+1]."""
+    tokens = re.findall(r"[MLHVCQZmlhvcqz]|" + _num, d)
     contours = []
     i = 0
-    cur = None
+    cur = (0.0, 0.0); start = (0.0, 0.0)
     pts, ctrls = [], []
+    cmd = None
+    def flush(closed):
+        nonlocal pts, ctrls
+        if pts:
+            if closed and len(pts) > 1 and abs(pts[-1][0] - pts[0][0]) < 1e-6 and abs(pts[-1][1] - pts[0][1]) < 1e-6:
+                pts.pop()
+            elif closed:
+                ctrls.append((pts[-1], pts[0]))  # straight close
+            contours.append((pts, ctrls, closed))
+        pts, ctrls = [], []
     while i < len(tokens):
         t = tokens[i]
-        if t in "Mm":
-            if pts:
-                contours.append((pts, ctrls, False))
-            x, y = float(tokens[i + 1]), float(tokens[i + 2])
-            cur = (x, y); pts, ctrls = [cur], []; i += 3
-        elif t in "Cc":
-            i += 1
-            while i + 5 < len(tokens) + 0 and i + 5 <= len(tokens) - 1 and re.match(_num, tokens[i]):
-                c1 = (float(tokens[i]), float(tokens[i + 1])); c2 = (float(tokens[i + 2]), float(tokens[i + 3])); p = (float(tokens[i + 4]), float(tokens[i + 5]))
-                ctrls.append((c1, c2)); pts.append(p); cur = p; i += 6
-        elif t in "Zz":
-            if pts:
-                # closing segment: if the last point duplicates the first, drop it and keep its incoming controls for the wrap
-                if len(pts) > 1 and abs(pts[-1][0] - pts[0][0]) < 1e-6 and abs(pts[-1][1] - pts[0][1]) < 1e-6:
-                    pts.pop()
-                else:
-                    ctrls.append((pts[-1], pts[0]))  # straight close
-                contours.append((pts, ctrls, True))
-            pts, ctrls = [], []; i += 1
+        if re.match(r"[A-Za-z]$", t):
+            cmd = t; i += 1
+            if cmd in "Zz":
+                flush(True); cur = start
+                continue
+        rel = cmd.islower(); c = cmd.upper()
+        def P(k):  # k-th number pair from i
+            x, y = float(tokens[i + k]), float(tokens[i + k + 1])
+            return (cur[0] + x, cur[1] + y) if rel else (x, y)
+        if c == "M":
+            flush(False); cur = P(0); start = cur; pts, ctrls = [cur], []; i += 2; cmd = "l" if rel else "L"
+        elif c == "L":
+            p = P(0); ctrls.append((cur, p)); pts.append(p); cur = p; i += 2
+        elif c == "H":
+            x = float(tokens[i]); p = ((cur[0] + x) if rel else x, cur[1]); ctrls.append((cur, p)); pts.append(p); cur = p; i += 1
+        elif c == "V":
+            y = float(tokens[i]); p = (cur[0], (cur[1] + y) if rel else y); ctrls.append((cur, p)); pts.append(p); cur = p; i += 1
+        elif c == "C":
+            c1, c2, p = P(0), P(2), P(4); ctrls.append((c1, c2)); pts.append(p); cur = p; i += 6
+        elif c == "Q":
+            q, p = P(0), P(2)
+            c1 = (cur[0] + 2 / 3 * (q[0] - cur[0]), cur[1] + 2 / 3 * (q[1] - cur[1])); c2 = (p[0] + 2 / 3 * (q[0] - p[0]), p[1] + 2 / 3 * (q[1] - p[1]))
+            ctrls.append((c1, c2)); pts.append(p); cur = p; i += 4
         else:
             i += 1
-    if pts:
-        contours.append((pts, ctrls, False))
+    flush(False)
     return contours
 
 
@@ -101,7 +115,7 @@ def svg_to_shapes(svg, scale=1.0, dx=0.0, dy=0.0, nid=None, name_prefix="p", dro
     for attrs in re.findall(r"<path([^>]*)/?>", svg):
         a = dict(re.findall(r'([\w:-]+)="([^"]*)"', attrs))
         d = a.get("d"); fill = a.get("fill", "#000000")
-        if not d or fill == "none":
+        if not d or (fill == "none" and a.get("stroke", "none") == "none"):
             continue
         op = float(a.get("opacity", a.get("fill-opacity", 1)))
         solid = _rgb(fill) if not fill.startswith("url(") else None
@@ -125,7 +139,15 @@ def svg_to_shapes(svg, scale=1.0, dx=0.0, dy=0.0, nid=None, name_prefix="p", dro
             xs = [float(v) for v in re.findall(r' x="([-\d.]+)"', "".join(paths_xml))]; ys = [float(v) for v in re.findall(r' y="([-\d.]+)"', "".join(paths_xml))]
             if xs and (max(xs) - min(xs)) * (max(ys) - min(ys)) < min_area:
                 stats["dropped"] += 1; continue
-        if solid:
+        stroke = ""
+        sc = a.get("stroke", "none")
+        if sc != "none" and _rgb(sc):
+            cap = {"round": "round", "square": "square"}.get(a.get("stroke-linecap", ""), "butt"); join = {"round": "round", "bevel": "bevel"}.get(a.get("stroke-linejoin", ""), "miter")
+            sop = float(a.get("stroke-opacity", 1)) * op
+            stroke = f'<Stroke thickness="{float(a.get("stroke-width", 1)) * scale:.2f}" cap="{cap}" join="{join}" name="S"><SolidColor colorValue="{_argb(_rgb(sc), sop)}" name="C"/></Stroke>'
+        if fill == "none":
+            paint = ""
+        elif solid:
             paint = f'<Fill name="F"><SolidColor colorValue="{_argb(solid, op)}" name="C"/></Fill>'
         else:
             gid = re.search(r"url\(#([^)]+)\)", fill).group(1); g = grads.get(gid)
@@ -143,7 +165,7 @@ def svg_to_shapes(svg, scale=1.0, dx=0.0, dy=0.0, nid=None, name_prefix="p", dro
         stats["paths"] += 1
         sid = nid() if nid else ""
         idattr = f' id="{sid}"' if sid else ""
-        shapes.append(f'<Shape x="0" y="0" name="{name_prefix}_{stats["paths"]}"{idattr}>{"".join(paths_xml)}{paint}</Shape>')
+        shapes.append(f'<Shape x="0" y="0" name="{name_prefix}_{stats["paths"]}"{idattr}>{"".join(paths_xml)}{paint}{stroke}</Shape>')
     shapes.reverse()  # SVG paints last-on-top; RML paints first-on-top
     return shapes, stats
 

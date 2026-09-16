@@ -1,0 +1,3293 @@
+{
+  "schemaVersion": "1.2.0",
+  "fps": 60,
+  "timeUnit": "normalized clip time",
+  "rotationUnit": "degrees",
+  "translationUnit": "artboard pixels",
+  "compiledNative": false,
+  "clips": [
+    {
+      "id": "Idle",
+      "label": "Quiet idle",
+      "category": "Presence",
+      "duration": 4.8,
+      "loop": true,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                1.1
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                0.75,
+                -0.7
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "body",
+            "property": "y",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.5,
+                -1.6
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "badge",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                0.7
+              ],
+              [
+                0.7,
+                -0.7
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                0.7
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                0.75,
+                -0.6
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "body",
+            "property": "y",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.5,
+                -0.6
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": null,
+      "hand": null,
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Attentive",
+      "label": "Attentive idle",
+      "category": "Presence",
+      "duration": 4,
+      "loop": true,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -1.2
+              ],
+              [
+                0.65,
+                -1.2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -1.2
+              ],
+              [
+                0.65,
+                -1.2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "curious",
+      "hand": null,
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Breathe",
+      "label": "Subtle breathing",
+      "category": "Presence",
+      "duration": 3.8,
+      "loop": true,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "body",
+            "property": "y",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.5,
+                -2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "body",
+            "property": "y",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.5,
+                -0.7
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": null,
+      "hand": null,
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Blink",
+      "label": "Blink",
+      "category": "Face",
+      "duration": 0.36,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [],
+        "performer": []
+      },
+      "expression": "blink",
+      "hand": null,
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "DoubleBlink",
+      "label": "Double blink",
+      "category": "Face",
+      "duration": 0.9,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [],
+        "performer": []
+      },
+      "expression": "blink",
+      "hand": null,
+      "prop": null,
+      "notes": "Blink pulse uses two timed eyelid closures."
+    },
+    {
+      "id": "LookLeft",
+      "label": "Look left",
+      "category": "Face",
+      "duration": 1.8,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -2
+              ],
+              [
+                0.65,
+                -2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -2
+              ],
+              [
+                0.65,
+                -2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "neutral",
+      "hand": null,
+      "prop": null,
+      "notes": "",
+      "gaze": [
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "LookRight",
+      "label": "Look right",
+      "category": "Face",
+      "duration": 1.8,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                2
+              ],
+              [
+                0.65,
+                2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                2
+              ],
+              [
+                0.65,
+                2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "neutral",
+      "hand": null,
+      "prop": null,
+      "notes": "",
+      "gaze": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "LookUp",
+      "label": "Look up",
+      "category": "Face",
+      "duration": 1.8,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -1
+              ],
+              [
+                0.65,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -1
+              ],
+              [
+                0.65,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "neutral",
+      "hand": null,
+      "prop": null,
+      "notes": "",
+      "gaze": [
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "LookDown",
+      "label": "Look down",
+      "category": "Face",
+      "duration": 1.8,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                2.4
+              ],
+              [
+                0.65,
+                2.4
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                2.4
+              ],
+              [
+                0.65,
+                2.4
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "neutral",
+      "hand": null,
+      "prop": null,
+      "notes": "",
+      "gaze": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Nod",
+      "label": "Acknowledge / nod",
+      "category": "Conversation",
+      "duration": 1.1,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                4
+              ],
+              [
+                0.48,
+                -1
+              ],
+              [
+                0.7,
+                2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                4
+              ],
+              [
+                0.48,
+                -1
+              ],
+              [
+                0.7,
+                2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": null,
+      "hand": null,
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "NodYes",
+      "label": "Yes / two nods",
+      "category": "Conversation",
+      "duration": 1.8,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.2,
+                3
+              ],
+              [
+                0.38,
+                -1
+              ],
+              [
+                0.58,
+                3
+              ],
+              [
+                0.8,
+                -0.6
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.2,
+                3
+              ],
+              [
+                0.38,
+                -1
+              ],
+              [
+                0.58,
+                3
+              ],
+              [
+                0.8,
+                -0.6
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "happy",
+      "hand": null,
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "ShakeNo",
+      "label": "No / gentle response",
+      "category": "Conversation",
+      "duration": 1.6,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                3
+              ],
+              [
+                0.55,
+                -3
+              ],
+              [
+                0.78,
+                1.2000000000000002
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                3
+              ],
+              [
+                0.55,
+                -3
+              ],
+              [
+                0.78,
+                1.2000000000000002
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "concerned",
+      "hand": null,
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Curious",
+      "label": "Curious tilt",
+      "category": "Conversation",
+      "duration": 2,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -4
+              ],
+              [
+                0.65,
+                -4
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -4
+              ],
+              [
+                0.65,
+                -4
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "curious",
+      "hand": null,
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Listen",
+      "label": "Listen",
+      "category": "Conversation",
+      "duration": 3,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -2
+              ],
+              [
+                0.65,
+                -2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -2
+              ],
+              [
+                0.65,
+                -2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -2
+              ],
+              [
+                0.65,
+                -2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "thoughtful",
+      "hand": null,
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Explain",
+      "label": "Explain a solution",
+      "category": "Conversation",
+      "duration": 3.2,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.2,
+                -5
+              ],
+              [
+                0.45,
+                -2
+              ],
+              [
+                0.68,
+                -6
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                1.5
+              ],
+              [
+                0.55,
+                -1.5
+              ],
+              [
+                0.78,
+                0.6000000000000001
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -12
+              ],
+              [
+                0.65,
+                -12
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -74
+              ],
+              [
+                0.65,
+                -74
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                1.5
+              ],
+              [
+                0.55,
+                -1.5
+              ],
+              [
+                0.78,
+                0.6000000000000001
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "neutral",
+      "hand": "open_palm",
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Welcome",
+      "label": "Open welcome",
+      "category": "Gestures",
+      "duration": 2.8,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -5
+              ],
+              [
+                0.65,
+                -5
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -2
+              ],
+              [
+                0.65,
+                -2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -12
+              ],
+              [
+                0.65,
+                -12
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -72
+              ],
+              [
+                0.65,
+                -72
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "happy",
+      "hand": "open_palm",
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Wave",
+      "label": "Wave hello",
+      "category": "Gestures",
+      "duration": 3.2,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.22,
+                -5
+              ],
+              [
+                0.34,
+                3
+              ],
+              [
+                0.46,
+                -6
+              ],
+              [
+                0.58,
+                3
+              ],
+              [
+                0.7,
+                -5
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -15
+              ],
+              [
+                0.65,
+                -15
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.22,
+                -146
+              ],
+              [
+                0.34,
+                -131
+              ],
+              [
+                0.46,
+                -153
+              ],
+              [
+                0.58,
+                -134
+              ],
+              [
+                0.7,
+                -148
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "happy",
+      "hand": "wave",
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "ThumbsUp",
+      "label": "Thumbs up",
+      "category": "Gestures",
+      "duration": 2.4,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -3
+              ],
+              [
+                0.65,
+                -3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -1.5
+              ],
+              [
+                0.65,
+                -1.5
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -8
+              ],
+              [
+                0.65,
+                -8
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -120
+              ],
+              [
+                0.65,
+                -120
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "happy",
+      "hand": "thumbs_up",
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "PointLeft",
+      "label": "Point to screen left",
+      "category": "Gestures",
+      "duration": 2.3,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -4
+              ],
+              [
+                0.65,
+                -4
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "neutral",
+      "hand": "point",
+      "prop": null,
+      "notes": "",
+      "mirrorHand": true
+    },
+    {
+      "id": "PointRight",
+      "label": "Point to screen right",
+      "category": "Gestures",
+      "duration": 2.3,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                3
+              ],
+              [
+                0.65,
+                3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -18
+              ],
+              [
+                0.65,
+                -18
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -70
+              ],
+              [
+                0.65,
+                -70
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "neutral",
+      "hand": "point",
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "PointUp",
+      "label": "Point upward",
+      "category": "Gestures",
+      "duration": 2.4,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -3
+              ],
+              [
+                0.65,
+                -3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -12
+              ],
+              [
+                0.65,
+                -12
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -160
+              ],
+              [
+                0.65,
+                -160
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "curious",
+      "hand": "focus",
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Present",
+      "label": "Present an option",
+      "category": "Gestures",
+      "duration": 2.6,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -3
+              ],
+              [
+                0.65,
+                -3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -12
+              ],
+              [
+                0.65,
+                -12
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -77
+              ],
+              [
+                0.65,
+                -77
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "neutral",
+      "hand": "present",
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Okay",
+      "label": "Okay / confirmation",
+      "category": "Gestures",
+      "duration": 2.2,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -3
+              ],
+              [
+                0.65,
+                -3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -9
+              ],
+              [
+                0.65,
+                -9
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -135
+              ],
+              [
+                0.65,
+                -135
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "confident",
+      "hand": "ok",
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Peace",
+      "label": "Two finger greeting",
+      "category": "Gestures",
+      "duration": 2.2,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -4
+              ],
+              [
+                0.65,
+                -4
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -12
+              ],
+              [
+                0.65,
+                -12
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -144
+              ],
+              [
+                0.65,
+                -144
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "happy",
+      "hand": "peace",
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Ready",
+      "label": "Ready to help",
+      "category": "Gestures",
+      "duration": 2.5,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -3
+              ],
+              [
+                0.65,
+                -3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -1
+              ],
+              [
+                0.65,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -87
+              ],
+              [
+                0.65,
+                -87
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "confident",
+      "hand": "fist",
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Protect",
+      "label": "Illustrative protection",
+      "category": "Service props",
+      "duration": 3.2,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -5
+              ],
+              [
+                0.65,
+                -5
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -10
+              ],
+              [
+                0.65,
+                -10
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -73
+              ],
+              [
+                0.65,
+                -73
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "focused",
+      "hand": "present",
+      "prop": "shield",
+      "notes": "Illustrative animation, not a measured security result or certification."
+    },
+    {
+      "id": "Idea",
+      "label": "An idea",
+      "category": "Service props",
+      "duration": 3,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -3
+              ],
+              [
+                0.65,
+                -3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -3
+              ],
+              [
+                0.65,
+                -3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -10
+              ],
+              [
+                0.65,
+                -10
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -73
+              ],
+              [
+                0.65,
+                -73
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -3
+              ],
+              [
+                0.65,
+                -3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "excited",
+      "hand": "open_palm",
+      "prop": "idea",
+      "notes": ""
+    },
+    {
+      "id": "Results",
+      "label": "Present results",
+      "category": "Service props",
+      "duration": 3,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -3
+              ],
+              [
+                0.65,
+                -3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -10
+              ],
+              [
+                0.65,
+                -10
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -73
+              ],
+              [
+                0.65,
+                -73
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "confident",
+      "hand": "present",
+      "prop": "analytics",
+      "notes": "Chart prop is decorative; no real metrics are implied."
+    },
+    {
+      "id": "Connected",
+      "label": "Connection illustration",
+      "category": "Service props",
+      "duration": 3,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -3
+              ],
+              [
+                0.65,
+                -3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "arm_R_upper",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -10
+              ],
+              [
+                0.65,
+                -10
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -73
+              ],
+              [
+                0.65,
+                -73
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "neutral",
+      "hand": "present",
+      "prop": "cloud",
+      "notes": ""
+    },
+    {
+      "id": "Success",
+      "label": "Success acknowledgement",
+      "category": "Feedback",
+      "duration": 2.4,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -2
+              ],
+              [
+                0.65,
+                -2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -3
+              ],
+              [
+                0.65,
+                -3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -2
+              ],
+              [
+                0.65,
+                -2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -120
+              ],
+              [
+                0.65,
+                -120
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "happy",
+      "hand": "thumbs_up",
+      "prop": "check",
+      "notes": "Trigger only after the application confirms its real operation succeeded."
+    },
+    {
+      "id": "Concern",
+      "label": "Concern / attention",
+      "category": "Feedback",
+      "duration": 2.5,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                2
+              ],
+              [
+                0.65,
+                2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                2
+              ],
+              [
+                0.65,
+                2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "concerned",
+      "hand": null,
+      "prop": "warning",
+      "notes": ""
+    },
+    {
+      "id": "Focus",
+      "label": "Focus",
+      "category": "Feedback",
+      "duration": 2.3,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                1
+              ],
+              [
+                0.65,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                1
+              ],
+              [
+                0.65,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "focused",
+      "hand": null,
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "Delight",
+      "label": "Restrained celebration",
+      "category": "Feedback",
+      "duration": 2.8,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                2
+              ],
+              [
+                0.55,
+                -2
+              ],
+              [
+                0.78,
+                0.8
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_L_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -4
+              ],
+              [
+                0.65,
+                -4
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                2
+              ],
+              [
+                0.55,
+                -2
+              ],
+              [
+                0.78,
+                0.8
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -128
+              ],
+              [
+                0.65,
+                -128
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "delighted",
+      "hand": "thumbs_up",
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "TabletPresent",
+      "label": "Present the tablet",
+      "category": "Tablet",
+      "duration": 2.8,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "tablet",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -3
+              ],
+              [
+                0.65,
+                -3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm_R_fore",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -2
+              ],
+              [
+                0.65,
+                -2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                2
+              ],
+              [
+                0.65,
+                2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "neutral",
+      "hand": null,
+      "prop": null,
+      "notes": ""
+    },
+    {
+      "id": "TabletReview",
+      "label": "Review the tablet",
+      "category": "Tablet",
+      "duration": 3.2,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "head",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                4
+              ],
+              [
+                0.65,
+                4
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "tablet",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -2
+              ],
+              [
+                0.65,
+                -2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": "thoughtful",
+      "hand": null,
+      "prop": null,
+      "notes": "",
+      "gaze": [
+        0.6,
+        0.8
+      ]
+    },
+    {
+      "id": "StepInPlace",
+      "label": "Front stepping study",
+      "category": "Movement",
+      "duration": 1.6,
+      "loop": true,
+      "interpolation": "smoothstep",
+      "views": [
+        "performer"
+      ],
+      "tracks": {
+        "performer": [
+          {
+            "node": "leg_L_thigh",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                5
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                0.75,
+                -5
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "leg_R_thigh",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -5
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                0.75,
+                5
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "leg_L_shin",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -4
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                0.75,
+                4
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "leg_R_shin",
+            "property": "rotation",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                4
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                0.75,
+                -4
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "body",
+            "property": "y",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.25,
+                -0.6
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                0.75,
+                -0.6
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": null,
+      "hand": null,
+      "prop": null,
+      "notes": "Small frontal stepping study, not a fully foot locked side view walk cycle."
+    },
+    {
+      "id": "SlideInLeft",
+      "label": "Slide in from left",
+      "category": "Movement",
+      "duration": 1.1,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "root",
+            "property": "x",
+            "keys": [
+              [
+                0,
+                -600
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "root",
+            "property": "x",
+            "keys": [
+              [
+                0,
+                -350
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": null,
+      "hand": null,
+      "prop": null,
+      "notes": "2D translation entrance, deliberately not labeled walking."
+    },
+    {
+      "id": "SlideOutLeft",
+      "label": "Slide out to left",
+      "category": "Movement",
+      "duration": 1.1,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "root",
+            "property": "x",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                -600
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "root",
+            "property": "x",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                -350
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": null,
+      "hand": null,
+      "prop": null,
+      "notes": "2D translation exit; stage crops intentionally during this clip."
+    },
+    {
+      "id": "SlideInRight",
+      "label": "Slide in from right",
+      "category": "Movement",
+      "duration": 1.1,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "root",
+            "property": "x",
+            "keys": [
+              [
+                0,
+                600
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "root",
+            "property": "x",
+            "keys": [
+              [
+                0,
+                350
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": null,
+      "hand": null,
+      "prop": null,
+      "notes": "2D translation entrance, deliberately not labeled walking."
+    },
+    {
+      "id": "SlideOutRight",
+      "label": "Slide out to right",
+      "category": "Movement",
+      "duration": 1.1,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [
+          {
+            "node": "root",
+            "property": "x",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                600
+              ]
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "node": "root",
+            "property": "x",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                350
+              ]
+            ]
+          }
+        ]
+      },
+      "expression": null,
+      "hand": null,
+      "prop": null,
+      "notes": "2D translation exit; stage crops intentionally during this clip."
+    },
+    {
+      "id": "Rest",
+      "label": "Rest pose",
+      "category": "Presence",
+      "duration": 1,
+      "loop": false,
+      "interpolation": "smoothstep",
+      "views": [
+        "hero",
+        "performer"
+      ],
+      "tracks": {
+        "hero": [],
+        "performer": []
+      },
+      "expression": null,
+      "hand": null,
+      "prop": null,
+      "notes": "Registered, untransformed rest pose."
+    }
+  ]
+}

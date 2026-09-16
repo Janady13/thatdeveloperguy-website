@@ -1,0 +1,1427 @@
+{
+  "hands": [
+    {
+      "id": "wave",
+      "image": "art/hands/wave.png",
+      "mirroredImage": "art/hands/wave-mirrored.png",
+      "size": [
+        67,
+        73
+      ],
+      "pivot": [
+        36,
+        66
+      ],
+      "mirroredPivot": [
+        31,
+        66
+      ],
+      "sourceRect": [
+        464,
+        716,
+        67,
+        73
+      ],
+      "notes": "Extracted from the source sheet with an outline bounded matte. Mirrored variant reflects only this glove."
+    },
+    {
+      "id": "thumbs_up",
+      "image": "art/hands/thumbs_up.png",
+      "mirroredImage": "art/hands/thumbs_up-mirrored.png",
+      "size": [
+        58,
+        73
+      ],
+      "pivot": [
+        17,
+        63
+      ],
+      "mirroredPivot": [
+        41,
+        63
+      ],
+      "sourceRect": [
+        561,
+        714,
+        58,
+        73
+      ],
+      "notes": "Extracted from the source sheet with an outline bounded matte. Mirrored variant reflects only this glove."
+    },
+    {
+      "id": "point",
+      "image": "art/hands/point.png",
+      "mirroredImage": "art/hands/point-mirrored.png",
+      "size": [
+        69,
+        67
+      ],
+      "pivot": [
+        16,
+        56
+      ],
+      "mirroredPivot": [
+        53,
+        56
+      ],
+      "sourceRect": [
+        663,
+        716,
+        69,
+        67
+      ],
+      "notes": "Extracted from the source sheet with an outline bounded matte. Mirrored variant reflects only this glove."
+    },
+    {
+      "id": "open_palm",
+      "image": "art/hands/open_palm.png",
+      "mirroredImage": "art/hands/open_palm-mirrored.png",
+      "size": [
+        93,
+        75
+      ],
+      "pivot": [
+        14,
+        59
+      ],
+      "mirroredPivot": [
+        79,
+        59
+      ],
+      "sourceRect": [
+        773,
+        707,
+        93,
+        75
+      ],
+      "notes": "Extracted from the source sheet with an outline bounded matte. Mirrored variant reflects only this glove."
+    },
+    {
+      "id": "present",
+      "image": "art/hands/present.png",
+      "mirroredImage": "art/hands/present-mirrored.png",
+      "size": [
+        88,
+        64
+      ],
+      "pivot": [
+        15,
+        49
+      ],
+      "mirroredPivot": [
+        73,
+        49
+      ],
+      "sourceRect": [
+        905,
+        717,
+        88,
+        64
+      ],
+      "notes": "Extracted from the source sheet with an outline bounded matte. Mirrored variant reflects only this glove."
+    },
+    {
+      "id": "ok",
+      "image": "art/hands/ok.png",
+      "mirroredImage": "art/hands/ok-mirrored.png",
+      "size": [
+        59,
+        75
+      ],
+      "pivot": [
+        29,
+        71
+      ],
+      "mirroredPivot": [
+        30,
+        71
+      ],
+      "sourceRect": [
+        1035,
+        712,
+        59,
+        75
+      ],
+      "notes": "Extracted from the source sheet with an outline bounded matte. Mirrored variant reflects only this glove."
+    },
+    {
+      "id": "focus",
+      "image": "art/hands/focus.png",
+      "mirroredImage": "art/hands/focus-mirrored.png",
+      "size": [
+        48,
+        78
+      ],
+      "pivot": [
+        26,
+        71
+      ],
+      "mirroredPivot": [
+        22,
+        71
+      ],
+      "sourceRect": [
+        1141,
+        709,
+        48,
+        78
+      ],
+      "notes": "Extracted from the source sheet with an outline bounded matte. Mirrored variant reflects only this glove."
+    },
+    {
+      "id": "peace",
+      "image": "art/hands/peace.png",
+      "mirroredImage": "art/hands/peace-mirrored.png",
+      "size": [
+        46,
+        74
+      ],
+      "pivot": [
+        19,
+        66
+      ],
+      "mirroredPivot": [
+        27,
+        66
+      ],
+      "sourceRect": [
+        1246,
+        707,
+        46,
+        74
+      ],
+      "notes": "Extracted from the source sheet with an outline bounded matte. Mirrored variant reflects only this glove."
+    },
+    {
+      "id": "fist",
+      "image": "art/hands/fist.png",
+      "mirroredImage": "art/hands/fist-mirrored.png",
+      "size": [
+        68,
+        66
+      ],
+      "pivot": [
+        13,
+        54
+      ],
+      "mirroredPivot": [
+        55,
+        54
+      ],
+      "sourceRect": [
+        1335,
+        712,
+        68,
+        66
+      ],
+      "notes": "Extracted from the source sheet with an outline bounded matte. Mirrored variant reflects only this glove."
+    }
+  ],
+  "views": [
+    {
+      "id": "front",
+      "image": "art/turnarounds/front.png",
+      "size": [
+        207,
+        342
+      ],
+      "sourceRect": [
+        451,
+        150,
+        207,
+        342
+      ],
+      "rigged": true,
+      "status": "provided illustrated view; not a 3D rotation"
+    },
+    {
+      "id": "three_quarter",
+      "image": "art/turnarounds/three_quarter.png",
+      "size": [
+        164,
+        339
+      ],
+      "sourceRect": [
+        657,
+        153,
+        164,
+        339
+      ],
+      "rigged": false,
+      "status": "provided illustrated view; not a 3D rotation"
+    },
+    {
+      "id": "side",
+      "image": "art/turnarounds/side.png",
+      "size": [
+        130,
+        338
+      ],
+      "sourceRect": [
+        817,
+        155,
+        130,
+        338
+      ],
+      "rigged": false,
+      "status": "provided illustrated view; not a 3D rotation"
+    },
+    {
+      "id": "back",
+      "image": "art/turnarounds/back.png",
+      "size": [
+        179,
+        343
+      ],
+      "sourceRect": [
+        941,
+        150,
+        179,
+        343
+      ],
+      "rigged": false,
+      "status": "provided illustrated view; not a 3D rotation"
+    }
+  ],
+  "expressionRefs": [
+    {
+      "id": "neutral",
+      "image": "art/expressions/neutral-head-reference.png",
+      "sourceRect": [
+        498,
+        557,
+        103,
+        100
+      ],
+      "kind": "raster head-swap reference",
+      "notes": "Angles differ slightly in the source sheet. Use native vector facial controls on one head for seamless expression transitions."
+    },
+    {
+      "id": "happy",
+      "image": "art/expressions/happy-head-reference.png",
+      "sourceRect": [
+        620,
+        557,
+        103,
+        100
+      ],
+      "kind": "raster head-swap reference",
+      "notes": "Angles differ slightly in the source sheet. Use native vector facial controls on one head for seamless expression transitions."
+    },
+    {
+      "id": "excited",
+      "image": "art/expressions/excited-head-reference.png",
+      "sourceRect": [
+        738,
+        557,
+        103,
+        100
+      ],
+      "kind": "raster head-swap reference",
+      "notes": "Angles differ slightly in the source sheet. Use native vector facial controls on one head for seamless expression transitions."
+    },
+    {
+      "id": "confident",
+      "image": "art/expressions/confident-head-reference.png",
+      "sourceRect": [
+        857,
+        557,
+        103,
+        100
+      ],
+      "kind": "raster head-swap reference",
+      "notes": "Angles differ slightly in the source sheet. Use native vector facial controls on one head for seamless expression transitions."
+    },
+    {
+      "id": "thoughtful",
+      "image": "art/expressions/thoughtful-head-reference.png",
+      "sourceRect": [
+        982,
+        557,
+        103,
+        100
+      ],
+      "kind": "raster head-swap reference",
+      "notes": "Angles differ slightly in the source sheet. Use native vector facial controls on one head for seamless expression transitions."
+    },
+    {
+      "id": "curious",
+      "image": "art/expressions/curious-head-reference.png",
+      "sourceRect": [
+        1103,
+        557,
+        103,
+        100
+      ],
+      "kind": "raster head-swap reference",
+      "notes": "Angles differ slightly in the source sheet. Use native vector facial controls on one head for seamless expression transitions."
+    },
+    {
+      "id": "concerned",
+      "image": "art/expressions/concerned-head-reference.png",
+      "sourceRect": [
+        1222,
+        557,
+        103,
+        100
+      ],
+      "kind": "raster head-swap reference",
+      "notes": "Angles differ slightly in the source sheet. Use native vector facial controls on one head for seamless expression transitions."
+    },
+    {
+      "id": "delighted",
+      "image": "art/expressions/delighted-head-reference.png",
+      "sourceRect": [
+        1340,
+        557,
+        103,
+        100
+      ],
+      "kind": "raster head-swap reference",
+      "notes": "Angles differ slightly in the source sheet. Use native vector facial controls on one head for seamless expression transitions."
+    }
+  ],
+  "faceBank": {
+    "expressions": [
+      "neutral",
+      "happy",
+      "excited",
+      "confident",
+      "thoughtful",
+      "curious",
+      "concerned",
+      "delighted",
+      "focused",
+      "blink",
+      "sleep",
+      "surprised"
+    ],
+    "visemes": [
+      "rest",
+      "A",
+      "E",
+      "I",
+      "O",
+      "U",
+      "FV",
+      "MBP",
+      "L",
+      "WQ",
+      "TH"
+    ],
+    "heroTransform": [
+      0.82,
+      0.23,
+      -0.12,
+      0.75,
+      264,
+      76
+    ],
+    "performerTransform": [
+      0.37,
+      0,
+      0,
+      0.35,
+      143,
+      77
+    ],
+    "screens": {
+      "hero": "M273 91 L294 87 L322 93 L358 104 L397 118 L427 130 L445 145 L450 158 L448 180 L439 211 L426 238 L416 246 L401 250 L377 247 L345 240 L315 228 L283 214 L269 205 L262 194 L260 174 L263 133 L267 104 Z",
+      "performer": "M149 80 L162 73 L185 70 L210 72 L226 78 L233 86 L236 97 L235 120 L230 135 L223 142 L207 145 L177 146 L157 143 L148 137 L142 126 L140 105 L141 92 Z"
+    },
+    "paths": {
+      "neutral": [
+        {
+          "id": "eye_L_outer_glow",
+          "d": "M 37 100 C 37 78.4608947578 49.536027005600005 61 65 61 C 80.4639729944 61 93 78.4608947578 93 100 C 93 121.5391052422 80.4639729944 139 65 139 C 49.536027005600005 139 37 121.5391052422 37 100 Z",
+          "fill": "none",
+          "stroke": "#0867b8",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_rim",
+          "d": "M 39 100 C 39 79.56546425740001 50.6405965052 63 65 63 C 79.3594034948 63 91 79.56546425740001 91 100 C 91 120.43453574259999 79.3594034948 137 65 137 C 50.6405965052 137 39 120.43453574259999 39 100 Z",
+          "fill": "#32cafa",
+          "stroke": "#21b9f5",
+          "width": 2,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_white",
+          "d": "M 44 98 C 44 79.22231850680001 53.8497355044 64 66 64 C 78.1502644956 64 88 79.22231850680001 88 98 C 88 116.77768149319999 78.1502644956 132 66 132 C 53.8497355044 132 44 116.77768149319999 44 98 Z",
+          "fill": "#c4faff",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_pupil",
+          "d": "M 47 111 C 47 96.0883117554 53.2680135028 84 61 84 C 68.7319864972 84 75 96.0883117554 75 111 C 75 125.9116882446 68.7319864972 138 61 138 C 53.2680135028 138 47 125.9116882446 47 111 Z",
+          "fill": "#061128",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_R_outer_glow",
+          "d": "M 137 100 C 137 78.4608947578 149.5360270056 61 165 61 C 180.4639729944 61 193 78.4608947578 193 100 C 193 121.5391052422 180.4639729944 139 165 139 C 149.5360270056 139 137 121.5391052422 137 100 Z",
+          "fill": "none",
+          "stroke": "#0867b8",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_rim",
+          "d": "M 139 100 C 139 79.56546425740001 150.6405965052 63 165 63 C 179.3594034948 63 191 79.56546425740001 191 100 C 191 120.43453574259999 179.3594034948 137 165 137 C 150.6405965052 137 139 120.43453574259999 139 100 Z",
+          "fill": "#32cafa",
+          "stroke": "#21b9f5",
+          "width": 2,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_white",
+          "d": "M 144 98 C 144 79.22231850680001 153.8497355044 64 166 64 C 178.1502644956 64 188 79.22231850680001 188 98 C 188 116.77768149319999 178.1502644956 132 166 132 C 153.8497355044 132 144 116.77768149319999 144 98 Z",
+          "fill": "#c4faff",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_pupil",
+          "d": "M 147 111 C 147 96.0883117554 153.2680135028 84 161 84 C 168.7319864972 84 175 96.0883117554 175 111 C 175 125.9116882446 168.7319864972 138 161 138 C 153.2680135028 138 147 125.9116882446 147 111 Z",
+          "fill": "#061128",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "brow_L",
+          "d": "M42 42 Q64 17 87 40 Q65 31 42 42 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "brow_R",
+          "d": "M144 40 Q165 20 187 42 Q165 33 144 40 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "mouth_shape",
+          "d": "M85 148 Q114 160 153 145 Q143 171 120 173 Q96 172 85 148 Z",
+          "fill": "#89f2ff",
+          "stroke": "#46d7ff",
+          "width": 2,
+          "opacity": 1,
+          "group": "mouth"
+        }
+      ],
+      "happy": [
+        {
+          "id": "eye_L_halo",
+          "d": "M42 105 Q65 74 88 105 Q72 96 65 96 Q55 96 42 105 Z",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_shape",
+          "d": "M42 105 Q65 74 88 105 Q72 96 65 96 Q55 96 42 105 Z",
+          "fill": "#7beaff",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_R_halo",
+          "d": "M142 105 Q165 74 188 105 Q172 96 165 96 Q155 96 142 105 Z",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_shape",
+          "d": "M142 105 Q165 74 188 105 Q172 96 165 96 Q155 96 142 105 Z",
+          "fill": "#7beaff",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "brow_L",
+          "d": "M42 42 Q64 17 87 40 Q65 31 42 42 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "brow_R",
+          "d": "M144 40 Q165 20 187 42 Q165 33 144 40 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "mouth_shape",
+          "d": "M87 148 Q116 160 151 145 Q145 179 115 178 Q95 174 87 148 Z",
+          "fill": "#89f2ff",
+          "stroke": "#46d7ff",
+          "width": 2,
+          "opacity": 1,
+          "group": "mouth"
+        }
+      ],
+      "excited": [
+        {
+          "id": "eye_L_halo",
+          "d": "M42 105 Q65 74 88 105 Q72 96 65 96 Q55 96 42 105 Z",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_shape",
+          "d": "M42 105 Q65 74 88 105 Q72 96 65 96 Q55 96 42 105 Z",
+          "fill": "#7beaff",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_R_halo",
+          "d": "M142 105 Q165 74 188 105 Q172 96 165 96 Q155 96 142 105 Z",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_shape",
+          "d": "M142 105 Q165 74 188 105 Q172 96 165 96 Q155 96 142 105 Z",
+          "fill": "#7beaff",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "brow_L",
+          "d": "M42 42 Q64 17 87 40 Q65 31 42 42 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "brow_R",
+          "d": "M144 40 Q165 20 187 42 Q165 33 144 40 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "mouth_shape",
+          "d": "M87 148 Q116 160 151 145 Q145 179 115 178 Q95 174 87 148 Z",
+          "fill": "#89f2ff",
+          "stroke": "#46d7ff",
+          "width": 2,
+          "opacity": 1,
+          "group": "mouth"
+        }
+      ],
+      "confident": [
+        {
+          "id": "eye_L_outer_glow",
+          "d": "M 37 100 C 37 78.4608947578 49.536027005600005 61 65 61 C 80.4639729944 61 93 78.4608947578 93 100 C 93 121.5391052422 80.4639729944 139 65 139 C 49.536027005600005 139 37 121.5391052422 37 100 Z",
+          "fill": "none",
+          "stroke": "#0867b8",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_rim",
+          "d": "M 39 100 C 39 79.56546425740001 50.6405965052 63 65 63 C 79.3594034948 63 91 79.56546425740001 91 100 C 91 120.43453574259999 79.3594034948 137 65 137 C 50.6405965052 137 39 120.43453574259999 39 100 Z",
+          "fill": "#32cafa",
+          "stroke": "#21b9f5",
+          "width": 2,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_white",
+          "d": "M 44 98 C 44 79.22231850680001 53.8497355044 64 66 64 C 78.1502644956 64 88 79.22231850680001 88 98 C 88 116.77768149319999 78.1502644956 132 66 132 C 53.8497355044 132 44 116.77768149319999 44 98 Z",
+          "fill": "#c4faff",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_pupil",
+          "d": "M 47 111 C 47 96.0883117554 53.2680135028 84 61 84 C 68.7319864972 84 75 96.0883117554 75 111 C 75 125.9116882446 68.7319864972 138 61 138 C 53.2680135028 138 47 125.9116882446 47 111 Z",
+          "fill": "#061128",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_R_halo",
+          "d": "M140 105 Q165 112 190 105",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_shape",
+          "d": "M140 105 Q165 112 190 105",
+          "fill": "none",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "brow_L",
+          "d": "M42 36 Q66 29 87 37",
+          "fill": "none",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "brow_R",
+          "d": "M144 53 Q164 57 186 52",
+          "fill": "none",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "mouth_shape",
+          "d": "M85 148 Q114 160 153 145 Q143 171 120 173 Q96 172 85 148 Z",
+          "fill": "#89f2ff",
+          "stroke": "#46d7ff",
+          "width": 2,
+          "opacity": 1,
+          "group": "mouth"
+        }
+      ],
+      "thoughtful": [
+        {
+          "id": "eye_L_outer_glow",
+          "d": "M 37 100 C 37 78.4608947578 49.536027005600005 61 65 61 C 80.4639729944 61 93 78.4608947578 93 100 C 93 121.5391052422 80.4639729944 139 65 139 C 49.536027005600005 139 37 121.5391052422 37 100 Z",
+          "fill": "none",
+          "stroke": "#0867b8",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_rim",
+          "d": "M 39 100 C 39 79.56546425740001 50.6405965052 63 65 63 C 79.3594034948 63 91 79.56546425740001 91 100 C 91 120.43453574259999 79.3594034948 137 65 137 C 50.6405965052 137 39 120.43453574259999 39 100 Z",
+          "fill": "#32cafa",
+          "stroke": "#21b9f5",
+          "width": 2,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_white",
+          "d": "M 44 98 C 44 79.22231850680001 53.8497355044 64 66 64 C 78.1502644956 64 88 79.22231850680001 88 98 C 88 116.77768149319999 78.1502644956 132 66 132 C 53.8497355044 132 44 116.77768149319999 44 98 Z",
+          "fill": "#c4faff",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_pupil",
+          "d": "M 43 111 C 43 96.0883117554 49.2680135028 84 57 84 C 64.7319864972 84 71 96.0883117554 71 111 C 71 125.9116882446 64.7319864972 138 57 138 C 49.2680135028 138 43 125.9116882446 43 111 Z",
+          "fill": "#061128",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_R_outer_glow",
+          "d": "M 137 100 C 137 78.4608947578 149.5360270056 61 165 61 C 180.4639729944 61 193 78.4608947578 193 100 C 193 121.5391052422 180.4639729944 139 165 139 C 149.5360270056 139 137 121.5391052422 137 100 Z",
+          "fill": "none",
+          "stroke": "#0867b8",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_rim",
+          "d": "M 139 100 C 139 79.56546425740001 150.6405965052 63 165 63 C 179.3594034948 63 191 79.56546425740001 191 100 C 191 120.43453574259999 179.3594034948 137 165 137 C 150.6405965052 137 139 120.43453574259999 139 100 Z",
+          "fill": "#32cafa",
+          "stroke": "#21b9f5",
+          "width": 2,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_white",
+          "d": "M 144 98 C 144 79.22231850680001 153.8497355044 64 166 64 C 178.1502644956 64 188 79.22231850680001 188 98 C 188 116.77768149319999 178.1502644956 132 166 132 C 153.8497355044 132 144 116.77768149319999 144 98 Z",
+          "fill": "#c4faff",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_pupil",
+          "d": "M 147 111 C 147 96.0883117554 153.2680135028 84 161 84 C 168.7319864972 84 175 96.0883117554 175 111 C 175 125.9116882446 168.7319864972 138 161 138 C 153.2680135028 138 147 125.9116882446 147 111 Z",
+          "fill": "#061128",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "brow_L",
+          "d": "M42 42 Q64 17 87 40 Q65 31 42 42 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "brow_R",
+          "d": "M144 40 Q165 20 187 42 Q165 33 144 40 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "mouth_shape",
+          "d": "M105 166 Q122 157 140 160",
+          "fill": "none",
+          "stroke": "#46d7ff",
+          "width": 2,
+          "opacity": 1,
+          "group": "mouth"
+        }
+      ],
+      "curious": [
+        {
+          "id": "eye_L_outer_glow",
+          "d": "M 37 100 C 37 78.4608947578 49.536027005600005 61 65 61 C 80.4639729944 61 93 78.4608947578 93 100 C 93 121.5391052422 80.4639729944 139 65 139 C 49.536027005600005 139 37 121.5391052422 37 100 Z",
+          "fill": "none",
+          "stroke": "#0867b8",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_rim",
+          "d": "M 39 100 C 39 79.56546425740001 50.6405965052 63 65 63 C 79.3594034948 63 91 79.56546425740001 91 100 C 91 120.43453574259999 79.3594034948 137 65 137 C 50.6405965052 137 39 120.43453574259999 39 100 Z",
+          "fill": "#32cafa",
+          "stroke": "#21b9f5",
+          "width": 2,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_white",
+          "d": "M 44 98 C 44 79.22231850680001 53.8497355044 64 66 64 C 78.1502644956 64 88 79.22231850680001 88 98 C 88 116.77768149319999 78.1502644956 132 66 132 C 53.8497355044 132 44 116.77768149319999 44 98 Z",
+          "fill": "#c4faff",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_pupil",
+          "d": "M 47 111 C 47 96.0883117554 53.2680135028 84 61 84 C 68.7319864972 84 75 96.0883117554 75 111 C 75 125.9116882446 68.7319864972 138 61 138 C 53.2680135028 138 47 125.9116882446 47 111 Z",
+          "fill": "#061128",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_R_outer_glow",
+          "d": "M 137 100 C 137 78.4608947578 149.5360270056 61 165 61 C 180.4639729944 61 193 78.4608947578 193 100 C 193 121.5391052422 180.4639729944 139 165 139 C 149.5360270056 139 137 121.5391052422 137 100 Z",
+          "fill": "none",
+          "stroke": "#0867b8",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_rim",
+          "d": "M 139 100 C 139 79.56546425740001 150.6405965052 63 165 63 C 179.3594034948 63 191 79.56546425740001 191 100 C 191 120.43453574259999 179.3594034948 137 165 137 C 150.6405965052 137 139 120.43453574259999 139 100 Z",
+          "fill": "#32cafa",
+          "stroke": "#21b9f5",
+          "width": 2,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_white",
+          "d": "M 144 98 C 144 79.22231850680001 153.8497355044 64 166 64 C 178.1502644956 64 188 79.22231850680001 188 98 C 188 116.77768149319999 178.1502644956 132 166 132 C 153.8497355044 132 144 116.77768149319999 144 98 Z",
+          "fill": "#c4faff",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_pupil",
+          "d": "M 151 111 C 151 96.0883117554 157.2680135028 84 165 84 C 172.7319864972 84 179 96.0883117554 179 111 C 179 125.9116882446 172.7319864972 138 165 138 C 157.2680135028 138 151 125.9116882446 151 111 Z",
+          "fill": "#061128",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "brow_L",
+          "d": "M41 25 Q66 13 87 33",
+          "fill": "none",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "brow_R",
+          "d": "M144 44 Q163 37 187 49",
+          "fill": "none",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "mouth_shape",
+          "d": "M85 148 Q114 160 153 145 Q143 171 120 173 Q96 172 85 148 Z",
+          "fill": "#89f2ff",
+          "stroke": "#46d7ff",
+          "width": 2,
+          "opacity": 1,
+          "group": "mouth"
+        }
+      ],
+      "concerned": [
+        {
+          "id": "eye_L_outer_glow",
+          "d": "M 37 100 C 37 78.4608947578 49.536027005600005 61 65 61 C 80.4639729944 61 93 78.4608947578 93 100 C 93 121.5391052422 80.4639729944 139 65 139 C 49.536027005600005 139 37 121.5391052422 37 100 Z",
+          "fill": "none",
+          "stroke": "#0867b8",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_rim",
+          "d": "M 39 100 C 39 79.56546425740001 50.6405965052 63 65 63 C 79.3594034948 63 91 79.56546425740001 91 100 C 91 120.43453574259999 79.3594034948 137 65 137 C 50.6405965052 137 39 120.43453574259999 39 100 Z",
+          "fill": "#32cafa",
+          "stroke": "#21b9f5",
+          "width": 2,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_white",
+          "d": "M 44 98 C 44 79.22231850680001 53.8497355044 64 66 64 C 78.1502644956 64 88 79.22231850680001 88 98 C 88 116.77768149319999 78.1502644956 132 66 132 C 53.8497355044 132 44 116.77768149319999 44 98 Z",
+          "fill": "#c4faff",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_pupil",
+          "d": "M 47 111 C 47 96.0883117554 53.2680135028 84 61 84 C 68.7319864972 84 75 96.0883117554 75 111 C 75 125.9116882446 68.7319864972 138 61 138 C 53.2680135028 138 47 125.9116882446 47 111 Z",
+          "fill": "#061128",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_R_outer_glow",
+          "d": "M 137 100 C 137 78.4608947578 149.5360270056 61 165 61 C 180.4639729944 61 193 78.4608947578 193 100 C 193 121.5391052422 180.4639729944 139 165 139 C 149.5360270056 139 137 121.5391052422 137 100 Z",
+          "fill": "none",
+          "stroke": "#0867b8",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_rim",
+          "d": "M 139 100 C 139 79.56546425740001 150.6405965052 63 165 63 C 179.3594034948 63 191 79.56546425740001 191 100 C 191 120.43453574259999 179.3594034948 137 165 137 C 150.6405965052 137 139 120.43453574259999 139 100 Z",
+          "fill": "#32cafa",
+          "stroke": "#21b9f5",
+          "width": 2,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_white",
+          "d": "M 144 98 C 144 79.22231850680001 153.8497355044 64 166 64 C 178.1502644956 64 188 79.22231850680001 188 98 C 188 116.77768149319999 178.1502644956 132 166 132 C 153.8497355044 132 144 116.77768149319999 144 98 Z",
+          "fill": "#c4faff",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_pupil",
+          "d": "M 147 111 C 147 96.0883117554 153.2680135028 84 161 84 C 168.7319864972 84 175 96.0883117554 175 111 C 175 125.9116882446 168.7319864972 138 161 138 C 153.2680135028 138 147 125.9116882446 147 111 Z",
+          "fill": "#061128",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "brow_L",
+          "d": "M43 46 Q62 46 83 30",
+          "fill": "none",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "brow_R",
+          "d": "M144 30 Q165 46 185 46",
+          "fill": "none",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "mouth_shape",
+          "d": "M92 166 Q117 143 143 162 Q117 153 92 166 Z",
+          "fill": "#89f2ff",
+          "stroke": "#46d7ff",
+          "width": 2,
+          "opacity": 1,
+          "group": "mouth"
+        }
+      ],
+      "delighted": [
+        {
+          "id": "eye_L_halo",
+          "d": "M42 105 Q65 74 88 105 Q72 96 65 96 Q55 96 42 105 Z",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_shape",
+          "d": "M42 105 Q65 74 88 105 Q72 96 65 96 Q55 96 42 105 Z",
+          "fill": "#7beaff",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_R_halo",
+          "d": "M142 105 Q165 74 188 105 Q172 96 165 96 Q155 96 142 105 Z",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_shape",
+          "d": "M142 105 Q165 74 188 105 Q172 96 165 96 Q155 96 142 105 Z",
+          "fill": "#7beaff",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "brow_L",
+          "d": "M42 42 Q64 17 87 40 Q65 31 42 42 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "brow_R",
+          "d": "M144 40 Q165 20 187 42 Q165 33 144 40 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "mouth_shape",
+          "d": "M87 148 Q116 160 151 145 Q145 179 115 178 Q95 174 87 148 Z",
+          "fill": "#89f2ff",
+          "stroke": "#46d7ff",
+          "width": 2,
+          "opacity": 1,
+          "group": "mouth"
+        }
+      ],
+      "focused": [
+        {
+          "id": "eye_L_halo",
+          "d": "M41 91 L89 104 Q80 121 65 121 Q47 116 41 91 Z",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_shape",
+          "d": "M41 91 L89 104 Q80 121 65 121 Q47 116 41 91 Z",
+          "fill": "#7beaff",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_R_halo",
+          "d": "M141 91 L189 104 Q180 121 165 121 Q147 116 141 91 Z",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_shape",
+          "d": "M141 91 L189 104 Q180 121 165 121 Q147 116 141 91 Z",
+          "fill": "#7beaff",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "brow_L",
+          "d": "M41 39 L88 54",
+          "fill": "none",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "brow_R",
+          "d": "M143 54 L187 39",
+          "fill": "none",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "mouth_shape",
+          "d": "M99 163 Q118 165 139 161",
+          "fill": "none",
+          "stroke": "#46d7ff",
+          "width": 2,
+          "opacity": 1,
+          "group": "mouth"
+        }
+      ],
+      "blink": [
+        {
+          "id": "eye_L_halo",
+          "d": "M40 105 Q65 112 90 105",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_shape",
+          "d": "M40 105 Q65 112 90 105",
+          "fill": "none",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_R_halo",
+          "d": "M140 105 Q165 112 190 105",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_shape",
+          "d": "M140 105 Q165 112 190 105",
+          "fill": "none",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "brow_L",
+          "d": "M42 42 Q64 17 87 40 Q65 31 42 42 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "brow_R",
+          "d": "M144 40 Q165 20 187 42 Q165 33 144 40 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "mouth_shape",
+          "d": "M85 148 Q114 160 153 145 Q143 171 120 173 Q96 172 85 148 Z",
+          "fill": "#89f2ff",
+          "stroke": "#46d7ff",
+          "width": 2,
+          "opacity": 1,
+          "group": "mouth"
+        }
+      ],
+      "sleep": [
+        {
+          "id": "eye_L_halo",
+          "d": "M40 105 Q65 112 90 105",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_shape",
+          "d": "M40 105 Q65 112 90 105",
+          "fill": "none",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_R_halo",
+          "d": "M140 105 Q165 112 190 105",
+          "fill": "none",
+          "stroke": "#0969ba",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_shape",
+          "d": "M140 105 Q165 112 190 105",
+          "fill": "none",
+          "stroke": "#87f4ff",
+          "width": 4,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "brow_L",
+          "d": "M42 42 Q64 17 87 40 Q65 31 42 42 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "brow_R",
+          "d": "M144 40 Q165 20 187 42 Q165 33 144 40 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "mouth_shape",
+          "d": "M99 163 Q118 165 139 161",
+          "fill": "none",
+          "stroke": "#46d7ff",
+          "width": 2,
+          "opacity": 1,
+          "group": "mouth"
+        }
+      ],
+      "surprised": [
+        {
+          "id": "eye_L_outer_glow",
+          "d": "M 37 100 C 37 78.4608947578 49.536027005600005 61 65 61 C 80.4639729944 61 93 78.4608947578 93 100 C 93 121.5391052422 80.4639729944 139 65 139 C 49.536027005600005 139 37 121.5391052422 37 100 Z",
+          "fill": "none",
+          "stroke": "#0867b8",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_rim",
+          "d": "M 39 100 C 39 79.56546425740001 50.6405965052 63 65 63 C 79.3594034948 63 91 79.56546425740001 91 100 C 91 120.43453574259999 79.3594034948 137 65 137 C 50.6405965052 137 39 120.43453574259999 39 100 Z",
+          "fill": "#32cafa",
+          "stroke": "#21b9f5",
+          "width": 2,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_white",
+          "d": "M 44 98 C 44 79.22231850680001 53.8497355044 64 66 64 C 78.1502644956 64 88 79.22231850680001 88 98 C 88 116.77768149319999 78.1502644956 132 66 132 C 53.8497355044 132 44 116.77768149319999 44 98 Z",
+          "fill": "#c4faff",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_L_pupil",
+          "d": "M 47 111 C 47 96.0883117554 53.2680135028 84 61 84 C 68.7319864972 84 75 96.0883117554 75 111 C 75 125.9116882446 68.7319864972 138 61 138 C 53.2680135028 138 47 125.9116882446 47 111 Z",
+          "fill": "#061128",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_L"
+        },
+        {
+          "id": "eye_R_outer_glow",
+          "d": "M 137 100 C 137 78.4608947578 149.5360270056 61 165 61 C 180.4639729944 61 193 78.4608947578 193 100 C 193 121.5391052422 180.4639729944 139 165 139 C 149.5360270056 139 137 121.5391052422 137 100 Z",
+          "fill": "none",
+          "stroke": "#0867b8",
+          "width": 11,
+          "opacity": 0.3,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_rim",
+          "d": "M 139 100 C 139 79.56546425740001 150.6405965052 63 165 63 C 179.3594034948 63 191 79.56546425740001 191 100 C 191 120.43453574259999 179.3594034948 137 165 137 C 150.6405965052 137 139 120.43453574259999 139 100 Z",
+          "fill": "#32cafa",
+          "stroke": "#21b9f5",
+          "width": 2,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_white",
+          "d": "M 144 98 C 144 79.22231850680001 153.8497355044 64 166 64 C 178.1502644956 64 188 79.22231850680001 188 98 C 188 116.77768149319999 178.1502644956 132 166 132 C 153.8497355044 132 144 116.77768149319999 144 98 Z",
+          "fill": "#c4faff",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "eye_R_pupil",
+          "d": "M 147 111 C 147 96.0883117554 153.2680135028 84 161 84 C 168.7319864972 84 175 96.0883117554 175 111 C 175 125.9116882446 168.7319864972 138 161 138 C 153.2680135028 138 147 125.9116882446 147 111 Z",
+          "fill": "#061128",
+          "stroke": null,
+          "width": 1,
+          "opacity": 1,
+          "group": "eye_R"
+        },
+        {
+          "id": "brow_L",
+          "d": "M42 42 Q64 17 87 40 Q65 31 42 42 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "brow_R",
+          "d": "M144 40 Q165 20 187 42 Q165 33 144 40 Z",
+          "fill": "#68e7ff",
+          "stroke": "#53d9fb",
+          "width": 3,
+          "opacity": 1,
+          "group": "brows"
+        },
+        {
+          "id": "mouth_shape",
+          "d": "M 101 161 C 101 151.0588745036 108.1634440032 143 117 143 C 125.8365559968 143 133 151.0588745036 133 161 C 133 170.9411254964 125.8365559968 179 117 179 C 108.1634440032 179 101 170.9411254964 101 161 Z",
+          "fill": "#89f2ff",
+          "stroke": "#46d7ff",
+          "width": 2,
+          "opacity": 1,
+          "group": "mouth"
+        }
+      ]
+    },
+    "visemePaths": {
+      "rest": "M98 158 Q117 165 140 156",
+      "A": "M 98 160 C 98 146.7451660048 106.5065897538 136 117 136 C 127.4934102462 136 136 146.7451660048 136 160 C 136 173.2548339952 127.4934102462 184 117 184 C 106.5065897538 184 98 173.2548339952 98 160 Z",
+      "E": "M89 148 Q115 144 146 149 L143 169 Q116 174 92 166 Z",
+      "I": "M87 154 Q115 148 149 153 L145 166 Q115 162 90 166 Z",
+      "O": "M 97 160 C 97 148.4020202542 105.954305004 139 117 139 C 128.045694996 139 137 148.4020202542 137 160 C 137 171.5979797458 128.045694996 181 117 181 C 105.954305004 181 97 171.5979797458 97 160 Z",
+      "U": "M 104 160 C 104 148.954305004 109.8202982526 140 117 140 C 124.1797017474 140 130 148.954305004 130 160 C 130 171.045694996 124.1797017474 180 117 180 C 109.8202982526 180 104 171.045694996 104 160 Z",
+      "FV": "M96 156 Q117 165 141 154 L137 169 Q116 176 98 167 Z",
+      "MBP": "M95 159 Q116 153 140 159 Q118 165 95 159 Z",
+      "L": "M94 149 Q117 145 142 150 L139 171 Q118 164 96 172 Z",
+      "WQ": "M 105 160 C 105 151.715728753 110.3725830024 145 117 145 C 123.6274169976 145 129 151.715728753 129 160 C 129 168.284271247 123.6274169976 175 117 175 C 110.3725830024 175 105 168.284271247 105 160 Z",
+      "TH": "M93 153 Q116 148 143 155 L139 171 Q115 168 96 167 Z"
+    },
+    "notes": "Vector display overlays are newly authored editable controls. Source-painted face remains separately available. Registered SVGs bake affine transforms into path geometry for import."
+  }
+}
