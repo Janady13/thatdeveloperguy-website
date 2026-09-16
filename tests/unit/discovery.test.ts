@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import { robotsFor, robotsHeaderFor } from '../../src/engines/seo/crawl/robots-policy.ts';
 import { sitemapEntries, sitemapXml, sitemapIndexXml } from '../../src/engines/seo/sitemaps/build-sitemap.ts';
-import { llmsText } from '../../src/engines/seo/discovery/build-llms.ts';
+import { llmsDocuments, llmsText } from '../../src/engines/seo/discovery/build-llms.ts';
 import type { CompiledPage } from '../../src/contracts/page.ts';
 
 const routes: any[] = [
@@ -30,15 +30,20 @@ test('the sitemap holds only published, indexable, canonical pages', () => {
   assert.match(sitemapIndexXml(), /<loc>https:\/\/thatdeveloperguy\.com\/sitemap\.xml<\/loc>/);
 });
 
-test('llms.txt is derived from visible page records and excludes noindex pages', () => {
+test('the root llms.txt joins scoped discovery files derived from visible page records', () => {
   const pages = [
-    { id: 'home', path: '/', heading: 'Lobby', description: 'Choose a service room.', canonical: 'https://thatdeveloperguy.com/', indexPolicy: 'index' },
-    { id: 'receipt', path: '/contact/received', heading: 'Receipt', description: 'Private receipt.', canonical: 'https://thatdeveloperguy.com/contact/received', indexPolicy: 'noindex' },
-  ] as CompiledPage[];
-  const output = llmsText(pages, 'demo');
-  assert.match(output, /non-indexable demonstration release/);
-  assert.match(output, /\[Lobby\]\(https:\/\/thatdeveloperguy\.com\/\)/);
-  assert.doesNotMatch(output, /Private receipt|contact\/received/);
+    { id: 'home', path: '/', heading: 'Lobby', description: 'Choose a service room.', summary: 'Choose the right room.', canonical: 'https://thatdeveloperguy.com/', indexPolicy: 'index', questions: [], related: [] },
+    { id: 'government', path: '/government', heading: 'Government Solutions', description: 'Government delivery.', summary: 'Plan and deliver public-sector work.', canonical: 'https://thatdeveloperguy.com/government', indexPolicy: 'index', questions: [{ id: 'q1', question: 'What is offered?', answer: 'Planning and delivery.' }], related: [] },
+    { id: 'receipt', path: '/contact/received', heading: 'Receipt', description: 'Private receipt.', summary: 'Private.', canonical: 'https://thatdeveloperguy.com/contact/received', indexPolicy: 'noindex', questions: [], related: [] },
+  ] as unknown as CompiledPage[];
+  const documents = llmsDocuments(pages, 'demo');
+  assert.deepEqual(documents.map(document => document.path), ['/llms.txt', '/government/llms.txt']);
+  assert.equal(llmsText(pages, 'demo'), documents[0]!.content);
+  assert.match(documents[0]!.content, /non-indexable demonstration release/);
+  assert.match(documents[0]!.content, /\[Government Solutions\]\(https:\/\/thatdeveloperguy\.com\/government\/llms\.txt\)/);
+  assert.match(documents[1]!.content, /Site-wide AI discovery index/);
+  assert.match(documents[1]!.content, /What is offered.*Planning and delivery/);
+  assert.doesNotMatch(documents.map(document => document.content).join('\n'), /Private receipt|contact\/received/);
 });
 
 const truthPolicyPath = process.env.TDG_TRUTH_POLICY ?? '/Users/josephanady/Code/thatdeveloperguy-truth/properties/engine-policy.json';

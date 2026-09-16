@@ -5,6 +5,7 @@ test('the lobby is complete HTML: title, canonical, poster and three real door l
   await page.goto('/');
   await expect(page).toHaveTitle(/ThatDeveloperGuy/);
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://thatdeveloperguy.com/');
+  await expect(page.locator('link[rel="describedby"]')).toHaveAttribute('href', '/llms.txt');
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://thatdeveloperguy.com/images/posters/lobby.webp');
   await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute('content', 'summary_large_image');
   const poster = page.locator('.scene-poster');
@@ -25,6 +26,7 @@ test('animated routes share one full-screen HTML contract with complete semantic
     expect(await page.locator('body').evaluate(element => getComputedStyle(element).overflow)).toBe('hidden');
     await expect(page.locator('.room-semantic-content h1')).toHaveCount(1);
     await expect(page.locator('.room-semantic-content a')).not.toHaveCount(0);
+    await expect(page.locator('link[rel="describedby"]')).toHaveAttribute('href', `${path}/llms.txt`);
   }
 });
 

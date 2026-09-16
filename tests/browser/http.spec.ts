@@ -26,3 +26,19 @@ test('the demo host is not indexable and serves the runtime WASM', async ({ requ
   expect(wasm.status()).toBe(200);
   expect(wasm.headers()['content-type']).toContain('application/wasm');
 });
+
+test('the root AI index joins every scoped llms.txt document', async ({ request }) => {
+  const paths = ['/accessibility', '/capabilities', '/capabilities/business-it', '/capabilities/cybersecurity', '/company', '/contact', '/government', '/privacy'];
+  const root = await request.get('/llms.txt');
+  expect(root.status()).toBe(200);
+  expect(root.headers()['content-type']).toContain('text/plain');
+  const index = await root.text();
+  for (const path of paths) {
+    const scoped = await request.get(`${path}/llms.txt`);
+    expect(scoped.status(), path).toBe(200);
+    expect(scoped.headers()['content-type'], path).toContain('text/plain');
+    expect(index, path).toContain(`https://thatdeveloperguy.com${path}/llms.txt`);
+    expect(await scoped.text(), path).toContain('https://thatdeveloperguy.com/llms.txt');
+  }
+  expect((await request.get('/contact/received/llms.txt')).status()).toBe(404);
+});

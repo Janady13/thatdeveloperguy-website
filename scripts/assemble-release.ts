@@ -5,13 +5,13 @@
 import { createHash } from 'node:crypto';
 import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
-import { join, relative, resolve } from 'node:path';
+import { dirname, join, relative, resolve } from 'node:path';
 import manifest from '../src/generated/route-manifest.json' with { type: 'json' };
 import { PRODUCTION_ORIGIN } from '../src/engines/seo/urls/production-origin.ts';
 import { robotsFor } from '../src/engines/seo/crawl/robots-policy.ts';
 import { renderHostConfig } from '../src/engines/seo/crawl/host-config.ts';
 import { sitemapIndexXml, sitemapXml } from '../src/engines/seo/sitemaps/build-sitemap.ts';
-import { llmsText } from '../src/engines/seo/discovery/build-llms.ts';
+import { llmsDocuments } from '../src/engines/seo/discovery/build-llms.ts';
 import { pages } from '../src/generated/index.ts';
 
 const root = resolve(import.meta.dirname, '..');
@@ -25,7 +25,11 @@ renameSync(join(site, '404/index.html'), join(site, '404.html')); rmSync(join(si
 
 // Discovery files: exactly one generated owner (records/crawler-policy.json mirrors the node's approved matrix).
 writeFileSync(join(site, 'robots.txt'), robotsFor(kind));
-writeFileSync(join(site, 'llms.txt'), llmsText(pages, kind));
+for (const document of llmsDocuments(pages, kind)) {
+  const target = join(site, document.path.replace(/^\/+/, ''));
+  mkdirSync(dirname(target), { recursive: true });
+  writeFileSync(target, document.content);
+}
 if (kind === 'production') { writeFileSync(join(site, 'sitemap.xml'), sitemapXml(manifest.routes as never)); writeFileSync(join(site, 'sitemap-index.xml'), sitemapIndexXml()); }
 
 // CSP: hash every inline script the router emits; JSON-LD data blocks are not executed and need no hash.

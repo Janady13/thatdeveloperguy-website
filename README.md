@@ -29,8 +29,10 @@ npm run test:browser      # rendered navigation, accessibility, failure paths an
 ```
 
 `dist/site` is the only public document root. Demo releases remain `noindex,nofollow`; production builds include only page records
-whose `publicationStatus` is `published`, plus generated robots, sitemap and `llms.txt` discovery files. Changing a demo record to
-published requires an approval reference and `publishedAt`; completing the artwork alone does not silently publish unapproved copy.
+whose `publicationStatus` is `published`, plus generated robots, sitemap and hierarchical AI-discovery files. `/llms.txt` is the
+site-wide index; each public non-home route has its own `<route>/llms.txt`, linked from the root and advertised by that page with
+`rel="describedby"`. Changing a demo record to published requires an approval reference and `publishedAt`; completing the artwork
+alone does not silently publish unapproved copy.
 
 Rive rooms: `cd rive/lobby && python3 build-scene.py && rive . --verify && rive . --once` (Rive CLI 1.0.4+). Plates and vectors are
 produced by the scripts in `creative-source/plates/` and need Cloudinary / Adobe access.

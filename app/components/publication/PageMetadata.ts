@@ -3,6 +3,7 @@ import { pagesByPath } from '../../../src/generated';
 import { normalizePath } from '../../../src/engines/seo/urls/normalize-path';
 import { truth } from '../../../src/authority/select-public-facts';
 import { PRODUCTION_ORIGIN } from '../../../src/engines/seo/urls/production-origin';
+import { scopedLlmsPath } from '../../../src/engines/seo/discovery/build-llms';
 
 const SOCIAL_IMAGE = `${PRODUCTION_ORIGIN}/images/posters/lobby.webp`;
 
@@ -18,6 +19,7 @@ export function pageMeta(pathname: string) {
     { title: page.title },
     { name: 'description', content: page.description },
     { tagName: 'link', rel: 'canonical', href: page.canonical },
+    ...(page.indexPolicy === 'index' ? [{ tagName: 'link', rel: 'describedby', type: 'text/plain', href: scopedLlmsPath(page) }] : []),
     { property: 'og:type', content: 'website' },
     { property: 'og:locale', content: 'en_US' },
     { property: 'og:site_name', content: truth.org.name },
