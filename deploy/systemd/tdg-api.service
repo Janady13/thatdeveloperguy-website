@@ -1,0 +1,33 @@
+[Unit]
+Description=ThatDeveloperGuy inquiry service (direct email, no database)
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=120
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=user
+Group=user
+WorkingDirectory=/home/user/sites/tdg-api/current
+ExecStart=/opt/node-v24.21.0-linux-x64/bin/node --env-file=/home/user/sites/tdg-api/runtime.env server.mjs
+Environment=NODE_ENV=production
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=30
+TimeoutStopSec=35
+KillSignal=SIGTERM
+UMask=0077
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=tdg-api
+LimitCORE=0
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadOnlyPaths=/home/user/sites/tdg-api
+
+[Install]
+WantedBy=multi-user.target

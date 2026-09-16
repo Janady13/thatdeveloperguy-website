@@ -35,6 +35,7 @@
     "content/**/*.json",
     "react-router.config.ts",
     "vite.config.ts",
-    ".react-router/types/**/*"
+    ".react-router/types/**/*",
+    "server"
   ]
 }
