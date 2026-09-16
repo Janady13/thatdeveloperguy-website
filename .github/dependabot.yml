@@ -11,6 +11,9 @@ updates:
       development-patches:
         dependency-type: development
         update-types: [patch]
+    ignore:
+      - dependency-name: "*"
+        update-types: [version-update:semver-major]
   - package-ecosystem: github-actions
     directory: /
     schedule:
