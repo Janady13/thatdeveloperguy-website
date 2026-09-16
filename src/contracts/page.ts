@@ -51,4 +51,13 @@ export interface CompiledPage extends PageRecord {
   action: { label: string; href: string };
 }
 
-export interface RouteManifestEntry { id: string; path: string; template: Template; publicationStatus: PublicationStatus; indexPolicy: IndexPolicy; sceneId?: string }
+export interface RouteManifestEntry {
+  id: string;
+  path: string;
+  template: Template;
+  publicationStatus: PublicationStatus;
+  indexPolicy: IndexPolicy;
+  sceneId?: string;
+  publishedAt?: string;
+  materiallyUpdatedAt?: string;
+}

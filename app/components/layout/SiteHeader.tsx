@@ -12,7 +12,7 @@ export function SiteHeader() {
       <Link to="/" className="site-brand" aria-label={`${truth.org.name} — lobby`}>thatdeveloper<span>guy</span>.com</Link>
       <nav aria-label="Primary" className="site-nav">
         {items.map(page => <NavLink key={page.id} to={page.path}>{page.heading}</NavLink>)}
-        {cta && <Link to={cta.path} className="site-nav-cta">{cta.heading}</Link>}
+        {cta && <NavLink to={cta.path} className="site-nav-cta">{cta.heading}</NavLink>}
       </nav>
     </header>
   );

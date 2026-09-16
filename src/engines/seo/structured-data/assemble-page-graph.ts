@@ -16,15 +16,18 @@ export function assemblePageGraph(page: CompiledPage): Record<string, unknown> {
     graph.push({ '@type': 'Person', '@id': PERSON_ID, name: truth.person.name, jobTitle: truth.person.jobTitle, url: truth.person.url, worksFor: { '@id': ORGANIZATION_ID } });
     graph.push({ '@type': 'WebSite', '@id': WEBSITE_ID, url: `${PRODUCTION_ORIGIN}/`, name: truth.org.name, publisher: { '@id': ORGANIZATION_ID } });
   }
-  const webpage: Record<string, unknown> = { '@type': 'WebPage', '@id': `${page.canonical}#webpage`, url: page.canonical, name: page.title, description: page.description, isPartOf: { '@id': WEBSITE_ID }, about: { '@id': ORGANIZATION_ID } };
+  const webpage: Record<string, unknown> = { '@type': 'WebPage', '@id': `${page.canonical}#webpage`, url: page.canonical, name: page.title, description: page.description, isPartOf: { '@id': WEBSITE_ID }, about: { '@id': ORGANIZATION_ID }, publisher: { '@id': ORGANIZATION_ID }, inLanguage: 'en-US' };
+  if (page.publishedAt) webpage.datePublished = page.publishedAt;
+  if (page.materiallyUpdatedAt ?? page.publishedAt) webpage.dateModified = page.materiallyUpdatedAt ?? page.publishedAt;
   if (page.breadcrumbs.length > 1) webpage.breadcrumb = { '@type': 'BreadcrumbList', itemListElement: page.breadcrumbs.map((crumb, i) => ({ '@type': 'ListItem', position: i + 1, name: crumb.name, item: crumb.path === '/' ? `${PRODUCTION_ORIGIN}/` : `${PRODUCTION_ORIGIN}${crumb.path}` })) };
   graph.push(webpage);
   if (page.template === 'capability' && page.serviceId) {
     const service: Record<string, unknown> = { '@type': 'Service', '@id': `${page.canonical}#service`, name: page.heading, description: page.description, serviceType: page.heading, provider: { '@id': ORGANIZATION_ID }, url: page.canonical };
     if (page.serviceDetail) service.audience = page.serviceDetail.audience.map(a => ({ '@type': 'Audience', audienceType: a }));
     graph.push(service);
+    webpage.mainEntity = { '@id': service['@id'] };
   }
   // The visible Q&A, verbatim. Same record, same text; there is no crawler-only version.
-  if (page.questions.length) graph.push({ '@type': 'FAQPage', '@id': `${page.canonical}#questions`, mainEntity: page.questions.map(q => ({ '@type': 'Question', name: q.question, acceptedAnswer: { '@type': 'Answer', text: q.answer } })) });
+  if (page.questions.length) graph.push({ '@type': 'FAQPage', '@id': `${page.canonical}#questions`, isPartOf: { '@id': `${page.canonical}#webpage` }, mainEntity: page.questions.map(q => ({ '@type': 'Question', name: q.question, acceptedAnswer: { '@type': 'Answer', text: q.answer } })) });
   return { '@context': 'https://schema.org', '@graph': graph };
 }

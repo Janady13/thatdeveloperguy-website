@@ -1,49 +1,4 @@
-/* The IT Services room is the page. The global header floats over the full-viewport artboard, matching the lobby demo. */
-body.it-services-route,
-body:has(.scene-it-services) {
-  min-height: 100dvh;
-  overflow: hidden;
-}
-
-body.it-services-route .site-header,
-body:has(.scene-it-services) .site-header {
-  position: fixed;
-  inset: 0 0 auto;
-  z-index: 30;
-  background: linear-gradient(to bottom, rgba(244, 241, 250, .92), rgba(244, 241, 250, .36) 66%, transparent);
-  border: 0;
-  backdrop-filter: blur(5px);
-}
-
-body.it-services-route .site-footer,
-body:has(.scene-it-services) .site-footer {
-  display: none;
-}
-
-body.it-services-route main,
-body:has(.scene-it-services) main,
-body.it-services-route .scene-it-services,
-body:has(.scene-it-services) .scene-it-services {
-  width: 100%;
-  min-height: 100dvh;
-  height: 100dvh;
-}
-
-body.it-services-route main,
-body:has(.scene-it-services) main {
-  position: fixed;
-  inset: 0;
-  display: block;
-}
-
-body.it-services-route .scene-it-services,
-body:has(.scene-it-services) .scene-it-services {
-  position: absolute;
-  inset: 0;
-  max-width: none;
-  margin: 0;
-  border: 0;
-}
+/* IT Services native compositing; shared full-viewport room layout lives in scenes.css. */
 
 .scene-it-services .scene-poster {
   opacity: 1;
@@ -75,7 +30,6 @@ body:has(.scene-it-services) .scene-it-services {
 .scene-it-services .scene-ui { z-index: 5; }
 
 @media (max-width: 767px) {
-  body.it-services-route .site-header,
   body:has(.scene-it-services) .site-header { padding-block: 12px; }
   .scene-it-services .scene-ui { padding: 14px 16px 16px; }
   .scene-it-services .scene-caption { max-width: 78%; font-size: .9rem; }

@@ -3,9 +3,11 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { robotsFor, robotsHeaderFor } from '../../src/engines/seo/crawl/robots-policy.ts';
 import { sitemapEntries, sitemapXml, sitemapIndexXml } from '../../src/engines/seo/sitemaps/build-sitemap.ts';
+import { llmsText } from '../../src/engines/seo/discovery/build-llms.ts';
+import type { CompiledPage } from '../../src/contracts/page.ts';
 
 const routes: any[] = [
-  { id: 'home', path: '/', template: 'home', publicationStatus: 'published', indexPolicy: 'index' },
+  { id: 'home', path: '/', template: 'home', publicationStatus: 'published', indexPolicy: 'index', publishedAt: '2026-09-16' },
   { id: 'contact.received', path: '/contact/received', template: 'contact-received', publicationStatus: 'published', indexPolicy: 'noindex' },
   { id: 'capability.cybersecurity', path: '/capabilities/cybersecurity', template: 'capability', publicationStatus: 'demo', indexPolicy: 'index' },
 ];
@@ -24,7 +26,19 @@ test('the demo host disallows everything and sends noindex; production follows t
 test('the sitemap holds only published, indexable, canonical pages', () => {
   assert.deepEqual(sitemapEntries(routes), ['https://thatdeveloperguy.com/']);
   assert.doesNotMatch(sitemapXml(routes), /contact\/received|cybersecurity/);
+  assert.match(sitemapXml(routes), /<lastmod>2026-09-16<\/lastmod>/);
   assert.match(sitemapIndexXml(), /<loc>https:\/\/thatdeveloperguy\.com\/sitemap\.xml<\/loc>/);
+});
+
+test('llms.txt is derived from visible page records and excludes noindex pages', () => {
+  const pages = [
+    { id: 'home', path: '/', heading: 'Lobby', description: 'Choose a service room.', canonical: 'https://thatdeveloperguy.com/', indexPolicy: 'index' },
+    { id: 'receipt', path: '/contact/received', heading: 'Receipt', description: 'Private receipt.', canonical: 'https://thatdeveloperguy.com/contact/received', indexPolicy: 'noindex' },
+  ] as CompiledPage[];
+  const output = llmsText(pages, 'demo');
+  assert.match(output, /non-indexable demonstration release/);
+  assert.match(output, /\[Lobby\]\(https:\/\/thatdeveloperguy\.com\/\)/);
+  assert.doesNotMatch(output, /Private receipt|contact\/received/);
 });
 
 test('the crawler policy record mirrors the node exactly', () => {

@@ -4,7 +4,7 @@
 # Reads BUBBLES_SUDO_PW from private/deploy.env (git-ignored). Never prints it.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-HOST="${DEPLOY_HOST:-user@192.168.1.132}"
+HOST="${DEPLOY_HOST:-user@100.90.97.104}"
 IDENTITY="${DEPLOY_IDENTITY:-}"
 NAME="${DEMO_NAME:-tdg}"
 [[ "$NAME" =~ ^[a-z0-9][a-z0-9-]{0,30}$ ]] || { echo "bad demo name"; exit 1; }
@@ -13,14 +13,24 @@ NAME="${DEMO_NAME:-tdg}"
 [ -f private/deploy.env ] && source private/deploy.env
 : "${BUBBLES_SUDO_PW:?set BUBBLES_SUDO_PW in private/deploy.env}"
 TS="$(date +%Y%m%d-%H%M%S)"
+ARCHIVE="/tmp/tdg-demo-$TS.tgz"
+trap 'rm -f "$ARCHIVE"' EXIT
+SSH_CLIENT=(ssh)
+SCP_CLIENT=(scp)
 SSH_ARGS=(-o BatchMode=yes)
+if [ "${DEPLOY_PASSWORD_AUTH:-off}" = "on" ]; then
+  export SSHPASS="${BUBBLES_SSH_PW:-$BUBBLES_SUDO_PW}"
+  SSH_CLIENT=(sshpass -e ssh)
+  SCP_CLIENT=(sshpass -e scp)
+  SSH_ARGS=(-o BatchMode=no -o PreferredAuthentications=password -o PubkeyAuthentication=no)
+fi
 if [ -n "$IDENTITY" ]; then
   [ -f "$IDENTITY" ] || { echo "missing deploy identity: $IDENTITY"; exit 1; }
   SSH_ARGS+=(-i "$IDENTITY" -o IdentitiesOnly=yes)
 fi
-COPYFILE_DISABLE=1 tar --no-xattrs -czf "/tmp/tdg-demo-$TS.tgz" -C dist/site .
-scp -q "${SSH_ARGS[@]}" "/tmp/tdg-demo-$TS.tgz" dist/deployment/site.conf dist/deployment/csp.conf "$HOST:/tmp/"
-ssh "${SSH_ARGS[@]}" "$HOST" "BUBBLES_SUDO_PW='$BUBBLES_SUDO_PW' bash -s -- '$NAME' '$TS'" <<'REMOTE'
+COPYFILE_DISABLE=1 tar --no-xattrs -czf "$ARCHIVE" -C dist/site .
+"${SCP_CLIENT[@]}" -q "${SSH_ARGS[@]}" "$ARCHIVE" dist/deployment/site.conf dist/deployment/csp.conf "$HOST:/tmp/"
+"${SSH_CLIENT[@]}" "${SSH_ARGS[@]}" "$HOST" "BUBBLES_SUDO_PW='$BUBBLES_SUDO_PW' bash -s -- '$NAME' '$TS'" <<'REMOTE'
 set -euo pipefail
 NAME="$1"; TS="$2"; ROOT="/var/www/sites/$NAME"; BACKUP="/var/backups/$NAME-demo-$TS.tgz"
 SITE_CONFIG="/etc/nginx/sites-available/tdg-demo.thatwebhostingguy"; CSP_CONFIG="/etc/nginx/snippets/tdg-demo-csp.conf"
@@ -54,5 +64,4 @@ rm -f "/tmp/tdg-demo-$TS.tgz" /tmp/site.conf /tmp/csp.conf
 echo "root: $ROOT ($(find "$ROOT" -type f | wc -l) files)"
 echo "backup: $BACKUP"
 REMOTE
-rm -f "/tmp/tdg-demo-$TS.tgz"
 echo "https://$NAME.thatwebhostingguy.com/"

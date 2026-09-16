@@ -11,6 +11,8 @@ import { PRODUCTION_ORIGIN } from '../src/engines/seo/urls/production-origin.ts'
 import { robotsFor } from '../src/engines/seo/crawl/robots-policy.ts';
 import { renderHostConfig } from '../src/engines/seo/crawl/host-config.ts';
 import { sitemapIndexXml, sitemapXml } from '../src/engines/seo/sitemaps/build-sitemap.ts';
+import { llmsText } from '../src/engines/seo/discovery/build-llms.ts';
+import { pages } from '../src/generated/index.ts';
 
 const root = resolve(import.meta.dirname, '..');
 const kind = process.env.TDG_RELEASE_KIND === 'demo' ? 'demo' : 'production';
@@ -23,6 +25,7 @@ renameSync(join(site, '404/index.html'), join(site, '404.html')); rmSync(join(si
 
 // Discovery files: exactly one generated owner (records/crawler-policy.json mirrors the node's approved matrix).
 writeFileSync(join(site, 'robots.txt'), robotsFor(kind));
+writeFileSync(join(site, 'llms.txt'), llmsText(pages, kind));
 if (kind === 'production') { writeFileSync(join(site, 'sitemap.xml'), sitemapXml(manifest.routes as never)); writeFileSync(join(site, 'sitemap-index.xml'), sitemapIndexXml()); }
 
 // CSP: hash every inline script the router emits; JSON-LD data blocks are not executed and need no hash.

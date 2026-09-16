@@ -21,6 +21,10 @@ export function loadRecords(contentDir: string): Array<{ record: PageRecord; dir
     for (const key of REQUIRED) if (record[key] === undefined || record[key] === null) throw new Error(`${name}/page.json: missing ${String(key)}`);
     if (normalizePath(record.path) !== record.path) throw new Error(`${record.id}: path "${record.path}" violates the trailing-slash policy`);
     if (record.template === 'capability' && !record.serviceDetail) throw new Error(`${record.id}: a capability page needs serviceDetail (problem, audience, included, deliverables, excluded, evidence, process)`);
+    if (record.publicationStatus === 'published' && !record.publishedAt) throw new Error(`${record.id}: a published page needs publishedAt`);
+    for (const [field, value] of [['publishedAt', record.publishedAt], ['materiallyUpdatedAt', record.materiallyUpdatedAt]] as const) {
+      if (value && !/^\d{4}-\d{2}-\d{2}$/.test(value)) throw new Error(`${record.id}: ${field} must be YYYY-MM-DD`);
+    }
     return { record, dir };
   }));
 }
@@ -53,7 +57,16 @@ export function compilePages(contentDir: string, level: PublicationLevel): { pag
     const href = record.primaryAction.project ? `${target.path}?project=${encodeURIComponent(record.primaryAction.project)}&from=${encodeURIComponent(record.id)}` : target.path;
     return { ...record, bodyHtml, questions, canonical: canonicalUrl(record.path), breadcrumbs, related, action: { label: record.primaryAction.label, href } };
   });
-  const manifest: RouteManifestEntry[] = pages.map(p => ({ id: p.id, path: p.path, template: p.template, publicationStatus: p.publicationStatus, indexPolicy: p.indexPolicy, ...(p.sceneId ? { sceneId: p.sceneId } : {}) }));
+  const manifest: RouteManifestEntry[] = pages.map(p => ({
+    id: p.id,
+    path: p.path,
+    template: p.template,
+    publicationStatus: p.publicationStatus,
+    indexPolicy: p.indexPolicy,
+    ...(p.sceneId ? { sceneId: p.sceneId } : {}),
+    ...(p.publishedAt ? { publishedAt: p.publishedAt } : {}),
+    ...(p.materiallyUpdatedAt ? { materiallyUpdatedAt: p.materiallyUpdatedAt } : {}),
+  }));
   return { pages, manifest, drafts };
 }
 

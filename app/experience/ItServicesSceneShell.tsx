@@ -24,10 +24,8 @@ export function ItServicesSceneShell({ scene, page }: { scene: SceneRecord; page
 
   useEffect(() => {
     setMounted(true);
-    document.body.classList.add('it-services-route');
     const verdict = probeRenderer();
     setRenderer(verdict.ok ? verdict.renderer : verdict.reason);
-    return () => document.body.classList.remove('it-services-route');
   }, []);
 
   const { hotspots, activate, leaving, leavingTarget } = useSceneNavigation({

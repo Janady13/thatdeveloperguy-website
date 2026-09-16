@@ -1,48 +1,5 @@
-/* The supplied Cybersecurity kit is the page: one full-viewport, independently animated room. */
-body.cybersecurity-route,
-body:has(.scene-cybersecurity) {
-  min-height: 100dvh;
-  overflow: hidden;
-}
-
-body.cybersecurity-route .site-header,
-body:has(.scene-cybersecurity) .site-header {
-  position: fixed;
-  inset: 0 0 auto;
-  z-index: 30;
-  background: linear-gradient(to bottom, rgba(244, 241, 250, .94), rgba(244, 241, 250, .4) 68%, transparent);
-  border: 0;
-  backdrop-filter: blur(5px);
-}
-
-body.cybersecurity-route .site-footer,
-body:has(.scene-cybersecurity) .site-footer { display: none; }
-
-body.cybersecurity-route main,
-body:has(.scene-cybersecurity) main,
-body.cybersecurity-route .scene-cybersecurity,
-body:has(.scene-cybersecurity) .scene-cybersecurity {
-  width: 100%;
-  min-height: 100dvh;
-  height: 100dvh;
-}
-
-body.cybersecurity-route main,
-body:has(.scene-cybersecurity) main {
-  position: fixed;
-  inset: 0;
-  display: block;
-}
-
-body.cybersecurity-route .scene-cybersecurity,
-body:has(.scene-cybersecurity) .scene-cybersecurity {
-  position: absolute;
-  inset: 0;
-  max-width: none;
-  margin: 0;
-  border: 0;
-  background: #f2eef8;
-}
+/* Cybersecurity vector/native compositing; shared full-viewport room layout lives in scenes.css. */
+.scene-cybersecurity { background: #f2eef8; }
 
 .scene-cybersecurity,
 .scene-cybersecurity .scene-plane,
@@ -199,7 +156,6 @@ body:has(.scene-cybersecurity) .scene-cybersecurity {
 @keyframes cyberFloorBreathe { from { opacity: .16; transform: translateX(-.4%); } to { opacity: .29; transform: translateX(.5%); } }
 
 @media (max-width: 767px) {
-  body.cybersecurity-route .site-header,
   body:has(.scene-cybersecurity) .site-header { padding-block: 12px; }
   .scene-cybersecurity .scene-ui { padding: 14px 16px 16px; }
   .scene-cybersecurity .scene-caption { max-width: 84%; font-size: .9rem; }

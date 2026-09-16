@@ -16,7 +16,7 @@ test('the lobby stays responsive and interactive on the software renderer', asyn
 test.describe('native lobby layer', () => {
   test.beforeEach(async ({ isMobile }, testInfo) => {
     test.skip(isMobile, 'the native layer is desktop-only by design');
-    test.skip(testInfo.project.name === 'chromium', 'needs a hardware renderer; see the chromium-gpu project');
+    test.skip(testInfo.project.name !== 'chromium-gpu', 'native Rive assertions run only in the explicit hardware-renderer project');
   });
 
   test('poster-to-native handover keeps the poster and the real links', async ({ page }) => {

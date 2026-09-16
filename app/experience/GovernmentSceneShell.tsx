@@ -23,10 +23,8 @@ export function GovernmentSceneShell({ scene, page }: { scene: SceneRecord; page
 
   useEffect(() => {
     setMounted(true);
-    document.body.classList.add('government-route');
     const verdict = probeRenderer();
     setRenderer(verdict.ok ? verdict.renderer : verdict.reason);
-    return () => document.body.classList.remove('government-route');
   }, []);
 
   const { hotspots, activate, leaving, leavingTarget } = useSceneNavigation({

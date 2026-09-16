@@ -30,13 +30,11 @@ export function CybersecuritySceneShell({ scene, page }: { scene: SceneRecord; p
 
   useEffect(() => {
     setMounted(true);
-    document.body.classList.add('cybersecurity-route');
     const verdict = probeRenderer();
     setRenderer(verdict.ok ? verdict.renderer : verdict.reason);
     const hash = window.location.hash.slice(1);
     const match = CYBERSECURITY_HOTSPOTS.find(hotspot => hotspot.target.kind === 'anchor' && hotspot.target.anchor === hash);
     if (match) setSelected(match.id as CybersecurityFocus);
-    return () => document.body.classList.remove('cybersecurity-route');
   }, []);
 
   const { hotspots, activate, leaving, leavingTarget } = useSceneNavigation({

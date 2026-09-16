@@ -8,7 +8,13 @@ export function sitemapEntries(routes: RouteManifestEntry[]): string[] {
   return routes.filter(r => r.publicationStatus === 'published' && r.indexPolicy === 'index').map(r => url(r.path));
 }
 export function sitemapXml(routes: RouteManifestEntry[]): string {
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries(routes).map(u => `  <url><loc>${u}</loc></url>`).join('\n')}\n</urlset>\n`;
+  const entries = routes
+    .filter(route => route.publicationStatus === 'published' && route.indexPolicy === 'index')
+    .map(route => {
+      const lastmod = route.materiallyUpdatedAt ?? route.publishedAt;
+      return `  <url><loc>${url(route.path)}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`;
+    });
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join('\n')}\n</urlset>\n`;
 }
 /** The node records thatdeveloperguy.com's sitemap as sitemap-index.xml; keep that address valid by indexing the one sitemap. */
 export function sitemapIndexXml(): string {

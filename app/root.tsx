@@ -8,30 +8,25 @@ import './styles/tokens.css'; import './styles/reset.css'; import './styles/typo
 import './styles/components.css'; import './styles/scenes.css'; import './styles/reduced-motion.css'; import './styles/print.css';
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const location = useLocation();
-  const roomClass = location.pathname === '/'
-    ? 'lobby-route room-route'
-    : location.pathname === '/capabilities/business-it'
-      ? 'it-services-route room-route'
-      : location.pathname === '/capabilities/cybersecurity'
-        ? 'cybersecurity-route room-route'
-        : undefined;
-  const roomRoute = Boolean(roomClass);
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#f4f1fa" />
+        <meta name="color-scheme" content="light" />
+        <link rel="preload" href="/fonts/public-sans-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/archivo-black-400-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="stylesheet" href="/fonts/fonts.css" />
         <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml" />
         <Meta />
         <Links />
       </head>
-      <body className={roomClass}>
+      <body>
         <SkipLinks />
         <SiteHeader />
         {children}
-        {!roomRoute && <SiteFooter />}
+        <SiteFooter />
         <ScrollRestoration />
         <Scripts />
       </body>

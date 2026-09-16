@@ -3,7 +3,7 @@ import { chromium } from '@playwright/test';
 import { mkdirSync, writeFileSync } from 'node:fs';
 const arg = (k: string, d: string) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1]! : d; };
 const BASE = arg('--base', 'http://127.0.0.1:4411');
-const routes = ['/', '/capabilities/cybersecurity', '/government', '/company'];
+const routes = ['/', '/capabilities/business-it', '/capabilities/cybersecurity', '/government', '/company'];
 const browser = await chromium.launch({ args: ['--use-angle=metal', '--ignore-gpu-blocklist'] });
 const report: Record<string, unknown> = {};
 for (const route of routes) {

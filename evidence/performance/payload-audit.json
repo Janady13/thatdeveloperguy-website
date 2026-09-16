@@ -1,687 +1,1355 @@
 {
   "base": "https://tdg.thatwebhostingguy.com",
-  "at": "2026-09-16T03:18:21.293Z",
+  "at": "2026-09-16T21:06:04.470Z",
   "routes": {
     "/": {
       "html": {
-        "transfer": 3969,
-        "decoded": 11605
+        "transfer": 3913,
+        "decoded": 11728
       },
-      "domContentLoaded": 334,
-      "load": 348,
+      "domContentLoaded": 215,
+      "load": 219,
       "paints": {
-        "first-paint": 936,
-        "first-contentful-paint": 936
+        "first-paint": 256,
+        "first-contentful-paint": 256
       },
       "lcp": {
         "ms": 1060,
-        "element": "IMG.scene-poster",
-        "url": "/images/posters/lobby.svg"
+        "element": "P",
+        "url": ""
       },
       "poster": {
-        "loadMs": 322,
-        "renderMs": 1060,
-        "decodeMs": 739
+        "loadMs": 203,
+        "renderMs": 256,
+        "decodeMs": 54
       },
       "resources": [
         {
-          "url": "/images/posters/lobby.svg",
+          "url": "/images/posters/lobby.webp",
           "type": "link",
-          "transfer": 28934,
-          "decoded": 161025,
-          "ms": 44
-        },
-        {
-          "url": "/assets/manifest-2685f4a8.js",
-          "type": "other",
-          "transfer": 1085,
-          "decoded": 6558,
-          "ms": 43
-        },
-        {
-          "url": "/assets/entry.client-C-cxeaxP.js",
-          "type": "other",
-          "transfer": 62911,
-          "decoded": 214752,
-          "ms": 62
-        },
-        {
-          "url": "/assets/root-DhMDn57f.js",
-          "type": "other",
-          "transfer": 1376,
-          "decoded": 2800,
+          "transfer": 162734,
+          "decoded": 162434,
           "ms": 65
         },
         {
-          "url": "/assets/home-Dh3ZFNZN.js",
-          "type": "other",
-          "transfer": 702,
-          "decoded": 822,
-          "ms": 66
+          "url": "/fonts/public-sans-latin.woff2",
+          "type": "link",
+          "transfer": 26936,
+          "decoded": 26636,
+          "ms": 70
         },
         {
-          "url": "/assets/not-found-BnJLTIbr.js",
-          "type": "other",
-          "transfer": 12673,
-          "decoded": 41830,
-          "ms": 65
+          "url": "/fonts/archivo-black-400-latin.woff2",
+          "type": "link",
+          "transfer": 10092,
+          "decoded": 9792,
+          "ms": 69
         },
         {
-          "url": "/assets/_page-BOl_-X_F.js",
+          "url": "/assets/manifest-f3f4e898.js",
           "type": "other",
-          "transfer": 859,
-          "decoded": 1305,
-          "ms": 67
+          "transfer": 1081,
+          "decoded": 6332,
+          "ms": 69
+        },
+        {
+          "url": "/assets/root-MDbly1Q1.js",
+          "type": "other",
+          "transfer": 1462,
+          "decoded": 3167,
+          "ms": 75
         },
         {
           "url": "/assets/jsx-runtime-BArjmnWf.js",
           "type": "other",
           "transfer": 37614,
           "decoded": 120502,
-          "ms": 72
+          "ms": 75
         },
         {
-          "url": "/assets/JsonLd-C1P4qVoX.js",
+          "url": "/assets/entry.client-C-cxeaxP.js",
           "type": "other",
-          "transfer": 1070,
-          "decoded": 1762,
-          "ms": 67
+          "transfer": 62911,
+          "decoded": 214752,
+          "ms": 73
         },
         {
-          "url": "/assets/RelatedPages-Cvuui_QK.js",
+          "url": "/assets/_page-CZ2Z4DxG.js",
           "type": "other",
-          "transfer": 532,
-          "decoded": 407,
-          "ms": 67
+          "transfer": 842,
+          "decoded": 1496,
+          "ms": 75
         },
         {
-          "url": "/assets/ContactAction-BPt52DWP.js",
+          "url": "/assets/home-D0bgAoIW.js",
           "type": "other",
-          "transfer": 469,
-          "decoded": 270,
-          "ms": 68
+          "transfer": 1513,
+          "decoded": 2706,
+          "ms": 75
         },
         {
-          "url": "/assets/OwnerToSupply-C2lM_Nbc.js",
+          "url": "/assets/JsonLd-8G-Jz-bE.js",
           "type": "other",
-          "transfer": 537,
-          "decoded": 422,
-          "ms": 68
+          "transfer": 1147,
+          "decoded": 2016,
+          "ms": 76
         },
         {
-          "url": "/assets/scene-Dt4UaHcU.js",
+          "url": "/assets/not-found-BnJLTIbr.js",
           "type": "other",
-          "transfer": 1002,
-          "decoded": 1597,
-          "ms": 69
-        },
-        {
-          "url": "/assets/SceneShell-Cb9cFYJf.js",
-          "type": "other",
-          "transfer": 2168,
-          "decoded": 4292,
-          "ms": 69
+          "transfer": 12673,
+          "decoded": 41830,
+          "ms": 75
         },
         {
           "url": "/fonts/fonts.css",
           "type": "link",
           "transfer": 445,
           "decoded": 334,
-          "ms": 16
+          "ms": 66
         },
         {
-          "url": "/assets/root-DTqzaogN.css",
+          "url": "/assets/root-BrR-4Gqi.css",
           "type": "link",
-          "transfer": 2732,
-          "decoded": 8351,
-          "ms": 16
+          "transfer": 12044,
+          "decoded": 60857,
+          "ms": 67
         },
         {
-          "url": "/assets/renderer-capability-Cfou0udw.js",
+          "url": "/assets/SceneShell-CY2r6BpI.js",
           "type": "other",
-          "transfer": 638,
-          "decoded": 615,
-          "ms": 70
+          "transfer": 2782,
+          "decoded": 5886,
+          "ms": 76
         },
         {
-          "url": "/assets/scene-CwgYQle3.js",
-          "type": "other",
-          "transfer": 350,
-          "decoded": 45,
-          "ms": 70
-        },
-        {
-          "url": "/fonts/public-sans-latin.woff2",
-          "type": "css",
-          "transfer": 26936,
-          "decoded": 26636,
-          "ms": 39
-        },
-        {
-          "url": "/fonts/archivo-black-400-latin.woff2",
-          "type": "css",
-          "transfer": 10092,
-          "decoded": 9792,
-          "ms": 37
-        },
-        {
-          "url": "/assets/ConsultantView.client-BhMTEFor.js",
+          "url": "/assets/LobbyRiveCanvas.client-iE-AgDzR.js",
           "type": "script",
-          "transfer": 1943,
-          "decoded": 3793,
-          "ms": 15
+          "transfer": 1795,
+          "decoded": 3168,
+          "ms": 8
         },
         {
-          "url": "/assets/dist-Zt2MgRvk.js",
+          "url": "/assets/dist-BCKVHR2P.js",
           "type": "script",
-          "transfer": 55764,
-          "decoded": 210378,
+          "transfer": 55777,
+          "decoded": 210412,
+          "ms": 45
+        },
+        {
+          "url": "/animation/runtime/rive.wasm",
+          "type": "fetch",
+          "transfer": 811596,
+          "decoded": 2200568,
+          "ms": 176
+        },
+        {
+          "url": "/animation/rooms/lobby-2x.a0992694006d.riv",
+          "type": "fetch",
+          "transfer": 6503,
+          "decoded": 18856,
+          "ms": 11
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/plant_left_fg.webp",
+          "type": "fetch",
+          "transfer": 15038,
+          "decoded": 14738,
+          "ms": 7
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/plant_left_rear.webp",
+          "type": "fetch",
+          "transfer": 19868,
+          "decoded": 19568,
+          "ms": 12
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/plant_gov_left.webp",
+          "type": "fetch",
+          "transfer": 16836,
+          "decoded": 16536,
+          "ms": 12
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/plant_gov_right.webp",
+          "type": "fetch",
+          "transfer": 17638,
+          "decoded": 17338,
+          "ms": 13
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/plant_cyber_right.webp",
+          "type": "fetch",
+          "transfer": 19560,
+          "decoded": 19260,
+          "ms": 17
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/plant_window_mid.webp",
+          "type": "fetch",
+          "transfer": 42720,
+          "decoded": 42420,
+          "ms": 17
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/plant_right_fg.webp",
+          "type": "fetch",
+          "transfer": 64748,
+          "decoded": 64448,
+          "ms": 22
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/plant_table.webp",
+          "type": "fetch",
+          "transfer": 10268,
+          "decoded": 9968,
+          "ms": 22
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/clouds.webp",
+          "type": "fetch",
+          "transfer": 15086,
+          "decoded": 14786,
+          "ms": 23
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/door_it_leaf.webp",
+          "type": "fetch",
+          "transfer": 8874,
+          "decoded": 8574,
+          "ms": 23
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/door_gov_leaf.webp",
+          "type": "fetch",
+          "transfer": 10802,
+          "decoded": 10502,
+          "ms": 24
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/door_cyber_leaf.webp",
+          "type": "fetch",
+          "transfer": 7462,
+          "decoded": 7162,
+          "ms": 24
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/reader_it.webp",
+          "type": "fetch",
+          "transfer": 2578,
+          "decoded": 2278,
+          "ms": 26
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/reader_gov.webp",
+          "type": "fetch",
+          "transfer": 2448,
+          "decoded": 2148,
+          "ms": 26
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/reader_cyber.webp",
+          "type": "fetch",
+          "transfer": 878,
+          "decoded": 578,
           "ms": 27
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/window_frames.webp",
+          "type": "fetch",
+          "transfer": 47244,
+          "decoded": 46944,
+          "ms": 27
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/arch_right_fg.webp",
+          "type": "fetch",
+          "transfer": 14890,
+          "decoded": 14590,
+          "ms": 27
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/arch_left_fg.webp",
+          "type": "fetch",
+          "transfer": 102354,
+          "decoded": 102054,
+          "ms": 30
+        },
+        {
+          "url": "/animation/rooms/lobby-plates/2x/bg_plate.webp",
+          "type": "fetch",
+          "transfer": 380766,
+          "decoded": 380466,
+          "ms": 39
         }
       ],
       "posters": [
-        "/images/posters/lobby.svg"
+        "/images/posters/lobby.webp"
       ],
-      "riv": [],
-      "scripts": 181693,
-      "totalTransfer": 254801
+      "riv": [
+        "/animation/rooms/lobby-2x.a0992694006d.riv"
+      ],
+      "scripts": 179597,
+      "totalTransfer": 2013918
+    },
+    "/capabilities/business-it": {
+      "html": {
+        "transfer": 8070,
+        "decoded": 37788
+      },
+      "domContentLoaded": 238,
+      "load": 344,
+      "paints": {
+        "first-paint": 408,
+        "first-contentful-paint": 408
+      },
+      "lcp": {
+        "ms": 408,
+        "element": "A.site-brand",
+        "url": ""
+      },
+      "poster": null,
+      "resources": [
+        {
+          "url": "/images/posters/it-services.webp",
+          "type": "link",
+          "transfer": 210670,
+          "decoded": 210370,
+          "ms": 210
+        },
+        {
+          "url": "/animation/it-services/layers/ceiling_lights.svg",
+          "type": "link",
+          "transfer": 12610,
+          "decoded": 68429,
+          "ms": 210
+        },
+        {
+          "url": "/animation/it-services/layers/hanging_sign.svg",
+          "type": "link",
+          "transfer": 34433,
+          "decoded": 173012,
+          "ms": 212
+        },
+        {
+          "url": "/animation/it-services/layers/status_board.svg",
+          "type": "link",
+          "transfer": 64483,
+          "decoded": 368771,
+          "ms": 216
+        },
+        {
+          "url": "/animation/it-services/layers/board_row_1.svg",
+          "type": "link",
+          "transfer": 7999,
+          "decoded": 42973,
+          "ms": 212
+        },
+        {
+          "url": "/animation/it-services/layers/board_row_2.svg",
+          "type": "link",
+          "transfer": 7853,
+          "decoded": 41543,
+          "ms": 212
+        },
+        {
+          "url": "/animation/it-services/layers/board_row_3.svg",
+          "type": "link",
+          "transfer": 8627,
+          "decoded": 45294,
+          "ms": 212
+        },
+        {
+          "url": "/animation/it-services/layers/board_row_4.svg",
+          "type": "link",
+          "transfer": 9391,
+          "decoded": 50291,
+          "ms": 212
+        },
+        {
+          "url": "/animation/it-services/layers/service_monitor_left.svg",
+          "type": "link",
+          "transfer": 5964,
+          "decoded": 31154,
+          "ms": 212
+        },
+        {
+          "url": "/animation/it-services/layers/service_monitor_right.svg",
+          "type": "link",
+          "transfer": 5117,
+          "decoded": 26895,
+          "ms": 213
+        },
+        {
+          "url": "/animation/it-services/layers/desk_reader.svg",
+          "type": "link",
+          "transfer": 1952,
+          "decoded": 9695,
+          "ms": 213
+        },
+        {
+          "url": "/animation/it-services/layers/workstation_monitor_01.svg",
+          "type": "link",
+          "transfer": 18761,
+          "decoded": 91347,
+          "ms": 213
+        },
+        {
+          "url": "/animation/it-services/layers/workstation_monitor_02.svg",
+          "type": "link",
+          "transfer": 14443,
+          "decoded": 71831,
+          "ms": 215
+        },
+        {
+          "url": "/animation/it-services/layers/workstation_monitor_03.svg",
+          "type": "link",
+          "transfer": 7206,
+          "decoded": 36472,
+          "ms": 214
+        },
+        {
+          "url": "/animation/it-services/layers/workstation_monitor_04.svg",
+          "type": "link",
+          "transfer": 8596,
+          "decoded": 44817,
+          "ms": 214
+        },
+        {
+          "url": "/animation/it-services/layers/workstation_phone.svg",
+          "type": "link",
+          "transfer": 5246,
+          "decoded": 26214,
+          "ms": 215
+        },
+        {
+          "url": "/animation/it-services/layers/network_appliance.svg",
+          "type": "link",
+          "transfer": 8166,
+          "decoded": 43937,
+          "ms": 215
+        },
+        {
+          "url": "/animation/it-services/layers/server_rack_01.svg",
+          "type": "link",
+          "transfer": 28136,
+          "decoded": 168905,
+          "ms": 216
+        },
+        {
+          "url": "/animation/it-services/layers/server_rack_02.svg",
+          "type": "link",
+          "transfer": 33791,
+          "decoded": 197154,
+          "ms": 217
+        },
+        {
+          "url": "/animation/it-services/layers/server_rack_03.svg",
+          "type": "link",
+          "transfer": 34033,
+          "decoded": 197214,
+          "ms": 217
+        },
+        {
+          "url": "/animation/it-services/layers/server_rack_04.svg",
+          "type": "link",
+          "transfer": 29098,
+          "decoded": 166151,
+          "ms": 219
+        },
+        {
+          "url": "/animation/it-services/layers/deployment_door_leaf.svg",
+          "type": "link",
+          "transfer": 15856,
+          "decoded": 90769,
+          "ms": 219
+        },
+        {
+          "url": "/animation/it-services/layers/laptop_lid.svg",
+          "type": "link",
+          "transfer": 6786,
+          "decoded": 34007,
+          "ms": 219
+        },
+        {
+          "url": "/animation/it-services/layers/tool_cart.svg",
+          "type": "link",
+          "transfer": 60560,
+          "decoded": 373877,
+          "ms": 221
+        },
+        {
+          "url": "/animation/it-services/layers/tool_cart_drawer_1.svg",
+          "type": "link",
+          "transfer": 7697,
+          "decoded": 44534,
+          "ms": 219
+        },
+        {
+          "url": "/animation/it-services/layers/tool_cart_drawer_2.svg",
+          "type": "link",
+          "transfer": 9136,
+          "decoded": 53536,
+          "ms": 220
+        },
+        {
+          "url": "/animation/it-services/layers/tool_cart_drawer_3.svg",
+          "type": "link",
+          "transfer": 8463,
+          "decoded": 49376,
+          "ms": 220
+        },
+        {
+          "url": "/animation/it-services/layers/tool_cart_drawer_4.svg",
+          "type": "link",
+          "transfer": 8442,
+          "decoded": 48938,
+          "ms": 220
+        },
+        {
+          "url": "/fonts/archivo-black-400-latin.woff2",
+          "type": "link",
+          "transfer": 10092,
+          "decoded": 9792,
+          "ms": 205
+        },
+        {
+          "url": "/fonts/public-sans-latin.woff2",
+          "type": "link",
+          "transfer": 26936,
+          "decoded": 26636,
+          "ms": 205
+        },
+        {
+          "url": "/animation/it-services/layers/tool_cart_drawer_5.svg",
+          "type": "link",
+          "transfer": 10327,
+          "decoded": 61636,
+          "ms": 220
+        },
+        {
+          "url": "/assets/manifest-f3f4e898.js",
+          "type": "other",
+          "transfer": 1081,
+          "decoded": 6332,
+          "ms": 205
+        },
+        {
+          "url": "/assets/root-MDbly1Q1.js",
+          "type": "other",
+          "transfer": 1462,
+          "decoded": 3167,
+          "ms": 208
+        },
+        {
+          "url": "/assets/jsx-runtime-BArjmnWf.js",
+          "type": "other",
+          "transfer": 37614,
+          "decoded": 120502,
+          "ms": 210
+        },
+        {
+          "url": "/assets/entry.client-C-cxeaxP.js",
+          "type": "other",
+          "transfer": 62911,
+          "decoded": 214752,
+          "ms": 210
+        },
+        {
+          "url": "/assets/_page-CZ2Z4DxG.js",
+          "type": "other",
+          "transfer": 842,
+          "decoded": 1496,
+          "ms": 208
+        },
+        {
+          "url": "/assets/ContentSections-OtbmdEIx.js",
+          "type": "other",
+          "transfer": 756,
+          "decoded": 1173,
+          "ms": 209
+        },
+        {
+          "url": "/assets/JsonLd-8G-Jz-bE.js",
+          "type": "other",
+          "transfer": 1147,
+          "decoded": 2016,
+          "ms": 209
+        },
+        {
+          "url": "/assets/RelatedPages-Cvuui_QK.js",
+          "type": "other",
+          "transfer": 532,
+          "decoded": 407,
+          "ms": 209
+        },
+        {
+          "url": "/assets/not-found-BnJLTIbr.js",
+          "type": "other",
+          "transfer": 12673,
+          "decoded": 41830,
+          "ms": 208
+        },
+        {
+          "url": "/assets/capability-W6GrXpEH.js",
+          "type": "other",
+          "transfer": 7729,
+          "decoded": 28157,
+          "ms": 208
+        },
+        {
+          "url": "/fonts/fonts.css",
+          "type": "link",
+          "transfer": 445,
+          "decoded": 334,
+          "ms": 204
+        },
+        {
+          "url": "/assets/ContactAction-BPt52DWP.js",
+          "type": "other",
+          "transfer": 469,
+          "decoded": 270,
+          "ms": 209
+        },
+        {
+          "url": "/assets/RoomSemanticContent-B_LbNsEY.js",
+          "type": "other",
+          "transfer": 425,
+          "decoded": 166,
+          "ms": 209
+        },
+        {
+          "url": "/assets/SceneShell-CY2r6BpI.js",
+          "type": "other",
+          "transfer": 2782,
+          "decoded": 5886,
+          "ms": 209
+        },
+        {
+          "url": "/assets/root-BrR-4Gqi.css",
+          "type": "link",
+          "transfer": 12044,
+          "decoded": 60857,
+          "ms": 204
+        },
+        {
+          "url": "/assets/capability-TeyV0MYd.css",
+          "type": "link",
+          "transfer": 1461,
+          "decoded": 5560,
+          "ms": 205
+        },
+        {
+          "url": "/assets/ItServicesRiveCanvas.client-DPdawM9m.js",
+          "type": "script",
+          "transfer": 1875,
+          "decoded": 3226,
+          "ms": 6
+        },
+        {
+          "url": "/assets/dist-BCKVHR2P.js",
+          "type": "script",
+          "transfer": 55777,
+          "decoded": 210412,
+          "ms": 42
+        },
+        {
+          "url": "/animation/runtime/rive.wasm",
+          "type": "fetch",
+          "transfer": 811596,
+          "decoded": 2200568,
+          "ms": 158
+        },
+        {
+          "url": "/animation/rooms/it-services.aa2afa627bc8.riv",
+          "type": "fetch",
+          "transfer": 7819,
+          "decoded": 30571,
+          "ms": 9
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/plant_back_left.webp",
+          "type": "fetch",
+          "transfer": 15006,
+          "decoded": 14706,
+          "ms": 9
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/plant_desk_left.webp",
+          "type": "fetch",
+          "transfer": 5234,
+          "decoded": 4934,
+          "ms": 10
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/plant_low_left.webp",
+          "type": "fetch",
+          "transfer": 4098,
+          "decoded": 3798,
+          "ms": 10
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/plant_counter.webp",
+          "type": "fetch",
+          "transfer": 6466,
+          "decoded": 6166,
+          "ms": 11
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/plant_right.webp",
+          "type": "fetch",
+          "transfer": 17436,
+          "decoded": 17136,
+          "ms": 11
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/plant_front_left.webp",
+          "type": "fetch",
+          "transfer": 40224,
+          "decoded": 39924,
+          "ms": 12
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/sign_panel.webp",
+          "type": "fetch",
+          "transfer": 24402,
+          "decoded": 24102,
+          "ms": 13
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/cable_left.webp",
+          "type": "fetch",
+          "transfer": 990,
+          "decoded": 690,
+          "ms": 13
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/cable_right.webp",
+          "type": "fetch",
+          "transfer": 1084,
+          "decoded": 784,
+          "ms": 14
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/door_leaf.webp",
+          "type": "fetch",
+          "transfer": 15578,
+          "decoded": 15278,
+          "ms": 15
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/drawer_1.webp",
+          "type": "fetch",
+          "transfer": 8754,
+          "decoded": 8454,
+          "ms": 17
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/drawer_2.webp",
+          "type": "fetch",
+          "transfer": 10072,
+          "decoded": 9772,
+          "ms": 17
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/drawer_3.webp",
+          "type": "fetch",
+          "transfer": 9936,
+          "decoded": 9636,
+          "ms": 18
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/drawer_4.webp",
+          "type": "fetch",
+          "transfer": 9916,
+          "decoded": 9616,
+          "ms": 19
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/drawer_5.webp",
+          "type": "fetch",
+          "transfer": 11220,
+          "decoded": 10920,
+          "ms": 19
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/laptop_lid.webp",
+          "type": "fetch",
+          "transfer": 6442,
+          "decoded": 6142,
+          "ms": 20
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/chair_near.webp",
+          "type": "fetch",
+          "transfer": 25198,
+          "decoded": 24898,
+          "ms": 20
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/phone.webp",
+          "type": "fetch",
+          "transfer": 4242,
+          "decoded": 3942,
+          "ms": 21
+        },
+        {
+          "url": "/animation/rooms/it-services-plates/2x/bg_plate.webp",
+          "type": "fetch",
+          "transfer": 530906,
+          "decoded": 530606,
+          "ms": 18
+        }
+      ],
+      "posters": [
+        "/images/posters/it-services.webp"
+      ],
+      "riv": [
+        "/animation/rooms/it-services.aa2afa627bc8.riv"
+      ],
+      "scripts": 188075,
+      "totalTransfer": 2497584
     },
     "/capabilities/cybersecurity": {
       "html": {
-        "transfer": 6496,
-        "decoded": 23368
+        "transfer": 7431,
+        "decoded": 27882
       },
-      "domContentLoaded": 73,
-      "load": 104,
+      "domContentLoaded": 58,
+      "load": 514,
+      "paints": {
+        "first-paint": 184,
+        "first-contentful-paint": 184
+      },
+      "lcp": {
+        "ms": 184,
+        "element": "P.scene-caption",
+        "url": ""
+      },
+      "poster": null,
+      "resources": [
+        {
+          "url": "/animation/cybersecurity/cybersecurity-scene.svg",
+          "type": "link",
+          "transfer": 990907,
+          "decoded": 5516942,
+          "ms": 349
+        },
+        {
+          "url": "/fonts/public-sans-latin.woff2",
+          "type": "link",
+          "transfer": 26936,
+          "decoded": 26636,
+          "ms": 128
+        },
+        {
+          "url": "/fonts/archivo-black-400-latin.woff2",
+          "type": "link",
+          "transfer": 10092,
+          "decoded": 9792,
+          "ms": 128
+        },
+        {
+          "url": "/assets/manifest-f3f4e898.js",
+          "type": "other",
+          "transfer": 1081,
+          "decoded": 6332,
+          "ms": 128
+        },
+        {
+          "url": "/assets/entry.client-C-cxeaxP.js",
+          "type": "other",
+          "transfer": 62911,
+          "decoded": 214752,
+          "ms": 131
+        },
+        {
+          "url": "/assets/root-MDbly1Q1.js",
+          "type": "other",
+          "transfer": 1462,
+          "decoded": 3167,
+          "ms": 129
+        },
+        {
+          "url": "/assets/not-found-BnJLTIbr.js",
+          "type": "other",
+          "transfer": 12673,
+          "decoded": 41830,
+          "ms": 130
+        },
+        {
+          "url": "/assets/jsx-runtime-BArjmnWf.js",
+          "type": "other",
+          "transfer": 37614,
+          "decoded": 120502,
+          "ms": 131
+        },
+        {
+          "url": "/assets/_page-CZ2Z4DxG.js",
+          "type": "other",
+          "transfer": 842,
+          "decoded": 1496,
+          "ms": 130
+        },
+        {
+          "url": "/assets/capability-W6GrXpEH.js",
+          "type": "other",
+          "transfer": 7729,
+          "decoded": 28157,
+          "ms": 130
+        },
+        {
+          "url": "/assets/JsonLd-8G-Jz-bE.js",
+          "type": "other",
+          "transfer": 1147,
+          "decoded": 2016,
+          "ms": 130
+        },
+        {
+          "url": "/assets/ContentSections-OtbmdEIx.js",
+          "type": "other",
+          "transfer": 756,
+          "decoded": 1173,
+          "ms": 131
+        },
+        {
+          "url": "/assets/RelatedPages-Cvuui_QK.js",
+          "type": "other",
+          "transfer": 532,
+          "decoded": 407,
+          "ms": 131
+        },
+        {
+          "url": "/assets/ContactAction-BPt52DWP.js",
+          "type": "other",
+          "transfer": 469,
+          "decoded": 270,
+          "ms": 131
+        },
+        {
+          "url": "/assets/RoomSemanticContent-B_LbNsEY.js",
+          "type": "other",
+          "transfer": 425,
+          "decoded": 166,
+          "ms": 131
+        },
+        {
+          "url": "/fonts/fonts.css",
+          "type": "link",
+          "transfer": 445,
+          "decoded": 334,
+          "ms": 11
+        },
+        {
+          "url": "/assets/root-BrR-4Gqi.css",
+          "type": "link",
+          "transfer": 12044,
+          "decoded": 60857,
+          "ms": 20
+        },
+        {
+          "url": "/assets/SceneShell-CY2r6BpI.js",
+          "type": "other",
+          "transfer": 2782,
+          "decoded": 5886,
+          "ms": 131
+        },
+        {
+          "url": "/assets/capability-TeyV0MYd.css",
+          "type": "link",
+          "transfer": 1461,
+          "decoded": 5560,
+          "ms": 20
+        },
+        {
+          "url": "/assets/CybersecurityVector.client-D2KkR2fd.js",
+          "type": "script",
+          "transfer": 2666,
+          "decoded": 9958,
+          "ms": 182
+        },
+        {
+          "url": "/assets/CybersecurityRiveCanvas.client-DOqKXeN2.js",
+          "type": "script",
+          "transfer": 1173,
+          "decoded": 1792,
+          "ms": 182
+        },
+        {
+          "url": "/assets/dist-BCKVHR2P.js",
+          "type": "script",
+          "transfer": 55777,
+          "decoded": 210412,
+          "ms": 190
+        },
+        {
+          "url": "/animation/cybersecurity/cybersecurity-scene.svg",
+          "type": "fetch",
+          "transfer": 0,
+          "decoded": 5516942,
+          "ms": 23
+        },
+        {
+          "url": "/animation/runtime/rive.wasm",
+          "type": "fetch",
+          "transfer": 811596,
+          "decoded": 2200568,
+          "ms": 166
+        },
+        {
+          "url": "/animation/rooms/cybersecurity.dd13f84dc1e7.riv",
+          "type": "fetch",
+          "transfer": 1390,
+          "decoded": 2898,
+          "ms": 7
+        }
+      ],
+      "posters": [],
+      "riv": [
+        "/animation/rooms/cybersecurity.dd13f84dc1e7.riv"
+      ],
+      "scripts": 190039,
+      "totalTransfer": 2052341
+    },
+    "/government": {
+      "html": {
+        "transfer": 4505,
+        "decoded": 14228
+      },
+      "domContentLoaded": 49,
+      "load": 82,
+      "paints": {
+        "first-paint": 96,
+        "first-contentful-paint": 96
+      },
+      "lcp": {
+        "ms": 96,
+        "element": "A.site-brand",
+        "url": ""
+      },
+      "poster": null,
+      "resources": [
+        {
+          "url": "/images/posters/government.webp",
+          "type": "link",
+          "transfer": 220852,
+          "decoded": 220552,
+          "ms": 52
+        },
+        {
+          "url": "/fonts/archivo-black-400-latin.woff2",
+          "type": "link",
+          "transfer": 10092,
+          "decoded": 9792,
+          "ms": 44
+        },
+        {
+          "url": "/fonts/public-sans-latin.woff2",
+          "type": "link",
+          "transfer": 26936,
+          "decoded": 26636,
+          "ms": 44
+        },
+        {
+          "url": "/assets/manifest-f3f4e898.js",
+          "type": "other",
+          "transfer": 1081,
+          "decoded": 6332,
+          "ms": 44
+        },
+        {
+          "url": "/assets/root-MDbly1Q1.js",
+          "type": "other",
+          "transfer": 1462,
+          "decoded": 3167,
+          "ms": 48
+        },
+        {
+          "url": "/assets/entry.client-C-cxeaxP.js",
+          "type": "other",
+          "transfer": 62911,
+          "decoded": 214752,
+          "ms": 47
+        },
+        {
+          "url": "/assets/not-found-BnJLTIbr.js",
+          "type": "other",
+          "transfer": 12673,
+          "decoded": 41830,
+          "ms": 50
+        },
+        {
+          "url": "/assets/jsx-runtime-BArjmnWf.js",
+          "type": "other",
+          "transfer": 37614,
+          "decoded": 120502,
+          "ms": 48
+        },
+        {
+          "url": "/fonts/fonts.css",
+          "type": "link",
+          "transfer": 445,
+          "decoded": 334,
+          "ms": 14
+        },
+        {
+          "url": "/assets/root-BrR-4Gqi.css",
+          "type": "link",
+          "transfer": 12044,
+          "decoded": 60857,
+          "ms": 19
+        },
+        {
+          "url": "/assets/_page-CZ2Z4DxG.js",
+          "type": "other",
+          "transfer": 842,
+          "decoded": 1496,
+          "ms": 51
+        },
+        {
+          "url": "/assets/JsonLd-8G-Jz-bE.js",
+          "type": "other",
+          "transfer": 1147,
+          "decoded": 2016,
+          "ms": 51
+        },
+        {
+          "url": "/assets/audience-REAgW0Wd.js",
+          "type": "other",
+          "transfer": 2307,
+          "decoded": 5022,
+          "ms": 50
+        },
+        {
+          "url": "/assets/ContentSections-OtbmdEIx.js",
+          "type": "other",
+          "transfer": 756,
+          "decoded": 1173,
+          "ms": 51
+        },
+        {
+          "url": "/assets/RelatedPages-Cvuui_QK.js",
+          "type": "other",
+          "transfer": 532,
+          "decoded": 407,
+          "ms": 51
+        },
+        {
+          "url": "/assets/ContactAction-BPt52DWP.js",
+          "type": "other",
+          "transfer": 469,
+          "decoded": 270,
+          "ms": 51
+        },
+        {
+          "url": "/assets/OwnerToSupply-C2lM_Nbc.js",
+          "type": "other",
+          "transfer": 537,
+          "decoded": 422,
+          "ms": 51
+        },
+        {
+          "url": "/assets/RoomSemanticContent-B_LbNsEY.js",
+          "type": "other",
+          "transfer": 425,
+          "decoded": 166,
+          "ms": 51
+        },
+        {
+          "url": "/assets/SceneShell-CY2r6BpI.js",
+          "type": "other",
+          "transfer": 2782,
+          "decoded": 5886,
+          "ms": 52
+        },
+        {
+          "url": "/assets/audience-9YmctOKM.css",
+          "type": "link",
+          "transfer": 427,
+          "decoded": 324,
+          "ms": 19
+        },
+        {
+          "url": "/assets/GovernmentRiveCanvas.client-B0JxAL1o.js",
+          "type": "script",
+          "transfer": 1924,
+          "decoded": 3408,
+          "ms": 9
+        },
+        {
+          "url": "/assets/dist-BCKVHR2P.js",
+          "type": "script",
+          "transfer": 55777,
+          "decoded": 210412,
+          "ms": 23
+        },
+        {
+          "url": "/animation/runtime/rive.wasm",
+          "type": "fetch",
+          "transfer": 811596,
+          "decoded": 2200568,
+          "ms": 177
+        },
+        {
+          "url": "/animation/rooms/government.88af9692263c.riv",
+          "type": "fetch",
+          "transfer": 927986,
+          "decoded": 2118853,
+          "ms": 175
+        },
+        {
+          "url": "/animation/rooms/government-plates/2x/bg_plate.webp",
+          "type": "fetch",
+          "transfer": 541706,
+          "decoded": 541406,
+          "ms": 11
+        }
+      ],
+      "posters": [
+        "/images/posters/government.webp"
+      ],
+      "riv": [
+        "/animation/rooms/government.88af9692263c.riv"
+      ],
+      "scripts": 183239,
+      "totalTransfer": 2739828
+    },
+    "/company": {
+      "html": {
+        "transfer": 3281,
+        "decoded": 9769
+      },
+      "domContentLoaded": 52,
+      "load": 92,
       "paints": {
         "first-paint": 84,
         "first-contentful-paint": 84
       },
       "lcp": {
-        "ms": 100,
-        "element": "IMG.scene-poster",
-        "url": "/images/posters/cybersecurity.svg"
-      },
-      "poster": {
-        "loadMs": 83,
-        "renderMs": 100,
-        "decodeMs": 17
-      },
-      "resources": [
-        {
-          "url": "/images/posters/cybersecurity.svg",
-          "type": "link",
-          "transfer": 26855,
-          "decoded": 223430,
-          "ms": 35
-        },
-        {
-          "url": "/assets/manifest-2685f4a8.js",
-          "type": "other",
-          "transfer": 1085,
-          "decoded": 6558,
-          "ms": 34
-        },
-        {
-          "url": "/assets/entry.client-C-cxeaxP.js",
-          "type": "other",
-          "transfer": 62911,
-          "decoded": 214752,
-          "ms": 55
-        },
-        {
-          "url": "/assets/root-DhMDn57f.js",
-          "type": "other",
-          "transfer": 1376,
-          "decoded": 2800,
-          "ms": 59
-        },
-        {
-          "url": "/assets/not-found-BnJLTIbr.js",
-          "type": "other",
-          "transfer": 12673,
-          "decoded": 41830,
-          "ms": 59
-        },
-        {
-          "url": "/assets/capability-CM9QeRuD.js",
-          "type": "other",
-          "transfer": 2116,
-          "decoded": 6303,
-          "ms": 60
-        },
-        {
-          "url": "/assets/jsx-runtime-BArjmnWf.js",
-          "type": "other",
-          "transfer": 37614,
-          "decoded": 120502,
-          "ms": 63
-        },
-        {
-          "url": "/fonts/fonts.css",
-          "type": "link",
-          "transfer": 445,
-          "decoded": 334,
-          "ms": 10
-        },
-        {
-          "url": "/assets/_page-BOl_-X_F.js",
-          "type": "other",
-          "transfer": 859,
-          "decoded": 1305,
-          "ms": 60
-        },
-        {
-          "url": "/assets/JsonLd-C1P4qVoX.js",
-          "type": "other",
-          "transfer": 1070,
-          "decoded": 1762,
-          "ms": 60
-        },
-        {
-          "url": "/assets/PageHeading-B6e02TZI.js",
-          "type": "other",
-          "transfer": 625,
-          "decoded": 703,
-          "ms": 60
-        },
-        {
-          "url": "/assets/RelatedPages-Cvuui_QK.js",
-          "type": "other",
-          "transfer": 532,
-          "decoded": 407,
-          "ms": 61
-        },
-        {
-          "url": "/assets/ContactAction-BPt52DWP.js",
-          "type": "other",
-          "transfer": 469,
-          "decoded": 270,
-          "ms": 61
-        },
-        {
-          "url": "/assets/SceneShell-Cb9cFYJf.js",
-          "type": "other",
-          "transfer": 2168,
-          "decoded": 4292,
-          "ms": 62
-        },
-        {
-          "url": "/assets/renderer-capability-Cfou0udw.js",
-          "type": "other",
-          "transfer": 638,
-          "decoded": 615,
-          "ms": 62
-        },
-        {
-          "url": "/assets/scene-CwgYQle3.js",
-          "type": "other",
-          "transfer": 350,
-          "decoded": 45,
-          "ms": 62
-        },
-        {
-          "url": "/assets/root-DTqzaogN.css",
-          "type": "link",
-          "transfer": 2732,
-          "decoded": 8351,
-          "ms": 11
-        },
-        {
-          "url": "/fonts/public-sans-latin.woff2",
-          "type": "css",
-          "transfer": 26936,
-          "decoded": 26636,
-          "ms": 47
-        },
-        {
-          "url": "/fonts/archivo-black-400-latin.woff2",
-          "type": "css",
-          "transfer": 10092,
-          "decoded": 9792,
-          "ms": 45
-        },
-        {
-          "url": "/assets/ConsultantView.client-BhMTEFor.js",
-          "type": "script",
-          "transfer": 1943,
-          "decoded": 3793,
-          "ms": 7
-        },
-        {
-          "url": "/assets/dist-Zt2MgRvk.js",
-          "type": "script",
-          "transfer": 55764,
-          "decoded": 210378,
-          "ms": 21
-        }
-      ],
-      "posters": [
-        "/images/posters/cybersecurity.svg"
-      ],
-      "riv": [],
-      "scripts": 182193,
-      "totalTransfer": 255749
-    },
-    "/government": {
-      "html": {
-        "transfer": 4070,
-        "decoded": 11758
-      },
-      "domContentLoaded": 62,
-      "load": 109,
-      "paints": {
-        "first-paint": 72,
-        "first-contentful-paint": 72
-      },
-      "lcp": {
-        "ms": 92,
-        "element": "IMG.scene-poster",
-        "url": "/images/posters/government.svg"
-      },
-      "poster": {
-        "loadMs": 85,
-        "renderMs": 92,
-        "decodeMs": 7
-      },
-      "resources": [
-        {
-          "url": "/images/posters/government.svg",
-          "type": "link",
-          "transfer": 31097,
-          "decoded": 206563,
-          "ms": 42
-        },
-        {
-          "url": "/assets/manifest-2685f4a8.js",
-          "type": "other",
-          "transfer": 1085,
-          "decoded": 6558,
-          "ms": 42
-        },
-        {
-          "url": "/assets/entry.client-C-cxeaxP.js",
-          "type": "other",
-          "transfer": 62911,
-          "decoded": 214752,
-          "ms": 58
-        },
-        {
-          "url": "/assets/root-DhMDn57f.js",
-          "type": "other",
-          "transfer": 1376,
-          "decoded": 2800,
-          "ms": 59
-        },
-        {
-          "url": "/assets/jsx-runtime-BArjmnWf.js",
-          "type": "other",
-          "transfer": 37614,
-          "decoded": 120502,
-          "ms": 60
-        },
-        {
-          "url": "/assets/not-found-BnJLTIbr.js",
-          "type": "other",
-          "transfer": 12673,
-          "decoded": 41830,
-          "ms": 62
-        },
-        {
-          "url": "/assets/audience-DuM25ZZ-.js",
-          "type": "other",
-          "transfer": 1363,
-          "decoded": 2361,
-          "ms": 62
-        },
-        {
-          "url": "/assets/_page-BOl_-X_F.js",
-          "type": "other",
-          "transfer": 859,
-          "decoded": 1305,
-          "ms": 62
-        },
-        {
-          "url": "/assets/JsonLd-C1P4qVoX.js",
-          "type": "other",
-          "transfer": 1070,
-          "decoded": 1762,
-          "ms": 62
-        },
-        {
-          "url": "/fonts/fonts.css",
-          "type": "link",
-          "transfer": 445,
-          "decoded": 334,
-          "ms": 10
-        },
-        {
-          "url": "/assets/root-DTqzaogN.css",
-          "type": "link",
-          "transfer": 2732,
-          "decoded": 8351,
-          "ms": 12
-        },
-        {
-          "url": "/assets/PageHeading-B6e02TZI.js",
-          "type": "other",
-          "transfer": 625,
-          "decoded": 703,
-          "ms": 62
-        },
-        {
-          "url": "/assets/RelatedPages-Cvuui_QK.js",
-          "type": "other",
-          "transfer": 532,
-          "decoded": 407,
-          "ms": 63
-        },
-        {
-          "url": "/assets/ContactAction-BPt52DWP.js",
-          "type": "other",
-          "transfer": 469,
-          "decoded": 270,
-          "ms": 63
-        },
-        {
-          "url": "/assets/OwnerToSupply-C2lM_Nbc.js",
-          "type": "other",
-          "transfer": 537,
-          "decoded": 422,
-          "ms": 63
-        },
-        {
-          "url": "/assets/SceneShell-Cb9cFYJf.js",
-          "type": "other",
-          "transfer": 2168,
-          "decoded": 4292,
-          "ms": 63
-        },
-        {
-          "url": "/assets/renderer-capability-Cfou0udw.js",
-          "type": "other",
-          "transfer": 638,
-          "decoded": 615,
-          "ms": 63
-        },
-        {
-          "url": "/assets/scene-CwgYQle3.js",
-          "type": "other",
-          "transfer": 350,
-          "decoded": 45,
-          "ms": 64
-        },
-        {
-          "url": "/fonts/public-sans-latin.woff2",
-          "type": "css",
-          "transfer": 26936,
-          "decoded": 26636,
-          "ms": 50
-        },
-        {
-          "url": "/fonts/archivo-black-400-latin.woff2",
-          "type": "css",
-          "transfer": 10092,
-          "decoded": 9792,
-          "ms": 48
-        },
-        {
-          "url": "/assets/ConsultantView.client-BhMTEFor.js",
-          "type": "script",
-          "transfer": 1943,
-          "decoded": 3793,
-          "ms": 5
-        },
-        {
-          "url": "/assets/dist-Zt2MgRvk.js",
-          "type": "script",
-          "transfer": 55764,
-          "decoded": 210378,
-          "ms": 19
-        }
-      ],
-      "posters": [
-        "/images/posters/government.svg"
-      ],
-      "riv": [],
-      "scripts": 181977,
-      "totalTransfer": 257349
-    },
-    "/company": {
-      "html": {
-        "transfer": 3030,
-        "decoded": 8429
-      },
-      "domContentLoaded": 60,
-      "load": 93,
-      "paints": {
-        "first-paint": 76,
-        "first-contentful-paint": 76
-      },
-      "lcp": {
-        "ms": 76,
+        "ms": 84,
         "element": "P",
         "url": ""
       },
       "poster": null,
       "resources": [
         {
-          "url": "/assets/manifest-2685f4a8.js",
+          "url": "/fonts/public-sans-latin.woff2",
+          "type": "link",
+          "transfer": 26936,
+          "decoded": 26636,
+          "ms": 31
+        },
+        {
+          "url": "/fonts/archivo-black-400-latin.woff2",
+          "type": "link",
+          "transfer": 10092,
+          "decoded": 9792,
+          "ms": 32
+        },
+        {
+          "url": "/assets/manifest-f3f4e898.js",
           "type": "other",
-          "transfer": 1085,
-          "decoded": 6558,
-          "ms": 16
+          "transfer": 1081,
+          "decoded": 6332,
+          "ms": 32
         },
         {
           "url": "/assets/entry.client-C-cxeaxP.js",
           "type": "other",
           "transfer": 62911,
           "decoded": 214752,
-          "ms": 47
+          "ms": 49
         },
         {
-          "url": "/assets/root-DhMDn57f.js",
+          "url": "/assets/root-MDbly1Q1.js",
           "type": "other",
-          "transfer": 1376,
-          "decoded": 2800,
-          "ms": 47
+          "transfer": 1462,
+          "decoded": 3167,
+          "ms": 56
         },
         {
           "url": "/assets/jsx-runtime-BArjmnWf.js",
           "type": "other",
           "transfer": 37614,
           "decoded": 120502,
-          "ms": 48
-        },
-        {
-          "url": "/assets/company-CBoD2tOM.js",
-          "type": "other",
-          "transfer": 889,
-          "decoded": 1547,
-          "ms": 52
+          "ms": 56
         },
         {
           "url": "/assets/not-found-BnJLTIbr.js",
           "type": "other",
           "transfer": 12673,
           "decoded": 41830,
-          "ms": 52
+          "ms": 61
         },
         {
-          "url": "/assets/_page-BOl_-X_F.js",
+          "url": "/assets/company-kUY_BJJQ.js",
           "type": "other",
-          "transfer": 859,
-          "decoded": 1305,
-          "ms": 52
+          "transfer": 886,
+          "decoded": 1551,
+          "ms": 61
         },
         {
-          "url": "/assets/JsonLd-C1P4qVoX.js",
+          "url": "/assets/_page-CZ2Z4DxG.js",
           "type": "other",
-          "transfer": 1070,
-          "decoded": 1762,
-          "ms": 53
+          "transfer": 842,
+          "decoded": 1496,
+          "ms": 61
         },
         {
-          "url": "/fonts/fonts.css",
-          "type": "link",
-          "transfer": 445,
-          "decoded": 334,
-          "ms": 15
-        },
-        {
-          "url": "/assets/PageHeading-B6e02TZI.js",
+          "url": "/assets/JsonLd-8G-Jz-bE.js",
           "type": "other",
-          "transfer": 625,
-          "decoded": 703,
-          "ms": 53
+          "transfer": 1147,
+          "decoded": 2016,
+          "ms": 62
+        },
+        {
+          "url": "/assets/ContentSections-OtbmdEIx.js",
+          "type": "other",
+          "transfer": 756,
+          "decoded": 1173,
+          "ms": 62
         },
         {
           "url": "/assets/RelatedPages-Cvuui_QK.js",
           "type": "other",
           "transfer": 532,
           "decoded": 407,
-          "ms": 53
+          "ms": 62
         },
         {
           "url": "/assets/ContactAction-BPt52DWP.js",
           "type": "other",
           "transfer": 469,
           "decoded": 270,
-          "ms": 53
+          "ms": 62
         },
         {
           "url": "/assets/OwnerToSupply-C2lM_Nbc.js",
           "type": "other",
           "transfer": 537,
           "decoded": 422,
-          "ms": 54
+          "ms": 62
         },
         {
-          "url": "/assets/root-DTqzaogN.css",
+          "url": "/fonts/fonts.css",
           "type": "link",
-          "transfer": 2732,
-          "decoded": 8351,
-          "ms": 15
+          "transfer": 445,
+          "decoded": 334,
+          "ms": 10
         },
         {
-          "url": "/fonts/public-sans-latin.woff2",
-          "type": "css",
-          "transfer": 26936,
-          "decoded": 26636,
-          "ms": 34
-        },
-        {
-          "url": "/fonts/archivo-black-400-latin.woff2",
-          "type": "css",
-          "transfer": 10092,
-          "decoded": 9792,
-          "ms": 33
+          "url": "/assets/root-BrR-4Gqi.css",
+          "type": "link",
+          "transfer": 12044,
+          "decoded": 60857,
+          "ms": 21
         }
       ],
       "posters": [],
       "riv": [],
-      "scripts": 120640,
-      "totalTransfer": 163875
+      "scripts": 120910,
+      "totalTransfer": 173708
     }
   }
 }

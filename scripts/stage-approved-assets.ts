@@ -3,12 +3,28 @@
  * Posters are the approved room masters as-is. A room .riv ships only from a verified export (`exportedBy: rive-cli | editor-ui`).
  * Hotspots carry the site's page ids and sections straight from the package; door hotspots get their Rive trigger.
  */
-import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, unlinkSync, writeFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
 import type { SceneHotspot, SceneRecord } from '../src/contracts/scene.ts';
 
 const root = resolve(import.meta.dirname, '..');
+const publicAnimation = resolve(root, 'public/animation');
+const posterDirectory = resolve(root, 'public/images/posters');
+
+// This script owns the public animation boundary. Recreate it so removed or
+// authoring-only files can never linger into a later release.
+rmSync(publicAnimation, { recursive: true, force: true });
+rmSync(posterDirectory, { recursive: true, force: true });
+mkdirSync(publicAnimation, { recursive: true });
+mkdirSync(posterDirectory, { recursive: true });
+
+const itLayerSource = resolve(root, 'creative-source/runtime/it-services/layers');
+const itLayerOutput = resolve(publicAnimation, 'it-services/layers');
+mkdirSync(itLayerOutput, { recursive: true });
+for (const file of readdirSync(itLayerSource)) {
+  if (file.endsWith('.svg')) copyFileSync(resolve(itLayerSource, file), resolve(itLayerOutput, file));
+}
 const ROOMS: Record<string, { posterAlt: string; captionRest: string }> = {
   lobby: { posterAlt: 'The lobby: reception desk, three doors — IT Services, Government Solutions, Cybersecurity — and a lounge by the window', captionRest: 'Three doors. Pick the room you need.' },
   'it-services': { posterAlt: 'The IT Services room: status board, service desk, workstations, server racks and a tool cart', captionRest: 'Every object in the room is a section of this page.' },
@@ -35,7 +51,6 @@ const ROOM_CAPTIONS: Record<string, Record<string, string>> = {
   cybersecurity: {},
 };
 
-mkdirSync(resolve(root, 'public/images/posters'), { recursive: true });
 const roomAnimationDir = resolve(root, 'public/animation/rooms');
 mkdirSync(roomAnimationDir, { recursive: true });
 for (const [sceneId, meta] of Object.entries(ROOMS)) {

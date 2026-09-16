@@ -5,12 +5,27 @@ test('the lobby is complete HTML: title, canonical, poster and three real door l
   await page.goto('/');
   await expect(page).toHaveTitle(/ThatDeveloperGuy/);
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://thatdeveloperguy.com/');
-  await expect(page.locator('.scene-poster')).toBeVisible();
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://thatdeveloperguy.com/images/posters/lobby.webp');
+  await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute('content', 'summary_large_image');
+  const poster = page.locator('.scene-poster');
+  await expect(poster).toBeAttached();
+  expect(await poster.isVisible() || await page.locator('.scene-rive canvas').isVisible()).toBe(true);
   const doors = page.locator('.scene-hit');
   await expect(doors).toHaveCount(5);
   await expect(doors.nth(0)).toHaveAttribute('href', '/capabilities/business-it');
   await expect(doors.nth(1)).toHaveAttribute('href', '/government');
   await expect(doors.nth(2)).toHaveAttribute('href', '/capabilities/cybersecurity');
+});
+
+test('animated routes share one full-screen HTML contract with complete semantic content', async ({ page }) => {
+  for (const path of ['/capabilities/business-it', '/government', '/capabilities/cybersecurity']) {
+    await page.goto(path);
+    await expect(page.locator('main > .scene')).toBeVisible();
+    await expect(page.locator('.site-footer')).toBeHidden();
+    expect(await page.locator('body').evaluate(element => getComputedStyle(element).overflow)).toBe('hidden');
+    await expect(page.locator('.room-semantic-content h1')).toHaveCount(1);
+    await expect(page.locator('.room-semantic-content a')).not.toHaveCount(0);
+  }
 });
 
 test('hovering a door names it in the caption; keyboard reaches every door', async ({ page, isMobile }) => {

@@ -7,6 +7,8 @@ test-results/
 shots/
 *.log
 .DS_Store
+__pycache__/
+*.py[cod]
 
 .react-router/
 build/

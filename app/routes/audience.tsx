@@ -5,6 +5,7 @@ import { ContentSections } from '../components/content/ContentSections';
 import { RelatedPages } from '../components/content/RelatedPages';
 import { ContactAction } from '../components/content/ContactAction';
 import { OwnerToSupply } from '../components/content/OwnerToSupply';
+import { RoomSemanticContent } from '../components/content/RoomSemanticContent';
 import { SceneShell } from '../experience/SceneShell';
 import { GovernmentSceneShell } from '../experience/GovernmentSceneShell';
 import governmentScene from '../experience/scenes/government/scene.json';
@@ -18,12 +19,26 @@ export default function Audience() {
   const page = usePage();
   if (!page) return <Missing />;
   const scene = page.sceneId ? SCENES[page.sceneId] : undefined;
+  if (scene && page.sceneId === 'government') {
+    return (
+      <>
+        <JsonLd page={page} />
+        <GovernmentSceneShell scene={scene} page={page} />
+        <RoomSemanticContent>
+          <PageHeading page={page} />
+          <ContentSections page={page} />
+          <OwnerToSupply />
+          <RelatedPages page={page} />
+          <ContactAction page={page} />
+        </RoomSemanticContent>
+      </>
+    );
+  }
   return (
     <>
       <JsonLd page={page} />
-      {scene && page.sceneId === 'government' && <GovernmentSceneShell scene={scene} page={page} />}
       <div className="page-wrap"><PageHeading page={page} /></div>
-      {scene && page.sceneId !== 'government' && <SceneShell scene={scene} page={page} />}
+      {scene && <SceneShell scene={scene} page={page} />}
       <div className="page-wrap">
         <ContentSections page={page} />
         <OwnerToSupply />
