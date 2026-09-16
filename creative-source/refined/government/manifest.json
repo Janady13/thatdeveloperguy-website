@@ -1,8 +1,8 @@
 {
   "room": "government",
   "canvas": {
-    "width": 1648,
-    "height": 928
+    "width": 1672,
+    "height": 941
   },
   "package": "TDG_VECTOR_ROOMS_REBUILD_v3 3.0.0-review.1 (hand-authored vector, no tracing)",
   "source": {
@@ -841,52 +841,100 @@
   ],
   "hotspots": [
     {
-      "id": "briefing",
-      "label": "Request a briefing",
+      "id": "presentation",
+      "label": "Government solutions",
       "rect": [
-        216,
-        286,
-        112,
-        268
+        724,
+        189,
+        355,
+        213
+      ],
+      "pageId": "",
+      "section": "#solutions"
+    },
+    {
+      "id": "planning",
+      "label": "Project planning",
+      "rect": [
+        578,
+        194,
+        132,
+        233
+      ],
+      "pageId": "",
+      "section": "#planning"
+    },
+    {
+      "id": "requirements",
+      "label": "Review requirements",
+      "rect": [
+        1091,
+        194,
+        134,
+        233
+      ],
+      "pageId": "",
+      "section": "#requirements"
+    },
+    {
+      "id": "contracting",
+      "label": "Contracting and capability statement",
+      "rect": [
+        334,
+        449,
+        94,
+        168
+      ],
+      "pageId": "",
+      "section": "#contracting"
+    },
+    {
+      "id": "briefing",
+      "label": "Request a project briefing",
+      "rect": [
+        697,
+        487,
+        398,
+        155
       ],
       "pageId": "contact",
       "section": ""
     },
     {
-      "id": "display",
-      "label": "Government solutions",
+      "id": "process",
+      "label": "Delivery process",
       "rect": [
-        698,
-        205,
-        365,
-        210
+        437,
+        157,
+        79,
+        356
       ],
-      "pageId": "audience.government",
-      "section": "#overview"
+      "pageId": "",
+      "section": "#process"
     },
     {
-      "id": "files",
-      "label": "Capability statement",
+      "id": "return-lobby",
+      "label": "Return to the lobby",
       "rect": [
-        338,
-        439,
-        150,
-        235
+        199,
+        245,
+        131,
+        403
       ],
-      "pageId": "capability-statement",
+      "pageId": "home",
       "section": ""
     },
     {
-      "id": "table",
-      "label": "Delivery approach",
+      "id": "workstations",
+      "label": "Government websites and workplace IT",
       "rect": [
-        540,
-        531,
-        600,
-        146
+        1377,
+        404,
+        126,
+        131
       ],
-      "pageId": "approach",
-      "section": ""
+      "pageId": "",
+      "section": "#delivery"
     }
   ],
   "lettering": [

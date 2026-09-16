@@ -6,6 +6,7 @@ import { RelatedPages } from '../components/content/RelatedPages';
 import { ContactAction } from '../components/content/ContactAction';
 import { OwnerToSupply } from '../components/content/OwnerToSupply';
 import { SceneShell } from '../experience/SceneShell';
+import { GovernmentSceneShell } from '../experience/GovernmentSceneShell';
 import governmentScene from '../experience/scenes/government/scene.json';
 import type { SceneRecord } from '../../src/contracts/scene';
 import { usePage, Missing } from './_page';
@@ -21,7 +22,7 @@ export default function Audience() {
     <>
       <JsonLd page={page} />
       <div className="page-wrap"><PageHeading page={page} /></div>
-      {scene && <SceneShell scene={scene} page={page} />}
+      {scene && (page.sceneId === 'government' ? <GovernmentSceneShell scene={scene} page={page} /> : <SceneShell scene={scene} page={page} />)}
       <div className="page-wrap">
         <ContentSections page={page} />
         <OwnerToSupply />

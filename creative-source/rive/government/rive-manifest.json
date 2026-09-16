@@ -1,0 +1,40 @@
+{
+  "room": "government",
+  "file": "government-2x.riv",
+  "bytes": 2118853,
+  "sha256": "88af9692263ced2ea02b3863d2d69e09aefbb4afa214749192a4658f536e35e4",
+  "artboard": "GovernmentSolutions",
+  "stateMachine": "GovernmentSolutionsMachine",
+  "viewModel": "GovernmentSolutions",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "exportedBy": "rive-cli",
+  "compiler": "rive 1.0.4",
+  "source": {
+    "kind": "rive-rml-project",
+    "path": "rive/government/scene.rml",
+    "sha256": "ae860913f7067190efb90936de7be488f9cee240566727e962d4d23020bcc417"
+  },
+  "plates": {
+    "base": "/animation/rooms/government-plates",
+    "sets": [
+      "2x",
+      "4x"
+    ]
+  },
+  "inputs": {
+    "hoverTarget": "number 0-8 (presentation, planning, requirements, contracting, briefing, process, return-lobby, workstations)",
+    "doorAmount": "0-1",
+    "drawerNAmount": "0-1 (N=1..5)",
+    "chairsAmount": "0-1",
+    "globeAmount": "0-1",
+    "bookAmount": "0-1",
+    "checklistAmount": "0-1",
+    "refreshPresentation": "boolean, host resets",
+    "walk": "0-1"
+  },
+  "authoredTo": "TDG_GOVERNMENT_SOLUTIONS_ANIMATION_KIT/rive/GovernmentSolutionsMachine.build-spec.json",
+  "authoredAt": "2026-09-16"
+}
