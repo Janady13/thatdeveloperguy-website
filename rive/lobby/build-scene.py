@@ -186,7 +186,7 @@ for d,leaf,reader,plate,gx,gy in DOORS:
     image(leaf,A[leaf],0,-l["h"]/2)
     emit('</Node>')
     # reveal: corridor behind the leaf
-    rv=nid(); emit(f'<Node x="{l["x"]:.2f}" y="{l["y"]:.2f}" name="reveal_{d}" id="{rv}">')
+    rv=nid(); emit(f'<Node x="{l["x"]:.2f}" y="{l["y"]:.2f}" opacity="0" name="reveal_{d}" id="{rv}">{bind(dn,18,door_far)}')
     far=rect(f"reveal_far_{d}",l["w"]*0.5,l["h"]*0.52,l["w"]*0.34,l["h"]*0.42,radial("FFC9BEF2","00C9BEF2",l["w"]*0.3,l["h"]*0.3),"screen",0.0,ox=0.5,oy=0.5,extra_paint=bind(dn,18,door_far))
     rect(f"reveal_floor_{d}",0,l["h"]*0.82,l["w"],l["h"]*0.18,linear([("FF2A1856",0),("FF150E2A",1)],0,0,0,l["h"]*0.18))
     rect(f"reveal_wall_{d}",0,0,l["w"],l["h"]*0.84,linear([("FF1C1338",0),("FF0D0A14",1)],0,0,0,l["h"]*0.84))
