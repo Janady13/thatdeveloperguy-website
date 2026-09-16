@@ -15,7 +15,7 @@
     "build": "npm run content && npm run stage && react-router build && node --import tsx scripts/assemble-release.ts",
     "build:demo": "npm run content:demo && npm run stage && VITE_INQUIRY_DELIVERY=connected react-router build && TDG_RELEASE_KIND=demo node --import tsx scripts/assemble-release.ts",
     "serve:dist": "node --import tsx scripts/serve-dist.ts",
-    "typecheck": "npm run content:demo && react-router typegen && tsc --noEmit",
+    "typecheck": "npm run content:demo && npm run stage && react-router typegen && tsc --noEmit",
     "test": "node --test --import tsx tests/unit/*.test.ts tests/api/*.test.ts",
     "test:browser": "playwright test",
     "scan:repo": "node --import tsx scripts/audit-repository.ts",
