@@ -37,7 +37,8 @@ test('the crawler policy record mirrors the node exactly', () => {
 test('staging directives cannot reach the production host config', async () => {
   const { renderHostConfig } = await import('../../src/engines/seo/crawl/host-config.ts');
   const demo = renderHostConfig('demo', 'tdg.thatwebhostingguy.com'), production = renderHostConfig('production', 'thatdeveloperguy.com');
-  assert.match(demo, /auth_basic "ThatDeveloperGuy staging"/); assert.match(demo, /X-Robots-Tag "noindex, nofollow"/);
+  assert.doesNotMatch(demo, /auth_basic "/); // open demo by owner decision; TDG_STAGING_GATE=on re-enables the gate
+  process.env.TDG_STAGING_GATE = 'on'; assert.match(renderHostConfig('demo', 'tdg.thatwebhostingguy.com'), /auth_basic "ThatDeveloperGuy staging"/); delete process.env.TDG_STAGING_GATE; assert.match(demo, /X-Robots-Tag "noindex, nofollow"/);
   assert.doesNotMatch(production, /auth_basic "|htpasswd/);
   assert.doesNotMatch(production.replace(/location = \/api\/inquiries \{[\s\S]*?\n    \}/, ''), /noindex/, 'production may carry noindex only on the API endpoint');
   assert.match(production, /live\/thatdeveloperguy\.com\/fullchain/); assert.match(demo, /live\/thatwebhostingguy\.com\/fullchain/);

@@ -10,5 +10,5 @@ export function renderHostConfig(kind: ReleaseKind, host: string, template = rea
     .replaceAll('__KIND__', kind)
     .replaceAll('__CERT__', kind === 'demo' ? 'thatwebhostingguy.com' : 'thatdeveloperguy.com')
     .replaceAll('__ROBOTS__', robotsHeaderFor(kind))
-    .replaceAll('__AUTH__', kind === 'demo' ? 'auth_basic "ThatDeveloperGuy staging"; auth_basic_user_file /etc/nginx/tdg-demo.htpasswd;' : '# production: no access gate');
+    .replaceAll('__AUTH__', kind === 'demo' && process.env.TDG_STAGING_GATE === 'on' ? 'auth_basic "ThatDeveloperGuy staging"; auth_basic_user_file /etc/nginx/tdg-demo.htpasswd;' : kind === 'demo' ? '# staging gate off (owner decision 2026-09-16: open demo for device testing; noindex + robots Disallow remain). Set TDG_STAGING_GATE=on to re-enable.' : '# production: no access gate');
 }
