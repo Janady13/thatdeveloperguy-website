@@ -1,0 +1,54 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="0:7" styleId="0:5" width="1672" height="941" name="Lobby" id="0:2">
+        <LayoutComponentStyle name="Artboard Style" id="0:5"/>
+        <Image x="1474.5" y="629.5" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1001" name="plant_right_fg" id="0:2001"/>
+        <Image x="0.0" y="394.75" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1002" name="plant_left_fg" id="0:2002"/>
+        <Image x="1264.5" y="71.75" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1003" name="arch_right_fg" id="0:2003"/>
+        <Image x="1154.5" y="413.75" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1004" name="reader_cyber" id="0:2004"/>
+        <Image x="909.5" y="413.75" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1005" name="reader_gov" id="0:2005"/>
+        <Image x="669.5" y="413.75" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1006" name="reader_it" id="0:2006"/>
+        <Image x="1039.5" y="301.75" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1007" name="door_cyber_leaf" id="0:2007"/>
+        <Image x="791.5" y="301.75" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1008" name="door_gov_leaf" id="0:2008"/>
+        <Image x="551.5" y="301.75" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1009" name="door_it_leaf" id="0:2009"/>
+        <Image x="1544.5" y="514.5" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1010" name="plant_table" id="0:2010"/>
+        <Image x="1534.5" y="399.5" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1011" name="plant_window_mid" id="0:2011"/>
+        <Image x="1204.5" y="329.75" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1012" name="plant_cyber_right" id="0:2012"/>
+        <Image x="944.5" y="364.75" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1013" name="plant_gov_right" id="0:2013"/>
+        <Image x="704.5" y="359.75" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1014" name="plant_gov_left" id="0:2014"/>
+        <Image x="424.5" y="294.75" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1015" name="plant_left_rear" id="0:2015"/>
+        <Image x="1429.5" y="0.0" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1016" name="window_frames" id="0:2016"/>
+        <Image x="1461.5" y="83.5" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1017" name="clouds" id="0:2017"/>
+        <Image x="0" y="0" originX="0" originY="0" scaleX="0.5" scaleY="0.5" assetId="0:1000" name="bg_plate" id="0:2000"/>
+
+        <LinearAnimation duration="60" name="Idle" id="0:6"/>
+        <StateMachine name="Lobby" id="0:7">
+            <StateMachineLayer name="Ambient" id="0:8">
+                <AnyState x="200" y="-120"/>
+                <ExitState x="400" y="-120"/>
+                <EntryState>
+                    <StateTransition stateToId="0:12"/>
+                </EntryState>
+                <AnimationState x="200" animationId="0:6" id="0:12"/>
+            </StateMachineLayer>
+        </StateMachine>
+    </Artboard>
+
+    <ImageAsset file="assets/2x/bg_plate.webp" name="bg_plate" id="0:1000"/>
+    <ImageAsset file="assets/2x/plant_right_fg.webp" name="plant_right_fg" id="0:1001"/>
+    <ImageAsset file="assets/2x/plant_left_fg.webp" name="plant_left_fg" id="0:1002"/>
+    <ImageAsset file="assets/2x/arch_right_fg.webp" name="arch_right_fg" id="0:1003"/>
+    <ImageAsset file="assets/2x/reader_cyber.webp" name="reader_cyber" id="0:1004"/>
+    <ImageAsset file="assets/2x/reader_gov.webp" name="reader_gov" id="0:1005"/>
+    <ImageAsset file="assets/2x/reader_it.webp" name="reader_it" id="0:1006"/>
+    <ImageAsset file="assets/2x/door_cyber_leaf.webp" name="door_cyber_leaf" id="0:1007"/>
+    <ImageAsset file="assets/2x/door_gov_leaf.webp" name="door_gov_leaf" id="0:1008"/>
+    <ImageAsset file="assets/2x/door_it_leaf.webp" name="door_it_leaf" id="0:1009"/>
+    <ImageAsset file="assets/2x/plant_table.webp" name="plant_table" id="0:1010"/>
+    <ImageAsset file="assets/2x/plant_window_mid.webp" name="plant_window_mid" id="0:1011"/>
+    <ImageAsset file="assets/2x/plant_cyber_right.webp" name="plant_cyber_right" id="0:1012"/>
+    <ImageAsset file="assets/2x/plant_gov_right.webp" name="plant_gov_right" id="0:1013"/>
+    <ImageAsset file="assets/2x/plant_gov_left.webp" name="plant_gov_left" id="0:1014"/>
+    <ImageAsset file="assets/2x/plant_left_rear.webp" name="plant_left_rear" id="0:1015"/>
+    <ImageAsset file="assets/2x/window_frames.webp" name="window_frames" id="0:1016"/>
+    <ImageAsset file="assets/2x/clouds.webp" name="clouds" id="0:1017"/>
+</Rive>

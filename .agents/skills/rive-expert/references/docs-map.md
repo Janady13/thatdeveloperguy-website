@@ -1,0 +1,433 @@
+# Rive documentation map (from https://rive.app/docs/llms.txt, fetched 2026-09-16)
+
+Fetch a page by appending `.md` URLs below; do not guess URLs. Re-fetch llms.txt when a topic is missing.
+
+
+# Rive
+- Introduction — https://rive.app/docs/getting-started/introduction.md
+- Pricing — https://rive.app/docs/account-admin/pricing.md
+- Community — https://rive.app/docs/community/community-overview.md
+- Marketplace — https://rive.app/docs/community/marketplace.md
+- Rive Experts — https://rive.app/docs/community/rive-experts.md
+- Using the Rive Editor — https://rive.app/docs/editor/get-rive.md
+- Interface Overview — https://rive.app/docs/editor/interface-overview/overview.md
+- File Browser — https://rive.app/docs/editor/interface-overview/file-browser.md
+- Viewport — https://rive.app/docs/editor/interface-overview/stage.md
+- Toolbar — https://rive.app/docs/editor/interface-overview/toolbar.md
+- Sidebar — https://rive.app/docs/editor/interface-overview/sidebar.md
+- Inspector — https://rive.app/docs/editor/interface-overview/inspector.md
+- Debug Panel — https://rive.app/docs/editor/interface-overview/debug-panel.md
+- Selection and Navigation — https://rive.app/docs/editor/interface-overview/selection-and-navigation.md
+- Keyboard Shortcuts — https://rive.app/docs/editor/keyboard-shortcuts.md
+- Dependencies Graph — https://rive.app/docs/editor/workflows/dependency-graph.md
+- Tagging — https://rive.app/docs/editor/tagging.md
+- Revision History — https://rive.app/docs/editor/fundamentals/revision-history.md
+- Best Practices — https://rive.app/docs/getting-started/best-practices.md
+- Artboards — https://rive.app/docs/editor/fundamentals/artboards.md
+- Components — https://rive.app/docs/editor/fundamentals/components.md
+- Shapes and Paths Overview — https://rive.app/docs/editor/fundamentals/shapes-and-paths-overview.md
+- Shape Tools — https://rive.app/docs/editor/fundamentals/procedural-shapes.md
+- Shape Builder — https://rive.app/docs/editor/design/shape-builder.md
+- Pen Tool Overview — https://rive.app/docs/editor/fundamentals/pen-tool-overview.md
+- Fill and Stroke — https://rive.app/docs/editor/fundamentals/fill-and-stroke.md
+- Edit Vertices — https://rive.app/docs/editor/fundamentals/edit-vertices.md
+- Trim Path — https://rive.app/docs/editor/manipulating-shapes/trim-path.md
+- Clipping — https://rive.app/docs/editor/manipulating-shapes/clipping.md
+- Align and Distribute — https://rive.app/docs/editor/fundamentals/align-and-distribute.md
+- Text — https://rive.app/docs/editor/text/text-overview.md
+- Text Runs — https://rive.app/docs/editor/text/text-runs.md
+- Text Styles — https://rive.app/docs/editor/text/text-styles.md
+- Text Modifiers — https://rive.app/docs/editor/text/text-modifiers.md
+- Hierarchy — https://rive.app/docs/editor/interface-overview/hierarchy.md
+- Groups — https://rive.app/docs/editor/fundamentals/groups.md
+- Solos — https://rive.app/docs/editor/manipulating-shapes/solos.md
+- Transform Spaces — https://rive.app/docs/editor/fundamentals/transform-spaces.md
+- Freeze and Origin — https://rive.app/docs/editor/fundamentals/freeze-and-origin.md
+- Animating Draw Order — https://rive.app/docs/editor/animate-mode/animating-draw-order.md
+- Overview — https://rive.app/docs/editor/layouts/layouts-overview.md
+- Tools — https://rive.app/docs/editor/layouts/layout-tools.md
+- Parameters — https://rive.app/docs/editor/layouts/layout-parameters.md
+- Component Sizing — https://rive.app/docs/editor/layouts/component-sizing.md
+- Layout Animation — https://rive.app/docs/editor/layouts/layout-animation.md
+- N-Slicing — https://rive.app/docs/editor/layouts/n-slicing.md
+- Rulers & Guides — https://rive.app/docs/editor/design/rulers-and-guides.md
+- Assets — https://rive.app/docs/editor/fundamentals/assets-overview.md
+- SVG & Vector Assets — https://rive.app/docs/editor/assets/svg.md
+- Photoshop Files — https://rive.app/docs/editor/assets/psd.md
+- Font Assets — https://rive.app/docs/editor/text/fonts.md
+- Audio Assets — https://rive.app/docs/editor/assets/audio.md
+- Libraries — https://rive.app/docs/editor/libraries.md
+- Animate Mode Overview — https://rive.app/docs/editor/animate-mode/animate-mode-overview.md
+- Timeline — https://rive.app/docs/editor/animate-mode/timeline.md
+- Keys — https://rive.app/docs/editor/animate-mode/keys.md
+- Interpolation (Easing) — https://rive.app/docs/editor/animate-mode/interpolation-easing.md
+- State Machine Overview — https://rive.app/docs/editor/state-machine/state-machine.md
+- States — https://rive.app/docs/editor/state-machine/states.md
+- Transitions — https://rive.app/docs/editor/state-machine/transitions.md
+- Layers — https://rive.app/docs/editor/state-machine/layers.md
+- Listeners — https://rive.app/docs/editor/state-machine/listeners.md
+- Events Overview — https://rive.app/docs/editor/events/overview.md
+- Open URL Events — https://rive.app/docs/editor/events/open-url-events.md
+- Audio Events — https://rive.app/docs/editor/events/audio-events.md
+- Data Binding Overview — https://rive.app/docs/editor/data-binding/overview.md
+- View Models & Instances — https://rive.app/docs/editor/data-binding/view-models.md
+- View Model Properties — https://rive.app/docs/editor/data-binding/property-types.md
+- Binding Data — https://rive.app/docs/editor/data-binding/binding-data.md
+- Controlling Data — https://rive.app/docs/editor/data-binding/controlling-data.md
+- Enums — https://rive.app/docs/editor/data-binding/enums.md
+- Lists — https://rive.app/docs/editor/data-binding/lists.md
+- Converters — https://rive.app/docs/editor/data-binding/converters.md
+- Stateful Components — https://rive.app/docs/editor/data-binding/stateful-components.md
+- Property Groups — https://rive.app/docs/editor/data-binding/property-groups.md
+- Migration Guide — https://rive.app/docs/editor/data-binding/migration-guide.md
+- Exporting for Runtime — https://rive.app/docs/editor/exporting/exporting-for-runtime.md
+- Sharing & Embedding — https://rive.app/docs/editor/embed-urls/overview.md
+- Exporting Videos & Images — https://rive.app/docs/editor/exporting/exporting-for-video-and-static-design.md
+- Exporting for Backup — https://rive.app/docs/editor/exporting/exporting-for-backup.md
+- AI Agent — https://rive.app/docs/editor/ai-agent/ai-agent.md
+- Rive MCP Integration — https://rive.app/docs/editor/ai/mcp.md
+- Manipulating Shapes Overview — https://rive.app/docs/editor/manipulating-shapes/manipulating-shapes.md
+- Meshes — https://rive.app/docs/editor/manipulating-shapes/meshes.md
+- Bones — https://rive.app/docs/editor/manipulating-shapes/bones.md
+- Joysticks — https://rive.app/docs/editor/manipulating-shapes/joysticks.md
+- Constraints Overview — https://rive.app/docs/editor/constraints/constraints-overview.md
+- IK Constraint — https://rive.app/docs/editor/constraints/ik-constraint.md
+- Distance Constraint — https://rive.app/docs/editor/constraints/distance-constraint.md
+- Scale Constraint — https://rive.app/docs/editor/constraints/scale-constraint.md
+- Rotation Constraint — https://rive.app/docs/editor/constraints/rotation-constraint.md
+- Transform Constraint — https://rive.app/docs/editor/constraints/transform-constraint.md
+- Translation Constraint — https://rive.app/docs/editor/constraints/translation-constraint.md
+- Follow Path Constraint — https://rive.app/docs/editor/constraints/follow-path-constraint.md
+- Scroll Constraints — https://rive.app/docs/editor/constraints/scroll-constraint.md
+- Semantics — https://rive.app/docs/editor/accessibility/semantics.md
+- Reduced Motion — https://rive.app/docs/editor/accessibility/reduced-motion.md
+- Workspaces — https://rive.app/docs/account-admin/workspaces/workspaces-overview.md
+- Managing Workspaces — https://rive.app/docs/account-admin/workspaces/managing-workspaces.md
+- Managing Workspace Members — https://rive.app/docs/account-admin/workspaces/managing-workspace-members.md
+- Bring Your Own S3 Bucket — https://rive.app/docs/account-admin/bring-your-own-bucket.md
+- Events at Runtime — https://rive.app/docs/editor/events/general-events.md
+- Getting Started — https://rive.app/docs/scripting/getting-started.md
+- Scripting Demos — https://rive.app/docs/scripting/demos.md
+- Creating Scripts — https://rive.app/docs/scripting/creating-scripts.md
+- Protocols — https://rive.app/docs/scripting/protocols/overview.md
+- Node Scripts — https://rive.app/docs/scripting/protocols/node-scripts.md
+- Layout Scripts — https://rive.app/docs/scripting/protocols/layout-scripts.md
+- Converter Scripts — https://rive.app/docs/scripting/protocols/converter-scripts.md
+- Path Effect Scripts — https://rive.app/docs/scripting/protocols/path-effect-scripts.md
+- Transition Condition Scripts — https://rive.app/docs/scripting/protocols/transition-condition-scripts.md
+- Listener Action Scripts — https://rive.app/docs/scripting/protocols/listener-action-scripts.md
+- WGSL Shaders — https://rive.app/docs/scripting/wgsl-shaders.md
+- Blank Scripts — https://rive.app/docs/scripting/protocols/util-scripts.md
+- Test Scripts — https://rive.app/docs/scripting/protocols/test-scripts.md
+- Script Inputs — https://rive.app/docs/scripting/script-inputs.md
+- Data Binding — https://rive.app/docs/scripting/data-binding.md
+- Pointer Events — https://rive.app/docs/scripting/pointer-events.md
+- Debug Panel — https://rive.app/docs/scripting/debugging/debug-panel.md
+- Unit Testing — https://rive.app/docs/scripting/debugging/unit-testing.md
+- Configuration — https://rive.app/docs/scripting/configuration.md
+- Keyboard Shortcuts — https://rive.app/docs/scripting/keyboard-shortcuts.md
+- DateTypeArg — https://rive.app/docs/scripting/api-reference/luau/date-type-arg.md
+- DateTypeResult — https://rive.app/docs/scripting/api-reference/luau/date-type-result.md
+- vector — https://rive.app/docs/scripting/api-reference/luau/vector.md
+- Animation — https://rive.app/docs/scripting/api-reference/artboards/animation.md
+- Artboard — https://rive.app/docs/scripting/api-reference/artboards/artboard.md
+- FocusEvent — https://rive.app/docs/scripting/api-reference/artboards/focus-event.md
+- GamepadConnected — https://rive.app/docs/scripting/api-reference/artboards/gamepad-connected.md
+- GamepadDisconnected — https://rive.app/docs/scripting/api-reference/artboards/gamepad-disconnected.md
+- GamepadEvent — https://rive.app/docs/scripting/api-reference/artboards/gamepad-event.md
+- GamepadMappingKind — https://rive.app/docs/scripting/api-reference/artboards/gamepad-mapping-kind.md
+- KeyPhase — https://rive.app/docs/scripting/api-reference/artboards/key-phase.md
+- KeyboardEvent — https://rive.app/docs/scripting/api-reference/artboards/keyboard-event.md
+- ListenerContext — https://rive.app/docs/scripting/api-reference/artboards/listener-context.md
+- NodeData — https://rive.app/docs/scripting/api-reference/artboards/node-data.md
+- NodeReadData — https://rive.app/docs/scripting/api-reference/artboards/node-read-data.md
+- NoneEvent — https://rive.app/docs/scripting/api-reference/artboards/none-event.md
+- PointerEvent — https://rive.app/docs/scripting/api-reference/artboards/pointer-event.md
+- PointerType — https://rive.app/docs/scripting/api-reference/artboards/pointer-type.md
+- ReportedEvent — https://rive.app/docs/scripting/api-reference/artboards/reported-event.md
+- TextInput — https://rive.app/docs/scripting/api-reference/artboards/text-input.md
+- ViewModel — https://rive.app/docs/scripting/api-reference/artboards/view-model.md
+- ViewModelChange — https://rive.app/docs/scripting/api-reference/artboards/view-model-change.md
+- Color — https://rive.app/docs/scripting/api-reference/color/color.md
+- DataValue — https://rive.app/docs/scripting/api-reference/data-value/data-value.md
+- DataValueBoolean — https://rive.app/docs/scripting/api-reference/data-value/data-value-boolean.md
+- DataValueColor — https://rive.app/docs/scripting/api-reference/data-value/data-value-color.md
+- DataValueNumber — https://rive.app/docs/scripting/api-reference/data-value/data-value-number.md
+- DataValueString — https://rive.app/docs/scripting/api-reference/data-value/data-value-string.md
+- Listener — https://rive.app/docs/scripting/api-reference/data-value/listener.md
+- Property — https://rive.app/docs/scripting/api-reference/data-value/property.md
+- PropertyTrigger — https://rive.app/docs/scripting/api-reference/data-value/property-trigger.md
+- FileFormat — https://rive.app/docs/scripting/api-reference/file-format/file-format.md
+- EditorContext — https://rive.app/docs/scripting/api-reference/file-format/editor-context.md
+- EditorScroll — https://rive.app/docs/scripting/api-reference/file-format/editor-scroll.md
+- EditorTheme — https://rive.app/docs/scripting/api-reference/file-format/editor-theme.md
+- EditorThemeStyle — https://rive.app/docs/scripting/api-reference/file-format/editor-theme-style.md
+- FormatCompletion — https://rive.app/docs/scripting/api-reference/file-format/format-completion.md
+- FormatDiagnostic — https://rive.app/docs/scripting/api-reference/file-format/format-diagnostic.md
+- FormatDocument — https://rive.app/docs/scripting/api-reference/file-format/format-document.md
+- FormatHover — https://rive.app/docs/scripting/api-reference/file-format/format-hover.md
+- FormatScope — https://rive.app/docs/scripting/api-reference/file-format/format-scope.md
+- FormatSurface — https://rive.app/docs/scripting/api-reference/file-format/format-surface.md
+- FormatToken — https://rive.app/docs/scripting/api-reference/file-format/format-token.md
+- FormatView — https://rive.app/docs/scripting/api-reference/file-format/format-view.md
+- TextFileFormat — https://rive.app/docs/scripting/api-reference/file-format/text-file-format.md
+- BindGroupDesc — https://rive.app/docs/scripting/api-reference/gpu/bind-group-desc.md
+- BindGroupLayoutDesc — https://rive.app/docs/scripting/api-reference/gpu/bind-group-layout-desc.md
+- BlendFactor — https://rive.app/docs/scripting/api-reference/gpu/blend-factor.md
+- BlendOp — https://rive.app/docs/scripting/api-reference/gpu/blend-op.md
+- BlendState — https://rive.app/docs/scripting/api-reference/gpu/blend-state.md
+- BufferUsage — https://rive.app/docs/scripting/api-reference/gpu/buffer-usage.md
+- BufferUsageArg — https://rive.app/docs/scripting/api-reference/gpu/buffer-usage-arg.md
+- Canvas — https://rive.app/docs/scripting/api-reference/gpu/canvas.md
+- ColorAttachment — https://rive.app/docs/scripting/api-reference/gpu/color-attachment.md
+- ColorTarget — https://rive.app/docs/scripting/api-reference/gpu/color-target.md
+- CompareFunction — https://rive.app/docs/scripting/api-reference/gpu/compare-function.md
+- CullMode — https://rive.app/docs/scripting/api-reference/gpu/cull-mode.md
+- DepthStencilAttachment — https://rive.app/docs/scripting/api-reference/gpu/depth-stencil-attachment.md
+- DepthStencilState — https://rive.app/docs/scripting/api-reference/gpu/depth-stencil-state.md
+- Filter — https://rive.app/docs/scripting/api-reference/gpu/filter.md
+- GPUBindGroup — https://rive.app/docs/scripting/api-reference/gpu/gpu-bind-group.md
+- GPUBindGroupLayout — https://rive.app/docs/scripting/api-reference/gpu/gpu-bind-group-layout.md
+- GPUBuffer — https://rive.app/docs/scripting/api-reference/gpu/gpu-buffer.md
+- GPUBufferDesc — https://rive.app/docs/scripting/api-reference/gpu/gpu-buffer-desc.md
+- GPUCanvas — https://rive.app/docs/scripting/api-reference/gpu/gpu-canvas.md
+- GPUColor — https://rive.app/docs/scripting/api-reference/gpu/gpu-color.md
+- GPUFeatures — https://rive.app/docs/scripting/api-reference/gpu/gpu-features.md
+- GPUPipeline — https://rive.app/docs/scripting/api-reference/gpu/gpu-pipeline.md
+- GPURenderPass — https://rive.app/docs/scripting/api-reference/gpu/gpu-render-pass.md
+- GPUSampler — https://rive.app/docs/scripting/api-reference/gpu/gpu-sampler.md
+- GPUTexture — https://rive.app/docs/scripting/api-reference/gpu/gpu-texture.md
+- LoadOp — https://rive.app/docs/scripting/api-reference/gpu/load-op.md
+- PipelineStage — https://rive.app/docs/scripting/api-reference/gpu/pipeline-stage.md
+- PrimitiveTopology — https://rive.app/docs/scripting/api-reference/gpu/primitive-topology.md
+- RenderPassDesc — https://rive.app/docs/scripting/api-reference/gpu/render-pass-desc.md
+- SamplerEntry — https://rive.app/docs/scripting/api-reference/gpu/sampler-entry.md
+- Shader — https://rive.app/docs/scripting/api-reference/gpu/shader.md
+- StoreOp — https://rive.app/docs/scripting/api-reference/gpu/store-op.md
+- TextureAspect — https://rive.app/docs/scripting/api-reference/gpu/texture-aspect.md
+- TextureEntry — https://rive.app/docs/scripting/api-reference/gpu/texture-entry.md
+- TextureType — https://rive.app/docs/scripting/api-reference/gpu/texture-type.md
+- UBOEntry — https://rive.app/docs/scripting/api-reference/gpu/ubo-entry.md
+- VertexAttribute — https://rive.app/docs/scripting/api-reference/gpu/vertex-attribute.md
+- VertexBufferLayout — https://rive.app/docs/scripting/api-reference/gpu/vertex-buffer-layout.md
+- VertexFormat — https://rive.app/docs/scripting/api-reference/gpu/vertex-format.md
+- WrapMode — https://rive.app/docs/scripting/api-reference/gpu/wrap-mode.md
+- ColorFormat — https://rive.app/docs/scripting/api-reference/gpu_types/color-format.md
+- CompressedFormat — https://rive.app/docs/scripting/api-reference/gpu_types/compressed-format.md
+- DepthFormat — https://rive.app/docs/scripting/api-reference/gpu_types/depth-format.md
+- GPUTextureView — https://rive.app/docs/scripting/api-reference/gpu_types/gpu-texture-view.md
+- TextureFormat — https://rive.app/docs/scripting/api-reference/gpu_types/texture-format.md
+- Gradient — https://rive.app/docs/scripting/api-reference/gradient/gradient.md
+- GradientStop — https://rive.app/docs/scripting/api-reference/gradient/gradient-stop.md
+- Image — https://rive.app/docs/scripting/api-reference/image/image.md
+- Font — https://rive.app/docs/scripting/api-reference/image/font.md
+- ImageFilter — https://rive.app/docs/scripting/api-reference/image/image-filter.md
+- ImageSampler — https://rive.app/docs/scripting/api-reference/image/image-sampler.md
+- ImageWrap — https://rive.app/docs/scripting/api-reference/image/image-wrap.md
+- AudioSound — https://rive.app/docs/scripting/api-reference/interfaces/audio-sound.md
+- AudioSource — https://rive.app/docs/scripting/api-reference/interfaces/audio-source.md
+- Blob — https://rive.app/docs/scripting/api-reference/interfaces/blob.md
+- Context — https://rive.app/docs/scripting/api-reference/interfaces/context.md
+- Converter — https://rive.app/docs/scripting/api-reference/interfaces/converter.md
+- Data — https://rive.app/docs/scripting/api-reference/interfaces/data.md
+- DataContext — https://rive.app/docs/scripting/api-reference/interfaces/data-context.md
+- DecodedImage — https://rive.app/docs/scripting/api-reference/interfaces/decoded-image.md
+- EnumValues — https://rive.app/docs/scripting/api-reference/interfaces/enum-values.md
+- Input — https://rive.app/docs/scripting/api-reference/interfaces/input.md
+- Interpolator — https://rive.app/docs/scripting/api-reference/interfaces/interpolator.md
+- Layout — https://rive.app/docs/scripting/api-reference/interfaces/layout.md
+- ListenerAction — https://rive.app/docs/scripting/api-reference/interfaces/listener-action.md
+- Node — https://rive.app/docs/scripting/api-reference/interfaces/node.md
+- Output — https://rive.app/docs/scripting/api-reference/interfaces/output.md
+- PathEffect — https://rive.app/docs/scripting/api-reference/interfaces/path-effect.md
+- PropertyEnum — https://rive.app/docs/scripting/api-reference/interfaces/property-enum.md
+- PropertyList — https://rive.app/docs/scripting/api-reference/interfaces/property-list.md
+- PropertyViewModel — https://rive.app/docs/scripting/api-reference/interfaces/property-view-model.md
+- Transition — https://rive.app/docs/scripting/api-reference/interfaces/transition.md
+- TransitionChild — https://rive.app/docs/scripting/api-reference/interfaces/transition-child.md
+- TransitionCondition — https://rive.app/docs/scripting/api-reference/interfaces/transition-condition.md
+- Trigger — https://rive.app/docs/scripting/api-reference/interfaces/trigger.md
+- ViewModel — https://rive.app/docs/scripting/api-reference/interfaces/view-model.md
+- Mat2D — https://rive.app/docs/scripting/api-reference/mat2d/mat2d.md
+- Mat4 — https://rive.app/docs/scripting/api-reference/mat4/mat4.md
+- TriangleBuffer — https://rive.app/docs/scripting/api-reference/mesh/triangle-buffer.md
+- VertexBuffer — https://rive.app/docs/scripting/api-reference/mesh/vertex-buffer.md
+- Paint — https://rive.app/docs/scripting/api-reference/paint/paint.md
+- BlendMode — https://rive.app/docs/scripting/api-reference/paint/blend-mode.md
+- PaintDefinition — https://rive.app/docs/scripting/api-reference/paint/paint-definition.md
+- PaintStyle — https://rive.app/docs/scripting/api-reference/paint/paint-style.md
+- StrokeCap — https://rive.app/docs/scripting/api-reference/paint/stroke-cap.md
+- StrokeJoin — https://rive.app/docs/scripting/api-reference/paint/stroke-join.md
+- Path — https://rive.app/docs/scripting/api-reference/path/path.md
+- CommandType — https://rive.app/docs/scripting/api-reference/path/command-type.md
+- ContourMeasure — https://rive.app/docs/scripting/api-reference/path/contour-measure.md
+- PathCommand — https://rive.app/docs/scripting/api-reference/path/path-command.md
+- PathData — https://rive.app/docs/scripting/api-reference/path/path-data.md
+- PathMeasure — https://rive.app/docs/scripting/api-reference/path/path-measure.md
+- Promise — https://rive.app/docs/scripting/api-reference/promise/promise.md
+- Renderer — https://rive.app/docs/scripting/api-reference/renderer/renderer.md
+- Expectation — https://rive.app/docs/scripting/api-reference/testing/expectation.md
+- Tester — https://rive.app/docs/scripting/api-reference/testing/tester.md
+- Tests — https://rive.app/docs/scripting/api-reference/testing/tests.md
+- Vector — https://rive.app/docs/scripting/api-reference/vector/vector.md
+- Getting Started with the Rive Runtimes — https://rive.app/docs/runtimes/getting-started.md
+- Rive Runtime Demos & Starters — https://rive.app/docs/runtimes/demos.md
+- Feature Support — https://rive.app/docs/feature-support.md
+- Runtime Sizes — https://rive.app/docs/runtimes/runtime-sizes.md
+- Choosing a Renderer — https://rive.app/docs/runtimes/choose-a-renderer/overview.md
+- .riv File Format — https://rive.app/docs/runtimes/advanced-topic/format.md
+- Rive Markup Language (RML) — https://rive.app/docs/runtimes/advanced-topic/rml.md
+- Getting Started — https://rive.app/docs/runtimes/web/web-js.md
+- Canvas vs WebGL2 — https://rive.app/docs/runtimes/web/canvas-vs-webgl.md
+- Rive Parameters — https://rive.app/docs/runtimes/web/rive-parameters.md
+- Artboards — https://rive.app/docs/runtimes/web/artboards.md
+- Layout — https://rive.app/docs/runtimes/web/layouts.md
+- State Machine Playback — https://rive.app/docs/runtimes/web/state-machines.md
+- Data Binding — https://rive.app/docs/runtimes/web/data-binding.md
+- Loading Assets — https://rive.app/docs/runtimes/web/loading-assets.md
+- Fonts — https://rive.app/docs/runtimes/web/fonts.md
+- Semantics — https://rive.app/docs/runtimes/web/semantics.md
+- GPU Canvas — https://rive.app/docs/runtimes/web/gpu-canvas.md
+- Preloading WASM — https://rive.app/docs/runtimes/web/preloading-wasm.md
+- Caching a Rive File — https://rive.app/docs/runtimes/web/caching-a-rive-file.md
+- Playing Audio — https://rive.app/docs/runtimes/web/playing-audio.md
+- Low-level API Usage — https://rive.app/docs/runtimes/web/low-level-api-usage.md
+- Migration Guides — https://rive.app/docs/runtimes/web/migration-guides.md
+- FAQ — https://rive.app/docs/runtimes/web/faq.md
+- React — https://rive.app/docs/runtimes/react/react.md
+- Parameters and Return Values — https://rive.app/docs/runtimes/react/parameters-and-return-values.md
+- Artboards — https://rive.app/docs/runtimes/react/artboards.md
+- Layout — https://rive.app/docs/runtimes/react/layouts.md
+- State Machine Playback — https://rive.app/docs/runtimes/react/state-machines.md
+- Data Binding — https://rive.app/docs/runtimes/react/data-binding.md
+- Loading Assets — https://rive.app/docs/runtimes/react/loading-assets.md
+- Fonts — https://rive.app/docs/runtimes/react/fonts.md
+- Semantics — https://rive.app/docs/runtimes/react/semantics.md
+- GPU Canvas — https://rive.app/docs/runtimes/react/gpu-canvas.md
+- Preloading WASM — https://rive.app/docs/runtimes/react/preloading-wasm.md
+- Caching a Rive File — https://rive.app/docs/runtimes/react/caching-a-rive-file.md
+- Playing Audio — https://rive.app/docs/runtimes/react/playing-audio.md
+- Rendering to a Bitmap — https://rive.app/docs/runtimes/react/rendering-to-a-bitmap.md
+- Best Practices — https://rive.app/docs/runtimes/react/best-practices.md
+- Migration Guides — https://rive.app/docs/runtimes/react/migration-guides.md
+- React Native — https://rive.app/docs/runtimes/react-native/react-native.md
+- Loading Rive Files — https://rive.app/docs/runtimes/react-native/loading-rive-files.md
+- Props — https://rive.app/docs/runtimes/react-native/props.md
+- Rive Ref Methods — https://rive.app/docs/runtimes/react-native/rive-ref-methods.md
+- Error Handling — https://rive.app/docs/runtimes/react-native/error-handling.md
+- Adding Rive to Expo — https://rive.app/docs/runtimes/react-native/adding-rive-to-expo.md
+- Native SDK Version Customization — https://rive.app/docs/runtimes/react-native/native-version-customization.md
+- Artboards — https://rive.app/docs/runtimes/react-native/artboards.md
+- Layout — https://rive.app/docs/runtimes/react-native/layouts.md
+- State Machine Playback — https://rive.app/docs/runtimes/react-native/state-machines.md
+- Data Binding — https://rive.app/docs/runtimes/react-native/data-binding.md
+- Loading Assets — https://rive.app/docs/runtimes/react-native/loading-assets.md
+- Fonts — https://rive.app/docs/runtimes/react-native/fonts.md
+- Caching a Rive File — https://rive.app/docs/runtimes/react-native/caching-a-rive-file.md
+- Playing Audio — https://rive.app/docs/runtimes/react-native/playing-audio.md
+- Migration Guide — https://rive.app/docs/runtimes/react-native/migration-guide.md
+- Flutter — https://rive.app/docs/runtimes/flutter/flutter.md
+- Rive Native for Flutter — https://rive.app/docs/runtimes/flutter/rive-native.md
+- Artboards — https://rive.app/docs/runtimes/flutter/artboards.md
+- Layout — https://rive.app/docs/runtimes/flutter/layouts.md
+- State Machine Playback — https://rive.app/docs/runtimes/flutter/state-machines.md
+- Data Binding — https://rive.app/docs/runtimes/flutter/data-binding.md
+- Loading Assets — https://rive.app/docs/runtimes/flutter/loading-assets.md
+- Fonts — https://rive.app/docs/runtimes/flutter/fonts.md
+- Semantics — https://rive.app/docs/runtimes/flutter/semantics.md
+- Caching a Rive File — https://rive.app/docs/runtimes/flutter/caching-a-rive-file.md
+- Playing Audio — https://rive.app/docs/runtimes/flutter/playing-audio.md
+- Migration Guide — https://rive.app/docs/runtimes/flutter/migration-guide.md
+- FAQ — https://rive.app/docs/runtimes/flutter/faq.md
+- Flutter API Reference — https://rive.app/docs/runtimes/flutter/api-reference.md
+- Apple — https://rive.app/docs/runtimes/apple/apple.md
+- GPU Canvas — https://rive.app/docs/runtimes/apple/gpu-canvas.md
+- FAQ — https://rive.app/docs/runtimes/apple/faq.md
+- Resource Usage — https://rive.app/docs/runtimes/apple/resource-usage.md
+- Artboards — https://rive.app/docs/runtimes/apple/artboards.md
+- Layout — https://rive.app/docs/runtimes/apple/layouts.md
+- State Machine Playback — https://rive.app/docs/runtimes/apple/state-machines.md
+- Data Binding — https://rive.app/docs/runtimes/apple/data-binding.md
+- Loading Assets — https://rive.app/docs/runtimes/apple/loading-assets.md
+- Fonts — https://rive.app/docs/runtimes/apple/fonts.md
+- Caching a Rive File — https://rive.app/docs/runtimes/apple/caching-a-rive-file.md
+- Semantics — https://rive.app/docs/runtimes/apple/semantics.md
+- Playing Audio — https://rive.app/docs/runtimes/apple/playing-audio.md
+- Logging — https://rive.app/docs/runtimes/apple/logging.md
+- Migration Guides — https://rive.app/docs/runtimes/apple/migration-guides.md
+- Migrating from the Legacy Rive Apple Runtime — https://rive.app/docs/runtimes/apple/migrating-from-legacy.md
+- Android — https://rive.app/docs/runtimes/android/android.md
+- Artboards — https://rive.app/docs/runtimes/android/artboards.md
+- Layout — https://rive.app/docs/runtimes/android/layouts.md
+- State Machine Playback — https://rive.app/docs/runtimes/android/state-machines.md
+- Data Binding — https://rive.app/docs/runtimes/android/data-binding.md
+- Loading Assets — https://rive.app/docs/runtimes/android/loading-assets.md
+- Fonts — https://rive.app/docs/runtimes/android/fonts.md
+- Caching a Rive File — https://rive.app/docs/runtimes/android/caching-a-rive-file.md
+- Playing Audio — https://rive.app/docs/runtimes/android/playing-audio.md
+- Logging — https://rive.app/docs/runtimes/android/logging.md
+- Rendering to a Bitmap — https://rive.app/docs/runtimes/android/rendering-to-a-bitmap.md
+- Getting Started (Legacy API) — https://rive.app/docs/runtimes/android/legacy-getting-started.md
+- Migrating from the Legacy Rive Android Runtime — https://rive.app/docs/runtimes/android/migrating-from-legacy.md
+- API Reference — https://rive.app/docs/runtimes/android/api-reference.md
+- Unity — https://rive.app/docs/game-runtimes/unity/unity.md
+- Getting Started — https://rive.app/docs/game-runtimes/unity/getting-started.md
+- Fundamentals — https://rive.app/docs/game-runtimes/unity/fundamentals.md
+- Components — https://rive.app/docs/game-runtimes/unity/components.md
+- Best Practices — https://rive.app/docs/game-runtimes/unity/best-practices.md
+- Layouts — https://rive.app/docs/game-runtimes/unity/layouts.md
+- Listeners — https://rive.app/docs/game-runtimes/unity/listeners.md
+- State Machines — https://rive.app/docs/game-runtimes/unity/state-machines.md
+- Data Binding — https://rive.app/docs/game-runtimes/unity/data-binding.md
+- Loading Assets — https://rive.app/docs/game-runtimes/unity/loading-assets.md
+- Audio — https://rive.app/docs/game-runtimes/unity/audio.md
+- Control a health bar with data binding in Unity — https://rive.app/docs/game-runtimes/unity/tutorials/health-bar.md
+- Procedural Rendering — https://rive.app/docs/game-runtimes/unity/procedural-rendering.md
+- Runtime Asset Swapping — https://rive.app/docs/game-runtimes/unity/runtime-asset-swapping.md
+- FAQ — https://rive.app/docs/game-runtimes/unity/faq.md
+- Unreal Engine — https://rive.app/docs/game-runtimes/unreal/unreal.md
+- Getting Started — https://rive.app/docs/game-runtimes/unreal/getting-started.md
+- Observing ViewModel Changes — https://rive.app/docs/game-runtimes/unreal/observing-viewmodel-changes.md
+- Using Triggers — https://rive.app/docs/game-runtimes/unreal/using-triggers.md
+- Runtime Asset Swapping — https://rive.app/docs/game-runtimes/unreal/runtime-asset-swapping.md
+- World-Space RenderTargets — https://rive.app/docs/game-runtimes/unreal/in-world-textures.md
+- C++ Runtime — https://rive.app/docs/runtimes/cpp/overview.md
+- Getting Started — https://rive.app/docs/runtimes/cpp/getting-started.md
+- File & Artboard — https://rive.app/docs/runtimes/cpp/file-and-artboard.md
+- State Machines — https://rive.app/docs/runtimes/cpp/state-machines.md
+- Data Binding — https://rive.app/docs/runtimes/cpp/data-binding.md
+- Asset Loading — https://rive.app/docs/runtimes/cpp/asset-loading.md
+- Rendering Loop — https://rive.app/docs/runtimes/cpp/rendering-loop.md
+- Command Queue — https://rive.app/docs/runtimes/cpp/command-queue.md
+- Renderers — https://rive.app/docs/runtimes/cpp/renderers.md
+- External Renderer — https://rive.app/docs/runtimes/cpp/external-renderer.md
+- Defold — https://rive.app/docs/game-runtimes/defold.md
+- Angular — https://rive.app/docs/runtimes/community-runtimes/angular.md
+- C# — https://rive.app/docs/runtimes/community-runtimes/c-sharp.md
+- Qt / QtQuick — https://rive.app/docs/runtimes/community-runtimes/qt-quick.md
+- RiveCMP — https://rive.app/docs/runtimes/community-runtimes/rive-cmp.md
+- 3rd Party Integrations — https://rive.app/docs/integrations/overview.md
+- HTML Embed — https://rive.app/docs/integrations/html-embed.md
+- Rive CLI — https://rive.app/docs/cli/overview.md
+- Getting Started — https://rive.app/docs/cli/getting-started.md
+- Working with AI Agents — https://rive.app/docs/cli/agents.md
+- Examples — https://rive.app/docs/cli/examples.md
+- Command Reference — https://rive.app/docs/cli/reference/commands.md
+- Project Configuration — https://rive.app/docs/cli/reference/project-config.md
+- Learn Rive — https://rive.app/docs/tutorials/learn-rive.md
+- Marketplace Overview — https://rive.app/docs/community/marketplace-overview.md
+- Support — https://rive.app/docs/community/support.md
+- Creating an Account — https://rive.app/docs/account-admin/account-overview/creating-an-account.md
+- Trouble Logging In — https://rive.app/docs/account-admin/account-overview/trouble-logging-in.md
+- Account Management — https://rive.app/docs/account-admin/account-overview/account-management.md
+- Change Your Email or Password — https://rive.app/docs/home/account-admin/account-overview/change-your-email-or-password.md
+- Billing Changes — https://rive.app/docs/account-admin/account-overview/billing-changes.md
+- Downloading My Receipt/Invoice — https://rive.app/docs/account-admin/account-overview/downloading-my-receipt-or-invoice.md
+- Add VAT/Tax ID to Your Invoice — https://rive.app/docs/home/account-admin/account-overview/add-vat-tax-id-to-your-invoice.md
+- Refunds — https://rive.app/docs/home/account-admin/account-overview/refunds.md
+- Cancelling My Plan — https://rive.app/docs/account-admin/account-overview/cancel-my-account.md
+- Cancel a Former Employee's Plan — https://rive.app/docs/home/account-admin/account-overview/cancel-a-former-employees-subscription.md
+- Delete My Account — https://rive.app/docs/account-admin/account-overview/delete-my-account.md
+- Reactivating a Canceled Plan — https://rive.app/docs/account-admin/workspaces/reactivating-a-canceled-workspace.md
+
+## OpenAPI Specs
