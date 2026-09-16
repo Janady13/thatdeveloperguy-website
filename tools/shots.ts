@@ -25,14 +25,17 @@ await send('Page.enable'); await send('Runtime.enable');
 await send('Emulation.setDeviceMetricsOverride', { width: W, height: H, deviceScaleFactor: 1, mobile: false });
 await send('Emulation.setCPUThrottlingRate', { rate: CPU });
 await send('Page.navigate', { url: `${BASE}/` });
-await wait(1500); await shot('00-arrive'); await wait(1500); await shot('01-live');
+await wait(1200); await shot('00-arrive');
+// Poster-to-native handover: wait up to 12 s for the site to mark the scene live (lazy runtime chunk + WASM + .riv).
+let handoverMs = -1; for (let i = 0; i < 60; i++) { if (await ev(`document.querySelector('.scene-live') !== null`)) { handoverMs = 1200 + i * 200; break; } await wait(200); }
+await shot('01-live');
 const renderer = await ev(`(() => { const c = document.createElement('canvas'); const g = c.getContext('webgl2'); const d = g && g.getExtension('WEBGL_debug_renderer_info'); return d ? g.getParameter(d.UNMASKED_RENDERER_WEBGL) : 'no webgl2'; })()`);
-const live = await ev(`document.querySelector('.stage-live') !== null`);
-const riveOffered = await ev(`document.querySelector('.stage-rive') !== null`);
-await ev(`document.querySelector('.stage-hit[data-hit="government"]').dispatchEvent(new MouseEvent('mouseover', { bubbles: true }))`); await wait(400); await shot('02-focus-government');
-const caption = await ev(`document.querySelector('.stage-caption').textContent`);
+const live = await ev(`document.querySelector('.scene-live') !== null`);
+const riveOffered = await ev(`document.querySelector('.scene-rive') !== null`);
+await ev(`document.querySelector('.scene-hit[data-hit="government"]').dispatchEvent(new MouseEvent('mouseover', { bubbles: true }))`); await wait(400); await shot('02-focus-government');
+const caption = await ev(`document.querySelector('.scene-caption').textContent`);
 const fps = await ev(`(async () => { const t0 = performance.now(); let f = 0; await new Promise(r => { const tick = () => { f++; if (performance.now() - t0 < 2000) requestAnimationFrame(tick); else r(); }; requestAnimationFrame(tick); }); return Math.round(f / ((performance.now() - t0) / 1000)); })()`);
-const result = { renderer, riveOffered, riveLive: live, caption, cpu: CPU, fpsIdle: fps, at: new Date().toISOString() };
+const result = { renderer, riveOffered, riveLive: live, handoverMs, caption, cpu: CPU, fpsIdle: fps, at: new Date().toISOString() };
 writeFileSync(join(OUT, `fps-${CPU}x.json`), JSON.stringify(result, null, 2));
 console.log(JSON.stringify(result));
 ws.close(); chrome.kill(); await new Promise(r => chrome.once('exit', r)); rmSync(profile, { recursive: true, force: true });

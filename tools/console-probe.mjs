@@ -1,0 +1,15 @@
+import { chromium } from '@playwright/test';
+const browser = await chromium.launch({ args: ['--use-angle=metal', '--ignore-gpu-blocklist'] });
+const page = await browser.newPage();
+const logs = [];
+page.on('console', m => logs.push(`${m.type()}: ${m.text()}`));
+page.on('pageerror', e => logs.push(`pageerror: ${e.message}`));
+page.on('requestfailed', r => logs.push(`requestfailed: ${r.url()} ${r.failure()?.errorText}`));
+const responses = [];
+page.on('response', r => { if (/riv|wasm|scene\.json/.test(r.url())) responses.push(`${r.status()} ${r.url()}`); });
+await page.goto('http://127.0.0.1:4411/', { waitUntil: 'networkidle' });
+await page.waitForTimeout(4000);
+console.log('rive offered:', await page.locator('.scene-rive').count(), 'live:', await page.locator('.scene-live').count(), 'motion button:', await page.locator('.motion-control').count());
+console.log('responses:', responses);
+console.log('logs:', logs.slice(0, 20));
+await browser.close();
