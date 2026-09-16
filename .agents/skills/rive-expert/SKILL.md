@@ -17,7 +17,7 @@ Rive is an authoritative external system. Do not rely on memory when the install
 2. Existing Rive-generated AGENTS.md instructions (inside each Rive project directory).
 3. Installed Rive CLI behavior and `rive --help`.
 4. `rive schema` for RML types, properties, defaults, enum values, property keys, animatable (`--animatable`) and bindable (`--bindable`) properties.
-5. `rive docs` for installed Rive concepts, syntax, patterns, gotchas. **Run it from inside a Rive project directory** — see `references/local-facts.md` for the shadowing trap and the bundled path.
+5. Installed Rive documentation for concepts, syntax, patterns, and gotchas. Run `rive docs --path` before trusting `rive docs`; on this machine it is shadowed by `~/docs`. Read the bundled files under `~/.rive/versions/<version>/docs/` when the reported path is not the bundled directory. See `references/local-facts.md`.
 6. The current Rive documentation index: https://rive.app/docs/llms.txt (map in `references/docs-map.md`).
 7. The specific current documentation page discovered through that index.
 8. Existing working examples (`rive samples`) or this repo's own projects.
@@ -27,7 +27,7 @@ Never invent a Rive type, property, property key, enum member, CLI option, bindi
 
 ## Documentation discovery
 
-Progressive disclosure: identify the part of Rive involved in the task and load only the relevant topic. Locally: `rive docs --list`, `rive docs <topic>`, `rive docs --search <term>`, `rive docs gotchas`. Schema: `rive schema <Type>`, `rive schema --search <term>`, `rive schema <Type> --animatable|--bindable`, `--json` for machine-readable. Online: start at llms.txt, never guess URLs.
+Progressive disclosure: identify the part of Rive involved in the task and load only the relevant topic. Locally, first run `rive docs --path`. Use `rive docs --list`, `rive docs <topic>`, and `rive docs --search <term>` only when that path is the bundled Rive docs; otherwise read the corresponding Markdown file in `~/.rive/versions/<version>/docs/` directly. Schema: search uncertain type names first with `rive schema --search <term>`, then use `rive schema <exact-Type>`, `--animatable`, `--bindable`, or `--json`. Online: start at llms.txt; never guess URLs.
 
 ## Environment discovery
 
