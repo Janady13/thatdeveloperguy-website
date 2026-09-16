@@ -1,0 +1,90 @@
+THATDEVELOPERGUY — REACT + RIVE + SEO + AIO PRODUCTION BLUEPRINT
+(owner's target architecture, supplied 2026-09-15; governs the build)
+============================================================
+
+PROJECT: thatdeveloperguy.com — company website and qualified-inquiry funnel for government organizations, prime contractors,
+and small/medium businesses. Visual system: Lobby, IT Services room, Government Solutions room, Cybersecurity room, shared
+Government Cyber Consultant mascot. One repository, one React website, one private TypeScript email-delivery service,
+shared typed publication and animation modules. Native Rive assets require their own release approval.
+
+01 NON-NEGOTIABLE BUILD RULES
+A. The SEO/AIO library governs implementation; its instructions map to implemented files, outputs, verification steps, reviewers.
+B. Consume the existing unified truth node; keep its Organization and Person identifiers; never equate brand, domain, person, legal org.
+C. Public content works before animation loads: titles, descriptions, canonicals, headings, body, real links, JSON-LD are prerendered.
+D. Rive enhances; a failed animation never removes navigation, content, contact details or the inquiry form.
+E. Every public page has one canonical purpose and address.
+F. Search providers receive the same approved meaning; no provider-specific hidden pages.
+G. Private source material never becomes public (no repo root, artwork ZIPs, evidence, credentials, source maps, the library).
+H. A successful animation is not a business action; only the backend reports provider acceptance, which is not mailbox delivery.
+
+02 STACK: React, strict TypeScript, React Router Framework Mode (ssr: false, prerender: allPublishedPagePaths()), Vite, CSS tokens.
+Unknown URLs receive an actual HTTP 404 (no universal 200 SPA fallback). Animation: official Rive React runtime
+(@rive-app/react-webgl2 candidate), pinned runtime + matching WASM, browser-only boundary, poster first and kept on failure.
+Backend: Node 24 LTS, Fastify, TypeScript, same-origin inquiry endpoint, direct email/SMTP, no database or submission archive.
+Build/test: committed lockfile, npm ci, unit + production-build browser tests + real HTTP tests + accessibility review + release gates.
+Hosting: BUBBLES — nginx serves the static site, proxies /api/ to the private Fastify service under systemd.
+
+03 PUBLIC URL AND ROOM MAP: / (lobby) · /government (Government Solutions room) · /business · /capabilities (hub) ·
+/capabilities/business-it (IT Services room) · /capabilities/cybersecurity (Cybersecurity room) · /capabilities/software-engineering ·
+/capabilities/it-teams · /capabilities/{pillar}/{topic} (conditional) · /approach · /company · /capability-statement · /resources[/{slug}] ·
+/contact · /contact/received (noindex, no customer data in URL) · /privacy · /accessibility · unknown → 404 with navigation.
+Lobby doors: IT Services → capability.business-it; Government Solutions → audience.government; Cybersecurity → capability.cybersecurity.
+Page IDs resolve to URLs from the publication registry; no second URL list inside the artwork.
+
+04 REPOSITORY FILE TREE (target): AGENTS.md, ARCHITECTURE.md, README.md, package files, tsconfig(.server).json, vite.config.ts,
+react-router.config.ts, eslint/vitest/playwright configs; docs/ (stack, publication, route/canonical, identity, inquiry, animation,
+accessibility, browser matrix, performance budgets, release gates, ownership/); build-inputs/ (PRIVATE: seo-aio-library/, authority/
+truth-node.lock.json + public-projection.json); records/ (PRIVATE decisions); content/ (site/, pages/<page>/page.json+body.md,
+capabilities/<pillar>/…questions.json, resources/, clusters.json); drafts/; app/ (root.tsx, routes.ts, entry.client.tsx, routes/,
+components/{layout,content,publication,forms}, experience/{SceneShell,ScenePoster,SceneLayerStack,SceneNavigation,DoorLink,
+HotspotOverlay,TransitionCoordinator,MotionPreferenceControl,scene-coordinate-map,scenes/<room>/,consultant/}, styles/);
+src/ (authority/, publication/, engines/{seo,aio,measurement}, animation/, contracts/, generated/); server/ (PRIVATE Fastify);
+creative-source/ (NOT public); public/ (approved assets only; animation/ populated by the asset-release script); scripts/ (TS);
+tests/ (unit, publication, seo, aio, animation, api, browser, http, manual); observability/; evidence/; deploy/ (nginx, systemd,
+runbooks); .github/workflows; dist/ (site/ = the ONLY public document root; api/; deployment/).
+
+05 SINGLE-SOURCE PUBLICATION PIPELINE: truth node → pinned public projection + approved page records → validation →
+public-only page registry → route HTML, metadata, JSON-LD, navigation, breadcrumbs, related links, canonical/indexability, sitemap,
+optional discovery map, scene destinations → production build + real HTTP/browser acceptance. No parallel handwritten company
+descriptions anywhere.
+
+06 EVERY PUBLIC PAGE HAS A CONTRACT: id, path, template, parentId, audience, primaryIntent, title, description, heading, summary,
+bodySource, serviceId, entityReferences, claimReferences, primaryAction, relatedPageIds, sceneId, socialImageId, publicationStatus,
+approvalReference, publishedAt, materiallyUpdatedAt, indexPolicy → canonical, breadcrumbs, structured data, sitemap eligibility,
+related URLs, head, prerender path, payload. Service pages answer: problem, who, included, deliverables, excluded, evidence, process,
+next step. Q&A rendered visibly from questions.json. Drafts never enter navigation, bundles, prerender, sitemaps, discovery, IndexNow.
+
+07 RIVE AND SCENE INTEGRATION: prerendered page → heading/description/nav/CTA → scene container with reserved dimensions
+(poster → mascot/native scene → occluders → real HTML hotspot links and controls) → visible content → contact → footer.
+Same coordinate map for scene and overlay; deliberate mobile layout; every door a real anchor (modified clicks normal); history,
+direct entry, refresh, keyboard work without the lobby; load only the active experience; keep poster until first usable frame;
+any failure → poster + working HTML; destroy observers/timers/canvases; pause offscreen; visible motion control.
+Mascot: reuse the v2 contract/controller; validate ConsultantVM names + contract version; the website owns routes and outcomes,
+the mascot owns presentation, the room owns placement. Don't claim side/back walking until produced and accepted.
+
+08 PUBLIC ENDPOINT OWNERSHIP: pages (prerender + static HTTP); /robots.txt, /sitemap.xml, /llms.txt (build-discovery, one owner);
+assets (fingerprinted, immutable; HTML revalidates); POST /api/inquiries (Fastify; plain + enhanced submissions; fixed recipient;
+validated Reply-To); private health endpoints restricted. Not generated: /google.html, /chatgpt.html, /claude.html, /ai-sitemap.xml,
+/llms-full.txt, raw identity/evidence, model-specific duplicates.
+
+09 INQUIRY AND MEASUREMENT: outcomes validation_failed | rate_limited | provider_accepted | provider_rejected | delivery_unknown;
+no-JS form → 303 to generic receipt; React form shows success only after the backend response. Events kept separate:
+page_view, room_opened, capability_viewed, inquiry_started, inquiry_provider_accepted, observed_search_referral,
+observed_ai_referral, qualified outcome. No PII into analytics. No lead database.
+
+10 SECURITY, CACHING, RELEASE: nginx root = dist/site only; one production HTTPS origin; one trailing-slash policy; explicit redirects;
+generated, tested CSP (hash-based inline policy for static HTML; test WASM permission); staging protected + noindex; fingerprinted
+vs HTML caching; pinned deps + lockfile; build from a recorded revision; keep artifacts/checksums; real HTTP tests on the candidate;
+controlled cutover + verified rollback. Native animation: verified-assets.json starts empty; no placeholder .riv; static and animated
+releases have distinct approval states.
+
+11 ACCEPTANCE BEFORE PRODUCTION: publication (facts match text and schema, IDs match projection, removed claims disappear, no leaks);
+SEO (useful initial HTML, direct requests work, unknown → 404, canonicals/redirects/robots/sitemap agree, no orphans, receipt noindex
+readable); AIO (visible supported answers, reviewed provider controls, crawl ≠ index ≠ citation); experience (doors work with keyboard,
+touch, mouse and JS off; direct entry; head updates on client nav; back/forward + focus; reduced motion; Rive failure leaves a complete
+site); backend (delivery paths tested, no false success, no header injection/relay, limits verified, sensitive payloads excluded);
+visual claims (artwork text reviewed; illustrative boards ≠ telemetry; government imagery ≠ affiliation; no unverified certification/
+staffing/clearance/24-7 claims); performance & accessibility (declared matrix, automated ≠ manual, lab ≠ field, declare unmet targets).
+BUILD ORDER: 1 lock stack/authority/contracts · 2 one complete /capabilities/cybersecurity vertical slice · 3 verify it ·
+4 integrate the approved Consultant runtime on that slice · 5 apply to other rooms/routes · 6 child content + discovery ·
+7 staging, real HTTP/device checks, cutover.
