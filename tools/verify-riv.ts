@@ -8,7 +8,7 @@ const require = createRequire(import.meta.url);
 
 /** Loads the runtime file with the low-level Canvas WASM in Node (no DOM) and reads back what the editor exported. */
 export async function verifyRiv(room: RoomId) {
-  const dir = resolve(repoRoot, 'scenes/rive', room);
+  const dir = resolve(repoRoot, 'creative-source/rive', room);
   const manifest = JSON.parse(readFileSync(resolve(dir, 'rive-manifest.json'), 'utf8'));
   const bytes = readFileSync(resolve(dir, manifest.file));
   if (bytes.subarray(0, 4).toString() !== 'RIVE') throw new Error('not a RIVE file');

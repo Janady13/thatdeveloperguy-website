@@ -5,7 +5,17 @@ import { walkPaths } from './model.ts';
 const INKSCAPE = 'http://www.inkscape.org/namespaces/inkscape';
 const TOKEN = /([MmLlHhVvZzCcSsQqTtAa])|(-?\d*\.?\d+(?:e-?\d+)?)/g;
 
-/** Kit path grammar is polygons only: M/L/H/V/Z. Anything else is a bug upstream, not something to guess at. */
+const CUBIC_STEPS = 8;
+function cubicPoints(x0: number, y0: number, x1: number, y1: number, x2: number, y2: number, x3: number, y3: number): Ring {
+  const out: Ring = [];
+  for (let i = 1; i <= CUBIC_STEPS; i++) {
+    const t = i / CUBIC_STEPS, u = 1 - t;
+    out.push([u * u * u * x0 + 3 * u * u * t * x1 + 3 * u * t * t * x2 + t * t * t * x3, u * u * u * y0 + 3 * u * u * t * y1 + 3 * u * t * t * y2 + t * t * t * y3]);
+  }
+  return out;
+}
+
+/** Kit path grammar is polygons (M/L/H/V/Z) plus a handful of hand-drawn cubics (C/c), which are flattened to points here and re-fitted later. Anything else is a bug upstream. */
 export function parsePathData(d: string): Ring[] {
   const rings: Ring[] = [];
   let ring: Ring = [];
@@ -19,7 +29,7 @@ export function parsePathData(d: string): Ring[] {
     if (t[1]) {
       cmd = t[1]; i++;
       if (cmd === 'Z' || cmd === 'z') { flush(); x = startX; y = startY; continue; }
-      if ('CcSsQqTtAa'.includes(cmd)) throw new Error(`path data: unsupported command ${cmd}`);
+      if ('SsQqTtAa'.includes(cmd)) throw new Error(`path data: unsupported command ${cmd}`);
     }
     switch (cmd) {
       case 'M': flush(); x = num(); y = num(); startX = x; startY = y; ring.push([x, y]); cmd = 'L'; break;
@@ -30,6 +40,8 @@ export function parsePathData(d: string): Ring[] {
       case 'h': x += num(); ring.push([x, y]); break;
       case 'V': y = num(); ring.push([x, y]); break;
       case 'v': y += num(); ring.push([x, y]); break;
+      case 'C': { const x1 = num(), y1 = num(), x2 = num(), y2 = num(), x3 = num(), y3 = num(); ring.push(...cubicPoints(x, y, x1, y1, x2, y2, x3, y3)); x = x3; y = y3; break; }
+      case 'c': { const x1 = x + num(), y1 = y + num(), x2 = x + num(), y2 = y + num(), x3 = x + num(), y3 = y + num(); ring.push(...cubicPoints(x, y, x1, y1, x2, y2, x3, y3)); x = x3; y = y3; break; }
       default: throw new Error(`path data: unexpected token near "${d.slice(0, 40)}"`);
     }
   }

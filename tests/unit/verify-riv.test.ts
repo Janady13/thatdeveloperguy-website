@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import { verifyRiv } from '../../tools/verify-riv.ts';
 
-const manifestUrl = new URL('../../scenes/rive/lobby/rive-manifest.json', import.meta.url);
+const manifestUrl = new URL('../../creative-source/rive/lobby/rive-manifest.json', import.meta.url);
 const exportedBy = existsSync(manifestUrl) ? JSON.parse(readFileSync(manifestUrl, 'utf8')).exportedBy : null;
 
 // The editor MCP's own export omits MCP-created artboards; only a UI export can pass. `npm run rive:verify` reports the raw state.

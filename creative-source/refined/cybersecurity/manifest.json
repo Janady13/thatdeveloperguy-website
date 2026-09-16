@@ -1,0 +1,1726 @@
+{
+  "room": "cybersecurity",
+  "canvas": {
+    "width": 1648,
+    "height": 928
+  },
+  "source": {
+    "svg": "TDG_CYBERSECURITY_ANIMATION_KIT/svg/tdg-cybersecurity.rive-import.svg",
+    "sha256": "2df455158a8c3efebc48c642ab33d4a12f0d129980afd96c9aea715f7ef334ff",
+    "manifest": "TDG_CYBERSECURITY_ANIMATION_KIT/docs/scene-manifest.json",
+    "hotspots": "TDG_CYBERSECURITY_ANIMATION_KIT/web/hotspots.json"
+  },
+  "stats": {
+    "before": {
+      "paths": 5307,
+      "rings": 58598,
+      "vertices": 378270
+    },
+    "after": {
+      "paths": 4143,
+      "contours": 20496,
+      "vertices": 123210
+    },
+    "dropped": {
+      "rings": 38102,
+      "paths": 1164
+    }
+  },
+  "options": {
+    "minArea": 1,
+    "tolerance": 0.75,
+    "minTurnDeg": 60,
+    "union": false
+  },
+  "parts": [
+    {
+      "id": "poster_lock",
+      "pivot": [
+        190,
+        377
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "ceiling_light_1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_light_2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_light_3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_light_4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_light_5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_light_6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "downlight_1",
+      "pivot": [
+        304,
+        36
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "downlight_2",
+      "pivot": [
+        1339,
+        36
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "downlight_3",
+      "pivot": [
+        357,
+        122
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "downlight_4",
+      "pivot": [
+        1412,
+        151
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "status_light_1_lens",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "status_light_2_lens",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "status_light_3_lens",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "header_star_1",
+      "pivot": [
+        576,
+        114
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "header_star_2",
+      "pivot": [
+        734,
+        114
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "header_star_3",
+      "pivot": [
+        896,
+        114
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "header_star_4",
+      "pivot": [
+        1070,
+        114
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "camera_dome",
+      "pivot": [
+        1347,
+        105
+      ],
+      "motion": "rotate_small"
+    },
+    {
+      "id": "camera_lens",
+      "pivot": [
+        1346,
+        111
+      ],
+      "motion": "look_small"
+    },
+    {
+      "id": "map_north_america",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "map_south_america",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "map_europe",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "map_africa",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "map_asia",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "map_oceania",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "map_node_1",
+      "pivot": [
+        414,
+        309
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "map_node_2",
+      "pivot": [
+        434,
+        359
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "map_node_3",
+      "pivot": [
+        448,
+        347
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "map_node_4",
+      "pivot": [
+        466,
+        369
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "map_node_5",
+      "pivot": [
+        534,
+        292
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "map_node_6",
+      "pivot": [
+        548,
+        338
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "map_node_7",
+      "pivot": [
+        579,
+        352
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "map_node_8",
+      "pivot": [
+        584,
+        309
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "map_node_9",
+      "pivot": [
+        607,
+        317
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "map_node_10",
+      "pivot": [
+        639,
+        315
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "map_node_11",
+      "pivot": [
+        666,
+        337
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "map_node_12",
+      "pivot": [
+        679,
+        389
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "threat_step_monitor_icon",
+      "pivot": [
+        735,
+        257
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "threat_step_analyze_icon",
+      "pivot": [
+        735,
+        293
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "threat_step_contain_icon",
+      "pivot": [
+        735,
+        328
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "threat_step_respond_icon",
+      "pivot": [
+        735,
+        364
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "health_row_networks_check",
+      "pivot": [
+        882,
+        338
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "health_row_endpoints_check",
+      "pivot": [
+        882,
+        360
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "health_row_applications_check",
+      "pivot": [
+        882,
+        380
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "health_row_data_check",
+      "pivot": [
+        882,
+        399
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "health_row_users_check",
+      "pivot": [
+        882,
+        418
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "operations_row_detect_icon",
+      "pivot": [
+        1081,
+        263
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "operations_row_prevent_icon",
+      "pivot": [
+        1081,
+        310
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "operations_row_respond_icon",
+      "pivot": [
+        1081,
+        354
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "operations_row_continuity_icon",
+      "pivot": [
+        1081,
+        400
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "far_left_led_row_1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "far_left_led_row_2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "far_left_led_row_3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "far_left_led_row_4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "far_left_led_row_5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "far_left_led_row_6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "far_left_led_row_7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "far_left_led_row_8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_left_glass",
+      "pivot": [
+        1314,
+        560
+      ],
+      "motion": "door_hinge_small"
+    },
+    {
+      "id": "server_rack_left_led_1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_left_led_2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_left_led_3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_left_led_4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_left_led_5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_left_led_6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_left_led_7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_left_led_8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_left_led_9",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_left_handle",
+      "pivot": [
+        1343,
+        426
+      ],
+      "motion": "rotate_small"
+    },
+    {
+      "id": "server_rack_middle_glass",
+      "pivot": [
+        1357,
+        560
+      ],
+      "motion": "door_hinge_small"
+    },
+    {
+      "id": "server_rack_middle_led_1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_middle_led_2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_middle_led_3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_middle_led_4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_middle_led_5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_middle_led_6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_middle_led_7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_middle_led_8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_middle_led_9",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_middle_handle",
+      "pivot": [
+        1387,
+        426
+      ],
+      "motion": "rotate_small"
+    },
+    {
+      "id": "server_rack_right_glass",
+      "pivot": [
+        1402,
+        560
+      ],
+      "motion": "door_hinge_small"
+    },
+    {
+      "id": "server_rack_right_led_1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_right_led_2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_right_led_3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_right_led_4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_right_led_5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_right_led_6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_right_led_7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_right_led_8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_right_led_9",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_right_handle",
+      "pivot": [
+        1425,
+        426
+      ],
+      "motion": "rotate_small"
+    },
+    {
+      "id": "secure_door_panel",
+      "pivot": [
+        1620,
+        581
+      ],
+      "motion": "door_hinge"
+    },
+    {
+      "id": "secure_door_handle",
+      "pivot": [
+        1608,
+        481
+      ],
+      "motion": "rotate_small"
+    },
+    {
+      "id": "console_1_left_cabinet_drawer_1_front",
+      "pivot": [
+        352,
+        507
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_1_left_cabinet_drawer_2_front",
+      "pivot": [
+        352,
+        523
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_1_left_cabinet_drawer_3_front",
+      "pivot": [
+        352,
+        540
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_1_right_cabinet_drawer_1_front",
+      "pivot": [
+        586,
+        507
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_1_right_cabinet_drawer_2_front",
+      "pivot": [
+        586,
+        523
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_1_right_cabinet_drawer_3_front",
+      "pivot": [
+        586,
+        540
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "monitor_1_1_bezel",
+      "pivot": [
+        431,
+        491
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "monitor_1_1_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "monitor_1_1_indicator",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "monitor_1_2_bezel",
+      "pivot": [
+        509,
+        491
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "monitor_1_2_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "monitor_1_2_indicator",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "monitor_1_3_bezel",
+      "pivot": [
+        584,
+        491
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "monitor_1_3_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "monitor_1_3_indicator",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "console_chair_1_frame",
+      "pivot": [
+        510,
+        553
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "console_chair_1_backrest",
+      "pivot": [
+        510,
+        531
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "console_2_left_cabinet_drawer_1_front",
+      "pivot": [
+        675,
+        507
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_2_left_cabinet_drawer_2_front",
+      "pivot": [
+        675,
+        523
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_2_left_cabinet_drawer_3_front",
+      "pivot": [
+        675,
+        540
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_2_right_cabinet_drawer_1_front",
+      "pivot": [
+        902,
+        507
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_2_right_cabinet_drawer_2_front",
+      "pivot": [
+        902,
+        523
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_2_right_cabinet_drawer_3_front",
+      "pivot": [
+        902,
+        540
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "monitor_2_1_bezel",
+      "pivot": [
+        754,
+        491
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "monitor_2_1_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "monitor_2_1_indicator",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "monitor_2_2_bezel",
+      "pivot": [
+        832,
+        491
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "monitor_2_2_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "monitor_2_2_indicator",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "monitor_2_3_bezel",
+      "pivot": [
+        907,
+        491
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "monitor_2_3_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "monitor_2_3_indicator",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "console_chair_2_frame",
+      "pivot": [
+        819,
+        553
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "console_chair_2_backrest",
+      "pivot": [
+        819,
+        531
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "console_3_left_cabinet_drawer_1_front",
+      "pivot": [
+        990,
+        507
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_3_left_cabinet_drawer_2_front",
+      "pivot": [
+        990,
+        523
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_3_left_cabinet_drawer_3_front",
+      "pivot": [
+        990,
+        540
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_3_right_cabinet_drawer_1_front",
+      "pivot": [
+        1220,
+        507
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_3_right_cabinet_drawer_2_front",
+      "pivot": [
+        1220,
+        523
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "console_3_right_cabinet_drawer_3_front",
+      "pivot": [
+        1220,
+        540
+      ],
+      "motion": "drawer_pull_small"
+    },
+    {
+      "id": "monitor_3_1_bezel",
+      "pivot": [
+        1069,
+        491
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "monitor_3_1_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "monitor_3_1_indicator",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "monitor_3_2_bezel",
+      "pivot": [
+        1147,
+        491
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "monitor_3_2_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "monitor_3_2_indicator",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "monitor_3_3_bezel",
+      "pivot": [
+        1222,
+        491
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "monitor_3_3_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "monitor_3_3_indicator",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "console_chair_3_frame",
+      "pivot": [
+        1131,
+        553
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "console_chair_3_backrest",
+      "pivot": [
+        1131,
+        531
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "left_pc_tower_slot_1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "left_pc_tower_slot_2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "left_pc_tower_slot_3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "left_pc_tower_slot_4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "reference_binder_1_spine",
+      "pivot": [
+        305,
+        573
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "reference_binder_2_spine",
+      "pivot": [
+        305,
+        606
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "reference_binder_3_spine",
+      "pivot": [
+        305,
+        632
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "reference_binder_4_spine",
+      "pivot": [
+        305,
+        657
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "reception_lock",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "floor_emblem_lock",
+      "pivot": [
+        822,
+        688
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "lounge_sofa_seat",
+      "pivot": [
+        1564,
+        680
+      ],
+      "motion": "squash_small"
+    },
+    {
+      "id": "plant_left_counter_foliage_crown",
+      "pivot": [
+        30,
+        450
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_left_counter_foliage_left",
+      "pivot": [
+        30,
+        450
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_left_counter_foliage_right",
+      "pivot": [
+        30,
+        450
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_window_foliage_crown",
+      "pivot": [
+        304,
+        445
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_window_foliage_left",
+      "pivot": [
+        304,
+        445
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_window_foliage_right",
+      "pivot": [
+        304,
+        445
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_reference_foliage_crown",
+      "pivot": [
+        294,
+        541
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_reference_foliage_left",
+      "pivot": [
+        294,
+        541
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_reference_foliage_right",
+      "pivot": [
+        294,
+        541
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_1_left_foliage_crown",
+      "pivot": [
+        380,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_1_left_foliage_left",
+      "pivot": [
+        380,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_1_left_foliage_right",
+      "pivot": [
+        380,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_1_right_foliage_crown",
+      "pivot": [
+        635,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_1_right_foliage_left",
+      "pivot": [
+        635,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_1_right_foliage_right",
+      "pivot": [
+        635,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_2_left_foliage_crown",
+      "pivot": [
+        695,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_2_left_foliage_left",
+      "pivot": [
+        695,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_2_left_foliage_right",
+      "pivot": [
+        695,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_2_right_foliage_crown",
+      "pivot": [
+        946,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_2_right_foliage_left",
+      "pivot": [
+        946,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_2_right_foliage_right",
+      "pivot": [
+        946,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_3_left_foliage_crown",
+      "pivot": [
+        1006,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_3_left_foliage_left",
+      "pivot": [
+        1006,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_3_left_foliage_right",
+      "pivot": [
+        1006,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_3_right_foliage_crown",
+      "pivot": [
+        1251,
+        483
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_3_right_foliage_left",
+      "pivot": [
+        1251,
+        483
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_console_3_right_foliage_right",
+      "pivot": [
+        1251,
+        483
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rack_rear_foliage_crown",
+      "pivot": [
+        1280,
+        473
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rack_rear_foliage_left",
+      "pivot": [
+        1280,
+        473
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rack_rear_foliage_right",
+      "pivot": [
+        1280,
+        473
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rack_front_foliage_crown",
+      "pivot": [
+        1432,
+        540
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rack_front_foliage_left",
+      "pivot": [
+        1432,
+        540
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rack_front_foliage_right",
+      "pivot": [
+        1432,
+        540
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_lounge_tall_foliage_crown",
+      "pivot": [
+        1615,
+        602
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_lounge_tall_foliage_left",
+      "pivot": [
+        1615,
+        602
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_lounge_tall_foliage_right",
+      "pivot": [
+        1615,
+        602
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_lounge_table_foliage_crown",
+      "pivot": [
+        1632,
+        652
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_lounge_table_foliage_left",
+      "pivot": [
+        1632,
+        652
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_lounge_table_foliage_right",
+      "pivot": [
+        1632,
+        652
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_foreground_left_foliage_crown",
+      "pivot": [
+        28,
+        846
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_foreground_left_foliage_left",
+      "pivot": [
+        28,
+        846
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_foreground_left_foliage_right",
+      "pivot": [
+        28,
+        846
+      ],
+      "motion": "sway_small"
+    }
+  ],
+  "hotspots": {
+    "canvas": {
+      "width": 1648,
+      "height": 928
+    },
+    "hotspots": [
+      {
+        "id": "monitoring",
+        "label": "Security monitoring overview",
+        "href": "#monitoring",
+        "target": "threat_display",
+        "hitbox": [
+          354,
+          188,
+          476,
+          246
+        ],
+        "effect": "map-scan"
+      },
+      {
+        "id": "health",
+        "label": "Security review and system health",
+        "href": "#security-review",
+        "target": "health_display",
+        "hitbox": [
+          832,
+          189,
+          193,
+          245
+        ],
+        "effect": "health-highlight"
+      },
+      {
+        "id": "response",
+        "label": "Incident response planning",
+        "href": "#response",
+        "target": "operations_display",
+        "hitbox": [
+          1031,
+          188,
+          244,
+          246
+        ],
+        "effect": "response-highlight"
+      },
+      {
+        "id": "infrastructure",
+        "label": "Infrastructure protection",
+        "href": "#infrastructure",
+        "target": "server_rack_middle",
+        "hitbox": [
+          1306,
+          232,
+          87,
+          333
+        ],
+        "effect": "rack-leds"
+      },
+      {
+        "id": "briefing",
+        "label": "Request a human security review",
+        "href": "/contact/?project=security&from=cybersecurity-room#request",
+        "target": "console_2",
+        "hitbox": [
+          669,
+          440,
+          305,
+          128
+        ],
+        "effect": "screens"
+      },
+      {
+        "id": "process",
+        "label": "Security review process",
+        "href": "#process",
+        "target": "reference_files",
+        "hitbox": [
+          269,
+          552,
+          125,
+          135
+        ],
+        "effect": "binder-lift"
+      },
+      {
+        "id": "return-lobby",
+        "label": "Return to the lobby",
+        "href": "/",
+        "target": "secure_door_leaf",
+        "hitbox": [
+          1497,
+          291,
+          123,
+          286
+        ],
+        "effect": "door-open"
+      }
+    ]
+  },
+  "diff": {
+    "width": 1672,
+    "height": 941,
+    "differentPixels": 340608,
+    "ratio": 0.2164855671203901
+  }
+}

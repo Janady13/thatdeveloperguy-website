@@ -10,7 +10,7 @@ export interface RoomKit { room: RoomId; dir: string; svg: string; manifest: str
 export const repoRoot = fileURLToPath(new URL('..', import.meta.url));
 
 export function loadKits(): KitsConfig {
-  return JSON.parse(readFileSync(resolve(repoRoot, 'scenes/kits.config.json'), 'utf8')) as KitsConfig;
+  return JSON.parse(readFileSync(resolve(repoRoot, 'creative-source/kits.config.json'), 'utf8')) as KitsConfig;
 }
 
 /** Absolute paths for one room's kit files. The kit directory is read-only input. */

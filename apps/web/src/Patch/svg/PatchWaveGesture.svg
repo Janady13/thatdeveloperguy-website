@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="515" height="805" viewBox="0 0 515 805">
+  <g id="PatchWaveGesture" transform="translate(0 0)">
+    <path id="WaveArm" d="M404 342c22-37 43-67 65-82 13-9 25-5 29 5 3 8-3 17-12 23-20 14-30 38-37 72z" fill="#203a5c" stroke="#102641" stroke-linejoin="round" stroke-width="8"/>
+    <path id="WaveHand" d="M456 268c-8-18-10-34-4-39 5-4 11 2 15 16l4-34c1-10 8-14 13-9 4 4 3 13 2 27l5-29c2-10 9-12 14-6 3 4 1 14-1 27l7-20c3-8 10-9 14-3 4 5-1 17-7 29-5 11-8 22-8 34-1 18-15 30-31 31z" fill="#f1f2ef" stroke="#102641" stroke-linejoin="round" stroke-width="7"/>
+    <path d="M474 272c11 8 22 9 34 2" fill="none" stroke="#cbd4db" stroke-linecap="round" stroke-width="5"/>
+  </g>
+</svg>

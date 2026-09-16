@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="515" height="805" viewBox="0 0 515 805">
+  <g id="PatchTalkingMouth">
+    <path d="M246 221c31 20 67 20 103-1l-4 38c-33 22-68 22-101 0z" fill="#b8d8ef"/>
+    <ellipse id="TalkingMouthShape" cx="298" cy="244" rx="25" ry="31" fill="#e7835d" stroke="#102641" stroke-linejoin="round" stroke-width="7"/>
+    <path d="M278 244h40" fill="none" stroke="#f5b28f" stroke-linecap="round" stroke-width="5"/>
+  </g>
+</svg>

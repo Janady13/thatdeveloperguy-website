@@ -1,0 +1,1035 @@
+{
+  "room": "government-solutions",
+  "canvas": {
+    "width": 1648,
+    "height": 928
+  },
+  "source": {
+    "svg": "TDG_GOVERNMENT_SOLUTIONS_ANIMATION_KIT/svg/tdg-government-solutions.rive-import.svg",
+    "sha256": "d11c85f147d68bc03d0c7b3c4e7c6cc50e3b7066b5ae50f5c2677370de6dcd73",
+    "manifest": "TDG_GOVERNMENT_SOLUTIONS_ANIMATION_KIT/docs/scene-manifest.json",
+    "hotspots": "TDG_GOVERNMENT_SOLUTIONS_ANIMATION_KIT/web/hotspots.json"
+  },
+  "stats": {
+    "before": {
+      "paths": 4009,
+      "rings": 66320,
+      "vertices": 388036
+    },
+    "after": {
+      "paths": 3078,
+      "contours": 19385,
+      "vertices": 115173
+    },
+    "dropped": {
+      "rings": 46935,
+      "paths": 931
+    }
+  },
+  "options": {
+    "minArea": 1,
+    "tolerance": 0.75,
+    "minTurnDeg": 60,
+    "union": false
+  },
+  "parts": [
+    {
+      "id": "window_clouds",
+      "pivot": [
+        1510,
+        196
+      ],
+      "motion": "drift_small"
+    },
+    {
+      "id": "process_plan_icon",
+      "pivot": [
+        465,
+        176
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "process_procure_icon",
+      "pivot": [
+        465,
+        248
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "process_implement_icon",
+      "pivot": [
+        465,
+        321
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "process_coordinate_icon",
+      "pivot": [
+        465,
+        394
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "process_deliver_icon",
+      "pivot": [
+        465,
+        464
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "ceiling_panel_1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_panel_2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_panel_3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_panel_4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_panel_5",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_panel_6",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_panel_7",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_panel_8",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_downlight_1",
+      "pivot": [
+        347,
+        60
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_downlight_2",
+      "pivot": [
+        467,
+        126
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_downlight_3",
+      "pivot": [
+        584,
+        146
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_downlight_4",
+      "pivot": [
+        1186,
+        146
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_downlight_5",
+      "pivot": [
+        1318,
+        123
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_downlight_6",
+      "pivot": [
+        1403,
+        69
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "presentation_title",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "presentation_rule",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "presentation_caption",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "policy_row_1_check",
+      "pivot": [
+        598,
+        267
+      ],
+      "motion": "check_reveal"
+    },
+    {
+      "id": "policy_row_2_check",
+      "pivot": [
+        598,
+        293
+      ],
+      "motion": "check_reveal"
+    },
+    {
+      "id": "policy_row_3_check",
+      "pivot": [
+        598,
+        320
+      ],
+      "motion": "check_reveal"
+    },
+    {
+      "id": "policy_row_4_check",
+      "pivot": [
+        598,
+        347
+      ],
+      "motion": "check_reveal"
+    },
+    {
+      "id": "policy_row_5_check",
+      "pivot": [
+        598,
+        376
+      ],
+      "motion": "check_reveal"
+    },
+    {
+      "id": "review_row_1_check",
+      "pivot": [
+        1103,
+        267
+      ],
+      "motion": "check_reveal"
+    },
+    {
+      "id": "review_row_2_check",
+      "pivot": [
+        1103,
+        293
+      ],
+      "motion": "check_reveal"
+    },
+    {
+      "id": "review_row_3_check",
+      "pivot": [
+        1103,
+        320
+      ],
+      "motion": "check_reveal"
+    },
+    {
+      "id": "review_row_4_check",
+      "pivot": [
+        1103,
+        347
+      ],
+      "motion": "check_reveal"
+    },
+    {
+      "id": "review_row_5_check",
+      "pivot": [
+        1103,
+        376
+      ],
+      "motion": "check_reveal"
+    },
+    {
+      "id": "briefing_door_panel",
+      "pivot": [
+        305,
+        609
+      ],
+      "motion": "door_hinge"
+    },
+    {
+      "id": "briefing_door_handle",
+      "pivot": [
+        219,
+        472
+      ],
+      "motion": "rotate_small"
+    },
+    {
+      "id": "contract_drawer_1_face",
+      "pivot": [
+        337,
+        451
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "contract_drawer_2_face",
+      "pivot": [
+        337,
+        484
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "contract_drawer_3_face",
+      "pivot": [
+        337,
+        514
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "contract_drawer_4_face",
+      "pivot": [
+        337,
+        543
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "contract_drawer_5_face",
+      "pivot": [
+        337,
+        574
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "printer_lid",
+      "pivot": [
+        386,
+        413
+      ],
+      "motion": "lift_small"
+    },
+    {
+      "id": "printer_indicator",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "rear_drawer_1_front",
+      "pivot": [
+        542,
+        465
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "rear_drawer_2_front",
+      "pivot": [
+        542,
+        495
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "rear_drawer_3_front",
+      "pivot": [
+        542,
+        522
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "reference_binder_1",
+      "pivot": [
+        838,
+        450
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "reference_binder_2",
+      "pivot": [
+        838,
+        450
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "reference_binder_3",
+      "pivot": [
+        838,
+        450
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "globe_sphere",
+      "pivot": [
+        1020,
+        416
+      ],
+      "motion": "rotate_small"
+    },
+    {
+      "id": "conference_chair_left_far_structure",
+      "pivot": [
+        715,
+        534
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "conference_chair_left_mid_structure",
+      "pivot": [
+        698,
+        557
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "conference_chair_left_near_structure",
+      "pivot": [
+        700,
+        582
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "conference_chair_left_near_backrest",
+      "pivot": [
+        700,
+        542
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "conference_chair_right_far_structure",
+      "pivot": [
+        1038,
+        535
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "conference_chair_right_mid_structure",
+      "pivot": [
+        1067,
+        554
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "conference_chair_right_near_structure",
+      "pivot": [
+        1068,
+        583
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "conference_chair_right_near_backrest",
+      "pivot": [
+        1068,
+        542
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "conference_chair_head_structure",
+      "pivot": [
+        878,
+        494
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "table_connection_ports",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "table_notecard_1",
+      "pivot": [
+        748,
+        506
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "table_notecard_2",
+      "pivot": [
+        1009,
+        506
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "table_pen_1",
+      "pivot": [
+        947,
+        488
+      ],
+      "motion": "rotate_small"
+    },
+    {
+      "id": "table_pen_2",
+      "pivot": [
+        947,
+        488
+      ],
+      "motion": "rotate_small"
+    },
+    {
+      "id": "table_pen_3",
+      "pivot": [
+        947,
+        488
+      ],
+      "motion": "rotate_small"
+    },
+    {
+      "id": "office_drawer_1_face",
+      "pivot": [
+        1263,
+        521
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "office_drawer_2_face",
+      "pivot": [
+        1263,
+        554
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "office_drawer_3_face",
+      "pivot": [
+        1449,
+        574
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "office_monitor_left_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh"
+    },
+    {
+      "id": "office_monitor_right_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh"
+    },
+    {
+      "id": "office_monitor_rear_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh"
+    },
+    {
+      "id": "office_keyboard_left",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "office_keyboard_right",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "office_mouse",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "office_chair_structure",
+      "pivot": [
+        1388,
+        607
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "office_chair_back",
+      "pivot": [
+        1381,
+        574
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "foreground_file_drawer_1_face",
+      "pivot": [
+        0,
+        841
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "foreground_file_drawer_2_face",
+      "pivot": [
+        169,
+        782
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "foreground_file_drawer_3_face",
+      "pivot": [
+        171,
+        920
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "foreground_book_1_cover",
+      "pivot": [
+        0,
+        737
+      ],
+      "motion": "book_lift"
+    },
+    {
+      "id": "foreground_book_2_cover",
+      "pivot": [
+        0,
+        701
+      ],
+      "motion": "book_lift"
+    },
+    {
+      "id": "foreground_book_3_cover",
+      "pivot": [
+        0,
+        670
+      ],
+      "motion": "book_lift"
+    },
+    {
+      "id": "foreground_book_4_cover",
+      "pivot": [
+        0,
+        615
+      ],
+      "motion": "book_lift"
+    },
+    {
+      "id": "coffee_mug_body",
+      "pivot": [
+        1545,
+        637
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "plant_printer_foliage_crown",
+      "pivot": [
+        367,
+        387
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_printer_foliage_left",
+      "pivot": [
+        367,
+        387
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_printer_foliage_right",
+      "pivot": [
+        367,
+        387
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_cabinet_foliage_crown",
+      "pivot": [
+        571,
+        442
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_cabinet_foliage_left",
+      "pivot": [
+        571,
+        442
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_cabinet_foliage_right",
+      "pivot": [
+        571,
+        442
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_left_foliage_crown",
+      "pivot": [
+        749,
+        435
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_left_foliage_left",
+      "pivot": [
+        749,
+        435
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_left_foliage_right",
+      "pivot": [
+        749,
+        435
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_right_foliage_crown",
+      "pivot": [
+        1067,
+        438
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_right_foliage_left",
+      "pivot": [
+        1067,
+        438
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_right_foliage_right",
+      "pivot": [
+        1067,
+        438
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_window_tall_foliage_crown",
+      "pivot": [
+        1264,
+        458
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_window_tall_foliage_left",
+      "pivot": [
+        1264,
+        458
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_window_tall_foliage_right",
+      "pivot": [
+        1264,
+        458
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_window_floor_foliage_crown",
+      "pivot": [
+        1190,
+        509
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_window_floor_foliage_left",
+      "pivot": [
+        1190,
+        509
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_window_floor_foliage_right",
+      "pivot": [
+        1190,
+        509
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_office_foliage_crown",
+      "pivot": [
+        1492,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_office_foliage_left",
+      "pivot": [
+        1492,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_office_foliage_right",
+      "pivot": [
+        1492,
+        480
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_foreground_left_foliage_crown",
+      "pivot": [
+        29,
+        569
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_foreground_left_foliage_left",
+      "pivot": [
+        29,
+        569
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_foreground_left_foliage_right",
+      "pivot": [
+        29,
+        569
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_foreground_right_foliage_crown",
+      "pivot": [
+        1600,
+        913
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_foreground_right_foliage_left",
+      "pivot": [
+        1600,
+        913
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_foreground_right_foliage_right",
+      "pivot": [
+        1600,
+        913
+      ],
+      "motion": "sway_small"
+    }
+  ],
+  "hotspots": {
+    "canvas": {
+      "width": 1648,
+      "height": 928
+    },
+    "hotspots": [
+      {
+        "id": "presentation",
+        "label": "Government solutions",
+        "href": "#solutions",
+        "target": "presentation_display",
+        "hitbox": [
+          714,
+          186,
+          350,
+          210
+        ],
+        "effect": "presentation-refresh"
+      },
+      {
+        "id": "planning",
+        "label": "Project planning",
+        "href": "#planning",
+        "target": "policy_board",
+        "hitbox": [
+          570,
+          191,
+          130,
+          230
+        ],
+        "effect": "checklist"
+      },
+      {
+        "id": "requirements",
+        "label": "Review requirements",
+        "href": "#requirements",
+        "target": "review_board",
+        "hitbox": [
+          1075,
+          191,
+          132,
+          230
+        ],
+        "effect": "checklist"
+      },
+      {
+        "id": "contracting",
+        "label": "Contracting and capability statement",
+        "href": "#contracting",
+        "target": "contract_files",
+        "hitbox": [
+          329,
+          443,
+          93,
+          166
+        ],
+        "effect": "drawers"
+      },
+      {
+        "id": "briefing",
+        "label": "Request a project briefing",
+        "href": "/contact/?project=govweb&from=government-room#request",
+        "target": "conference_table",
+        "hitbox": [
+          687,
+          480,
+          392,
+          153
+        ],
+        "effect": "chair-nudge"
+      },
+      {
+        "id": "process",
+        "label": "Delivery process",
+        "href": "#process",
+        "target": "process_column_signage",
+        "hitbox": [
+          431,
+          155,
+          78,
+          351
+        ],
+        "effect": "step-highlight"
+      },
+      {
+        "id": "return-lobby",
+        "label": "Return to the lobby",
+        "href": "/",
+        "target": "briefing_door_leaf",
+        "hitbox": [
+          196,
+          242,
+          129,
+          397
+        ],
+        "effect": "door-open"
+      },
+      {
+        "id": "workstations",
+        "label": "Government websites and workplace IT",
+        "href": "#delivery",
+        "target": "office_monitor_left",
+        "hitbox": [
+          1357,
+          398,
+          124,
+          129
+        ],
+        "effect": "screen-refresh"
+      }
+    ]
+  },
+  "diff": {
+    "width": 1672,
+    "height": 941,
+    "differentPixels": 351290,
+    "ratio": 0.22327489334872297
+  }
+}

@@ -1,0 +1,1273 @@
+{
+  "room": "it-services",
+  "canvas": {
+    "width": 1648,
+    "height": 928
+  },
+  "source": {
+    "svg": "TDG_IT_SERVICES_ANIMATION_KIT/svg/tdg-it-services.rive-import.svg",
+    "sha256": "c11268fdc550d1fba2e95dad2fb1075bac1f7c4cfca459b77ed91ee6b1027626",
+    "manifest": "TDG_IT_SERVICES_ANIMATION_KIT/docs/scene-manifest.json",
+    "hotspots": "TDG_IT_SERVICES_ANIMATION_KIT/web/hotspots.json"
+  },
+  "stats": {
+    "before": {
+      "paths": 4382,
+      "rings": 63920,
+      "vertices": 381131
+    },
+    "after": {
+      "paths": 3341,
+      "contours": 19894,
+      "vertices": 117995
+    },
+    "dropped": {
+      "rings": 44026,
+      "paths": 1041
+    }
+  },
+  "options": {
+    "minArea": 1,
+    "tolerance": 0.75,
+    "minTurnDeg": 60,
+    "union": false
+  },
+  "parts": [
+    {
+      "id": "exterior_clouds",
+      "pivot": [
+        185,
+        252
+      ],
+      "motion": "drift_small"
+    },
+    {
+      "id": "rear_mission_poster",
+      "pivot": [
+        514,
+        236
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "ceiling_light_panel_1",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_light_panel_2",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_light_panel_3",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_light_panel_4",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_downlight_1",
+      "pivot": [
+        461,
+        44
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_downlight_2",
+      "pivot": [
+        470,
+        169
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_downlight_3",
+      "pivot": [
+        677,
+        170
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_downlight_4",
+      "pivot": [
+        968,
+        170
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_downlight_5",
+      "pivot": [
+        1167,
+        170
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "ceiling_downlight_6",
+      "pivot": [
+        1180,
+        44
+      ],
+      "motion": "light_intensity"
+    },
+    {
+      "id": "sign_server_icon",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "sign_title",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "board_heading_signal",
+      "pivot": [
+        648,
+        245
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "board_row_1_value",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "board_row_1_signal",
+      "pivot": [
+        649,
+        287
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "board_row_2_value",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "board_row_2_signal",
+      "pivot": [
+        649,
+        319
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "board_row_3_value",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "board_row_3_signal",
+      "pivot": [
+        649,
+        350
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "board_row_4_value",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "board_row_4_signal",
+      "pivot": [
+        649,
+        381
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "board_mission_icon",
+      "pivot": [
+        948,
+        315
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "deployment_door_panel",
+      "pivot": [
+        1075,
+        550
+      ],
+      "motion": "door_hinge"
+    },
+    {
+      "id": "deployment_door_handle_left",
+      "pivot": [
+        1081,
+        438
+      ],
+      "motion": "rotate_small"
+    },
+    {
+      "id": "deployment_door_handle_right",
+      "pivot": [
+        1165,
+        438
+      ],
+      "motion": "rotate_small"
+    },
+    {
+      "id": "shelf_binder_1",
+      "pivot": [
+        1320,
+        248
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "shelf_binder_2",
+      "pivot": [
+        1320,
+        248
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "shelf_binder_3",
+      "pivot": [
+        1320,
+        248
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "shelf_binder_4",
+      "pivot": [
+        1320,
+        248
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "shelf_binder_5",
+      "pivot": [
+        1320,
+        248
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "server_rack_01_led_row_01",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_01_led_row_02",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_01_led_row_03",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_01_led_row_04",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_01_led_row_05",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_01_led_row_06",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_01_led_row_07",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_01_led_row_08",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_01_led_row_09",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_02_led_row_01",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_02_led_row_02",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_02_led_row_03",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_02_led_row_04",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_02_led_row_05",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_02_led_row_06",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_02_led_row_07",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_02_led_row_08",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_02_led_row_09",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_03_led_row_01",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_03_led_row_02",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_03_led_row_03",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_03_led_row_04",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_03_led_row_05",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_03_led_row_06",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_03_led_row_07",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_03_led_row_08",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_03_led_row_09",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_04_led_row_01",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_04_led_row_02",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_04_led_row_03",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_04_led_row_04",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_04_led_row_05",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_04_led_row_06",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_04_led_row_07",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_04_led_row_08",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "server_rack_04_led_row_09",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "floor_endpoint_leds",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "rear_storage_drawer_1",
+      "pivot": [
+        389,
+        465
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "rear_storage_drawer_2",
+      "pivot": [
+        389,
+        496
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "rear_storage_drawer_3",
+      "pivot": [
+        467,
+        514
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "rear_storage_drawer_4",
+      "pivot": [
+        467,
+        548
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "rear_storage_drawer_5",
+      "pivot": [
+        467,
+        583
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "service_chair_back",
+      "pivot": [
+        827,
+        478
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "service_monitor_left_housing",
+      "pivot": [
+        735,
+        476
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "service_monitor_right_housing",
+      "pivot": [
+        943,
+        476
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "desk_paper_tray_1",
+      "pivot": [
+        658,
+        473
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "desk_paper_tray_2",
+      "pivot": [
+        658,
+        473
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "desk_paper_tray_3",
+      "pivot": [
+        658,
+        473
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "desk_reader_head",
+      "pivot": [
+        891,
+        474
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "desk_reader_indicator",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "desk_help_sign",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "opacity"
+    },
+    {
+      "id": "left_cabinet_drawer_1_face",
+      "pivot": [
+        132,
+        627
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "left_cabinet_drawer_2_face",
+      "pivot": [
+        132,
+        670
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "left_cabinet_drawer_3_face",
+      "pivot": [
+        132,
+        720
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "workstation_monitor_01_bezel",
+      "pivot": [
+        42.25,
+        552
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "workstation_monitor_01_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh"
+    },
+    {
+      "id": "workstation_monitor_02_bezel",
+      "pivot": [
+        170.75,
+        526
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "workstation_monitor_02_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh"
+    },
+    {
+      "id": "workstation_monitor_03_bezel",
+      "pivot": [
+        273.5,
+        511
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "workstation_monitor_03_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh"
+    },
+    {
+      "id": "workstation_monitor_04_bezel",
+      "pivot": [
+        349.25,
+        507
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "workstation_monitor_04_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh"
+    },
+    {
+      "id": "workstation_keyboard_near",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "workstation_keyboard_far",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "workstation_mouse",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "workstation_phone_handset",
+      "pivot": [
+        280,
+        508
+      ],
+      "motion": "phone_ring"
+    },
+    {
+      "id": "coffee_mug_body",
+      "pivot": [
+        135,
+        574
+      ],
+      "motion": "translate_small"
+    },
+    {
+      "id": "chair_far_wheel_1",
+      "pivot": [
+        405,
+        647
+      ],
+      "motion": "rotate"
+    },
+    {
+      "id": "chair_far_wheel_2",
+      "pivot": [
+        436,
+        661
+      ],
+      "motion": "rotate"
+    },
+    {
+      "id": "chair_far_wheel_3",
+      "pivot": [
+        487,
+        660
+      ],
+      "motion": "rotate"
+    },
+    {
+      "id": "chair_far_back",
+      "pivot": [
+        461,
+        584
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "chair_near_wheel_1",
+      "pivot": [
+        262,
+        745
+      ],
+      "motion": "rotate"
+    },
+    {
+      "id": "chair_near_wheel_2",
+      "pivot": [
+        342,
+        753
+      ],
+      "motion": "rotate"
+    },
+    {
+      "id": "chair_near_wheel_3",
+      "pivot": [
+        411,
+        744
+      ],
+      "motion": "rotate"
+    },
+    {
+      "id": "chair_near_back",
+      "pivot": [
+        390,
+        636
+      ],
+      "motion": "tilt_small"
+    },
+    {
+      "id": "network_appliance_leds",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "pulse"
+    },
+    {
+      "id": "laptop_lid_housing",
+      "pivot": [
+        1569,
+        511
+      ],
+      "motion": "laptop_hinge"
+    },
+    {
+      "id": "laptop_screen",
+      "pivot": [
+        0,
+        0
+      ],
+      "motion": "screen_refresh"
+    },
+    {
+      "id": "cable_loop_left",
+      "pivot": [
+        1581,
+        334
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "cable_loop_right",
+      "pivot": [
+        1623,
+        334
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "tool_cart_drawer_1_face",
+      "pivot": [
+        1385,
+        582.5
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "tool_cart_drawer_2_face",
+      "pivot": [
+        1385,
+        616
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "tool_cart_drawer_3_face",
+      "pivot": [
+        1385,
+        646.5
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "tool_cart_drawer_4_face",
+      "pivot": [
+        1385,
+        677
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "tool_cart_drawer_5_face",
+      "pivot": [
+        1385,
+        711.5
+      ],
+      "motion": "drawer_pull"
+    },
+    {
+      "id": "tool_cart_wheel_1",
+      "pivot": [
+        1394,
+        759
+      ],
+      "motion": "rotate"
+    },
+    {
+      "id": "tool_cart_wheel_2",
+      "pivot": [
+        1503,
+        777
+      ],
+      "motion": "rotate"
+    },
+    {
+      "id": "storage_bin_1_lid",
+      "pivot": [
+        1555,
+        571
+      ],
+      "motion": "lift_small"
+    },
+    {
+      "id": "storage_bin_2_lid",
+      "pivot": [
+        1543,
+        655
+      ],
+      "motion": "lift_small"
+    },
+    {
+      "id": "plant_rear_left_foliage_crown",
+      "pivot": [
+        417,
+        423
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_left_foliage_left",
+      "pivot": [
+        417,
+        423
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_left_foliage_right",
+      "pivot": [
+        417,
+        423
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_cabinet_left_foliage_crown",
+      "pivot": [
+        411,
+        491
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_cabinet_left_foliage_left",
+      "pivot": [
+        411,
+        491
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_cabinet_left_foliage_right",
+      "pivot": [
+        411,
+        491
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_cabinet_right_foliage_crown",
+      "pivot": [
+        500,
+        492
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_cabinet_right_foliage_left",
+      "pivot": [
+        500,
+        492
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_rear_cabinet_right_foliage_right",
+      "pivot": [
+        500,
+        492
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_service_desk_foliage_crown",
+      "pivot": [
+        616,
+        451
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_service_desk_foliage_left",
+      "pivot": [
+        616,
+        451
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_service_desk_foliage_right",
+      "pivot": [
+        616,
+        451
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_workstation_foliage_crown",
+      "pivot": [
+        246,
+        508
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_workstation_foliage_left",
+      "pivot": [
+        246,
+        508
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_workstation_foliage_right",
+      "pivot": [
+        246,
+        508
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_server_corner_foliage_crown",
+      "pivot": [
+        1325,
+        516
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_server_corner_foliage_left",
+      "pivot": [
+        1325,
+        516
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_server_corner_foliage_right",
+      "pivot": [
+        1325,
+        516
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_foreground_foliage_crown",
+      "pivot": [
+        36,
+        794
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_foreground_foliage_left",
+      "pivot": [
+        36,
+        794
+      ],
+      "motion": "sway_small"
+    },
+    {
+      "id": "plant_foreground_foliage_right",
+      "pivot": [
+        36,
+        794
+      ],
+      "motion": "sway_small"
+    }
+  ],
+  "hotspots": {
+    "canvas": {
+      "width": 1648,
+      "height": 928
+    },
+    "hotspots": [
+      {
+        "id": "status-board",
+        "label": "System status illustration",
+        "href": "#monitoring",
+        "target": "status_board",
+        "hitbox": [
+          615,
+          213,
+          420,
+          200
+        ],
+        "effect": "board-refresh"
+      },
+      {
+        "id": "helpdesk",
+        "label": "IT support",
+        "href": "#support",
+        "target": "service_desk",
+        "hitbox": [
+          568,
+          473,
+          511,
+          142
+        ],
+        "effect": "reader-pulse"
+      },
+      {
+        "id": "workstations",
+        "label": "Workstations and endpoints",
+        "href": "#workstations",
+        "target": "workstation_monitor_02",
+        "hitbox": [
+          112,
+          413,
+          280,
+          126
+        ],
+        "effect": "screen-refresh"
+      },
+      {
+        "id": "infrastructure",
+        "label": "Network and infrastructure",
+        "href": "#infrastructure",
+        "target": "server_rack_02",
+        "hitbox": [
+          1351,
+          258,
+          195,
+          274
+        ],
+        "effect": "rack-ripple"
+      },
+      {
+        "id": "deployment",
+        "label": "Deployment and maintenance",
+        "href": "#deployment",
+        "target": "deployment_door_leaf",
+        "hitbox": [
+          1062,
+          282,
+          126,
+          272
+        ],
+        "effect": "door-open"
+      },
+      {
+        "id": "toolkit",
+        "label": "IT service process",
+        "href": "#process",
+        "target": "tool_cart",
+        "hitbox": [
+          1377,
+          545,
+          160,
+          248
+        ],
+        "effect": "drawers"
+      },
+      {
+        "id": "contact",
+        "label": "Request IT support",
+        "href": "/contact/?project=itsupport&from=it-room#request",
+        "target": null,
+        "hitbox": null,
+        "effect": null
+      }
+    ]
+  },
+  "diff": {
+    "width": 1672,
+    "height": 941,
+    "differentPixels": 440123,
+    "ratio": 0.2797358760150303
+  }
+}

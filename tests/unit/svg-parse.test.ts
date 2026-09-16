@@ -9,7 +9,8 @@ test('parsePathData handles M/L/H/V/Z absolute and relative, multiple subpaths',
   assert.deepEqual(parsePathData('M0 0H100V50H0Z'), [[[0, 0], [100, 0], [100, 50], [0, 50]]]);
   assert.deepEqual(parsePathData('M15 15h10v10h-10z'), [[[15, 15], [25, 15], [25, 25], [15, 25]]]);
   assert.equal(parsePathData('M10 10L30 10L30 40L10 40ZM12.7 12.7L12.7 13.3L13.3 13.3L13.3 12.7Z').length, 2);
-  assert.throws(() => parsePathData('M0 0C1 1 2 2 3 3Z'), /unsupported/);
+  assert.equal(parsePathData('M0 0C1 1 2 2 3 3L3 0Z')[0]!.length, 1 + 8 + 1); // cubic flattened to 8 points
+  assert.throws(() => parsePathData('M0 0Q1 1 2 2Z'), /unsupported/);
 });
 
 test('parseScene keeps the group tree, ids, labels and fills', () => {

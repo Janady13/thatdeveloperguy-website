@@ -1,4 +1,4 @@
-import manifest from '../../../../../scenes/rive/lobby/rive-manifest.json';
+import manifest from '../../../../../creative-source/rive/lobby/rive-manifest.json';
 
 export interface Hotspot { id: string; label: string; href: string; hit: { x: number; y: number; width: number; height: number }; focusValue: string; trigger: string }
 interface DoorRecord { id: string; leafId: string; hinge: [number, number]; hit: Hotspot['hit']; href: string; label: string }

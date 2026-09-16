@@ -29,7 +29,7 @@ export function selectParts(manifest: KitManifest): PartSpec[] {
 export function refineRoom(room: RoomId, options: RefineOptions = DEFAULT_REFINE): RefinedManifest {
   const kits = loadKits();
   const kit = resolveRoom(room, kits);
-  const out = resolve(repoRoot, 'scenes/refined', room);
+  const out = resolve(repoRoot, 'creative-source/refined', room);
   mkdirSync(join(out, 'parts'), { recursive: true });
   const svgText = readFileSync(kit.svg, 'utf8');
   const kitManifest = JSON.parse(readFileSync(kit.manifest, 'utf8')) as KitManifest;

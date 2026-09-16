@@ -1,0 +1,27 @@
+.tdg-patch-rive {
+  --patch-scale: 1;
+  --patch-facing: 1;
+  display: block;
+  width: min(100%, 420px);
+  aspect-ratio: 515 / 805;
+  transform: scaleX(var(--patch-facing)) scale(var(--patch-scale));
+  transform-origin: 50% 92%;
+  isolation: isolate;
+  contain: layout paint size;
+}
+
+.tdg-patch-rive canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tdg-patch-rive[data-reduced-motion='true'] {
+  transform: scaleX(var(--patch-facing)) scale(var(--patch-scale));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tdg-patch-rive {
+    transition: none !important;
+  }
+}

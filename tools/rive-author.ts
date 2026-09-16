@@ -2,7 +2,7 @@
  * Authors the lobby artboard in the open Rive Early Access file and exports it.
  *   npm run rive:author -- --room lobby [--replace | --resume]
  *   npm run rive:author -- --room lobby --riv <path-to-editor-ui-export.riv>   (ingest)
- * Every editor call is appended to scenes/rive/lobby/authoring-log.json.
+ * Every editor call is appended to creative-source/rive/lobby/authoring-log.json.
  *
  * Editor facts this relies on (probed 2026-09-15, editor MCP 0.6): property keys are short names
  * (x=13, y=14, r=15, sx=16, sy=17, opacity=18; animation fps=56, duration=57 in frames, loop=59 enum
@@ -117,7 +117,7 @@ async function stateMachine(ctx: Ctx): Promise<void> {
   const missing = ctx.plan.layers.filter(layer => !have.has(layer.name));
   if (missing.length) await ctx.editor.call('animation_editor', { command: 'createStateMachineLayers', data: { createStateMachineLayers: { stateMachineId: machine.id, layers: missing.map(layer => ({ name: layer.name, states: layer.states.map((s, i) => ({ name: s.name, x: 120 + i * 240, y: 140, ...(s.animation ? { linearAnimationName: s.animation } : {}) })), otherTransitions: layer.transitions.map(t => ({ from: t.from, to: t.to })) })) } } });
   const full = await ctx.editor.call<any>('animation_editor', { command: 'queryStateMachine', data: { queryStateMachine: { stateMachineId: machine.id } } });
-  writeFileSync(join(resolve(repoRoot, 'scenes/rive/lobby'), 'state-machine.json'), JSON.stringify(full, null, 1));
+  writeFileSync(join(resolve(repoRoot, 'creative-source/rive/lobby'), 'state-machine.json'), JSON.stringify(full, null, 1));
   const conditions: Array<{ id: string; conditions: any[] }> = [];
   for (const layer of ctx.plan.layers) {
     const live = (full.layers as any[]).find(l => l.layerName === layer.name);
@@ -162,7 +162,7 @@ async function resumeContext(editor: RiveEditor, plan: LobbyPlan, artboardId: st
 
 /** Copy an export made from the editor UI (File → Export → For Runtime) into place and refresh the manifest. The MCP's own export omits MCP-created artboards. */
 export function ingestLobbyExport(rivPath: string): void {
-  const outDir = resolve(repoRoot, 'scenes/rive/lobby');
+  const outDir = resolve(repoRoot, 'creative-source/rive/lobby');
   const manifestPath = join(outDir, 'rive-manifest.json');
   if (!existsSync(manifestPath)) throw new Error('author the lobby first; rive-manifest.json is missing');
   const bytes = readFileSync(rivPath);
@@ -177,8 +177,8 @@ export function ingestLobbyExport(rivPath: string): void {
 }
 
 export async function authorLobby(mode: 'build' | 'replace' | 'resume' = 'build'): Promise<void> {
-  const refinedDir = resolve(repoRoot, 'scenes/refined/lobby');
-  const outDir = resolve(repoRoot, 'scenes/rive/lobby'); mkdirSync(outDir, { recursive: true });
+  const refinedDir = resolve(repoRoot, 'creative-source/refined/lobby');
+  const outDir = resolve(repoRoot, 'creative-source/rive/lobby'); mkdirSync(outDir, { recursive: true });
   const log: LogEntry[] = [];
   const editor = new RiveEditor(undefined, entry => { log.push(entry); writeFileSync(join(outDir, 'authoring-log.json'), JSON.stringify(log, null, 1)); });
   const server = await editor.initialize();

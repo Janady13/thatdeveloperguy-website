@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { planLobby } from '../../tools/rive-plan.ts';
 
-const manifest = JSON.parse(readFileSync(new URL('../../scenes/refined/lobby/manifest.json', import.meta.url), 'utf8'));
+const manifest = JSON.parse(readFileSync(new URL('../../creative-source/refined/lobby/manifest.json', import.meta.url), 'utf8'));
 
 test('planLobby derives three doors with hinges, hits and routes from the kit hotspots', () => {
   const plan = planLobby(manifest);
