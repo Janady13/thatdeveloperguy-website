@@ -31,5 +31,5 @@ jobs:
       - run: npm ci --ignore-scripts
       - run: npm rebuild esbuild @resvg/resvg-js
       - run: npm run check
-      - run: npx playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chromium webkit
       - run: npm run test:browser -- --project=chromium --project=mobile
