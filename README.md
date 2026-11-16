@@ -1,5 +1,7 @@
 # thatdeveloperguy.com
 
+> **Status.** This repository holds the source of thatdeveloperguy.com as it stood in September 2026. The live site was rebuilt in November 2026, and its current source is kept in a private repository.
+
 Illustrated, animated website for ThatDeveloperGuy — government IT, security and real solutions. A lobby with three doors leads into
 fully animated rooms (IT Services, Government Solutions, Cybersecurity), each built as a Rive scene over crisp plates and driven by a
 data-bound view model.
